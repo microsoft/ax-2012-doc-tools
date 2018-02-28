@@ -1,0 +1,1899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: Manuf</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Manufacturing</h2>
+
+
+<a class="cssAHref2" href="Module-Manufacturing-11.htm#m-manufacturing">Module: Manufacturing</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ChildParents-13.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ChildParents-15.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>601</td><td><a name="c-jmgtmpjobstatus"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-jmgipccategory">JmgIpcCategory</a></td>
+<td>.Category</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>602</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .JobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgstampjournaltrans">JmgStampJournalTrans</a></td>
+<td>.JobRef, .JobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>603</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .JobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgstamptrans">JmgStampTrans</a></td>
+<td>.JobRef, .JobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>604</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.Fky?, .ModuleRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>605</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.ProdId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>606</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.ProdId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>607</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.Fky?, .ModuleRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>608</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.Fky?, .ModuleRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>609</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.Fky?, .ModuleRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>610</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>611</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>612</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.ModuleRefId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>613</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgtmpjobstatus">JmgTmpJobStatus</a></td>
+<td>.WrkCtrId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrtable">WrkCtrTable</a></td>
+<td>.WrkCtrId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>614</td><td><a name="c-jmgtmppayexport"></a>JmgTmpPayExport</td>
+<td>.PayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgpaytable">JmgPayTable</a></td>
+<td>.PayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>615</td><td><a name="c-jmgtmppayspecification"></a>JmgTmpPaySpecification</td>
+<td>.PayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgpaytable">JmgPayTable</a></td>
+<td>.PayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>616</td><td><a name="c-jmgtmppaystattrans"></a>JmgTmpPayStatTrans</td>
+<td>.JmgPayStatGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgpaystatgroup">JmgPayStatGroup</a></td>
+<td>.PayStatGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>617</td><td>JmgTmpPayStatTrans</td>
+<td>.JmgPayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgpaytable">JmgPayTable</a></td>
+<td>.PayCostType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>618</td><td><a name="c-jmgtmpprojbarcode"></a>JmgTmpProjBarcode</td>
+<td>.ProjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>619</td><td>JmgTmpProjBarcode</td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>620</td><td><a name="c-jmgtmpworkplanner"></a>JmgTmpWorkPlanner</td>
+<td>.AbsenceJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-15.htm#p-hrmabsencecode">HRMAbsenceCode</a></td>
+<td>.JmgJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>621</td><td>JmgTmpWorkPlanner</td>
+<td>.ProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>622</td><td>JmgTmpWorkPlanner</td>
+<td>.SpecialDayId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgspecialdaytable">JmgSpecialDayTable</a></td>
+<td>.SpecialDayId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>623</td><td><a name="c-jmgworkplanneremployeetmp"></a>JmgWorkPlannerEmployeeTmp</td>
+<td>.Friday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>624</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Monday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>625</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Saturday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>626</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Sunday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>627</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Thursday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>628</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Tuesday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>629</td><td>JmgWorkPlannerEmployeeTmp</td>
+<td>.Wednesday</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>630</td><td><a name="c-jmgworkplannerprofiletmp"></a>JmgWorkPlannerProfileTmp</td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-jmgprofiletable">JmgProfileTable</a></td>
+<td>.Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>631</td><td><a name="c-kanban"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.BOMDataAreaId, .BOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-bomtable">BOMTable</a></td>
+<td>.dataAreaId, .BOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>632</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.LegalEntity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>633</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>634</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.InventDimId, .InventDimDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>635</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.ItemDataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.dataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>636</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.InventTransDataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.dataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>637</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.CurrentJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>638</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.KanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>639</td><td><a name="c-kanbanboardtmpfiltercriteria"></a>KanbanBoardTmpFilterCriteria</td>
+<td>.InventLocationIdFrom</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>640</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.InventLocationIdTo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>641</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.InventSiteIdFrom</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>642</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.InventSiteIdTo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>643</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.PlanActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planactivity">PlanActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>644</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.PlanReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planreference">PlanReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>645</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.WMSLocationIdFrom, .InventLocationIdFrom</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>646</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.WMSLocationIdTo, .InventLocationIdTo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>647</td><td>KanbanBoardTmpFilterCriteria</td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>648</td><td><a name="c-kanbanboardtmpprocessjob"></a>KanbanBoardTmpProcessJob</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>649</td><td>KanbanBoardTmpProcessJob</td>
+<td>.ReceiptInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>650</td><td>KanbanBoardTmpProcessJob</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>651</td><td>KanbanBoardTmpProcessJob</td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>652</td><td>KanbanBoardTmpProcessJob</td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>653</td><td>KanbanBoardTmpProcessJob</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>654</td><td>KanbanBoardTmpProcessJob</td>
+<td>.PlannedPeriod, .Sequence</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobschedule">KanbanJobSchedule</a></td>
+<td>.PlannedPeriod, .Sequence</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>655</td><td>KanbanBoardTmpProcessJob</td>
+<td>.KanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>656</td><td>KanbanBoardTmpProcessJob</td>
+<td>.ReceiptInventLocationId, .ReceiptWMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.inventLocationId, .wMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>657</td><td><a name="c-kanbanboardtmptransferjob"></a>KanbanBoardTmpTransferJob</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>658</td><td>KanbanBoardTmpTransferJob</td>
+<td>.IssueInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>659</td><td>KanbanBoardTmpTransferJob</td>
+<td>.ReceiptInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>660</td><td>KanbanBoardTmpTransferJob</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>661</td><td>KanbanBoardTmpTransferJob</td>
+<td>.KanbanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.KanbanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>662</td><td>KanbanBoardTmpTransferJob</td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>663</td><td>KanbanBoardTmpTransferJob</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>664</td><td>KanbanBoardTmpTransferJob</td>
+<td>.KanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>665</td><td>KanbanBoardTmpTransferJob</td>
+<td>.CarrierId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-shipcarriertable">ShipCarrierTable</a></td>
+<td>.CarrierId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>666</td><td>KanbanBoardTmpTransferJob</td>
+<td>.InventUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>667</td><td>KanbanBoardTmpTransferJob</td>
+<td>.IssueInventLocationId, .IssueWMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.inventLocationId, .wMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>668</td><td>KanbanBoardTmpTransferJob</td>
+<td>.ReceiptInventLocationId, .ReceiptWMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.inventLocationId, .wMSLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>669</td><td>KanbanBoardTmpTransferJob</td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-23.htm#p-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>670</td><td><a name="c-kanbancard"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>671</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.KanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>672</td><td><a name="c-kanbanflow"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanflow">KanbanFlow</a></td>
+<td>.LegalEntity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>673</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanflow">KanbanFlow</a></td>
+<td>.FirstPlanPlanActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planplanactivity">PlanPlanActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>674</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanflow">KanbanFlow</a></td>
+<td>.LastPlanPlanActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planplanactivity">PlanPlanActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>675</td><td><a name="c-kanbanflowactivityrelationship"></a>KanbanFlowActivityRelationship</td>
+<td>.KanbanFlow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanflow">KanbanFlow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>676</td><td>KanbanFlowActivityRelationship</td>
+<td>.LeanProdFlowActivityRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanprodflowplanactivityrelation">LeanProdFlowPlanActivityRelation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>677</td><td><a name="c-kanbanflowtmpactivityrelations"></a>KanbanFlowTmpActivityRelations</td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>678</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.InventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>679</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.PlanActivityId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planactivity">PlanActivity</a></td>
+<td>.PlanActivityId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>680</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.PlanReferenceName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planreference">PlanReference</a></td>
+<td>.PlanName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>681</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.UnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>682</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>683</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.WMSLocationId, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>684</td><td>KanbanFlowTmpActivityRelations</td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>685</td><td><a name="c-kanbanjob"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>686</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.InventDimDataAreaId, .InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.dataAreaId, .inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>687</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.IssueInventDimDataAreaId, .IssueInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.dataAreaId, .inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>688</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.InventLocationDataAreaId, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.dataAreaId, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>689</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.InventTransDataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.dataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>690</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.IssueInventTransDataAreaId, .IssueInventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.dataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>691</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>692</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.LeanProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>693</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.SourceDocumentHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentheader">SourceDocumentHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>694</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.WMSLocationDataAreaId, .WMSLocationId, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.dataAreaId, .wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>695</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>696</td><td><a name="c-kanbanjobcapacitysum"></a>KanbanJobCapacitySum</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>697</td><td>KanbanJobCapacitySum</td>
+<td>.PlannedCapacityThroughputUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>698</td><td><a name="c-kanbanjobissue"></a>KanbanJobIssue</td>
+<td>.KanbanJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>699</td><td>KanbanJobIssue</td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>700</td><td><a name="c-kanbanjobpickinglist"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.BOM</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-bom">BOM</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>701</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>702</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.InventDimDataAreaId, .InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.dataAreaId, .inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>703</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.ItemDataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.dataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>704</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.InventTransDataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.dataAreaId, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>705</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>706</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>707</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.ReplenishmentRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>708</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.PickingProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>709</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>710</td><td><a name="c-kanbanjobplanactivityservice"></a>KanbanJobPlanActivityService</td>
+<td>.KanbanJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>711</td><td>KanbanJobPlanActivityService</td>
+<td>.PlanActivityService</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planactivityservice">PlanActivityService</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>712</td><td><a name="c-kanbanjobpurchaseline"></a>KanbanJobPurchaseLine</td>
+<td>.KanbanJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>713</td><td>KanbanJobPurchaseLine</td>
+<td>.PurchLineInventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-14.htm#p-purchline">PurchLine</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>714</td><td><a name="c-kanbanjobqualitymeasure"></a>KanbanJobQualityMeasure</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>715</td><td><a name="c-kanbanjobreceipt"></a>KanbanJobReceipt</td>
+<td>.KanbanJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>716</td><td>KanbanJobReceipt</td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>717</td><td><a name="c-kanbanjobreceiptadviceline"></a>KanbanJobReceiptAdviceLine</td>
+<td>.KanbanJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>718</td><td>KanbanJobReceiptAdviceLine</td>
+<td>.ReceiptAdviceLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendpackingsliptrans">VendPackingSlipTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>719</td><td><a name="c-kanbanjobschedule"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobschedule">KanbanJobSchedule</a></td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>720</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobschedule">KanbanJobSchedule</a></td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>721</td><td><a name="c-kanbanjobschedulecapacitysum"></a>KanbanJobScheduleCapacitySum</td>
+<td>.PlannedCapacityThroughputUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>722</td><td>KanbanJobScheduleCapacitySum</td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>723</td><td><a name="c-kanbanjobschedulelock"></a>KanbanJobScheduleLock</td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>724</td><td><a name="c-kanbanjobstatusupdate"></a>KanbanJobStatusUpdate</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>725</td><td>KanbanJobStatusUpdate</td>
+<td>.PlanAfterJob</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>726</td><td><a name="c-kanbanjobtmppegging"></a>KanbanJobTmpPegging</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>727</td><td>KanbanJobTmpPegging</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>728</td><td>KanbanJobTmpPegging</td>
+<td>.KanbanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.KanbanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>729</td><td>KanbanJobTmpPegging</td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.CardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>730</td><td>KanbanJobTmpPegging</td>
+<td>.Job</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>731</td><td>KanbanJobTmpPegging</td>
+<td>.UnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>732</td><td><a name="c-kanbanjobtmppicklist"></a>KanbanJobTmpPickList</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>733</td><td>KanbanJobTmpPickList</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>734</td><td>KanbanJobTmpPickList</td>
+<td>.UnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>735</td><td><a name="c-kanbanpagetmp"></a>KanbanPageTmp</td>
+<td>.PickInventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-inventbatch">InventBatch</a></td>
+<td>.inventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>736</td><td>KanbanPageTmp</td>
+<td>.ShipInventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-inventbatch">InventBatch</a></td>
+<td>.inventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>737</td><td>KanbanPageTmp</td>
+<td>.PickInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>738</td><td>KanbanPageTmp</td>
+<td>.InventGtdId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-inventgtd_ru">InventGTD_RU</a></td>
+<td>.InventGTDId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>739</td><td>KanbanPageTmp</td>
+<td>.FromInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>740</td><td>KanbanPageTmp</td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>741</td><td>KanbanPageTmp</td>
+<td>.PickFromInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>742</td><td>KanbanPageTmp</td>
+<td>.PickInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>743</td><td>KanbanPageTmp</td>
+<td>.InventOwnerId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventowner_ru">InventOwner_RU</a></td>
+<td>.InventOwnerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>744</td><td>KanbanPageTmp</td>
+<td>.InventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>745</td><td>KanbanPageTmp</td>
+<td>.PickInventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventserial">InventSerial</a></td>
+<td>.InventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>746</td><td>KanbanPageTmp</td>
+<td>.ShipInventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventserial">InventSerial</a></td>
+<td>.InventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>747</td><td>KanbanPageTmp</td>
+<td>.CustomerItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>748</td><td>KanbanPageTmp</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>749</td><td>KanbanPageTmp</td>
+<td>.PickItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>750</td><td>KanbanPageTmp</td>
+<td>.SalesOrder</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salestable">SalesTable</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>751</td><td>KanbanPageTmp</td>
+<td>.PickWMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>752</td><td>KanbanPageTmp</td>
+<td>.ShipWMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>753</td><td>KanbanPageTmp</td>
+<td>.PickWorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrtable">WrkCtrTable</a></td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>754</td><td>KanbanPageTmp</td>
+<td>.WorkCell</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrtable">WrkCtrTable</a></td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>755</td><td><a name="c-kanbanquantitycalculation"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitycalculation">KanbanQuantityCalculation</a></td>
+<td>.KanbanQuantityPolicy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>756</td><td><a name="c-kanbanquantitycalculationproposal"></a>KanbanQuantityCalculationProposal</td>
+<td>.KanbanQuantityCalculation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitycalculation">KanbanQuantityCalculation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>757</td><td>KanbanQuantityCalculationProposal</td>
+<td>.KanbanRuleFixed</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>758</td><td><a name="c-kanbanquantitydemandperiodfence"></a>KanbanQuantityDemandPeriodFence</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicydemandperiod">KanbanQuantityPolicyDemandPeriod</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>759</td><td><a name="c-kanbanquantitydemandperiodseason"></a>KanbanQuantityDemandPeriodSeason</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicydemandperiod">KanbanQuantityPolicyDemandPeriod</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>760</td><td><a name="c-kanbanquantitypolicy"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-16.htm#p-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>761</td><td><a name="c-kanbanquantitypolicydemandperiod"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicydemandperiod">KanbanQuantityPolicyDemandPeriod</a></td>
+<td>.KanbanQuantityPolicy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>762</td><td><a name="c-kanbanquantitypolicykanbanrulefixed"></a>KanbanQuantityPolicyKanbanRuleFixed</td>
+<td>.KanbanQuantityPolicy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>763</td><td>KanbanQuantityPolicyKanbanRuleFixed</td>
+<td>.KanbanRuleFixed</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>764</td><td><a name="c-kanbanquantitypolicysafetystock"></a>KanbanQuantityPolicySafetyStock</td>
+<td>.KanbanQuantityPolicy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>765</td><td><a name="c-kanbanrule"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.LegalEntity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>766</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.KanbanFlow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanflow">KanbanFlow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>767</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.ReplacingKanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>768</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.CardsNumberSequence</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencetable">NumberSequenceTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>769</td><td><a name="c-kanbanruleevent"></a>KanbanRuleEvent</td>
+<td>.ParentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulevariable">KanbanRuleVariable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>770</td><td><a name="c-kanbanrulefixed"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.ParentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>771</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.ReplenishmentTimeUnitOfMeasure</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>772</td><td><a name="c-kanbanrulevariable"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-kanbanrulevariable">KanbanRuleVariable</a></td>
+<td>.ParentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>773</td><td><a name="c-kanbansourcerequirement"></a>KanbanSourceRequirement</td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>774</td><td>KanbanSourceRequirement</td>
+<td>.ParentSourceRequirementRecId, .ParentSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>775</td><td>KanbanSourceRequirement</td>
+<td>.RootSourceRequirementRecId, .RootSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>776</td><td>KanbanSourceRequirement</td>
+<td>.SourceRequirementRecId, .SourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>777</td><td>KanbanSourceRequirement</td>
+<td>.SourceRequirementRecId, .SourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjob">KanbanJob</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>778</td><td>KanbanSourceRequirement</td>
+<td>.SourceRequirementRecId, .SourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>779</td><td>KanbanSourceRequirement</td>
+<td>.ParentSourceRequirementRecId, .ParentSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodbom">ProdBOM</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>780</td><td>KanbanSourceRequirement</td>
+<td>.RootSourceRequirementRecId, .RootSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodbom">ProdBOM</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>781</td><td>KanbanSourceRequirement</td>
+<td>.SourceRequirementRecId, .SourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodbom">ProdBOM</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>782</td><td>KanbanSourceRequirement</td>
+<td>.ParentSourceRequirementRecId, .ParentSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>783</td><td>KanbanSourceRequirement</td>
+<td>.RootSourceRequirementRecId, .RootSourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>784</td><td>KanbanSourceRequirement</td>
+<td>.SourceRequirementRecId, .SourceRequirementTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>785</td><td><a name="c-kanbanstatusupdate"></a>KanbanStatusUpdate</td>
+<td>.DeleteKanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>786</td><td>KanbanStatusUpdate</td>
+<td>.Kanban</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanban">Kanban</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>787</td><td>KanbanStatusUpdate</td>
+<td>.KanbanCard</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbancard">KanbanCard</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>788</td><td><a name="c-leancoverage"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leancoverage">LeanCoverage</a></td>
+<td>.AllocationDataAreaId, .AllocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastitemallocation">ForecastItemAllocation</a></td>
+<td>.dataAreaId, .AllocateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>789</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leancoverage">LeanCoverage</a></td>
+<td>.InventDimId, .InventDimDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>790</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leancoverage">LeanCoverage</a></td>
+<td>.ItemId, .ItemDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>791</td><td><a name="c-leancoveragekanbanrule"></a>LeanCoverageKanbanRule</td>
+<td>.KanbanRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-12.htm#p-kanbanrule">KanbanRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>792</td><td>LeanCoverageKanbanRule</td>
+<td>.Coverage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leancoverage">LeanCoverage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>793</td><td><a name="c-leanprodflowactivitypickinglocation"></a>LeanProdFlowActivityPickingLocation</td>
+<td>.InventDimDataAreaId, .InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.dataAreaId, .inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>794</td><td>LeanProdFlowActivityPickingLocation</td>
+<td>.ItemId, .ItemDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>795</td><td>LeanProdFlowActivityPickingLocation</td>
+<td>.ProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>796</td><td><a name="c-leanprodflowplanactivityrelation"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanprodflowplanactivityrelation">LeanProdFlowPlanActivityRelation</a></td>
+<td>.ProductionFlow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflow">LeanProductionFlow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>797</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanprodflowplanactivityrelation">LeanProdFlowPlanActivityRelation</a></td>
+<td>.PlanActivityRelationship</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-planactivityrelationship">PlanActivityRelationship</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>798</td><td><a name="c-leanproductionflow"></a><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflow">LeanProductionFlow</a></td>
+<td>.ProductionFlowReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflowreference">LeanProductionFlowReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>799</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflow">LeanProductionFlow</a></td>
+<td>.Plan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-14.htm#p-plan">Plan</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>800</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflow">LeanProductionFlow</a></td>
+<td>.QuantityPerCycleUnitOfMeasure</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>801</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-13.htm#p-leanproductionflow">LeanProductionFlow</a></td>
+<td>.TaktUnitOfMeasure</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ChildParents-15.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

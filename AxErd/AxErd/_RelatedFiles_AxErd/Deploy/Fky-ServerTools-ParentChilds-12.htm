@@ -1,0 +1,1143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: SvrT</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Server and Tools</h2>
+
+
+<a class="cssAHref2" href="Module-ServerTools-11.htm#m-serverandtools">Module: Server and Tools</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ServerTools-ParentChilds-11.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>232</td><td><a name="p-omuserroleorganization"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-omuserroleorganization">OMUserRoleOrganization</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-securityuserroledbtemptable">SecurityUserRoleDBTempTable</a></td>
+<td>.OMUserRoleOrganization</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>233</td><td><a name="p-sigparameters"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sigparameters">SIGParameters</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>234</td><td><a name="p-sigprocsetup"></a>SIGProcSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sigprocsetupfield">SIGProcSetupField</a></td>
+<td>.SetupRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>235</td><td><a name="p-sigreasoncode"></a>SIGReasonCode</td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>236</td><td>SIGReasonCode</td>
+<td>.ReasonCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sigsignaturelog">SIGSignatureLog</a></td>
+<td>.ReasonCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>237</td><td>SIGReasonCode</td>
+<td>.ReasonCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpsigndocument">TmpSignDocument</a></td>
+<td>.ReasonCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>238</td><td><a name="p-syscodeprofilerlinesum"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.RunId, .PathId, .LineNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.RunId, .ParentPathId, .parentLineNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>239</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.RunId, .PathId, .LineNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.RunId, .PathId, .LineNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>240</td><td><a name="p-syscodeprofilermethodsum"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.pathId, .RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.parentPathId, .RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>241</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.RunId, .pathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.RunId, .PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>242</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.RunId, .pathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.RunId, .PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>243</td><td><a name="p-syscodeprofilerobjectsum"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildobjectsum">SysCodeProfilerChildObjectSum</a></td>
+<td>.RunId, .ParentObjectID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>244</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.RunId, .ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>245</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.RunId, .ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>246</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .WithChildren, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .WithChildren, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>247</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId, .objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.RunId, .ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>248</td><td><a name="p-syscodeprofilerobjecttable"></a>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>249</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.parentObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>250</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>251</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.parentObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>252</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildobjectsum">SysCodeProfilerChildObjectSum</a></td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>253</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildobjectsum">SysCodeProfilerChildObjectSum</a></td>
+<td>.ParentObjectID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>254</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>255</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>256</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>257</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerparameters">SysCodeProfilerParameters</a></td>
+<td>.nextObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>258</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>259</td><td>SysCodeProfilerObjectTable</td>
+<td>.objectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>260</td><td><a name="p-syscodeprofilerpathtable"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.ParentPathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>261</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>262</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.parentPathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>263</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>264</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>265</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.pathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>266</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerparameters">SysCodeProfilerParameters</a></td>
+<td>.nextPathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>267</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerpathtable">SysCodeProfilerPathTable</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.PathId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>268</td><td><a name="p-syscodeprofilerrunsum"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunsum">SysCodeProfilerRunSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunsum">SysCodeProfilerRunSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>269</td><td><a name="p-syscodeprofilerruntable"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildlinesum">SysCodeProfilerChildLineSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>270</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildmethodsum">SysCodeProfilerChildMethodSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>271</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerchildobjectsum">SysCodeProfilerChildObjectSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>272</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerlinesum">SysCodeProfilerLineSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>273</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilermethodsum">SysCodeProfilerMethodSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>274</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerobjectsum">SysCodeProfilerObjectSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>275</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunline">SysCodeProfilerRunLine</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>276</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerrunsum">SysCodeProfilerRunSum</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>277</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syscodeprofilerruntable">SysCodeProfilerRunTable</a></td>
+<td>.RelatedRunId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>278</td><td><a name="p-sysdatabaselog"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysdatabaselog">SysDataBaseLog</a></td>
+<td>.LogRecId, .table</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-eeaccesslogsysdatabasetmp">EeAccessLogSysDatabaseTmp</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>279</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysdatabaselog">SysDataBaseLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sigsignaturefailure">SIGSignatureFailure</a></td>
+<td>.AuditLogRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>280</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysdatabaselog">SysDataBaseLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sigsignaturelog">SIGSignatureLog</a></td>
+<td>.AuditLogRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>281</td><td><a name="p-sysdataimplog"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysdataimplog">SysDataImpLog</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysdataimplogref">SysDataImpLogRef</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>282</td><td><a name="p-sysedtmigrationedt"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationedt">SysEDTMigrationEDT</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationrelation">SysEDTMigrationRelation</a></td>
+<td>.SysEDTMigrationEDT</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>283</td><td><a name="p-sysedtmigrationrelation"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationrelation">SysEDTMigrationRelation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationtestartifact">SysEDTMigrationTestArtifact</a></td>
+<td>.SysEDTMigrationRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>284</td><td><a name="p-sysedtmigrationtable"></a>SysEDTMigrationTable</td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationedt">SysEDTMigrationEDT</a></td>
+<td>.RelatedTableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>285</td><td>SysEDTMigrationTable</td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysedtmigrationrelation">SysEDTMigrationRelation</a></td>
+<td>.TableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>286</td><td><a name="p-sysexpimpgroup"></a>SysExpImpGroup</td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimpfield">SysExpImpField</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>287</td><td>SysExpImpGroup</td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimptable">SysExpImpTable</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>288</td><td>SysExpImpGroup</td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimptablequery">SysExpImpTableQuery</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>289</td><td>SysExpImpGroup</td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelworkbook">TmpExcelWorkbook</a></td>
+<td>.ExpImpGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>290</td><td><a name="p-sysexpimptable"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimptable">SysExpImpTable</a></td>
+<td>.ConvTableId, .GroupId, .OccurrenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimpfield">SysExpImpField</a></td>
+<td>.convTableId, .GroupId, .OccurrenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>291</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimptable">SysExpImpTable</a></td>
+<td>.OccurrenceId, .ConvTableId, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysexpimptablequery">SysExpImpTableQuery</a></td>
+<td>.OccurrenceId, .QueryTableId, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>292</td><td><a name="p-syssecurityformtable"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syssecurityformtable">SysSecurityFormTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syssecurityformcontroltable">SysSecurityFormControlTable</a></td>
+<td>.SysSecurityFormId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>293</td><td><a name="p-sysserverconfig"></a>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-batch">Batch</a></td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>294</td><td>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-batchhistory">BatchHistory</a></td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>295</td><td>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-batchserverconfig">BatchServerConfig</a></td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>296</td><td>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-batchservergroup">BatchServerGroup</a></td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>297</td><td>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syssqmdeployment">SysSQMDeployment</a></td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>298</td><td>SysServerConfig</td>
+<td>.ServerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syssqmsettings">SysSQMSettings</a></td>
+<td>.LastUploadingAOS</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>299</td><td><a name="p-systracetablesql"></a>SysTraceTableSQL</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-systracetablesqlexecplan">SysTraceTableSQLExecPlan</a></td>
+<td>.TraceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>300</td><td>SysTraceTableSQL</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-systracetablesqltabref">SysTraceTableSQLTabRef</a></td>
+<td>.TraceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>301</td><td><a name="p-sysuserinfo"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-11.htm#c-catexternalcatalog">CatExternalCatalog</a></td>
+<td>.Owner</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>302</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Pky?, .Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-dimensionalias">DimensionAlias</a></td>
+<td>.Fky?, .UserInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>303</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-14.htm#c-mainaccountcontroluser">MainAccountControlUser</a></td>
+<td>.UserId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>304</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailuserstoretable">RetailUserStoreTable</a></td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>305</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-syscue">SysCue</a></td>
+<td>.CreatedByUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>306</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-syscuegroup">SysCueGroup</a></td>
+<td>.CreatedByUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>307</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-syscuepersonalization">SysCuePersonalization</a></td>
+<td>.CreatedByUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>308</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ChildParents-11.htm#c-workflowworkitemqueueassignee">WorkflowWorkItemQueueAssignee</a></td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>309</td><td><a name="p-sysuserlicensecount"></a>SysUserLicenseCount</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-sysuserlicenselist">SysUserLicenseList</a></td>
+<td>.SysUserLicenseCount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>310</td><td><a name="p-tmpexcellookup"></a>TmpExcelLookup</td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelcolumn">TmpExcelColumn</a></td>
+<td>.LookupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>311</td><td>TmpExcelLookup</td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcellookupenum">TmpExcelLookupEnum</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>312</td><td><a name="p-tmpexcelworkbook"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelworkbook">TmpExcelWorkbook</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelworksheet">TmpExcelWorksheet</a></td>
+<td>.WorkbookId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>313</td><td><a name="p-tmpexcelworksheet"></a><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelworksheet">TmpExcelWorksheet</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-tmpexcelcolumn">TmpExcelColumn</a></td>
+<td>.WorksheetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>314</td><td><a name="p-usergroupinfo"></a>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-acojournaltable_br">ACOJournalTable_BR</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>315</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetdepbookjournalname">AssetDepBookJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>316</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetdepbookjournaltable">AssetDepBookJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>317</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-12.htm#c-assetparameters">AssetParameters</a></td>
+<td>.AssetUserGroupIdPostPO</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>318</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolusergroupsuppresswarnings">BudgetControlUserGroupSuppressWarnings</a></td>
+<td>.UserGroupInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>319</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetoverrideusergroupoption">BudgetOverrideUserGroupOption</a></td>
+<td>.UserGroupInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>320</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.PlanningUserGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>321</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-11.htm#c-cosjournalnametab">COSJournalNameTab</a></td>
+<td>.ApproveGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>322</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-11.htm#c-cosjournaltable">COSJournalTable</a></td>
+<td>.GroupBlockId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>323</td><td>UserGroupInfo</td>
+<td>.Pky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-dimensionalias">DimensionAlias</a></td>
+<td>.Fky?, .UserGroupInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>324</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-12.htm#c-inventfiscallifojournalname">InventFiscalLIFOJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>325</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-12.htm#c-inventfiscallifojournaltable">InventFiscalLIFOJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>326</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventjournalname">InventJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>327</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventjournaltable">InventJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>328</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-ledgerjournalname">LedgerJournalName</a></td>
+<td>.ApproveGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>329</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-ledgerjournalname">LedgerJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>330</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournalpostcontrolusergroup">LedgerJournalPostControlUserGroup</a></td>
+<td>.UserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>331</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltable">LedgerJournalTable</a></td>
+<td>.GroupBlockId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>332</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-14.htm#c-ledgerperiodmoduleaccesscontrol">LedgerPeriodModuleAccessControl</a></td>
+<td>.UserGroupInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>333</td><td>UserGroupInfo</td>
+<td>.Pky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-ltinvoiceautonumberingtable">LtInvoiceAutoNumberingTable</a></td>
+<td>.Fky?, .InvoiceUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>334</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodjournalname">ProdJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>335</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodjournaltable">ProdJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>336</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-11.htm#c-projbudgetusergroupoption">ProjBudgetUserGroupOption</a></td>
+<td>.UserGroupInfo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>337</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projjournalname">ProjJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>338</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projjournalstatusline">ProjJournalStatusLine</a></td>
+<td>.GroupIdStatus</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>339</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projjournaltable">ProjJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>340</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-14.htm#c-projparameters">ProjParameters</a></td>
+<td>.ApproveGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>341</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournalname">ReqItemJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>342</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>343</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-15.htm#c-subledgerjournaltransferrule">SubledgerJournalTransferRule</a></td>
+<td>.NotificationUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>344</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-syssecurityformtable">SysSecurityFormTable</a></td>
+<td>.UserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>345</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tutorialjournalname">TutorialJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>346</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tutorialjournaltable">TutorialJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>347</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ChildParents-11.htm#c-usergrouplist">UserGroupList</a></td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>348</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsjournalname">WMSJournalName</a></td>
+<td>.blockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>349</td><td>UserGroupInfo</td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsjournaltable">WMSJournalTable</a></td>
+<td>.blockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

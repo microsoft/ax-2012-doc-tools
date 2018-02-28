@@ -1,0 +1,1952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: Retail</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Retail</h2>
+
+
+<a class="cssAHref2" href="Module-Retail-11.htm#m-retail">Module: Retail</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Retail-ParentChilds-12.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Retail-ParentChilds-14.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>409</td><td><a name="p-retailconcessionfilelogtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionfilelogtable">RetailConcessionFileLogTable</a></td>
+<td>.LogId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionfilelogtrans">RetailConcessionFileLogTrans</a></td>
+<td>.LogId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>410</td><td><a name="p-retailconcessionfilelogtrans"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionfilelogtrans">RetailConcessionFileLogTrans</a></td>
+<td>.LogFileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsalestrans">RetailTransactionSalesTrans</a></td>
+<td>.FileLogId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>411</td><td><a name="p-retailconcessionpurchlogtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionpurchlogtable">RetailConcessionPurchLogTable</a></td>
+<td>.LogId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionpurchlogtrans">RetailConcessionPurchLogTrans</a></td>
+<td>.LogId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>412</td><td><a name="p-retailconcessionpurchlogtrans"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessionpurchlogtrans">RetailConcessionPurchLogTrans</a></td>
+<td>.PurchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsalestrans">RetailTransactionSalesTrans</a></td>
+<td>.purchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>413</td><td><a name="p-retailconcessionsorting"></a>RetailConcessionSorting</td>
+<td>.SortingId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessioncontracttable">RetailConcessionContractTable</a></td>
+<td>.concessionSortingId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>414</td><td>RetailConcessionSorting</td>
+<td>.SortingId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessioncontracttable">RetailConcessionContractTable</a></td>
+<td>.concessionSortingId2, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>415</td><td>RetailConcessionSorting</td>
+<td>.SortingId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessioncontracttable">RetailConcessionContractTable</a></td>
+<td>.concessionSortingId3, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>416</td><td><a name="p-retailconnactionpackedquery"></a>RetailConnActionPackedQuery</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnactionworktable">RetailConnActionWorkTable</a></td>
+<td>.retailConnActionPackedQuery</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>417</td><td><a name="p-retailconnaosprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnaosprofile">RetailConnAOSProfile</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnconnectionprofile">RetailConnConnectionProfile</a></td>
+<td>.Fky?, .Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>418</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnaosprofile">RetailConnAOSProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedule">RetailConnSchedule</a></td>
+<td>.RetailConnAOSProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>419</td><td><a name="p-retailconnchannelschema"></a>RetailConnChannelSchema</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.RetailConnChannelSchema</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>420</td><td>RetailConnChannelSchema</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntable">RetailConnLocationDesignTable</a></td>
+<td>.RetailConnChannelSchema</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>421</td><td>RetailConnChannelSchema</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.RetailConnChannelSchema</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>422</td><td>RetailConnChannelSchema</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.RetailConnChannelSchema</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>423</td><td><a name="p-retailconncreateactionsbyfieldstable"></a>RetailConnCreateActionsByFieldsTable</td>
+<td>.replicatingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconncreateactionsbyfieldstrans">RetailConnCreateActionsByFieldsTrans</a></td>
+<td>.replicatingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>424</td><td><a name="p-retailconncustomconnectionprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconncustomconnectionprofile">RetailConnCustomConnectionProfile</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnconnectionprofile">RetailConnConnectionProfile</a></td>
+<td>.Fky?, .Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>425</td><td><a name="p-retailconndatabaseprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndatabaseprofile">RetailConnDatabaseProfile</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnconnectionprofile">RetailConnConnectionProfile</a></td>
+<td>.Fky?, .Profile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>426</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndatabaseprofile">RetailConnDatabaseProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.RetailConnDatabaseProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>427</td><td><a name="p-retailconndistributiongroup"></a>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributiongroupmember">RetailConnDistributionGroupMember</a></td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>428</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>429</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>430</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>431</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerdistributionfilter">RetailConnSchedulerDistributionFilter</a></td>
+<td>.distributionGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>432</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinventitemlabelsetup">RetailInventItemLabelSetup</a></td>
+<td>.distributionGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>433</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinventitemstoreorderinginfo">RetailInventItemStoreOrderingInfo</a></td>
+<td>.distributionGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>434</td><td>RetailConnDistributionGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailstoretable">RetailStoreTable</a></td>
+<td>.distributionGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>435</td><td><a name="p-retailconndistributionlocation"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributiongroupmember">RetailConnDistributionGroupMember</a></td>
+<td>.locationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>436</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>437</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsublocationtable">RetailConnDistributionSublocationTable</a></td>
+<td>.locationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>438</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsublocationtable">RetailConnDistributionSublocationTable</a></td>
+<td>.sublocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>439</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationlistmember">RetailConnLocationListMember</a></td>
+<td>.DistributionLocationRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>440</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscaldocumentmodel2_br">RetailFiscalDocumentModel2_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>441</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscaldocumentmodel2line_br">RetailFiscalDocumentModel2Line_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>442</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscaldocumentmodel2taxtrans_br">RetailFiscalDocumentModel2TaxTrans_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>443</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscalprinter_br">RetailFiscalPrinter_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>444</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscalprinterreport_br">RetailFiscalPrinterReport_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>445</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscalreceipt_br">RetailFiscalReceipt_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>446</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscalreceiptline_br">RetailFiscalReceiptLine_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>447</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailfiscalreceipttaxtrans_br">RetailFiscalReceiptTaxTrans_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>448</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.dataEntries</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>449</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.suspendRetrieveTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>450</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.sendTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>451</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.customer2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>452</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.staffValidation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>453</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.floatingCashier</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>454</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.voidPostedTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>455</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.inventoryLookup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>456</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.customer</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>457</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retaillistingstatuslog">RetailListingStatusLog</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>458</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailposbatchaccounttrans">RetailPosBatchAccountTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>459</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailposbatchtable">RetailPosBatchTable</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>460</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailposbatchtendertrans">RetailPosBatchTenderTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>461</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailpubretailconndistributionlocation">RetailPubRetailConnDistributionLocation</a></td>
+<td>.OriginId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>462</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtransactionaddresstrans">RetailTransactionAddressTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>463</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtransactionattributetrans">RetailTransactionAttributeTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>464</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtransactionbankedtendertrans">RetailTransactionBankedTenderTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>465</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtransactiondiscounttrans">RetailTransactionDiscountTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>466</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionincomeexpensetrans">RetailTransactionIncomeExpenseTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>467</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactioninfocodetrans">RetailTransactionInfocodeTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>468</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionloyaltypointstrans">RetailTransactionLoyaltyPointsTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>469</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionmarkuptrans">RetailTransactionMarkupTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>470</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionorderinvoicetrans">RetailTransactionOrderInvoiceTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>471</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionpaymenttrans">RetailTransactionPaymentTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>472</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailtransactionpaymenttrans_br">RetailTransactionPaymentTrans_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>473</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsafetendertrans">RetailTransactionSafeTenderTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>474</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsalestrans">RetailTransactionSalesTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>475</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactiontable">RetailTransactionTable</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>476</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactiontaxtrans">RetailTransactionTaxTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>477</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactiontenderdeclarationtrans">RetailTransactionTenderDeclarationTrans</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>478</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailzreport_br">RetailZReport_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>479</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-retailzreporttotalizer_br">RetailZReportTotalizer_BR</a></td>
+<td>.Origin</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>480</td><td><a name="p-retailconndistributionsubgroup"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.subgroupId, .groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributiongroupmember">RetailConnDistributionGroupMember</a></td>
+<td>.subgroupId, .groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>481</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.groupId, .subgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.groupId, .subgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>482</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.groupId, .subgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerdistributionfilter">RetailConnSchedulerDistributionFilter</a></td>
+<td>.distributionGroupId, .distributionSubgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>483</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.subgroupId, .groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinventitemlabelsetup">RetailInventItemLabelSetup</a></td>
+<td>.distributionSubgroupId, .distributionGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>484</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsubgroup">RetailConnDistributionSubgroup</a></td>
+<td>.subgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinventitemstoreorderinginfo">RetailInventItemStoreOrderingInfo</a></td>
+<td>.distributionSubgroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>485</td><td><a name="p-retailconndistributionsublocationtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsublocationtable">RetailConnDistributionSublocationTable</a></td>
+<td>.sublocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>486</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionsublocationtable">RetailConnDistributionSublocationTable</a></td>
+<td>.sublocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailpubretailconndistributionlocation">RetailPubRetailConnDistributionLocation</a></td>
+<td>.distributionLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>487</td><td><a name="p-retailconnlocationdesigntable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntable">RetailConnLocationDesignTable</a></td>
+<td>.RetailConnChannelSchema, .locationTableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntablefield">RetailConnLocationDesignTableField</a></td>
+<td>.RetailConnChannelSchema, .locationTableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>488</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntable">RetailConnLocationDesignTable</a></td>
+<td>.RetailConnChannelSchema, .locationTableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.RetailConnChannelSchema, .ChannelTableName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>489</td><td><a name="p-retailconnlocationdesigntablefield"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntablefield">RetailConnLocationDesignTableField</a></td>
+<td>.RetailConnChannelSchema, .locationTableName, .fieldName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.RetailConnChannelSchema, .ChannelTableName, .toDataAreaIdFieldName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>490</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationdesigntablefield">RetailConnLocationDesignTableField</a></td>
+<td>.RetailConnChannelSchema, .locationTableName, .fieldName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.RetailConnChannelSchema, .ChannelTableName, .replicationCounterFieldName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>491</td><td><a name="p-retailconnlocationlist"></a>RetailConnLocationList</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnlocationlistmember">RetailConnLocationListMember</a></td>
+<td>.locationListRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>492</td><td>RetailConnLocationList</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulelocationlistmapping">RetailConnScheduleLocationListMapping</a></td>
+<td>.RetailConnLocationList</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>493</td><td>RetailConnLocationList</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulerreplicationcounter">RetailConnSchedulerReplicationCounter</a></td>
+<td>.RetailConnLocationList</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>494</td><td><a name="p-retailconnpreactiontable"></a>RetailConnPreactionTable</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnactiontable">RetailConnActionTable</a></td>
+<td>.preactionNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>495</td><td>RetailConnPreactionTable</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnactionworktable">RetailConnActionWorkTable</a></td>
+<td>.preactionNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>496</td><td><a name="p-retailconnschedule"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedule">RetailConnSchedule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlocation">RetailConnDistributionLocation</a></td>
+<td>.RestrictionAgnosticSchedule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>497</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedule">RetailConnSchedule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulejobmapping">RetailConnScheduleJobMapping</a></td>
+<td>.ScheduleRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>498</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedule">RetailConnSchedule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulelocationlistmapping">RetailConnScheduleLocationListMapping</a></td>
+<td>.RetailConnSchedule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>499</td><td><a name="p-retailconnschedulejobmapping"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulejobmapping">RetailConnScheduleJobMapping</a></td>
+<td>.SchedulerJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerlog">RetailConnSchedulerLog</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>500</td><td><a name="p-retailconnschedulerjobtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulejobmapping">RetailConnScheduleJobMapping</a></td>
+<td>.SchedulerJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>501</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerdistributionfilter">RetailConnSchedulerDistributionFilter</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>502</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobline">RetailConnSchedulerJobLine</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>503</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.useJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>504</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerlog">RetailConnSchedulerLog</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>505</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerlogline">RetailConnSchedulerLogLine</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>506</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulerreplicationcounter">RetailConnSchedulerReplicationCounter</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>507</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnscmonincomingmessages">RetailConnSCMonIncomingMessages</a></td>
+<td>.JobID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>508</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobtable">RetailConnSchedulerJobTable</a></td>
+<td>.jobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnscmonoutgoingmessages">RetailConnSCMonOutgoingMessages</a></td>
+<td>.JobID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>509</td><td><a name="p-retailconnschedulersubjobtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.subJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnschedulerjobline">RetailConnSchedulerJobLine</a></td>
+<td>.subJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>510</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.subJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobfieldlist">RetailConnSchedulerSubjobFieldList</a></td>
+<td>.subjobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>511</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobtable">RetailConnSchedulerSubjobTable</a></td>
+<td>.subJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnschedulersubjobfilter">RetailConnSchedulerSubjobFilter</a></td>
+<td>.subJobId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>512</td><td><a name="p-retailconnstoreconnectprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnstoreconnectprofile">RetailConnStoreConnectProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnaosprofile">RetailConnAOSProfile</a></td>
+<td>.StoreConnectRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>513</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnstoreconnectprofile">RetailConnStoreConnectProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconnconnectionprofile">RetailConnConnectionProfile</a></td>
+<td>.StoreConnectRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>514</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnstoreconnectprofile">RetailConnStoreConnectProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconncustomconnectionprofile">RetailConnCustomConnectionProfile</a></td>
+<td>.StoreConnectRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>515</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnstoreconnectprofile">RetailConnStoreConnectProfile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndatabaseprofile">RetailConnDatabaseProfile</a></td>
+<td>.StoreConnectRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>516</td><td><a name="p-retailconnstoreconnectuploadoptions"></a>RetailConnStoreConnectUploadOptions</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconnstoreconnectprofile">RetailConnStoreConnectProfile</a></td>
+<td>.SCUploadOptionsRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>517</td><td><a name="p-retailconntabledistribution"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistribution">RetailConnTableDistribution</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistribution">RetailConnTableDistribution</a></td>
+<td>.refMasterTableDistributionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>518</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistribution">RetailConnTableDistribution</a></td>
+<td>.refMasterTableDistributionId, .refTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistributionlink">RetailConnTableDistributionLink</a></td>
+<td>.refMasterTableDistributionId, .refTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>519</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistribution">RetailConnTableDistribution</a></td>
+<td>.refTableId, .refMasterTableDistributionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistributionlinkcondition">RetailConnTableDistributionLinkCondition</a></td>
+<td>.refTableId, .refMasterTableDistributionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>520</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistribution">RetailConnTableDistribution</a></td>
+<td>.refTableId, .refMasterTableDistributionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistributionlinktable">RetailConnTableDistributionLinkTable</a></td>
+<td>.refTableId, .refMasterTableDistributionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>521</td><td><a name="p-retailconntabledistributionlinktable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistributionlinktable">RetailConnTableDistributionLinkTable</a></td>
+<td>.refMasterTableDistributionId, .refTableId, .linkId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconntabledistributionlink">RetailConnTableDistributionLink</a></td>
+<td>.refMasterTableDistributionId, .refTableId, .linkId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>522</td><td><a name="p-retailconsessionpartpayment"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionpartpayment">RetailConsessionPartPayment</a></td>
+<td>.PartPaymentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionpartpaymentline">RetailConsessionPartPaymentLine</a></td>
+<td>.PartPaymentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>523</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionpartpayment">RetailConsessionPartPayment</a></td>
+<td>.PartPaymentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsalestrans">RetailTransactionSalesTrans</a></td>
+<td>.ConsessionPartPaymentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>524</td><td><a name="p-retailconsessionsettlementtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.ConcessionSettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>525</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionpartpayment">RetailConsessionPartPayment</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>526</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementsales">RetailConsessionSettlementSales</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>527</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtrans">RetailConsessionSettlementTrans</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>528</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionsalestrans">RetailTransactionSalesTrans</a></td>
+<td>.ConcessionSettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>529</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailconsessionsettlementtable">RetailConsessionSettlementTable</a></td>
+<td>.SettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.ConsessionSettlementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>530</td><td><a name="p-retailcreditvouchertable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailcreditvouchertable">RetailCreditVoucherTable</a></td>
+<td>.entryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionpaymenttrans">RetailTransactionPaymentTrans</a></td>
+<td>.creditVoucherId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>531</td><td><a name="p-retaildataentrytypetable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildataentrytypetable">RetailDataEntryTypeTable</a></td>
+<td>.entryTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailcreditvouchertable">RetailCreditVoucherTable</a></td>
+<td>.entryTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>532</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildataentrytypetable">RetailDataEntryTypeTable</a></td>
+<td>.entryTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildataentrytrans">RetailDataEntryTrans</a></td>
+<td>.entryTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>533</td><td><a name="p-retaildiscountcode"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildiscountcode">RetailDiscountCode</a></td>
+<td>.RecId, .TableId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-docuref">DocuRef</a></td>
+<td>.RefRecId, .RefTableId, .RefCompanyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>534</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildiscountcode">RetailDiscountCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailcampaigndiscountmedia">RetailCampaignDiscountMedia</a></td>
+<td>.DiscountCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>535</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildiscountcode">RetailDiscountCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailperiodicdiscount">RetailPeriodicDiscount</a></td>
+<td>.DiscountCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>536</td><td><a name="p-retaildiscountmixandmatch"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildiscountmixandmatch">RetailDiscountMixAndMatch</a></td>
+<td>.OfferId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmixandmatchlinegroups">RetailMixAndMatchLineGroups</a></td>
+<td>.mixAndMatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>537</td><td><a name="p-retaildiscountmultibuy"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildiscountmultibuy">RetailDiscountMultibuy</a></td>
+<td>.OfferId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmultibuydiscountline">RetailMultibuyDiscountLine</a></td>
+<td>.multibuyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>538</td><td><a name="p-retaildiscountvalidationperiod"></a>RetailDiscountValidationPeriod</td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>539</td><td>RetailDiscountValidationPeriod</td>
+<td>.periodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailperiodicdiscount">RetailPeriodicDiscount</a></td>
+<td>.ValidationPeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>540</td><td><a name="p-retaileventnotificationprofile"></a>RetailEventNotificationProfile</td>
+<td>.ProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailchanneltable">RetailChannelTable</a></td>
+<td>.EventNotificationProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>541</td><td>RetailEventNotificationProfile</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaileventnotificationsetting">RetailEventNotificationSetting</a></td>
+<td>.EventNotificationProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>542</td><td>RetailEventNotificationProfile</td>
+<td>.ProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailparameters">RetailParameters</a></td>
+<td>.EventNotificationProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>543</td><td><a name="p-retailformlayout"></a>RetailFormLayout</td>
+<td>.LayoutType, .FormLayoutId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailreceiptprofileline">RetailReceiptProfileLine</a></td>
+<td>.ReceiptType, .FormLayoutId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>544</td><td><a name="p-retailfunctionalityprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>545</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailreceiptmasks">RetailReceiptMasks</a></td>
+<td>.FuncProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>546</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailstoretable">RetailStoreTable</a></td>
+<td>.functionalityProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>547</td><td><a name="p-retailgiftcardtable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgiftcardtable">RetailGiftCardTable</a></td>
+<td>.entryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgiftcardtransactions">RetailGiftCardTransactions</a></td>
+<td>.cardNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>548</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgiftcardtable">RetailGiftCardTable</a></td>
+<td>.entryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionpaymenttrans">RetailTransactionPaymentTrans</a></td>
+<td>.giftCardId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>549</td><td><a name="p-retailgroupmemberline"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgroupmemberline">RetailGroupMemberLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailassortmentproductline">RetailAssortmentProductLine</a></td>
+<td>.RetailGroupMemberLineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>550</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgroupmemberline">RetailGroupMemberLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaildlvmodeproductline">RetailDlvModeProductLine</a></td>
+<td>.RetailGroupMemberLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>551</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgroupmemberline">RetailGroupMemberLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailloyaltypointstable">RetailLoyaltyPointsTable</a></td>
+<td>.RetailGroupMemberLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>552</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgroupmemberline">RetailGroupMemberLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailperiodicdiscountline">RetailPeriodicDiscountLine</a></td>
+<td>.RetailGroupMemberLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>553</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailgroupmemberline">RetailGroupMemberLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailspecialcategorymember">RetailSpecialCategoryMember</a></td>
+<td>.RetailGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>554</td><td><a name="p-retailhandheldsetup"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhandheldsetup">RetailHandheldSetup</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailbatchexportpaths">RetailBatchExportPaths</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>555</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhandheldsetup">RetailHandheldSetup</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailbatchimportpaths">RetailBatchImportPaths</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>556</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhandheldsetup">RetailHandheldSetup</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinvreceivinglisttable">RetailInvReceivingListTable</a></td>
+<td>.StoreInventoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>557</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhandheldsetup">RetailHandheldSetup</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailinvtransferpickinglisttable">RetailInvTransferPickingListTable</a></td>
+<td>.StoreInventoryID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>558</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhandheldsetup">RetailHandheldSetup</a></td>
+<td>.handheldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailstockcounttable">RetailStockCountTable</a></td>
+<td>.StoreInventoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>559</td><td><a name="p-retailhardwareprofile"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhardwareprofile">RetailHardwareProfile</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>560</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhardwareprofile">RetailHardwareProfile</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailkeycommand">RetailKeyCommand</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>561</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhardwareprofile">RetailHardwareProfile</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailkeymapping">RetailKeyMapping</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>562</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailhardwareprofile">RetailHardwareProfile</a></td>
+<td>.profileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailterminaltable">RetailTerminalTable</a></td>
+<td>.hardwareProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>563</td><td><a name="p-retailhour"></a>RetailHour</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailcustinvoicejourtable">RetailCustInvoiceJourTable</a></td>
+<td>.RetailHourOfDay</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>564</td><td>RetailHour</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailsalestable">RetailSalesTable</a></td>
+<td>.RetailHourOfDay</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>565</td><td><a name="p-retailimages"></a>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailbuttongridbuttons">RetailButtonGridButtons</a></td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>566</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtilllayout">RetailTillLayout</a></td>
+<td>.logoPictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>567</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtilllayout">RetailTillLayout</a></td>
+<td>.logoPictureId2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>568</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtilllayout">RetailTillLayout</a></td>
+<td>.logoPictureId3</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>569</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtilllayout">RetailTillLayout</a></td>
+<td>.logoPictureId4</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>570</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailtilllayout">RetailTillLayout</a></td>
+<td>.logoPictureId5</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>571</td><td>RetailImages</td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailvisualprofile">RetailVisualProfile</a></td>
+<td>.PictureId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>572</td><td><a name="p-retailimportgroup"></a>RetailImportGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportsetup">RetailImportSetup</a></td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>573</td><td>RetailImportGroup</td>
+<td>.groupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailparametersex2">RetailParametersEx2</a></td>
+<td>.defaultImportGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>574</td><td><a name="p-retailimportjournaltable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltable">RetailImportJournalTable</a></td>
+<td>.journalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltrans">RetailImportJournalTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>575</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltable">RetailImportJournalTable</a></td>
+<td>.journalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimporttable">RetailImportTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>576</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltable">RetailImportJournalTable</a></td>
+<td>.journalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimporttrans">RetailImportTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>577</td><td><a name="p-retailimportjournaltrans"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltrans">RetailImportJournalTrans</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmandatorycheck">RetailMandatoryCheck</a></td>
+<td>.refTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>578</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltrans">RetailImportJournalTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmandatorycheckerrorlines">RetailMandatoryCheckErrorLines</a></td>
+<td>.refTableId, .refFieldId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>579</td><td><a name="p-retailimportsetup"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportsetup">RetailImportSetup</a></td>
+<td>.groupId, .elementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportsetup">RetailImportSetup</a></td>
+<td>.groupId, .elementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>580</td><td><a name="p-retailimporttable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimporttable">RetailImportTable</a></td>
+<td>.importedFileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimportjournaltrans">RetailImportJournalTrans</a></td>
+<td>.importedFileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>581</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimporttable">RetailImportTable</a></td>
+<td>.importedFileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailimporttrans">RetailImportTrans</a></td>
+<td>.importedFileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>582</td><td><a name="p-retailincomeexpenseaccounttable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailincomeexpenseaccounttable">RetailIncomeExpenseAccountTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>583</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailincomeexpenseaccounttable">RetailIncomeExpenseAccountTable</a></td>
+<td>.Pky?, .storeId, .accountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetablespecific">RetailInfocodeTableSpecific</a></td>
+<td>.Fky?, .refRelation, .refRelation2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>584</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailincomeexpenseaccounttable">RetailIncomeExpenseAccountTable</a></td>
+<td>.accountNum, .storeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-15.htm#c-retailposbatchaccounttrans">RetailPosBatchAccountTrans</a></td>
+<td>.AccountNum, .StoreId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>585</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailincomeexpenseaccounttable">RetailIncomeExpenseAccountTable</a></td>
+<td>.storeId, .accountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactionincomeexpensetrans">RetailTransactionIncomeExpenseTrans</a></td>
+<td>.store, .incomeExepenseAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>586</td><td><a name="p-retailinfocodetable"></a><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.Pky?, .infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventjournalname">InventJournalName</a></td>
+<td>.Fky?, .RetailInfocodeIdEx2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>587</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventjournaltrans">InventJournalTrans</a></td>
+<td>.RetailInfocodeIdEx2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>588</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-15.htm#c-inventtransferline">InventTransferLine</a></td>
+<td>.RetailInfocodeIdEx2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>589</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconndistributionlist">RetailConnDistributionList</a></td>
+<td>.refTableId, .refRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>590</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.endOfTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>591</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.negativeSalesLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>592</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.startOfTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>593</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.overridePrice</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>594</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.negativeAdjustment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>595</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.voidTransaction</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>596</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.voidPayment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>597</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.discountAtTotal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>598</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.markUp</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>599</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.voidIsPressed</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>600</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.refundSale</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>601</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.markDown</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>602</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.salesPerson</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>603</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.transactionTaxChange</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>604</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.lineItemTaxChange</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>605</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.serialNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>606</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.itemNotOnFile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>607</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailfunctionalityprofile">RetailFunctionalityProfile</a></td>
+<td>.tenderDeclaration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>608</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.linkedInfocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>609</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetablespecific">RetailInfocodeTableSpecific</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>610</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinformationsubcodetable">RetailInformationSubcodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>611</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinventerrornotifytable">RetailInventErrorNotifyTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>612</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailparametersex2">RetailParametersEx2</a></td>
+<td>.receivingInfocodeIdPO</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>613</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailparametersex2">RetailParametersEx2</a></td>
+<td>.pickingInfocodeIdTO</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>614</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailparametersex2">RetailParametersEx2</a></td>
+<td>.pickingInfocodeIdPRO</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>615</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-17.htm#c-retailtransactioninfocodetrans">RetailTransactionInfocodeTrans</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Retail-ParentChilds-14.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

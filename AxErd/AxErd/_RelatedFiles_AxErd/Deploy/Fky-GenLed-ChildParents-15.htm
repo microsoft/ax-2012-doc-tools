@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: GenL</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: General ledger</h2>
+
+
+<a class="cssAHref2" href="Module-GenLed-11.htm#m-generalledger">Module: General ledger</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-GenLed-ChildParents-14.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>811</td><td><a name="c-subledgerjournalentry"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgerjournalentry">SubledgerJournalEntry</a></td>
+<td>.AccountingEvent</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-accountingevent">AccountingEvent</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>812</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgerjournalentry">SubledgerJournalEntry</a></td>
+<td>.VoucherDataAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>813</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgerjournalentry">SubledgerJournalEntry</a></td>
+<td>.FiscalCalendarPeriod</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-fiscalcalendarperiod">FiscalCalendarPeriod</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>814</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgerjournalentry">SubledgerJournalEntry</a></td>
+<td>.Ledger</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-ledger">Ledger</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>815</td><td><a name="c-subledgerjournaltransfernumberseqtmp"></a>SubLedgerJournalTransferNumberSeqTmp</td>
+<td>.FiscalCalendarPeriod</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-fiscalcalendarperiod">FiscalCalendarPeriod</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>816</td><td>SubLedgerJournalTransferNumberSeqTmp</td>
+<td>.FiscalCalendarYear</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-fiscalcalendaryear">FiscalCalendarYear</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>817</td><td>SubLedgerJournalTransferNumberSeqTmp</td>
+<td>.Ledger</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-ledger">Ledger</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>818</td><td>SubLedgerJournalTransferNumberSeqTmp</td>
+<td>.SubledgerJournalEntry</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgerjournalentry">SubledgerJournalEntry</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>819</td><td><a name="c-subledgerjournaltransferrule"></a>SubledgerJournalTransferRule</td>
+<td>.Ledger</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-ledger">Ledger</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>820</td><td>SubledgerJournalTransferRule</td>
+<td>.SourceDocumentType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumenttmptypeinformation">SourceDocumentTmpTypeInformation</a></td>
+<td>.ClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>821</td><td>SubledgerJournalTransferRule</td>
+<td>.NotificationUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-12.htm#p-usergroupinfo">UserGroupInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>822</td><td><a name="c-subledgervouchergeneraljournalentry"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgervouchergeneraljournalentry">SubledgerVoucherGeneralJournalEntry</a></td>
+<td>.VoucherDataAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>823</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-subledgervouchergeneraljournalentry">SubledgerVoucherGeneralJournalEntry</a></td>
+<td>.GeneralJournalEntry</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-generaljournalentry">GeneralJournalEntry</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>824</td><td><a name="c-tmpaccountsum"></a>TmpAccountSum</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>825</td><td>TmpAccountSum</td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>826</td><td>TmpAccountSum</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>827</td><td><a name="c-tmpcurrencyledgergainlossaccount"></a>TmpCurrencyLedgerGainLossAccount</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>828</td><td>TmpCurrencyLedgerGainLossAccount</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>829</td><td>TmpCurrencyLedgerGainLossAccount</td>
+<td>.TaxLedgerDimension_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>830</td><td>TmpCurrencyLedgerGainLossAccount</td>
+<td>.Ledger</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-ledger">Ledger</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>831</td><td><a name="c-tmpdimension"></a>TmpDimension</td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>832</td><td><a name="c-tmpdimensionrelationshipconstraint"></a>TmpDimensionRelationshipConstraint</td>
+<td>.LeftDimensionHierarchyLevel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchylevel">DimensionHierarchyLevel</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>833</td><td>TmpDimensionRelationshipConstraint</td>
+<td>.RightDimensionHierarchyLevel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchylevel">DimensionHierarchyLevel</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>834</td><td>TmpDimensionRelationshipConstraint</td>
+<td>.DirRelationshipTypeTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-14.htm#p-dirrelationshiptypetable">DirRelationshipTypeTable</a></td>
+<td>.RelationshipTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>835</td><td>TmpDimensionRelationshipConstraint</td>
+<td>.OMHierarchyType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-omhierarchytype">OMHierarchyType</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>836</td><td><a name="c-tmpdimensionruleappliedhierarchy"></a>TmpDimensionRuleAppliedHierarchy</td>
+<td>.DimensionHierarchy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchy">DimensionHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>837</td><td><a name="c-tmpdimtransextract"></a>TmpDimTransExtract</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>838</td><td>TmpDimTransExtract</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>839</td><td>TmpDimTransExtract</td>
+<td>.TaxTransGeneralJournalAccountEntry</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtransgeneraljournalaccountentry">TaxTransGeneralJournalAccountEntry</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>840</td><td><a name="c-tmpexchrates"></a>TmpExchRates</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>841</td><td><a name="c-tmpexchratetxt"></a>TmpExchRateTxt</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>842</td><td><a name="c-tmpjournalizingdefinitiontestresult"></a>TmpJournalizingDefinitionTestResult</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>843</td><td><a name="c-tmpledgerallocation"></a>TmpLedgerAllocation</td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>844</td><td>TmpLedgerAllocation</td>
+<td>.AccountStructure</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchy">DimensionHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>845</td><td>TmpLedgerAllocation</td>
+<td>.MainAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-23.htm#p-mainaccount">MainAccount</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>846</td><td><a name="c-tmpledgerbalancecontrol"></a>TmpLedgerBalanceControl</td>
+<td>.Fky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ParentChilds-11.htm#p-bankaccounttable">BankAccountTable</a></td>
+<td>.Pky?, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>847</td><td>TmpLedgerBalanceControl</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>848</td><td>TmpLedgerBalanceControl</td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalname">LedgerJournalName</a></td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>849</td><td>TmpLedgerBalanceControl</td>
+<td>.Fky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-13.htm#p-rcashtable">RCashTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>850</td><td><a name="c-tmpledgerbase"></a>TmpLedgerBase</td>
+<td>.Fky?, .Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ParentChilds-11.htm#p-bankaccounttable">BankAccountTable</a></td>
+<td>.Pky?, .Pky?, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>851</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ParentChilds-11.htm#p-bankaccounttable">BankAccountTable</a></td>
+<td>.Pky?, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>852</td><td>TmpLedgerBase</td>
+<td>.RecordTableId, .RecordRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>853</td><td>TmpLedgerBase</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>854</td><td>TmpLedgerBase</td>
+<td>.Fky?, .RecordTableId, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .TableId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>855</td><td>TmpLedgerBase</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>856</td><td>TmpLedgerBase</td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>857</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-employeetable_ru">EmployeeTable_RU</a></td>
+<td>.Pky?, .EmployeeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>858</td><td>TmpLedgerBase</td>
+<td>.Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-employeetable_ru">EmployeeTable_RU</a></td>
+<td>.Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>859</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.Pky?, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>860</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.Pky?, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>861</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>862</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-13.htm#p-rassettable">RAssetTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>863</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-13.htm#p-rassettable">RAssetTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>864</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-13.htm#p-rcashtable">RCashTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>865</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-13.htm#p-rcashtable">RCashTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>866</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.Pky?, .TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>867</td><td>TmpLedgerBase</td>
+<td>.Fky?, .id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>868</td><td><a name="c-tmpledgerconscompany"></a>TmpLedgerConsCompany</td>
+<td>.SourceCompany, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>869</td><td><a name="c-tmpledgerconsdimensionattribute"></a>TmpLedgerConsDimensionAttribute</td>
+<td>.LegalEntity, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>870</td><td><a name="c-tmpledgerconsdimensionvalueitem"></a>TmpLedgerConsDimensionValueItem</td>
+<td>.LegalEntity, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>871</td><td><a name="c-tmpledgerconselimination"></a>TmpLedgerConsElimination</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgereliminationrule">LedgerEliminationRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>872</td><td>TmpLedgerConsElimination</td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalname">LedgerJournalName</a></td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>873</td><td>TmpLedgerConsElimination</td>
+<td>.ReasonRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-reasontableref">ReasonTableRef</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>874</td><td><a name="c-tmpledgerconstrans"></a>TmpLedgerConsTrans</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>875</td><td>TmpLedgerConsTrans</td>
+<td>.TmpDataAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>876</td><td>TmpLedgerConsTrans</td>
+<td>.DimensionHierarchy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchy">DimensionHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>877</td><td><a name="c-tmpledgerjournalaccountmovement"></a>TmpLedgerJournalAccountMovement</td>
+<td>.CompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>878</td><td>TmpLedgerJournalAccountMovement</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>879</td><td><a name="c-tmpledgerjournalcontroldetail"></a>TmpLedgerJournalControlDetail</td>
+<td>.LedgerLegalEntity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>880</td><td>TmpLedgerJournalControlDetail</td>
+<td>.DimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-15.htm#p-dimensionattribute">DimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>881</td><td>TmpLedgerJournalControlDetail</td>
+<td>.DimensionConstraintTree</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionconstrainttree">DimensionConstraintTree</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>882</td><td>TmpLedgerJournalControlDetail</td>
+<td>.DimensionHierarchy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchy">DimensionHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>883</td><td>TmpLedgerJournalControlDetail</td>
+<td>.LedgerJournalControlDetail</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalcontroldetail">LedgerJournalControlDetail</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>884</td><td><a name="c-tmpledgerjournalsplitheader"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-tmpledgerjournalsplitheader">TmpLedgerJournalSplitHeader</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>885</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-tmpledgerjournalsplitheader">TmpLedgerJournalSplitHeader</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>886</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-tmpledgerjournalsplitheader">TmpLedgerJournalSplitHeader</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>887</td><td><a name="c-tmpledgerjournalsplitlines"></a>TmpLedgerJournalSplitLines</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>888</td><td>TmpLedgerJournalSplitLines</td>
+<td>.OffsetRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>889</td><td>TmpLedgerJournalSplitLines</td>
+<td>.OriginalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>890</td><td>TmpLedgerJournalSplitLines</td>
+<td>.LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-tmpledgerjournalsplitheader">TmpLedgerJournalSplitHeader</a></td>
+<td>.LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>891</td><td><a name="c-tmpledgerpaymentcontrol"></a>TmpLedgerPaymentControl</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>892</td><td>TmpLedgerPaymentControl</td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>893</td><td>TmpLedgerPaymentControl</td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalname">LedgerJournalName</a></td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>894</td><td>TmpLedgerPaymentControl</td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltable">LedgerJournalTable</a></td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>895</td><td><a name="c-tmpledgerpaymentcontrolcur"></a>TmpLedgerPaymentControlCur</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>896</td><td>TmpLedgerPaymentControlCur</td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalname">LedgerJournalName</a></td>
+<td>.JournalName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>897</td><td>TmpLedgerPaymentControlCur</td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltable">LedgerJournalTable</a></td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>898</td><td><a name="c-tmpledgertable"></a>TmpLedgerTable</td>
+<td>.CompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>899</td><td>TmpLedgerTable</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>900</td><td><a name="c-tmpledgertrans"></a>TmpLedgerTrans</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>901</td><td>TmpLedgerTrans</td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>902</td><td>TmpLedgerTrans</td>
+<td>.LedgerDimensionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>903</td><td>TmpLedgerTrans</td>
+<td>.LedgerPostingJournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-12.htm#p-ledgerpostingjournal">LedgerPostingJournal</a></td>
+<td>.LedgerPostingJournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>904</td><td><a name="c-tmpmainaccount"></a>TmpMainAccount</td>
+<td>.MainAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-23.htm#p-mainaccount">MainAccount</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>905</td><td><a name="c-tmpxbrltaxonomydetailsreferences"></a>TmpXBRLTaxonomyDetailsReferences</td>
+<td>.RowDefinition</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-23.htm#p-ledgerrowdef">LedgerRowDef</a></td>
+<td>.RowDefinition</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>906</td><td><a name="c-transactionreversaltrans"></a>TransactionReversalTrans</td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>907</td><td><a name="c-transactiontextparametersetup"></a>TransactionTextParameterSetup</td>
+<td>.TransactText</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-transacttxt">TransactTxt</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>908</td><td><a name="c-transacttxt"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-transacttxt">TransactTxt</a></td>
+<td>.LanguageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DevPartTool-ParentChilds-11.htm#p-languagetable">LanguageTable</a></td>
+<td>.LanguageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DevPartTool-11.htm">(Developer and Partner Tools)</a></span></td></tr>
+
+
+
+<tr><td>909</td><td><a name="c-xbrltaxonomyarc"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>910</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>911</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>912</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.TaxonomyId, .FromElement, .ArcType, .ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyId, .Label, .LinkbaseType, .ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>913</td><td><a name="c-xbrltaxonomycomplextype"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomycomplextype">XBRLTaxonomyComplexType</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>914</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomycomplextype">XBRLTaxonomyComplexType</a></td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>915</td><td><a name="c-xbrltaxonomycomplextypevalue"></a>XBRLTaxonomyComplexTypeValue</td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>916</td><td>XBRLTaxonomyComplexTypeValue</td>
+<td>.ComplexTypeName, .TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomycomplextype">XBRLTaxonomyComplexType</a></td>
+<td>.ComplexTypeName, .TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>917</td><td><a name="c-xbrltaxonomyelement"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>918</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>919</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.TaxonomyId, .ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyId, .ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>920</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.TargetNamespaceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomytargetnamespace">XBRLTaxonomyTargetNamespace</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>921</td><td><a name="c-xbrltaxonomyelementvalue"></a>XBRLTaxonomyElementValue</td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>922</td><td>XBRLTaxonomyElementValue</td>
+<td>.ElementId, .TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.ElementId, .TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>923</td><td><a name="c-xbrltaxonomyextendedlink"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>924</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>925</td><td><a name="c-xbrltaxonomyfile"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>926</td><td><a name="c-xbrltaxonomylabelelement"></a>XBRLTaxonomyLabelElement</td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>927</td><td>XBRLTaxonomyLabelElement</td>
+<td>.Fky?, .TaxonomyId, .Label</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.Pky?, .TaxonomyId, .ToElement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>928</td><td>XBRLTaxonomyLabelElement</td>
+<td>.ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>929</td><td>XBRLTaxonomyLabelElement</td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>930</td><td><a name="c-xbrltaxonomylines"></a>XBRLTaxonomyLines</td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomytable">XBRLTaxonomyTable</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>931</td><td><a name="c-xbrltaxonomylocator"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>932</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyId, .Label, .LinkbaseType, .ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.TaxonomyId, .ToElement, .ArcType, .ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>933</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyId, .ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyelement">XBRLTaxonomyElement</a></td>
+<td>.TaxonomyId, .ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>934</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>935</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomylocator">XBRLTaxonomyLocator</a></td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>936</td><td><a name="c-xbrltaxonomyreferenceelement"></a>XBRLTaxonomyReferenceElement</td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>937</td><td>XBRLTaxonomyReferenceElement</td>
+<td>.Fky?, .TaxonomyId, .Label</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyarc">XBRLTaxonomyArc</a></td>
+<td>.Pky?, .TaxonomyId, .ToElement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>938</td><td>XBRLTaxonomyReferenceElement</td>
+<td>.ExtendedLinkRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyextendedlink">XBRLTaxonomyExtendedLink</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>939</td><td>XBRLTaxonomyReferenceElement</td>
+<td>.TaxonomyFileRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomyfile">XBRLTaxonomyFile</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>940</td><td><a name="c-xbrltaxonomytargetnamespace"></a><a class="cssAHref2" href="Fky-GenLed-ParentChilds-25.htm#p-xbrltaxonomytargetnamespace">XBRLTaxonomyTargetNamespace</a></td>
+<td>.TaxonomyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-xbrltaxonomy">XBRLTaxonomy</a></td>
+<td>.TaxonomyID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

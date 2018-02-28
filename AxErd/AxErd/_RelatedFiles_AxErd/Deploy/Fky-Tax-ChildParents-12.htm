@@ -1,0 +1,1342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: Tax</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Tax</h2>
+
+
+<a class="cssAHref2" href="Module-Tax-11.htm#m-tax">Module: Tax</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Tax-ChildParents-11.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>201</td><td><a name="c-taxtransgeneraljournalaccountentry"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtransgeneraljournalaccountentry">TaxTransGeneralJournalAccountEntry</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>202</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtransgeneraljournalaccountentry">TaxTransGeneralJournalAccountEntry</a></td>
+<td>.GeneralJournalAccountEntry</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-21.htm#p-generaljournalaccountentry">GeneralJournalAccountEntry</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>203</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtransgeneraljournalaccountentry">TaxTransGeneralJournalAccountEntry</a></td>
+<td>.TaxTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtrans">TaxTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>204</td><td><a name="c-taxuncommitted"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>205</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.SourceCurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>206</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.Fky?, .SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-12.htm#p-custinvoiceline">CustInvoiceLine</a></td>
+<td>.Pky?, .RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>207</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-12.htm#p-custinvoicetable">CustInvoiceTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>208</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.InvoiceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-custvendinvoicejour">CustVendInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>209</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>210</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.LedgerDimension_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>211</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.OffsetLedgerDimension_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>212</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.OperationLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>213</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxOffsetUseTaxLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>214</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxSalesOffsetLedgerDimension_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>215</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>216</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxPeriodPaymentCode_PL</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ParentChilds-11.htm#p-pltaxduetable">PlTaxDueTable</a></td>
+<td>.TaxPeriodPaymentCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>217</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>218</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>219</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>220</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>221</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.SourceTableId, .SourceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-trvexptrans">TrvExpTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>222</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.VATOperationCode_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-14.htm#p-vatoperationcodetable_ru">VATOperationCodeTable_RU</a></td>
+<td>.OperationCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>223</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.VATTaxAgentVendAccount_RU, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>224</td><td><a name="c-taxuncommittedextensionth"></a>TaxUncommittedExtensionTH</td>
+<td>.TaxUnrealizedRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtrans">TaxTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>225</td><td>TaxUncommittedExtensionTH</td>
+<td>.TaxUncommitted</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxuncommitted">TaxUncommitted</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>226</td><td><a name="c-taxunrealizeddocusetline"></a>TaxUnrealizedDocuSetLine</td>
+<td>.TaxUnrealizedDocuSetTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxunrealizeddocusettable">TaxUnrealizedDocuSetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>227</td><td><a name="c-taxunrealizedvatremainingtmp"></a>TaxUnrealizedVATRemainingTmp</td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>228</td><td><a name="c-taxvatnumtable"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxvatnumtable">TaxVATNumTable</a></td>
+<td>.CountryRegionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-14.htm#p-logisticsaddresscountryregion">LogisticsAddressCountryRegion</a></td>
+<td>.CountryRegionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>229</td><td><a name="c-taxvatregistertmp"></a>TaxVatRegisterTmp</td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>230</td><td>TaxVatRegisterTmp</td>
+<td>.TaxPeriod</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-12.htm#p-taxperiodhead">TaxPeriodHead</a></td>
+<td>.TaxPeriod</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>231</td><td>TaxVatRegisterTmp</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>232</td><td><a name="c-taxwithholdcertificatecintmp"></a>TaxWithholdCertificateCINTmp</td>
+<td>.CertificateNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdcertificatetmp">TaxWithholdCertificateTmp</a></td>
+<td>.CertificateNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>233</td><td><a name="c-taxwithholdcertificatepaymsumtmp"></a>TaxWithholdCertificatePaymSumTmp</td>
+<td>.CertificateNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdcertificatetmp">TaxWithholdCertificateTmp</a></td>
+<td>.CertificateNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>234</td><td><a name="c-taxwithholdcertificatetmpcommoninfo"></a>TaxWithholdCertificateTmpCommonInfo</td>
+<td>.FromCustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>235</td><td>TaxWithholdCertificateTmpCommonInfo</td>
+<td>.ToCustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>236</td><td>TaxWithholdCertificateTmpCommonInfo</td>
+<td>.FromVendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>237</td><td>TaxWithholdCertificateTmpCommonInfo</td>
+<td>.ToVendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>238</td><td><a name="c-taxwithholddata"></a>TaxWithholdData</td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>239</td><td><a name="c-taxwithholdgroupdata"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdgroupdata">TaxWithholdGroupData</a></td>
+<td>.TaxWithholdGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdgroupheading">TaxWithholdGroupHeading</a></td>
+<td>.TaxWithholdGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>240</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdgroupdata">TaxWithholdGroupData</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>241</td><td><a name="c-taxwithholdlimit"></a>TaxWithholdLimit</td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>242</td><td><a name="c-taxwithholdtable"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>243</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.LedgerDimension_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>244</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>245</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxIncomingLedgerDimension_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>246</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxReportLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>247</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdComponent_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdcomponenttable_in">TaxWithholdComponentTable_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>248</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdSettlementPeriod_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdhead_in">TaxWithholdHead_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>249</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdLedgerAccountGroup_TH</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdledgeraccountgroup_th">TaxWithholdLedgerAccountGroup_TH</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>250</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdPeriodHead_TH</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdperiodhead_th">TaxWithholdPeriodHead_TH</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>251</td><td><a name="c-taxwithholdtrans"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.InvoiceCurrency</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>252</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.PaymCurrency</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>253</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdCurrency</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>254</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>255</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.CustTransInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-13.htm#p-custtrans">CustTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>256</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.CustTransPaymId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-13.htm#p-custtrans">CustTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>257</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.PaymCompany, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>258</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>259</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltable">LedgerJournalTable</a></td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>260</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.LedgerJourTransRecId_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>261</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.SpecTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FinMangt-ParentChilds-11.htm#p-spectrans">SpecTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FinMangt-11.htm">(Financial management)</a></span></td></tr>
+
+
+
+<tr><td>262</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdComponentGroupTable_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdcomponentgrouptable_in">TaxWithholdComponentGroupTable_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>263</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdComponentTable_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdcomponenttable_in">TaxWithholdComponentTable_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>264</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdgroupheading">TaxWithholdGroupHeading</a></td>
+<td>.TaxWithholdGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>265</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdItemGroupHeading_TH</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholditemgroupheading_th">TaxWithholdItemGroupHeading_TH</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>266</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdPeriodHead_TH</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholdperiodhead_th">TaxWithholdPeriodHead_TH</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>267</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>268</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.PaymVendor</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>269</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>270</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.VendTransInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-12.htm#p-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>271</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.VendTransPaymId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-12.htm#p-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>272</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.CustVendTransOpenRecId_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-13.htm#p-vendtransopen">VendTransOpen</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>273</td><td><a name="c-taxwithholdtransextensionth"></a>TaxWithholdTransExtensionTH</td>
+<td>.ExpenseLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>274</td><td>TaxWithholdTransExtensionTH</td>
+<td>.LedgerJournalTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>275</td><td>TaxWithholdTransExtensionTH</td>
+<td>.TaxWithholdTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>276</td><td><a name="c-taxworkregulation"></a><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>277</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-12.htm#p-custinvoicetable">CustInvoiceTable</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>278</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransferjour">InventTransferJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>279</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransfertable">InventTransferTable</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>280</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>281</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-13.htm#p-markuptrans">MarkupTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>282</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>283</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-14.htm#p-purchparmtable">PurchParmTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>284</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-15.htm#p-purchtable">PurchTable</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>285</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>286</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesquotationtable">SalesQuotationTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>287</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salestable">SalesTable</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>288</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>289</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-vendinvoiceinfoline">VendInvoiceInfoLine</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>290</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingTableId, .HeadingRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-vendinvoiceinfotable">VendInvoiceInfoTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>291</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-vendinvoicejour">VendInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>292</td><td><a name="c-tmptax"></a>TmpTax</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>293</td><td><a name="c-tmptaxpurchledger"></a>TmpTaxPurchLedger</td>
+<td>.LedgerPostingJournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-12.htm#p-ledgerpostingjournal">LedgerPostingJournal</a></td>
+<td>.LedgerPostingJournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>294</td><td>TmpTaxPurchLedger</td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>295</td><td><a name="c-tmptaxreconciliationnovat"></a>TmpTaxReconciliationNoVat</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>296</td><td>TmpTaxReconciliationNoVat</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>297</td><td><a name="c-tmptaxreconciliationreport"></a>TmpTaxReconciliationReport</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>298</td><td>TmpTaxReconciliationReport</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>299</td><td><a name="c-tmptaxregistrationsearchcriteria"></a>TmpTaxRegistrationSearchCriteria</td>
+<td>.CountryRegionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-14.htm#p-logisticsaddresscountryregion">LogisticsAddressCountryRegion</a></td>
+<td>.CountryRegionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>300</td><td>TmpTaxRegistrationSearchCriteria</td>
+<td>.TaxRegistrationType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxregistrationtype">TaxRegistrationType</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>301</td><td><a name="c-tmptaxregulation"></a>TmpTaxRegulation</td>
+<td>.SourceCurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>302</td><td>TmpTaxRegulation</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>303</td><td><a name="c-tmptaxtotals"></a>TmpTaxTotals</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>304</td><td>TmpTaxTotals</td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltable">LedgerJournalTable</a></td>
+<td>.JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>305</td><td>TmpTaxTotals</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>306</td><td><a name="c-tmptaxtrans"></a>TmpTaxTrans</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>307</td><td>TmpTaxTrans</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>308</td><td><a name="c-tmptaxwithhold"></a>TmpTaxWithhold</td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtable">TaxWithholdTable</a></td>
+<td>.TaxWithholdCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>309</td><td>TmpTaxWithhold</td>
+<td>.TaxWithholdTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>310</td><td><a name="c-tmptaxworktrans"></a>TmpTaxWorkTrans</td>
+<td>.SourceTableId, .SourceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ParentChilds-12.htm#p-bankstmtisoreportentry">BankStmtISOReportEntry</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>311</td><td>TmpTaxWorkTrans</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>312</td><td>TmpTaxWorkTrans</td>
+<td>.SourceCurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>313</td><td>TmpTaxWorkTrans</td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>314</td><td>TmpTaxWorkTrans</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>315</td><td>TmpTaxWorkTrans</td>
+<td>.LedgerDimension_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>316</td><td>TmpTaxWorkTrans</td>
+<td>.OffsetLedgerDimension_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>317</td><td>TmpTaxWorkTrans</td>
+<td>.OperationLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>318</td><td>TmpTaxWorkTrans</td>
+<td>.TaxSalesOffsetLedgerDimension_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>319</td><td>TmpTaxWorkTrans</td>
+<td>.TaxOffsetUseTaxLedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>320</td><td>TmpTaxWorkTrans</td>
+<td>.SourceTableId, .SourceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventqualityordertable">InventQualityOrderTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>321</td><td>TmpTaxWorkTrans</td>
+<td>.SourceTableId, .SourceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransferline">InventTransferLine</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>322</td><td>TmpTaxWorkTrans</td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>323</td><td>TmpTaxWorkTrans</td>
+<td>.SourceTableId, .SourceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>324</td><td>TmpTaxWorkTrans</td>
+<td>.MarkupTransRecId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-13.htm#p-markuptrans">MarkupTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>325</td><td>TmpTaxWorkTrans</td>
+<td>.TaxPeriodPaymentCode_PL</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ParentChilds-11.htm#p-pltaxduetable">PlTaxDueTable</a></td>
+<td>.TaxPeriodPaymentCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>326</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>327</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>328</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>329</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>330</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>331</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-14.htm#p-purchline">PurchLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>332</td><td>TmpTaxWorkTrans</td>
+<td>.SourceRecId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>333</td><td>TmpTaxWorkTrans</td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>334</td><td>TmpTaxWorkTrans</td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>335</td><td>TmpTaxWorkTrans</td>
+<td>.TaxRegistrationNumberTable_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxregistrationnumbers_in">TaxRegistrationNumbers_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>336</td><td>TmpTaxWorkTrans</td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxtable">TaxTable</a></td>
+<td>.TaxCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>337</td><td>TmpTaxWorkTrans</td>
+<td>.TaxUnrealizedRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-14.htm#p-taxtrans">TaxTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>338</td><td>TmpTaxWorkTrans</td>
+<td>.VATOperationCode_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-14.htm#p-vatoperationcodetable_ru">VATOperationCodeTable_RU</a></td>
+<td>.OperationCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>339</td><td>TmpTaxWorkTrans</td>
+<td>.VendInvoiceInfoLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-vendinvoiceinfoline">VendInvoiceInfoLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>340</td><td>TmpTaxWorkTrans</td>
+<td>.VATTaxAgentVendAccount_RU, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

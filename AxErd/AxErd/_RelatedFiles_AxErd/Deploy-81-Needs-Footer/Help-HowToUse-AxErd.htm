@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+    Latest Update:    2013-05-21  Tuesday  20:01pm
+    Help-HowToUse-AxErd.htm
+	Microsoft Dynamics AX 2012 R2.  Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd: Help</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+</head>
+<body class="cssBackgroundColorBodyDefaultStart">
+
+
+<h4>Microsoft Dynamics AX 2012 R2: AxErd</h4>
+<h2 class="cssH3ColorDefaultStart">Help</h2>
+
+
+<br />
+<i>Navigation:</i> <a href="Default.htm">AxErd_Home</a>
+<br /><br />
+<a name="EmailToMicrosoftDynAxCp"></a><i>Email us about AxErd:</i> <b>adocs@microsoft.com</b>
+
+
+<br /><br /><br />
+<p id="IdP_Help_Intro_1" class="cssRoutineText">
+Welcome to the Help documentation for the "AxErd" website for Microsoft Dynamics AX 2012 R2.
+</p>
+
+<p>
+A good way to learn about this website is to recklessly click lots of links, to see all the other pages that you can navigate to.
+<br />
+The main idea of this website is to provide partners and customers with ERD diagrams for most of the core tables in each application module.
+<br />
+Next, when one of our provided ERD diagrams is insufficiently complete for your needs, you can use other pages on this website to easily extend our core ERD diagram.
+</p>
+
+
+<br /><br />
+<hr />
+<br />
+
+<h3 id="idH3_HowToBuildErd">How to Build or Extend an ERD, with Dynamics AX 2012 and Visio 2010</h3>
+
+<br />
+<h4>Phase I: in AxErd</h4>
+
+<ol type="1" start="1">
+<li class="cssLI663_HowToBuildErd_1"><p>Use the AxErd website to help ascertain a list of tables that you want on your new ERD.</p></li>
+</ol>
+
+<br />
+<h4>Phase II: in Microsoft Dynamics AX</h4>
+
+<ol type="1" start="1">
+<li class="cssLI663_HowToBuildErd_2"><p>Start the standard ax32.exe client, and open a development workspace window.</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>Create, then open a new private project.</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>From under AOT > Data Dictionary > Tables, drag all the tables of interest onto the project window.
+		<br />Drag each table, one by one, to its proper place to keep the project list alphabetized.</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>Right-click your project node, and then click Add-ins > Reverse Engineer.</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>In the dialog, select the radio <b>ERX ER data model</b>, because we want to output a .ERX formatted file (for Visio 2010 to later input).</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>Fill in a full drive + directory + filename path. The extension of the filename must be .ERX.</p></li>
+<li class="cssLI663_HowToBuildErd_2"><p>Click OK to complete the dialog. This causes the .ERX file to be written.</p></li>
+</ol>
+
+<br />
+<h4>Phase III: in Microsoft Visio</h4>
+
+<ol type="1" start="1">
+<li class="cssLI663_HowToBuildErd_3"><p>Open Visio 2010, or 2007, or 2003.
+		<br />(Note that Visio 2013 is unable to import .ERX files. Also, there might be a couple of odd tables that, if included in your .ERX file, cause Visio's import of the .ERX to fail.)</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Create a new file of the template type that is labeled <b>Database Model Diagram</b>.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Menu: Database > Import > ERwin ERX file. Enter the full drive + directory + filename of your .ERX file. Then click OK.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Menu: Database > Table & Views, ensure the checkbox is checkmarked.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>In the lower-left of the Visio window, see your tables listed.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Drag some or all of the tables onto the Visio canvas.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Ctrl+A to highlight-select all tables that are on the canvas.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Menu: Database > Display Options ...</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>> General tab: Select the Relational radio knob, and the Conceptual Names knob.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>> Table tab: Uncheckmark - Indexes, Non Keys, and Annotations.
+		<br />Click OK to complete the dialog.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Menu: Home > Auto Align & Space
+		<br />Now all the tables almost fit on one page.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Click an unused point on the canvas to release the all-selected state.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Drag individual tables around on the canvas to untangle the arrowed connector lines.
+		<br />Ideally none of the lines cross each other.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>To help untangle a given arrowed connector line, click on any troublesome connector to select it, and then right-click on it to use the options that redesign the line.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Save the .VSD file.</p></li>
+<li class="cssLI663_HowToBuildErd_3"><p>Menu: File > Save As, and then save another version of the ERD diagram as a .PNG image file, for ongoing convenience.</p></li>
+</ol>
+
+<br /><br /><br />
+
+<hr />
+<br /><br />
+
+
+<p id="IdP_Help_Intro_1" class="cssRoutineText">
+There are several types of pages on this AxErd website. The following table describes the various page types.
+</p>
+
+<br /><br />
+
+<table border="0px">
+
+
+<thead>
+<tr>
+	<th>
+		<i><b>Page Type</b></i>
+	</th>
+	<th class="cssTdNoTopBottomBorder"><pre>      </pre></th>
+	<th>
+		<i><b>Link Behavior</b></i>
+	</th>
+	<th class="cssTdNoTopBottomBorder"><pre>      </pre></th>
+	<th>
+		<i><b>Description of Page Type</b></i>
+	</th>
+</tr>
+
+</thead>
+<tbody>
+
+
+<tr class="cssTr_493_HelpHtu_AltOdd">
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+TM
+<br />
+Table-Module
+<br/><br />
+(application module)
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+<i>Table Name</i>: Link to the first row for that table in the correct PC file.
+<br /><br />
+<i>Module Name</i>: Link to the first MT file, in the short sequence of MT files, for that application module.
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+The TM pages list all Microsoft Dynamics AX 2012 R2 tables. These are the table that you can see in the Development Workspace, under AOT > Data Dictionary > Tables.
+<br /><br />
+There are approximately 40 TM pages. The TM pages have Previous and Next links that chain the pages together in alphabetical sequence.
+<br /><br />
+Each row on a TM page has the name of a table, followed by the name of the application module to which the table belongs.
+<br />
+(Some of the application module designations are merely approximations of the module names that are displayed in the AX Workspace.)
+		</p>
+	</td>
+</tr>
+
+
+
+<tr class="cssTr_493_HelpHtu_AltEven">
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+MT
+<br />
+Module-Tables
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+<i>ERD</i>: Link to the page of ERD links for the application module.
+<br /><br />
+<i>Table Name</i>: Link to the TM page that has the row for this table.
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+The MT pages list alphabetically all the tables that are in the given application module.
+<br /><br />
+For a typical module there are usually 1-4 MT pages. These 4 MT pages have Previous and Next links that chain the pages together in alphabetical sequence.
+<br /><br />
+Each row on an MT page has an ERD link, then the name of the module (as a constant down the whole column), and then the name of a table.
+		</p>
+	</td>
+</tr>
+
+
+
+<tr class="cssTr_493_HelpHtu_AltOdd">
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+PC
+<br />
+Parent-Children
+<br /><br />
+(tables, and their foreign key relationships)
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+<i>Parent Table Name</i>: Link to the first row for the same parent table in the corresponding CP page.
+<br />
+IMPORTANT: On PC and CP pages, by clicking the table links in the left column,
+you can endlessly toggle between displays of all the child tables then all the parent tables,
+for the given table name link that you are clicking.
+<br /><br />
+On each row, the arrow at mid-row always points to the parent table, from the child table.
+Thus the direction of the arrow points left-ward on the PC pages, and right-ward on CP pages.
+<br /><br />
+<i>Module of Parent Table</i>: Link to the MT page for this application module, to the row for the parent table.
+<br /><br />
+<i>Child Table Name</i>: Link to the first row for the same child in the corresponding CP page.
+<br /><br />
+<i>Module of Child Table</i>: Link to the MT page for this application module, to the row for the child table.
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+The PC pages are perhaps the most important pages on the AxErd website (along with the ERD diagrams).
+<br /><br />
+The PC pages list all the parent tables that are in the given application module.
+<br /><br />
+The list is sorted alphabetically by the left column of table names, which are the parent tables.
+<br />Within each set of rows for any one parent table, the child table names are listed alphabetically (in a column further to the right).
+<br /><br />
+For a typical module there are usually 1-6 PC pages (plus 6 CP pages). These 6 PC pages have Previous and Next links that chain the pages together in alphabetical sequence.
+		</p>
+	</td>
+</tr>
+
+
+
+<tr class="cssTr_493_HelpHtu_AltEven">
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+CP
+<br />
+Child-Parents
+<br /><br />
+(much like the information available under AOT > Data Dictionary > Tables > <i>MYTABLE</i> > Relations)
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+<i>(The links on this CP page type are analogous to those on the PC page type.)</i>
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+<i>(The description of this CP page type is analogous to the PC page type.
+<br />
+The difference is that on CP pages the child table is in the important left column.)</i>
+		</p>
+	</td>
+</tr>
+
+
+
+<tr class="cssTr_493_HelpHtu_AltOdd">
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+ERDs
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+<i>(Self-explanatory.)</i>
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrOdd">
+		<p class="cssRoutineText">
+For each application module, there is one page of ERD links, and it links to each ERD diagram that is available for the given module.
+<br /><br />
+No one ERD is a complete representation of all the foreign key relationships between all the tables within the module, not even close.
+<br />
+Some ERD diagrams include tables from other application modules, although many more such tables could be added the ERDs.
+<br /><br />
+MAIN IDEA: If none of the provided ERD diagrams is sufficiently complete for your needs, you can use the PC & CP pages to easily find the information necessary to extend one of our provided ERD diagrams.
+		</p>
+	</td>
+</tr>
+
+
+
+<tr class="cssTr_493_HelpHtu_AltEven">
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+Home
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+<i>(Self-explanatory.)</i>
+		</p>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<pre>      </pre>
+	</td>
+	<td class="cssTd_494_HelpHtu_AltTrEven">
+		<p class="cssRoutineText">
+The AxErd Home page is the hub page that all others provide a link to.
+<br /><br />
+The Home page is also the default start page for the AxErd website.
+		</p>
+	</td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+<br /><br /><br />
+
+</body>
+</html>

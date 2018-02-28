@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: EP</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Enterprise Portal</h2>
+
+
+<a class="cssAHref2" href="Module-EP-11.htm#m-enterpriseportal">Module: Enterprise Portal</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="p-epwebsiteparameters"></a><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epglobalparameters">EPGlobalParameters</a></td>
+<td>.DevelopmentSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.SiteId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epglobalparameters">EPGlobalParameters</a></td>
+<td>.HomepageSiteId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.Pky?, .SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-14.htm#c-kmknowledgecollectorplanningtable">KMKnowledgeCollectorPlanningTable</a></td>
+<td>.Fky?, .WebSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-13.htm#c-smmparameterstable">smmParametersTable</a></td>
+<td>.WebSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequestparameters">UserRequestParameters</a></td>
+<td>.CustomerSelfServiceSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td><a class="cssAHref2" href="Fky-EP-ChildParents-11.htm#c-epwebsiteparameters">EPWebSiteParameters</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-EP-11.htm">(Enterprise Portal)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequestparameters">UserRequestParameters</a></td>
+<td>.VendorSelfServiceSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

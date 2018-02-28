@@ -1,0 +1,2394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: InvWM</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Inventory and warehouse management</h2>
+
+
+<a class="cssAHref2" href="Module-InvenWareMangt-11.htm#m-inventoryandwarehousemanagement">Module: Inventory and warehouse management</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-InvenWareMangt-ChildParents-11.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-InvenWareMangt-ChildParents-13.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>201</td><td><a name="c-inventitemsetupsupplytype"></a>InventItemSetupSupplyType</td>
+<td>.ItemDataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.dataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>202</td><td><a name="c-inventjournalname"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>203</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.VoucherNumberSequenceTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencetable">NumberSequenceTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>204</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.HHTTagSeqId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencetable">NumberSequenceTable</a></td>
+<td>.NumberSequence</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>205</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.Fky?, .RetailInfocodeIdEx2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-13.htm#p-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.Pky?, .infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>206</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-12.htm#p-usergroupinfo">UserGroupInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>207</td><td><a name="c-inventjournaltable"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>208</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>209</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>210</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.JournalIdOrignal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>211</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>212</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.InventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>213</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.TableId, .JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-20.htm#p-journalerror">JournalError</a></td>
+<td>.RefTableId, .JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>214</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.VoucherNumberSequenceTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencetable">NumberSequenceTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>215</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.OffSessionId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-officialstrans_ru">OfficialsTrans_RU</a></td>
+<td>.OffSessionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>216</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.Fky?, .FSHReplenishmentRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-15.htm#p-purchtable">PurchTable</a></td>
+<td>.Pky?, .PurchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>217</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.Fky?, .FSHReplenishmentRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-12.htm#p-retailbuyerspushtable">RetailBuyersPushTable</a></td>
+<td>.Pky?, .BuyersPushId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>218</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.BlockUserGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-12.htm#p-usergroupinfo">UserGroupInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>219</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.BlockUserId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>220</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.PostedUserId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>221</td><td><a name="c-inventjournaltrans"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.AssetId, .AssetBookId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ParentChilds-11.htm#p-assetbook">AssetBook</a></td>
+<td>.AssetId, .BookId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>222</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.AssetBookId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ParentChilds-11.htm#p-assetbooktable">AssetBookTable</a></td>
+<td>.BookId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>223</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.AssetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ParentChilds-12.htm#p-assettable">AssetTable</a></td>
+<td>.AssetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>224</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjSalesCurrencyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>225</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>226</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>227</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ExciseTariffCodes_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-11.htm#p-excisetariffcodes_in">ExciseTariffCodes_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>228</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>229</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>230</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ToInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>231</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventjournalreporttable_ru">InventJournalReportTable_RU</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>232</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>233</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.WarehouseLocation_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>234</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>235</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>236</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.InventTransIdFather</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>237</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.InventTransIdReturn</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>238</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ToInventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>239</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.Fky?, .LineNum, .JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-20.htm#p-journalerror">JournalError</a></td>
+<td>.Pky?, .LineNum, .JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>240</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.PostalAddress_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-logisticspostaladdress">LogisticsPostalAddress</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>241</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>242</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projitemtrans">ProjItemTrans</a></td>
+<td>.ProjTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>243</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjLinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>244</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>245</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ReasonRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-reasontableref">ReasonTableRef</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>246</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.RetailInfocodeIdEx2</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-13.htm#p-retailinfocodetable">RetailInfocodeTable</a></td>
+<td>.infocodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>247</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.Fky?, .ScrapTypeId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-15.htm#p-returnactiondefaults">ReturnActionDefaults</a></td>
+<td>.Pky?, .ReturnActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>248</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>249</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjTaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>250</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjTaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>251</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxservicetariff">TaxServiceTariff</a></td>
+<td>.ParentRecId, .ParentTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>252</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.ProjUnitID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>253</td><td><a name="c-inventjournaltrans_tag"></a>InventJournalTrans_Tag</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>254</td><td>InventJournalTrans_Tag</td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>255</td><td>InventJournalTrans_Tag</td>
+<td>.journalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltable">InventJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>256</td><td>InventJournalTrans_Tag</td>
+<td>.itemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>257</td><td>InventJournalTrans_Tag</td>
+<td>.Fky?, .journalId, .lineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-20.htm#p-journalerror">JournalError</a></td>
+<td>.Pky?, .JournalId, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>258</td><td>InventJournalTrans_Tag</td>
+<td>.unitID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>259</td><td><a name="c-inventjournaltransdocpltmp"></a>InventJournalTransDocPLTmp</td>
+<td>.InventBatchId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-inventbatch">InventBatch</a></td>
+<td>.inventBatchId, .itemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>260</td><td>InventJournalTransDocPLTmp</td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>261</td><td>InventJournalTransDocPLTmp</td>
+<td>.InventSerialId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventserial">InventSerial</a></td>
+<td>.InventSerialId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>262</td><td>InventJournalTransDocPLTmp</td>
+<td>.InventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>263</td><td>InventJournalTransDocPLTmp</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>264</td><td>InventJournalTransDocPLTmp</td>
+<td>.UnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>265</td><td>InventJournalTransDocPLTmp</td>
+<td>.wMSLocationId, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>266</td><td>InventJournalTransDocPLTmp</td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>267</td><td><a name="c-inventjournaltransextensionth"></a>InventJournalTransExtensionTH</td>
+<td>.InventJournalTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventjournaltrans">InventJournalTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>268</td><td>InventJournalTransExtensionTH</td>
+<td>.ToTaxBranch</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxbranch">TaxBranch</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>269</td><td><a name="c-inventlocation"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.Fky?, .VendAccountCustom_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-custompartners_ru">CustomPartners_RU</a></td>
+<td>.Pky?, .PartnerCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>270</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.CustAccount_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>271</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.CustAccount_HU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>272</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationIdGoodsInRoute_RU, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>273</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationIdQuarantine, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>274</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationIdReqMain, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>275</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationIdTransit, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>276</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>277</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.RBODefaultInventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>278</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>279</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.NumberSequenceGroup_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencegroup">NumberSequenceGroup</a></td>
+<td>.numberSequenceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>280</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>281</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.VendAccountCustom_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>282</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.emptyPalletLocation, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>283</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.WMSlocationIdDefaultIssue, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>284</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.WMSLocationIdDefaultReceipt, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>285</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.Fky?, .WMSLocationIdGoodsInRoute_RU, .InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmslocation">WMSLocation</a></td>
+<td>.Pky?, .wMSLocationId, .inventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>286</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.RBODefaultWMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>287</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.ReqCalendarId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-workcalendartable">WorkCalendarTable</a></td>
+<td>.CalendarId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>288</td><td><a name="c-inventlocationdefaultlocation"></a>InventLocationDefaultLocation</td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>289</td><td>InventLocationDefaultLocation</td>
+<td>.LocationLogisticsLocationRole</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocationrole">InventLocationLogisticsLocationRole</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>290</td><td><a name="c-inventlocationlogisticslocation"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocation">InventLocationLogisticsLocation</a></td>
+<td>.InventLocation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>291</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocation">InventLocationLogisticsLocation</a></td>
+<td>.Location</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-15.htm#p-logisticslocation">LogisticsLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>292</td><td><a name="c-inventlocationlogisticslocationrole"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocationrole">InventLocationLogisticsLocationRole</a></td>
+<td>.LocationLogisticsLocation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocation">InventLocationLogisticsLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>293</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventlocationlogisticslocationrole">InventLocationLogisticsLocationRole</a></td>
+<td>.LocationRole</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-logisticslocationrole">LogisticsLocationRole</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>294</td><td><a name="c-inventmodelgroup"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventmodelgroup">InventModelGroup</a></td>
+<td>.PdsDispositionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-20.htm#p-pdsdispositionmaster">PdsDispositionMaster</a></td>
+<td>.DispositionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>295</td><td><a name="c-inventmodelgroupitem"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventmodelgroupitem">InventModelGroupItem</a></td>
+<td>.ModelGroupDataAreaId, .ModelGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventmodelgroup">InventModelGroup</a></td>
+<td>.dataAreaId, .ModelGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>296</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventmodelgroupitem">InventModelGroupItem</a></td>
+<td>.ItemDataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.dataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>297</td><td><a name="c-inventnonconformancehistory"></a>InventNonConformanceHistory</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>298</td><td>InventNonConformanceHistory</td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>299</td><td><a name="c-inventnonconformanceorigin"></a>InventNonConformanceOrigin</td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>300</td><td>InventNonConformanceOrigin</td>
+<td>.InventQualityOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventqualityordertable">InventQualityOrderTable</a></td>
+<td>.QualityOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>301</td><td><a name="c-inventnonconformancerelation"></a>InventNonConformanceRelation</td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>302</td><td>InventNonConformanceRelation</td>
+<td>.InventNonConformanceIDRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>303</td><td><a name="c-inventnonconformancetable"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>304</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>305</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.TestResponsibleWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>306</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>307</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventTestInfoStatRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>308</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventTestProblemTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventproblemtype">InventProblemType</a></td>
+<td>.ProblemTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>309</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventNonConformanceType, .InventTestProblemTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventproblemtypesetup">InventProblemTypeSetup</a></td>
+<td>.NonConformanceType, .ProblemTypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>310</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventqualityordertable">InventQualityOrderTable</a></td>
+<td>.Pky?, .QualityOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>311</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.QuarantineZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventquarantinezone">InventQuarantineZone</a></td>
+<td>.QuarantineZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>312</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>313</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventTransIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>314</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.InventTransIdRef, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-pmfprodcoby">PmfProdCoBy</a></td>
+<td>.ProdId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>315</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-15.htm#p-prodtable">ProdTable</a></td>
+<td>.Pky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>316</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventTransIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-14.htm#p-purchline">PurchLine</a></td>
+<td>.Pky?, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>317</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-15.htm#p-purchtable">PurchTable</a></td>
+<td>.Pky?, .PurchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>318</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventTransIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.Pky?, .InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>319</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.Fky?, .InventRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salestable">SalesTable</a></td>
+<td>.Pky?, .SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>320</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.UnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>321</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnonconformancetable">InventNonConformanceTable</a></td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>322</td><td><a name="c-inventnumgroup"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventnumgroup">InventNumGroup</a></td>
+<td>.NumberSequenceTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencetable">NumberSequenceTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>323</td><td><a name="c-inventonhandtmp"></a>InventOnhandTmp</td>
+<td>.InventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-inventbatch">InventBatch</a></td>
+<td>.inventBatchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>324</td><td>InventOnhandTmp</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>325</td><td>InventOnhandTmp</td>
+<td>.InventGTDId_RU, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-inventgtd_ru">InventGTD_RU</a></td>
+<td>.InventGTDId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>326</td><td>InventOnhandTmp</td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>327</td><td>InventOnhandTmp</td>
+<td>.InventOwnerId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventowner_ru">InventOwner_RU</a></td>
+<td>.InventOwnerId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>328</td><td>InventOnhandTmp</td>
+<td>.InventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>329</td><td>InventOnhandTmp</td>
+<td>.InventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventserial">InventSerial</a></td>
+<td>.InventSerialId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>330</td><td>InventOnhandTmp</td>
+<td>.InventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>331</td><td>InventOnhandTmp</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>332</td><td>InventOnhandTmp</td>
+<td>.WMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>333</td><td><a name="c-inventopenqtycriticaltmp"></a>InventOpenQtyCriticalTmp</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>334</td><td>InventOpenQtyCriticalTmp</td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>335</td><td>InventOpenQtyCriticalTmp</td>
+<td>.InventUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>336</td><td><a name="c-inventpackagingmaterialcode"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingmaterialcode">InventPackagingMaterialCode</a></td>
+<td>.Unit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>337</td><td><a name="c-inventpackagingmaterialfee"></a>InventPackagingMaterialFee</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>338</td><td>InventPackagingMaterialFee</td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingmaterialcode">InventPackagingMaterialCode</a></td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>339</td><td><a name="c-inventpackagingmaterialtrans"></a>InventPackagingMaterialTrans</td>
+<td>.InvoiceId, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-12.htm#p-custinvoicetrans">CustInvoiceTrans</a></td>
+<td>.InvoiceId, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>340</td><td>InventPackagingMaterialTrans</td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>341</td><td>InventPackagingMaterialTrans</td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingmaterialcode">InventPackagingMaterialCode</a></td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>342</td><td>InventPackagingMaterialTrans</td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>343</td><td>InventPackagingMaterialTrans</td>
+<td>.LogisticsPostalAddress</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-logisticspostaladdress">LogisticsPostalAddress</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>344</td><td>InventPackagingMaterialTrans</td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salestable">SalesTable</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>345</td><td>InventPackagingMaterialTrans</td>
+<td>.PackingUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>346</td><td><a name="c-inventpackagingmaterialtranspurch"></a>InventPackagingMaterialTransPurch</td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingmaterialcode">InventPackagingMaterialCode</a></td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>347</td><td>InventPackagingMaterialTransPurch</td>
+<td>.PurchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-15.htm#p-purchtable">PurchTable</a></td>
+<td>.PurchId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>348</td><td>InventPackagingMaterialTransPurch</td>
+<td>.PackingUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>349</td><td>InventPackagingMaterialTransPurch</td>
+<td>.PurchId, .InvoiceDate, .InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-vendinvoicejour">VendInvoiceJour</a></td>
+<td>.PurchId, .InvoiceDate, .InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>350</td><td>InventPackagingMaterialTransPurch</td>
+<td>.InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>351</td><td><a name="c-inventpackagingunit"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.InventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-12.htm#p-inventdim">InventDim</a></td>
+<td>.inventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>352</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackaginggroup">InventPackagingGroup</a></td>
+<td>.Pky?, .PackagingGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>353</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.Pky?, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>354</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.PackageId_PL</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ParentChilds-11.htm#p-plinventpackagetable">PlInventPackageTable</a></td>
+<td>.PackageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>355</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.Unit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>356</td><td><a name="c-inventpackagingunitmaterial"></a>InventPackagingUnitMaterial</td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingmaterialcode">InventPackagingMaterialCode</a></td>
+<td>.PackMaterialCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>357</td><td>InventPackagingUnitMaterial</td>
+<td>.PackingUnitRecID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpackagingunit">InventPackagingUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>358</td><td><a name="c-inventparameters"></a>InventParameters</td>
+<td>.BarcodeSetupIdPick</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-barcodesetup">BarcodeSetup</a></td>
+<td>.barcodeSetupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>359</td><td>InventParameters</td>
+<td>.CloseBatchGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-batchgroup">BatchGroup</a></td>
+<td>.Group</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>360</td><td>InventParameters</td>
+<td>.CustomStatisticCurrencyCode_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>361</td><td>InventParameters</td>
+<td>.AnalysisDimensionAttribute_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-15.htm#p-dimensionattribute">DimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>362</td><td>InventParameters</td>
+<td>.SiteDimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-15.htm#p-dimensionattribute">DimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>363</td><td>InventParameters</td>
+<td>.InventSumDateFinancialDimensionFocus_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-20.htm#p-dimensionhierarchy">DimensionHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>364</td><td>InventParameters</td>
+<td>.Fky?, .FiscalLIFOJournalNameIdFinal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-11.htm#p-inventfiscallifojournalname">InventFiscalLIFOJournalName</a></td>
+<td>.Pky?, .JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>365</td><td>InventParameters</td>
+<td>.Fky?, .FiscalLIFOJournalNameIdInternal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-11.htm#p-inventfiscallifojournalname">InventFiscalLIFOJournalName</a></td>
+<td>.Pky?, .JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>366</td><td>InventParameters</td>
+<td>.BOMJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>367</td><td>InventParameters</td>
+<td>.CountJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>368</td><td>InventParameters</td>
+<td>.InventBaileeJournalNameId_RU, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>369</td><td>InventParameters</td>
+<td>.LossProfitJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>370</td><td>InventParameters</td>
+<td>.MovementJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>371</td><td>InventParameters</td>
+<td>.PdsCWInventJournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>372</td><td>InventParameters</td>
+<td>.TagCountingJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>373</td><td>InventParameters</td>
+<td>.TransferJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>374</td><td>InventParameters</td>
+<td>.FallbackInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>375</td><td>InventParameters</td>
+<td>.MultiSiteDefaultInventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>376</td><td>InventParameters</td>
+<td>.InventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>377</td><td>InventParameters</td>
+<td>.MultiSiteDefaultInventSiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>378</td><td>InventParameters</td>
+<td>.SalesTaxGroup_LV</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>379</td><td>InventParameters</td>
+<td>.DefaultUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>380</td><td>InventParameters</td>
+<td>.OutboundRuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmsoutboundrule">WMSOutboundRule</a></td>
+<td>.OutboundRuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>381</td><td><a name="c-inventparmquarantineorder"></a>InventParmQuarantineOrder</td>
+<td>.QuarantineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventquarantineorder">InventQuarantineOrder</a></td>
+<td>.QuarantineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>382</td><td>InventParmQuarantineOrder</td>
+<td>.WMSJournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmsjournalname">WMSJournalName</a></td>
+<td>.journalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>383</td><td>InventParmQuarantineOrder</td>
+<td>.WMSJournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-22.htm#p-wmsjournaltable">WMSJournalTable</a></td>
+<td>.journalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>384</td><td><a name="c-inventpendingquantity"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpendingquantity">InventPendingQuantity</a></td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>385</td><td><a name="c-inventpendingregistrationdetail"></a>InventPendingRegistrationDetail</td>
+<td>.SourceLineLegalEntityId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>386</td><td>InventPendingRegistrationDetail</td>
+<td>.Party</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-diraddressbookpartyallview">DirAddressBookPartyAllView</a></td>
+<td>.Party</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>387</td><td>InventPendingRegistrationDetail</td>
+<td>.Party</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-13.htm#p-dirpartytable">DirPartyTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>388</td><td>InventPendingRegistrationDetail</td>
+<td>.SourceLineCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-11.htm#p-ecorescategory">EcoResCategory</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>389</td><td>InventPendingRegistrationDetail</td>
+<td>.DistinctProduct</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-ecoresdistinctproduct">EcoResDistinctProduct</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>390</td><td>InventPendingRegistrationDetail</td>
+<td>.InventLocationIdSearchable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-14.htm#p-inventlocation">InventLocation</a></td>
+<td>.InventLocationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>391</td><td>InventPendingRegistrationDetail</td>
+<td>.InventPendingQuantity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventpendingquantity">InventPendingQuantity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>392</td><td>InventPendingRegistrationDetail</td>
+<td>.InventSiteIdSearchable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>393</td><td>InventPendingRegistrationDetail</td>
+<td>.ItemIdDataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.dataAreaId, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>394</td><td>InventPendingRegistrationDetail</td>
+<td>.ReferenceLineID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>395</td><td><a name="c-inventposting"></a>InventPosting</td>
+<td>.CostRelation, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-bomcostgroup">BOMCostGroup</a></td>
+<td>.CostGroupId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>396</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>397</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>398</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>399</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>400</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>401</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>402</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>403</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>404</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>405</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>406</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>407</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>408</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>409</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>410</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>411</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>412</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>413</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>414</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>415</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>416</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>417</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>418</td><td>InventPosting</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>419</td><td>InventPosting</td>
+<td>.CategoryRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-11.htm#p-ecorescategory">EcoResCategory</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>420</td><td>InventPosting</td>
+<td>.Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventitemgroup">InventItemGroup</a></td>
+<td>.Pky?, .ItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>421</td><td>InventPosting</td>
+<td>.InventProfileId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-12.htm#p-inventprofile_ru">InventProfile_RU</a></td>
+<td>.InventProfileId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>422</td><td>InventPosting</td>
+<td>.Fky?, .SiteRelation_CN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-15.htm#p-inventsite">InventSite</a></td>
+<td>.Pky?, .SiteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>423</td><td>InventPosting</td>
+<td>.Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.Pky?, .ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>424</td><td>InventPosting</td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>425</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>426</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>427</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>428</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>429</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>430</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>431</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>432</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>433</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>434</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>435</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>436</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>437</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>438</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>439</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>440</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.Pky?, .Pky?, .VendGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>441</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>442</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>443</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>444</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>445</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>446</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>447</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>448</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>449</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>450</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>451</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>452</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>453</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>454</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>455</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>456</td><td>InventPosting</td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.Pky?, .Pky?, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-InvenWareMangt-ChildParents-13.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

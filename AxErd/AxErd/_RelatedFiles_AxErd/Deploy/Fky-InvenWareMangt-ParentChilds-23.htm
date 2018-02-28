@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: InvWM</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Inventory and warehouse management</h2>
+
+
+<a class="cssAHref2" href="Module-InvenWareMangt-11.htm#m-inventoryandwarehousemanagement">Module: Inventory and warehouse management</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-InvenWareMangt-ParentChilds-22.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>2407</td><td><a name="p-wmspallettypegroup"></a>WMSPalletTypeGroup</td>
+<td>.palletTypeGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmslocation">WMSLocation</a></td>
+<td>.palletTypeGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2408</td><td>WMSPalletTypeGroup</td>
+<td>.palletTypeGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspallettypegroupmember">WMSPalletTypeGroupMember</a></td>
+<td>.palletTypeGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2409</td><td><a name="p-wmspickingroute"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-formlettersortingparameters">FormLetterSortingParameters</a></td>
+<td>.SortingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>2410</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaileventnotificationlog">RetailEventNotificationLog</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>2411</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.Pky?, .pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsordertrans">WMSOrderTrans</a></td>
+<td>.Fky?, .routeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2412</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickinglist_orderpicktmp">WMSPickingList_OrderPickTmp</a></td>
+<td>.PickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2413</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickinglistreportheadertmp">WMSPickingListReportHeaderTmp</a></td>
+<td>.pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2414</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickinglistreporttmp">WMSPickingListReportTmp</a></td>
+<td>.pickingRouteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2415</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.pickingRouteID, .ActivationDateTime</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroutelink">WMSPickingRouteLink</a></td>
+<td>.PickingRouteId, .ActivationDateTime</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2416</td><td><a name="p-wmsreportsetup"></a>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutildateperiods">WMSSpaceUtilDatePeriods</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2417</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilforecast">WMSSpaceUtilForecast</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2418</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilinconsistencies">WMSSpaceUtilInconsistencies</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2419</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilizationrun">WMSSpaceUtilizationRun</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2420</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilplanforecast">WMSSpaceUtilPlanForecast</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2421</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilreportsetup">WMSSpaceUtilReportSetup</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2422</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2423</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmsworkloadcapacitywarehouse">WMSWorkloadCapacityWarehouse</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2424</td><td>WMSReportSetup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmsworkloadforecast">WMSWorkLoadForecast</a></td>
+<td>.WMSReportSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2425</td><td><a name="p-wmsreservationcombinationtable"></a>WMSReservationCombinationTable</td>
+<td>.CombinationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationcombinationline">WMSReservationCombinationLine</a></td>
+<td>.CombinationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2426</td><td>WMSReservationCombinationTable</td>
+<td>.CombinationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationsequenceline">WMSReservationSequenceLine</a></td>
+<td>.ReservationCombinationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2427</td><td><a name="p-wmsreservationsequencetable"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationsequencetable">WMSReservationSequenceTable</a></td>
+<td>.SequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationsequenceline">WMSReservationSequenceLine</a></td>
+<td>.SequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2428</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationsequencetable">WMSReservationSequenceTable</a></td>
+<td>.SequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.reservationSequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2429</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsreservationsequencetable">WMSReservationSequenceTable</a></td>
+<td>.SequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipmenttemplate">WMSShipmentTemplate</a></td>
+<td>.reservationSequenceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2430</td><td><a name="p-wmsshipment"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanboardtmptransferjob">KanbanBoardTmpTransferJob</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>2431</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-16.htm#c-shipcarriershipmentinvoice">ShipCarrierShipmentInvoice</a></td>
+<td>.WMSShipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2432</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-16.htm#c-shipcarriershipmentpackingslip">ShipCarrierShipmentPackingSlip</a></td>
+<td>.WMSShipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2433</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-16.htm#c-shipcarriershippingrequest">ShipCarrierShippingRequest</a></td>
+<td>.WMSShipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2434</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-wmsbilloflading">WMSBillOfLading</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2435</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-wmsbillofladingtmp">WMSBillOfLadingTmp</a></td>
+<td>.ShipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2436</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsordertrans">WMSOrderTrans</a></td>
+<td>.shipmentIdOriginal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2437</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsordertrans">WMSOrderTrans</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2438</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2439</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmstransport">WMSTransport</a></td>
+<td>.shipmentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2440</td><td><a name="p-wmsshipmenttemplate"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipmenttemplate">WMSShipmentTemplate</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsshipment">WMSShipment</a></td>
+<td>.ShipmentTemplate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2441</td><td><a name="p-wmsstorageloadunit"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilforecast">WMSSpaceUtilForecast</a></td>
+<td>.WMSStorageLoadUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2442</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilinconsistencies">WMSSpaceUtilInconsistencies</a></td>
+<td>.WMSStorageLoadUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2443</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilizationtmp">WMSSpaceUtilizationTmp</a></td>
+<td>.WMSStorageLoadUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2444</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunitmember">WMSStorageLoadUnitMember</a></td>
+<td>.WMSStorageLoadUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2445</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunit">WMSStorageLoadUnit</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunitreqtrans">WMSStorageLoadUnitReqTrans</a></td>
+<td>.WMSStorageLoadUnit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2446</td><td><a name="p-wmsstorearea"></a>WMSStoreArea</td>
+<td>.storeAreaId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtestinstrument">InventTestInstrument</a></td>
+<td>.WMSInputAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2447</td><td>WMSStoreArea</td>
+<td>.storeAreaId, .storeAreaType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpwmsareasetup">TmpWMSAreaSetup</a></td>
+<td>.storeAreaId, .WMSStoreAreaType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2448</td><td>WMSStoreArea</td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpwmsareasetupchanges">TmpWMSAreaSetupChanges</a></td>
+<td>.storeAreaIdNew</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2449</td><td>WMSStoreArea</td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpwmsareasetupchanges">TmpWMSAreaSetupChanges</a></td>
+<td>.storeAreaIdOld</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2450</td><td>WMSStoreArea</td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpwmslocation">TmpWMSLocation</a></td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2451</td><td>WMSStoreArea</td>
+<td>.storeAreaId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-wmscheckabczonestmp">WMSCheckABCZonesTmp</a></td>
+<td>.SuggestedAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2452</td><td>WMSStoreArea</td>
+<td>.storeAreaId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmslocation">WMSLocation</a></td>
+<td>.storeAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2453</td><td>WMSStoreArea</td>
+<td>.storeAreaId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmslocation">WMSLocation</a></td>
+<td>.pickingAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2454</td><td>WMSStoreArea</td>
+<td>.storeAreaId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspickingroute">WMSPickingRoute</a></td>
+<td>.pickingAreaId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2455</td><td>WMSStoreArea</td>
+<td>.Pky?, .storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmsstorezonearea">WMSStoreZoneArea</a></td>
+<td>.Fky?, .storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2456</td><td><a name="p-wmsstorezone"></a>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-11.htm#c-inventitemlocation">InventItemLocation</a></td>
+<td>.wMSStoreZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2457</td><td>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-wmscheckabczonestmp">WMSCheckABCZonesTmp</a></td>
+<td>.SuggestedZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2458</td><td>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-wmscheckabczonestmp">WMSCheckABCZonesTmp</a></td>
+<td>.WMSStoreZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2459</td><td>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilplanforecast">WMSSpaceUtilPlanForecast</a></td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2460</td><td>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunitmember">WMSStorageLoadUnitMember</a></td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2461</td><td>WMSStoreZone</td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmsstorezonearea">WMSStoreZoneArea</a></td>
+<td>.storeZoneId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2462</td><td><a name="p-wmsstorezonearea"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmsstorezonearea">WMSStoreZoneArea</a></td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmslocation">WMSLocation</a></td>
+<td>.storeAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2463</td><td><a name="p-wmstransport"></a><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmstransport">WMSTransport</a></td>
+<td>.transportId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpwmspallettransport">TmpWMSPalletTransport</a></td>
+<td>.WMSTransportId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2464</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmstransport">WMSTransport</a></td>
+<td>.transportId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsordertrans">WMSOrderTrans</a></td>
+<td>.routeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>2465</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-19.htm#c-wmstransport">WMSTransport</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmspallet">WMSPallet</a></td>
+<td>.wMSPalletId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

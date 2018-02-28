@@ -1,0 +1,2097 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: PMA</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Project management and accounting</h2>
+
+
+<a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm#m-projectmanagementandaccounting">Module: Project management and accounting</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProjectMangtAccounting-ChildParents-13.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProjectMangtAccounting-ChildParents-15.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>605</td><td><a name="c-projlinepropertysetup"></a>ProjLinePropertySetup</td>
+<td>.Fky?, .CategoryRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.Pky?, .CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>606</td><td>ProjLinePropertySetup</td>
+<td>.Fky?, .CategoryRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategorygroup">ProjCategoryGroup</a></td>
+<td>.Pky?, .CategoryGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>607</td><td>ProjLinePropertySetup</td>
+<td>.Fky?, .ProjRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projgroup">ProjGroup</a></td>
+<td>.Pky?, .ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>608</td><td>ProjLinePropertySetup</td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>609</td><td>ProjLinePropertySetup</td>
+<td>.Fky?, .ProjRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.Pky?, .ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>610</td><td><a name="c-projlistbudgettmp"></a>ProjListBudgetTmp</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>611</td><td><a name="c-projlistestimatetmp"></a>ProjListEstimateTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>612</td><td><a name="c-projlistledgerrecontmp"></a>ProjListLedgerReconTmp</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>613</td><td>ProjListLedgerReconTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>614</td><td><a name="c-projlistledgerreconwipaccounttmp"></a>ProjListLedgerReconWIPAccountTmp</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>615</td><td>ProjListLedgerReconWIPAccountTmp</td>
+<td>.EmplItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>616</td><td>ProjListLedgerReconWIPAccountTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>617</td><td>ProjListLedgerReconWIPAccountTmp</td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projempltrans">ProjEmplTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>618</td><td>ProjListLedgerReconWIPAccountTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>619</td><td><a name="c-projlistlinepropertytmp"></a>ProjListLinePropertyTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>620</td><td>ProjListLinePropertyTmp</td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>621</td><td>ProjListLinePropertyTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>622</td><td><a name="c-projlistpostingreadytmp"></a>ProjListPostingReadyTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>623</td><td>ProjListPostingReadyTmp</td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournaltable">ProjJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>624</td><td>ProjListPostingReadyTmp</td>
+<td>.InvoiceStatusId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>625</td><td>ProjListPostingReadyTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>626</td><td>ProjListPostingReadyTmp</td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>627</td><td><a name="c-projlistprojpostingtmp"></a>ProjListProjPostingTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-categorytable">CategoryTable</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>628</td><td>ProjListProjPostingTmp</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>629</td><td>ProjListProjPostingTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>630</td><td><a name="c-projlisttranscommittedcosttmp"></a>ProjListTransCommittedCostTmp</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>631</td><td>ProjListTransCommittedCostTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>632</td><td>ProjListTransCommittedCostTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>633</td><td>ProjListTransCommittedCostTmp</td>
+<td>.VendorAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>634</td><td><a name="c-projlisttranstmp"></a>ProjListTransTmp</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>635</td><td>ProjListTransTmp</td>
+<td>.Level3, .Level2, .Level1</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId, .CategoryId, .CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>636</td><td>ProjListTransTmp</td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>637</td><td><a name="c-projonacctrans"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.CurrencyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>638</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>639</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.PSARefRecIdBudgetTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastsales">ForecastSales</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>640</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.PSARefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>641</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.ProjID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>642</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>643</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>644</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>645</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>646</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxservicetariff">TaxServiceTariff</a></td>
+<td>.ParentRecId, .ParentTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>647</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.TaxWithholdItemGroupHeading_TH</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-taxwithholditemgroupheading_th">TaxWithholdItemGroupHeading_TH</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>648</td><td><a name="c-projonacctranssale"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctranssale">ProjOnAccTransSale</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>649</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctranssale">ProjOnAccTransSale</a></td>
+<td>.FundingSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projfundingsource">ProjFundingSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>650</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctranssale">ProjOnAccTransSale</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>651</td><td><a name="c-projparameters"></a>ProjParameters</td>
+<td>.ProjTransCFOPOtherState_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ParentChilds-11.htm#p-cfoptable_br">CFOPTable_BR</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>652</td><td>ProjParameters</td>
+<td>.ProjTransCFOPOutsideCountry_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ParentChilds-11.htm#p-cfoptable_br">CFOPTable_BR</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>653</td><td>ProjParameters</td>
+<td>.ProjTransCFOPSameState_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ParentChilds-11.htm#p-cfoptable_br">CFOPTable_BR</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>654</td><td>ProjParameters</td>
+<td>.DefaultForecastItemAllocation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastitemallocation">ForecastItemAllocation</a></td>
+<td>.AllocateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>655</td><td>ProjParameters</td>
+<td>.ItemLumpSumAllocationKey</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastitemallocation">ForecastItemAllocation</a></td>
+<td>.AllocateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>656</td><td>ProjParameters</td>
+<td>.Fky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>657</td><td>ProjParameters</td>
+<td>.Fky?, .OriginalForecastModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>658</td><td>ProjParameters</td>
+<td>.Fky?, .RemainingForecastModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>659</td><td>ProjParameters</td>
+<td>.Fky?, .TotalForecastModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>660</td><td>ProjParameters</td>
+<td>.Fky?, .inventJournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-13.htm#p-inventjournalname">InventJournalName</a></td>
+<td>.Pky?, .JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>661</td><td>ProjParameters</td>
+<td>.ExpenseJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-22.htm#p-ledgerjournalname">LedgerJournalName</a></td>
+<td>.JournalName, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>662</td><td>ProjParameters</td>
+<td>.ForecastPaymExpenses</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymterm">PaymTerm</a></td>
+<td>.PaymTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>663</td><td>ProjParameters</td>
+<td>.ForecastPaymHour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymterm">PaymTerm</a></td>
+<td>.PaymTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>664</td><td>ProjParameters</td>
+<td>.ForecastPaymItem</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymterm">PaymTerm</a></td>
+<td>.PaymTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>665</td><td>ProjParameters</td>
+<td>.ExpenseLumpSumAllocationKey</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projallocatekey">ProjAllocateKey</a></td>
+<td>.AllocateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>666</td><td>ProjParameters</td>
+<td>.CostCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>667</td><td>ProjParameters</td>
+<td>.EmplCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>668</td><td>ProjParameters</td>
+<td>.ItemCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>669</td><td>ProjParameters</td>
+<td>.RevenueCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>670</td><td>ProjParameters</td>
+<td>.CostTemplate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcontrol">ProjControl</a></td>
+<td>.ControlId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>671</td><td>ProjParameters</td>
+<td>.Fky?, .BegBalJournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournalname">ProjJournalName</a></td>
+<td>.Pky?, .JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>672</td><td>ProjParameters</td>
+<td>.EmplJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournalname">ProjJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>673</td><td>ProjParameters</td>
+<td>.ContractLineFeeJournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournalname">ProjJournalName</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>674</td><td>ProjParameters</td>
+<td>.TimeJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournalname">ProjJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>675</td><td>ProjParameters</td>
+<td>.RevenueJournalNameId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournalname">ProjJournalName</a></td>
+<td>.JournalNameId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>676</td><td>ProjParameters</td>
+<td>.TaxItemGroupOnAcc</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>677</td><td>ProjParameters</td>
+<td>.ApproveGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-12.htm#p-usergroupinfo">UserGroupInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>678</td><td><a name="c-projperiodempl"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodempl">ProjPeriodEmpl</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>679</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodempl">ProjPeriodEmpl</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodtable">ProjPeriodTable</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>680</td><td><a name="c-projperiodline"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodline">ProjPeriodLine</a></td>
+<td>.Fky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>681</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodline">ProjPeriodLine</a></td>
+<td>.PeriodFrom, .PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodempl">ProjPeriodEmpl</a></td>
+<td>.PeriodFrom, .PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>682</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodline">ProjPeriodLine</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodtable">ProjPeriodTable</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>683</td><td><a name="c-projperiodpostingtmp"></a>ProjPeriodPostingTmp</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>684</td><td>ProjPeriodPostingTmp</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>685</td><td><a name="c-projperiodtimesheetweek"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projperiodtimesheetweek">ProjPeriodTimesheetWeek</a></td>
+<td>.PeriodTo, .PeriodFrom, .PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodline">ProjPeriodLine</a></td>
+<td>.PeriodTo, .PeriodFrom, .PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>686</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projperiodtimesheetweek">ProjPeriodTimesheetWeek</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodtable">ProjPeriodTable</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>687</td><td><a name="c-projposting"></a>ProjPosting</td>
+<td>.LedgerDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-16.htm#p-dimensionattributevaluecombination">DimensionAttributeValueCombination</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>688</td><td>ProjPosting</td>
+<td>.Fky?, .ProjCategoryRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.Pky?, .CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>689</td><td>ProjPosting</td>
+<td>.Fky?, .ProjCategoryRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategorygroup">ProjCategoryGroup</a></td>
+<td>.Pky?, .CategoryGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>690</td><td>ProjPosting</td>
+<td>.ProjFundingSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projfundingsource">ProjFundingSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>691</td><td>ProjPosting</td>
+<td>.Fky?, .ProjRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projgroup">ProjGroup</a></td>
+<td>.Pky?, .ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>692</td><td>ProjPosting</td>
+<td>.Fky?, .ProjRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.Pky?, .ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>693</td><td><a name="c-projproposalcost"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projcosttrans">ProjCostTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>694</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>695</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>696</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>697</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>698</td><td><a name="c-projproposalcostdetail"></a>ProjProposalCostDetail</td>
+<td>.SaleRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projcosttranssale">ProjCostTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>699</td><td>ProjProposalCostDetail</td>
+<td>.ProposalRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalcost">ProjProposalCost</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>700</td><td><a name="c-projproposalempl"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projempltrans">ProjEmplTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>701</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>702</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>703</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>704</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>705</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxservicetariff">TaxServiceTariff</a></td>
+<td>.ParentRecId, .ParentTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>706</td><td><a name="c-projproposalempldetail"></a>ProjProposalEmplDetail</td>
+<td>.SaleRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projempltranssale">ProjEmplTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>707</td><td>ProjProposalEmplDetail</td>
+<td>.ProposalRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalempl">ProjProposalEmpl</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>708</td><td><a name="c-projproposalitem"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>709</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-16.htm#p-inventtable">InventTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>710</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-19.htm#p-inventtransorigin">InventTransOrigin</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>711</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.ProjTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projitemtrans">ProjItemTrans</a></td>
+<td>.ProjTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>712</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>713</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>714</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesline">SalesLine</a></td>
+<td>.InventTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>715</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salestable">SalesTable</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>716</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>717</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>718</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxservicetariff">TaxServiceTariff</a></td>
+<td>.ParentRecId, .ParentTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>719</td><td><a name="c-projproposalitemdetail"></a>ProjProposalItemDetail</td>
+<td>.SaleRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projitemtranssale">ProjItemTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>720</td><td>ProjProposalItemDetail</td>
+<td>.ProposalRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalitem">ProjProposalItem</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>721</td><td><a name="c-projproposaljour"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.CashDiscCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FinMangt-ParentChilds-11.htm#p-cashdisc">CashDisc</a></td>
+<td>.CashDiscCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FinMangt-11.htm">(Financial management)</a></span></td></tr>
+
+
+
+<tr><td>722</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.CurrencyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>723</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.CustBankAccountId, .InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-11.htm#p-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>724</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ParentChilds-12.htm#p-custledger">CustLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>725</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>726</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.OrderAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>727</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>728</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.DlvMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-11.htm#p-dlvmode">DlvMode</a></td>
+<td>.Code</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>729</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.DlvTerm</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-dlvterm">DlvTerm</a></td>
+<td>.Code</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>730</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.FiscalDocumentType_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ParentChilds-11.htm#p-fiscaldocumenttype_br">FiscalDocumentType_BR</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>731</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.FiscalEstablishment_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ParentChilds-11.htm#p-fiscalestablishment_br">FiscalEstablishment_BR</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>732</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.PSAWorkerSubmittedBy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>733</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.WorkerApprovedBy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>734</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.Port</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-11.htm#p-intrastatport">IntrastatPort</a></td>
+<td>.PortId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>735</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.LanguageId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DevPartTool-ParentChilds-11.htm#p-languagetable">LanguageTable</a></td>
+<td>.LanguageId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DevPartTool-11.htm">(Developer and Partner Tools)</a></span></td></tr>
+
+
+
+<tr><td>736</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.Fky?, .LanguageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DevPartTool-ParentChilds-11.htm#p-languagetable">LanguageTable</a></td>
+<td>.Pky?, .LanguageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DevPartTool-11.htm">(Developer and Partner Tools)</a></span></td></tr>
+
+
+
+<tr><td>737</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.DeliveryPostalAddress</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-logisticspostaladdress">LogisticsPostalAddress</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>738</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.NumberSequenceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-11.htm#p-numbersequencegroup">NumberSequenceGroup</a></td>
+<td>.numberSequenceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>739</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.PaymDayId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymday">PaymDay</a></td>
+<td>.PaymDayId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>740</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.PaymentSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymsched">PaymSched</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>741</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.Payment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ParentChilds-11.htm#p-paymterm">PaymTerm</a></td>
+<td>.PaymTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>742</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.TaxPeriodPaymentCode_PL</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ParentChilds-11.htm#p-pltaxduetable">PlTaxDueTable</a></td>
+<td>.TaxPeriodPaymentCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>743</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.FundingSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projfundingsource">ProjFundingSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>744</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projgroup">ProjGroup</a></td>
+<td>.ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>745</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.InvoiceDate, .ProjInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projinvoicejour">ProjInvoiceJour</a></td>
+<td>.InvoiceDate, .ProjInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>746</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projinvoicetable">ProjInvoiceTable</a></td>
+<td>.ProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>747</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ReasonTableRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-reasontableref">ReasonTableRef</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>748</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>749</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.TaxInformation_IN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-12.htm#p-taxinformation_in">TaxInformation_IN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>750</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.TransportationDocument</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ParentChilds-12.htm#p-transportationdocument">TransportationDocument</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>751</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.CanceledBy</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>752</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.VATInvoiceDescTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-vatinvoicedesctable_cn">VATInvoiceDescTable_CN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>753</td><td><a name="c-projproposaljourextensioncn"></a>ProjProposalJourExtensionCN</td>
+<td>.ProjProposalJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>754</td><td>ProjProposalJourExtensionCN</td>
+<td>.VATInvoiceDescTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ParentChilds-13.htm#p-vatinvoicedesctable_cn">VATInvoiceDescTable_CN</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>755</td><td><a name="c-projproposalonacc"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctrans">ProjOnAccTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>756</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>757</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>758</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>759</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>760</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-13.htm#p-taxservicetariff">TaxServiceTariff</a></td>
+<td>.ParentRecId, .ParentTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>761</td><td><a name="c-projproposalonaccdetail"></a>ProjProposalOnAccDetail</td>
+<td>.SaleRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projonacctranssale">ProjOnAccTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>762</td><td>ProjProposalOnAccDetail</td>
+<td>.ProposalRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalonacc">ProjProposalOnAcc</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>763</td><td><a name="c-projproposalrevenue"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposaljour">ProjProposalJour</a></td>
+<td>.ProposalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>764</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>765</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>766</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>767</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>768</td><td><a name="c-projproposalrevenuedetail"></a>ProjProposalRevenueDetail</td>
+<td>.ProposalRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projproposalrevenue">ProjProposalRevenue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>769</td><td>ProjProposalRevenueDetail</td>
+<td>.SaleRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>770</td><td><a name="c-projpwpvendorretentionsetting"></a>ProjPWPVendorRetentionSetting</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>771</td><td>ProjPWPVendorRetentionSetting</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-16.htm#p-psavendorretentiontermstable">PSAVendorRetentionTermsTable</a></td>
+<td>.VendorRetentionTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>772</td><td>ProjPWPVendorRetentionSetting</td>
+<td>.VendorRelation, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendgroup">VendGroup</a></td>
+<td>.VendGroup, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>773</td><td>ProjPWPVendorRetentionSetting</td>
+<td>.VendorRelation, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-18.htm#p-vendtable">VendTable</a></td>
+<td>.AccountNum, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>774</td><td><a name="c-projresource"></a>ProjResource</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>775</td><td>ProjResource</td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrtable">WrkCtrTable</a></td>
+<td>.WrkCtrId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>776</td><td><a name="c-projrevenuesalesprice"></a>ProjRevenueSalesPrice</td>
+<td>.CurrencyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>777</td><td>ProjRevenueSalesPrice</td>
+<td>.PSACustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>778</td><td>ProjRevenueSalesPrice</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>779</td><td>ProjRevenueSalesPrice</td>
+<td>.ProjPriceGroup, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-13.htm#p-pricediscgroup">PriceDiscGroup</a></td>
+<td>.GroupId, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>780</td><td>ProjRevenueSalesPrice</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>781</td><td>ProjRevenueSalesPrice</td>
+<td>.PSAProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projinvoicetable">ProjInvoiceTable</a></td>
+<td>.ProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>782</td><td>ProjRevenueSalesPrice</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>783</td><td><a name="c-projrevenuetrans"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.CurrencyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>784</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>785</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>786</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>787</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>788</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.AdjRefTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>789</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TransIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>790</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>791</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.PSAContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacontractlineitems">PSAContractLineItems</a></td>
+<td>.ContractLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>792</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ParentChilds-11.htm#p-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>793</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>794</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TaxItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>795</td><td><a name="c-projrevenuetranssale"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>796</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.ControlId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcontrol">ProjControl</a></td>
+<td>.ControlId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>797</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.FundingSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projfundingsource">ProjFundingSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>798</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>799</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.PSARefREcId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projrevenuetranssale">ProjRevenueTransSale</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>800</td><td><a name="c-projtable"></a><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.AssetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ParentChilds-12.htm#p-assettable">AssetTable</a></td>
+<td>.AssetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>801</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>802</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>803</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.PSAForecastModelId, .PSAForecastModelIdExternal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-11.htm#p-forecastmodel">ForecastModel</a></td>
+<td>.ModelId, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>804</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.WorkerPSAArchitect</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>805</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.WorkerResponsibleFinancial</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>806</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.WorkerResponsible</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>807</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.WorkerResponsibleSales</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>808</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.DeliveryLocation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-15.htm#p-logisticslocation">LogisticsLocation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>809</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjPriceGroup, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-13.htm#p-pricediscgroup">PriceDiscGroup</a></td>
+<td>.GroupId, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>810</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projgroup">ProjGroup</a></td>
+<td>.ProjGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>811</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projinvoicetable">ProjInvoiceTable</a></td>
+<td>.ProjInvoiceProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>812</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.sortingId[1], .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projsorting">ProjSorting</a></td>
+<td>.sortingId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>813</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.Fky?, .sortingId[2]</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projsorting">ProjSorting</a></td>
+<td>.Pky?, .sortingId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>814</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.Fky?, .sortingId[3]</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projsorting">ProjSorting</a></td>
+<td>.Pky?, .sortingId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>815</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.AlternateBudgetProject</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>816</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ParentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>817</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.WIPProject</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-projwiptable">ProjWIPTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>818</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojattribute">PSAActivityProjAttribute</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>819</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojcertificate">PSAActivityProjCertificate</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>820</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojeducation">PSAActivityProjEducation</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>821</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojproject">PSAActivityProjProject</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>822</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojreqimportance">PSAActivityProjReqImportance</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>823</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaactivityprojskill">PSAActivityProjSkill</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>824</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.PSARetainScheduleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psacustomerretentiontermtable">PSACustomerRetentionTermTable</a></td>
+<td>.RetentionTermId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>825</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>826</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.PSAUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-21.htm#p-unitofmeasure">UnitOfMeasure</a></td>
+<td>.Symbol</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>827</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.PSASchedCalendarId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-workcalendartable">WorkCalendarTable</a></td>
+<td>.CalendarId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProjectMangtAccounting-ChildParents-15.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

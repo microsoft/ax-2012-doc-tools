@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: Bud</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Budgeting</h2>
+
+
+<a class="cssAHref2" href="Module-Budget-11.htm#m-budgeting">Module: Budgeting</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="p-budgetallocationterm"></a>BudgetAllocationTerm</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallocationtermdetail">BudgetAllocationTermDetail</a></td>
+<td>.BudgetAllocationTerm</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td>BudgetAllocationTerm</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningallocationschedule">BudgetPlanningAllocationSchedule</a></td>
+<td>.AllocationTerm</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a name="p-budgetallowtransferrule"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallowtransferrule">BudgetAllowTransferRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallowtransferrulemember">BudgetAllowTransferRuleMember</a></td>
+<td>.BudgetAllowTransferRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td><a name="p-budgetallowtransferrulemember"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallowtransferrulemember">BudgetAllowTransferRuleMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallowtransferrulemembercriteria">BudgetAllowTransferRuleMemberCriteria</a></td>
+<td>.BudgetAllowTransferRuleMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a name="p-budgetcontrolconfiguration"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolbudgetcycle">BudgetControlBudgetCycle</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontroldimensionattribute">BudgetControlDimensionAttribute</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolmainaccount">BudgetControlMainAccount</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolsourceintegratorenabled">BudgetControlSourceIntegratorEnabled</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolusergroupsuppresswarnings">BudgetControlUserGroupSuppressWarnings</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetoverrideusergroupoption">BudgetOverrideUserGroupOption</a></td>
+<td>.BudgetControlConfiguration</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td><a name="p-budgetcontroldimensionattribute"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontroldimensionattribute">BudgetControlDimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrulecriteria">BudgetControlRuleCriteria</a></td>
+<td>.BudgetControlDimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontroldimensionattribute">BudgetControlDimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmembercriteria">BudgetGroupMemberCriteria</a></td>
+<td>.BudgetControlDimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a name="p-budgetcontrolrule"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.TemporaryBudgetControlRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrulecriteria">BudgetControlRuleCriteria</a></td>
+<td>.BudgetControlRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolruleusergroupoption">BudgetControlRuleUserGroupOption</a></td>
+<td>.BudgetControlRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingdetail">BudgetSourceTrackingDetail</a></td>
+<td>.BudgetControlRule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td><a name="p-budgetcycle"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycle">BudgetCycle</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolbudgetcycle">BudgetControlBudgetCycle</a></td>
+<td>.BudgetCycle</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>20</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycle">BudgetCycle</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.BudgetCycle</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>21</td><td><a name="p-budgetcycletimespan"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycletimespan">BudgetCycleTimeSpan</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolconfiguration">BudgetControlConfiguration</a></td>
+<td>.DefaultBudgetCycleTimeSpan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>22</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycletimespan">BudgetCycleTimeSpan</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolrule">BudgetControlRule</a></td>
+<td>.BudgetCycleTimeSpan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>23</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycletimespan">BudgetCycleTimeSpan</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycle">BudgetCycle</a></td>
+<td>.BudgetCycleTimeSpan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>24</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcycletimespan">BudgetCycleTimeSpan</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.BudgetCycleTimeSpan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>25</td><td><a name="p-budgetgroup"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.TemporaryBudgetGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>26</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupledgerdimension">BudgetGroupLedgerDimension</a></td>
+<td>.BudgetGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>27</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.BudgetGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>28</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroup">BudgetGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupusergroupoption">BudgetGroupUserGroupOption</a></td>
+<td>.BudgetGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>29</td><td><a name="p-budgetgroupmember"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcheckresulterrorwarningdetail">BudgetCheckResultErrorWarningDetail</a></td>
+<td>.BudgetGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>30</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.ParentBudgetGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>31</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.TemporaryBudgetGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>32</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmembercriteria">BudgetGroupMemberCriteria</a></td>
+<td>.BudgetGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>33</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupmember">BudgetGroupMember</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingdetail">BudgetSourceTrackingDetail</a></td>
+<td>.BudgetGroupMember</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>34</td><td><a name="p-budgetmodel"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetbudget">AssetBudget</a></td>
+<td>.Fky?, .BudgetModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>35</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId, .SubModelId, .Type, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolbudgetcycle">BudgetControlBudgetCycle</a></td>
+<td>.BudgetModelId, .BudgetModelSubModelId, .BudgetModelType, .BudgetModelDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>36</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.SubModelId, .ModelId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.SubModelId, .ModelId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>37</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.dataAreaId, .SubModelId, .ModelId, .Type</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetracking">BudgetSourceTracking</a></td>
+<td>.BudgetModelDataAreaId, .BudgetModelSubModelId, .BudgetModelId, .BudgetModelType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>38</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.dataAreaId, .Type, .SubModelId, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionheader">BudgetTransactionHeader</a></td>
+<td>.BudgetModelDataAreaId, .BudgetModelType, .BudgetSubModelId, .BudgetModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>39</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-11.htm#c-cosplanmodel">COSPlanModel</a></td>
+<td>.Fky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>40</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-11.htm#c-costmpcostbalances">COStmpCostBalances</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>41</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans_asset">LedgerJournalTrans_Asset</a></td>
+<td>.Fky?, .BudgetModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>42</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans_rasset">LedgerJournalTrans_RAsset</a></td>
+<td>.Fky?, .BudgetModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>43</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-ledgerrrgcelltable_ru">LedgerRRGCellTable_RU</a></td>
+<td>.ModelNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>44</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-ledgerrrgequeries_w">LedgerRRGEQueries_W</a></td>
+<td>.ModelNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>45</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-ledgerrrgoperationtable_ru">LedgerRRGOperationTable_RU</a></td>
+<td>.ModelNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>46</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-ledgerrrgreporttable_ru">LedgerRRGReportTable_RU</a></td>
+<td>.ModelNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>47</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetmodel">BudgetModel</a></td>
+<td>.Pky?, .ModelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-rassetbudgettrans">RAssetBudgetTrans</a></td>
+<td>.Fky?, .BudgetModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>48</td><td><a name="p-budgetoverrideusergroupoption"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetoverrideusergroupoption">BudgetOverrideUserGroupOption</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontrolruleusergroupoption">BudgetControlRuleUserGroupOption</a></td>
+<td>.BudgetOverrideUserGroupOption</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>49</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetoverrideusergroupoption">BudgetOverrideUserGroupOption</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetgroupusergroupoption">BudgetGroupUserGroupOption</a></td>
+<td>.BudgetOverrideUserGroupOption</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>50</td><td><a name="p-budgetplanattachmentdirectory"></a>BudgetPlanAttachmentDirectory</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.BudgetPlanAttachmentDirectory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>51</td><td><a name="p-budgetplanheader"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanattachment">BudgetPlanAttachment</a></td>
+<td>.BudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>52</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanchildtmp">BudgetPlanChildTmp</a></td>
+<td>.ChildBudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>53</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanchildtmp">BudgetPlanChildTmp</a></td>
+<td>.ParentBudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>54</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanestimatetmp">BudgetPlanEstimateTmp</a></td>
+<td>.BudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>55</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.DocumentNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanhcmreporttmp">BudgetPlanHCMReportTmp</a></td>
+<td>.MonetaryBudgetPlan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>56</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.DocumentNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanhcmreporttmp">BudgetPlanHCMReportTmp</a></td>
+<td>.QuantityBudgetPlan</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>57</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.ParentBudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>58</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanline">BudgetPlanLine</a></td>
+<td>.BudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>59</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinedatagenerationtmp">BudgetPlanLineDataGenerationTmp</a></td>
+<td>.BudgetPlanHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>60</td><td><a name="p-budgetplanline"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanline">BudgetPlanLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinebudgettransactionlinelink">BudgetPlanLineBudgetTransactionLineLink</a></td>
+<td>.BudgetPlanLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>61</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanline">BudgetPlanLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinesource">BudgetPlanLineSource</a></td>
+<td>.BudgetPlanLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>62</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanline">BudgetPlanLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinesource">BudgetPlanLineSource</a></td>
+<td>.SourceBudgetPlanLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>63</td><td><a name="p-budgetplanlinesource"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinesource">BudgetPlanLineSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinedatagenerationtmp">BudgetPlanLineDataGenerationTmp</a></td>
+<td>.BudgetPlanLineSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>64</td><td><a name="p-budgetplanningallocationschedule"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningallocationschedule">BudgetPlanningAllocationSchedule</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstageallocation">BudgetPlanningStageAllocation</a></td>
+<td>.BudgetPlanningAllocationSchedule</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>65</td><td><a name="p-budgetplanningprocess"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.BudgetPlanningProcess</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>66</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocessadministration">BudgetPlanningProcessAdministration</a></td>
+<td>.BudgetPlanningProcess</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>67</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocesstranslation">BudgetPlanningProcessTranslation</a></td>
+<td>.BudgetPlanningProcess</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>68</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstagerule">BudgetPlanningStageRule</a></td>
+<td>.BudgetPlanningProcess</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>69</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanpriorityconstraint">BudgetPlanPriorityConstraint</a></td>
+<td>.BudgetPlanningProcess</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>70</td><td><a name="p-budgetplanningstage"></a>BudgetPlanningStage</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanattachment">BudgetPlanAttachment</a></td>
+<td>.BudgetPlanningStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>71</td><td>BudgetPlanningStage</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.BudgetPlanningStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>72</td><td>BudgetPlanningStage</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstagetranslation">BudgetPlanningStageTranslation</a></td>
+<td>.BudgetPlanningStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>73</td><td>BudgetPlanningStage</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.BudgetPlanningStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>74</td><td><a name="p-budgetplanningworkflow"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflow">BudgetPlanningWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocessadministration">BudgetPlanningProcessAdministration</a></td>
+<td>.BudgetPlanningWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>75</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflow">BudgetPlanningWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.BudgetPlanningWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>76</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflow">BudgetPlanningWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowtranslation">BudgetPlanningWorkflowTranslation</a></td>
+<td>.BudgetPlanningWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>77</td><td><a name="p-budgetplanningworkflowstage"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstageallocation">BudgetPlanningStageAllocation</a></td>
+<td>.BudgetPlanningWorkflowStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>78</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstagerule">BudgetPlanningStageRule</a></td>
+<td>.BudgetPlanningWorkflowStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>79</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.PriorBudgetPlanningWorkflowStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>80</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningworkflowstage">BudgetPlanningWorkflowStage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenarioconstraint">BudgetPlanScenarioConstraint</a></td>
+<td>.BudgetPlanningWorkflowStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>81</td><td><a name="p-budgetplanpriority"></a>BudgetPlanPriority</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanheader">BudgetPlanHeader</a></td>
+<td>.BudgetPlanPriority</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>82</td><td>BudgetPlanPriority</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanpriorityconstraint">BudgetPlanPriorityConstraint</a></td>
+<td>.BudgetPlanPriority</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>83</td><td>BudgetPlanPriority</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanprioritytranslation">BudgetPlanPriorityTranslation</a></td>
+<td>.BudgetPlanPriority</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>84</td><td><a name="p-budgetplanproposedasset"></a>BudgetPlanProposedAsset</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinedatagenerationtmp">BudgetPlanLineDataGenerationTmp</a></td>
+<td>.BudgetPlanProposedAsset</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>85</td><td>BudgetPlanProposedAsset</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinesource">BudgetPlanLineSource</a></td>
+<td>.BudgetPlanProposedAsset</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>86</td><td><a name="p-budgetplanproposedproject"></a>BudgetPlanProposedProject</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinedatagenerationtmp">BudgetPlanLineDataGenerationTmp</a></td>
+<td>.BudgetPlanProposedProject</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>87</td><td>BudgetPlanProposedProject</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinesource">BudgetPlanLineSource</a></td>
+<td>.BudgetPlanProposedProject</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>88</td><td><a name="p-budgetplanscenario"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanline">BudgetPlanLine</a></td>
+<td>.BudgetPlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>89</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinedatagenerationtmp">BudgetPlanLineDataGenerationTmp</a></td>
+<td>.BudgetPlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>90</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningallocationschedule">BudgetPlanningAllocationSchedule</a></td>
+<td>.DestinationPlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>91</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningallocationschedule">BudgetPlanningAllocationSchedule</a></td>
+<td>.SourcePlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>92</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenarioconstraint">BudgetPlanScenarioConstraint</a></td>
+<td>.BudgetPlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>93</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenario">BudgetPlanScenario</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanscenariotranslation">BudgetPlanScenarioTranslation</a></td>
+<td>.BudgetPlanScenario</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>94</td><td><a name="p-budgetplantemplate"></a>BudgetPlanTemplate</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningprocess">BudgetPlanningProcess</a></td>
+<td>.BudgetPlanJustificationTemplate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>95</td><td>BudgetPlanTemplate</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanningstagerule">BudgetPlanningStageRule</a></td>
+<td>.BudgetPlanWorksheetTemplate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>96</td><td><a name="p-budgetprimaryledgerdimensionattribute"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetprimaryledgerdimensionattribute">BudgetPrimaryLedgerDimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetallowtransferrulemembercriteria">BudgetAllowTransferRuleMemberCriteria</a></td>
+<td>.BudgetPrimaryLedgerDimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>97</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetprimaryledgerdimensionattribute">BudgetPrimaryLedgerDimensionAttribute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcontroldimensionattribute">BudgetControlDimensionAttribute</a></td>
+<td>.BudgetPrimaryLedgerDimensionAttribute</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>98</td><td><a name="p-budgetsource"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsource">BudgetSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetcheckresulterrorwarningdetail">BudgetCheckResultErrorWarningDetail</a></td>
+<td>.BudgetSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>99</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsource">BudgetSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetracking">BudgetSourceTracking</a></td>
+<td>.BudgetSource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>100</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsource">BudgetSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-generaljournalentry">GeneralJournalEntry</a></td>
+<td>.BudgetSourceLedgerEntryPosted</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>101</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsource">BudgetSource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.BudgetSourceLedgerEntryUnposted</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>102</td><td><a name="p-budgetsourcetracking"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetracking">BudgetSourceTracking</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingdetail">BudgetSourceTrackingDetail</a></td>
+<td>.BudgetSourceTracking</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>103</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetracking">BudgetSourceTracking</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingrelievingdetail">BudgetSourceTrackingRelievingDetail</a></td>
+<td>.RelievingBudgetSourceTracking</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>104</td><td><a name="p-budgetsourcetrackingdetail"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingdetail">BudgetSourceTrackingDetail</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsourcetrackingrelievingdetail">BudgetSourceTrackingRelievingDetail</a></td>
+<td>.RelievedBudgetSourceTrackingDetail</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>105</td><td><a name="p-budgettransactioncode"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactioncode">BudgetTransactionCode</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettmpdetails">BudgetTmpDetails</a></td>
+<td>.BudgetTransactionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>106</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactioncode">BudgetTransactionCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionheader">BudgetTransactionHeader</a></td>
+<td>.BudgetTransactionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>107</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactioncode">BudgetTransactionCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-journalizingdefinitionbudgettrans">JournalizingDefinitionBudgetTrans</a></td>
+<td>.BudgetTransactionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>108</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactioncode">BudgetTransactionCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtmpperiodclose">PurchParmTmpPeriodClose</a></td>
+<td>.CarryForwardBudgetTransactionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>109</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactioncode">BudgetTransactionCode</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtmpperiodclose">PurchParmTmpPeriodClose</a></td>
+<td>.OriginalBudgetTransactionCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>110</td><td><a name="p-budgettransactionheader"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionheader">BudgetTransactionHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.BudgetTransactionHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>111</td><td><a name="p-budgettransactionline"></a><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetplanlinebudgettransactionlinelink">BudgetPlanLineBudgetTransactionLineLink</a></td>
+<td>.BudgetTransactionLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>112</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgetsource">BudgetSource</a></td>
+<td>.BudgetTransactionLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>113</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionlinereverse">BudgetTransactionLineReverse</a></td>
+<td>.ReversedBudgetTransactionLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>114</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionlinereverse">BudgetTransactionLineReverse</a></td>
+<td>.ReversingBudgetTransactionLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td></tr>
+
+
+
+<tr><td>115</td><td><a class="cssAHref2" href="Fky-Budget-ChildParents-11.htm#c-budgettransactionline">BudgetTransactionLine</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Budget-11.htm">(Budgeting)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-ledgerconsolidatehistref">LedgerConsolidateHistRef</a></td>
+<td>.TransTableId, .TransRecid</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: Manuf</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Manufacturing</h2>
+
+
+<a class="cssAHref2" href="Module-Manufacturing-11.htm#m-manufacturing">Module: Manufacturing</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-15.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-17.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1053</td><td><a name="p-prodtablejour"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.TransDate, .Voucher, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-15.htm#c-inventtrans">InventTrans</a></td>
+<td>.DateFinancial, .Voucher, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1054</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Voucher, .TransDate, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-15.htm#c-inventtrans">InventTrans</a></td>
+<td>.VoucherPhysical, .DatePhysical, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1055</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Pky?, .Pky?, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-13.htm#c-prodindirecttrans">ProdIndirectTrans</a></td>
+<td>.Fky?, .Fky?, .DateCalc, .VoucherCalc</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>1056</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Pky?, .Pky?, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-13.htm#c-prodindirecttrans">ProdIndirectTrans</a></td>
+<td>.Fky?, .Fky?, .DateEstimation, .VoucherEstimation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>1057</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.TransDate, .Voucher, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-prodreleasetrans_ru">ProdReleaseTrans_RU</a></td>
+<td>.DateCalc, .VoucherCalc, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>1058</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Pky?, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-prodreleasetrans_ru">ProdReleaseTrans_RU</a></td>
+<td>.Fky?, .DateWIP, .VoucherWIP</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>1059</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Pky?, .Pky?, .Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodroutetrans">ProdRouteTrans</a></td>
+<td>.Fky?, .Fky?, .VoucherCalc, .DateCalc</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1060</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtablejour">ProdTableJour</a></td>
+<td>.Pky?, .Pky?, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodroutetrans">ProdRouteTrans</a></td>
+<td>.Fky?, .Fky?, .DateWIP, .VoucherWIP</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1061</td><td><a name="p-prodtableproj"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtableproj">ProdTableProj</a></td>
+<td>.ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtable">ProdTable</a></td>
+<td>.ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1062</td><td><a name="p-produnittable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpwrkctrjob">GanttTmpWrkCtrJob</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1063</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-12.htm#c-jmgbundleslize">JmgBundleSlize</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1064</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-12.htm#c-jmgemployee">JmgEmployee</a></td>
+<td>.FilterProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1065</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-14.htm#c-proddailymonthlybasetmp_cn">ProdDailyMonthlyBaseTmp_CN</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>1066</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-14.htm#c-proddailymonthlytmp_cn">ProdDailyMonthlyTmp_CN</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>1067</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodroutetrans">ProdRouteTrans</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1068</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmpprodbalance">TmpProdBalance</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1069</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmpprodefficiency">TmpProdEfficiency</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1070</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-produnittable">ProdUnitTable</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-wrkctrresourcegroup">WrkCtrResourceGroup</a></td>
+<td>.ProdUnitId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1071</td><td><a name="p-reqcalctasksbundle"></a>ReqCalcTasksBundle</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqcalctask">ReqCalcTask</a></td>
+<td>.Bundle</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1072</td><td><a name="p-reqgroup"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtable">InventTable</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1073</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemtable">ReqItemTable</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1074</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqparameters">ReqParameters</a></td>
+<td>.StandardReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1075</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.dataAreaId, .ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-retailattributeslegalentitylookup">RetailAttributesLegalEntityLookup</a></td>
+<td>.ItemDataAreaId, .GroupCoverage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1076</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmassupdateworksheetline">RetailMassUpdateWorksheetLine</a></td>
+<td>.InventTable_ReqGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1077</td><td><a name="p-reqintercompanyplanninggroup"></a>ReqIntercompanyPlanningGroup</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqintercompanyplanninggroupmember">ReqIntercompanyPlanningGroupMember</a></td>
+<td>.PlanningGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1078</td><td><a name="p-reqitemjournalname"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournalname">ReqItemJournalName</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.JournalNameId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1079</td><td><a name="p-reqitemjournaltable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournalsafetystocktmp">ReqItemJournalSafetyStockTmp</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1080</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.JournalIdOriginal</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1081</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltable">ReqItemJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemjournaltrans">ReqItemJournalTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1082</td><td><a name="p-reqitemtable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemtable">ReqItemTable</a></td>
+<td>.ItemId, .CovInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemtable">ReqItemTable</a></td>
+<td>.ItemId, .CovInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1083</td><td><a name="p-reqlog"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqlog">ReqLog</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanforecast">ReqPlanForecast</a></td>
+<td>.ReqPlanIdForecast</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1084</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqlog">ReqLog</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1085</td><td><a name="p-reqpeggingassignment"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpeggingassignment">ReqPeggingAssignment</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpegging">ReqPegging</a></td>
+<td>.PeggingAssignedRequirement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1086</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpeggingassignment">ReqPeggingAssignment</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpegging">ReqPegging</a></td>
+<td>.PeggingAssignedSupply</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1087</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpeggingassignment">ReqPeggingAssignment</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpeggingevent">ReqPeggingEvent</a></td>
+<td>.PeggingRequirement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1088</td><td><a name="p-reqplan"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpwrkctrjob">GanttTmpWrkCtrJob</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1089</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanquantitypolicy">KanbanQuantityPolicy</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1090</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqcalctasktrace">ReqCalcTaskTrace</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1091</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqlog">ReqLog</a></td>
+<td>.CopyReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1092</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqlog">ReqLog</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1093</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanforecast">ReqPlanForecast</a></td>
+<td>.ReqPlanIdForecast</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1094</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1095</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.ReqPlanId, .ReqPlanDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1096</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqprocesslist">ReqProcessList</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1097</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqprocesstmplist">ReqProcessTmpList</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1098</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtransfirmlog">ReqTransFirmLog</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1099</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplan">ReqPlan</a></td>
+<td>.ReqPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsspaceutilizationrun">WMSSpaceUtilizationRun</a></td>
+<td>.PlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1100</td><td><a name="p-reqplanforecast"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanforecast">ReqPlanForecast</a></td>
+<td>.ReqPlanIdForecast</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqparameters">ReqParameters</a></td>
+<td>.CurrentReqPlanIdForecast</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1101</td><td><a name="p-reqplansched"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfprodcoby">PmfProdCoBy</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1102</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-prodbom">ProdBOM</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1103</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtable">ProdTable</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1104</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchline">PurchLine</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1105</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchlinehistory">PurchLineHistory</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1106</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-17.htm#c-purchrfqcaseline">PurchRFQCaseLine</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1107</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-17.htm#c-purchrfqline">PurchRFQLine</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1108</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqintercompanymasterplanmapping">ReqIntercompanyMasterPlanMapping</a></td>
+<td>.CustomerPlanId, .CustomerDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1109</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqintercompanymasterplanmapping">ReqIntercompanyMasterPlanMapping</a></td>
+<td>.VendorPlanId, .VendorDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1110</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.dataAreaId, .ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqintercompanyplanninggroupmember">ReqIntercompanyPlanningGroupMember</a></td>
+<td>.IntercompanyPlanDataAreaId, .IntercompanyPlanId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1111</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqparameters">ReqParameters</a></td>
+<td>.CurrentReqPlanIdSchedDynamic</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1112</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqparameters">ReqParameters</a></td>
+<td>.CurrentReqPlanIdSchedStatic</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1113</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.dataAreaId, .ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-16.htm#c-retailstoretable">RetailStoreTable</a></td>
+<td>.TaxGroupDataAreaId, .RetailReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1114</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplansched">ReqPlanSched</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendrfqtrans">VendRFQTrans</a></td>
+<td>.ReqPlanIdSched</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1115</td><td><a name="p-reqplanversion"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfcotmpreqtrans">PmfCoTmpReqTrans</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1116</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqwrkctrcapres">PMFSeqWrkCtrCapRes</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1117</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1118</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1119</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroutejob">ReqRouteJob</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1120</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtracelog">ReqTraceLog</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1121</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1122</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.LastPlanRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1123</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtranscov">ReqTransCov</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1124</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-18.htm#c-wmsstorageloadunitreqtrans">WMSStorageLoadUnitReqTrans</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1125</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqplanversion">ReqPlanVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-wrkctrcapres">WrkCtrCapRes</a></td>
+<td>.PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1126</td><td><a name="p-reqpo"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.Pky?, .Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfcotmpreqtrans">PmfCoTmpReqTrans</a></td>
+<td>.Fky?, .Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1127</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.RefType, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfcotmpreqtrans">PmfCoTmpReqTrans</a></td>
+<td>.RefType, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1128</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqreqroutechanges">PMFSeqReqRouteChanges</a></td>
+<td>.RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1129</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtable">ProdTable</a></td>
+<td>.ReqPOId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1130</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.Pky?, .Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Fky?, .Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1131</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.Pky?, .Pky?, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Fky?, .Fky?, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1132</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.RefType, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RefType, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1133</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Fky?, .IntercompanyPlannedOrder</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1134</td><td><a name="p-reqprocesslist"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqprocesslist">ReqProcessList</a></td>
+<td>.ProcessId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqlog">ReqLog</a></td>
+<td>.ProcessId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1135</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqprocesslist">ReqProcessList</a></td>
+<td>.ProcessId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-requnscheduledorders">ReqUnscheduledOrders</a></td>
+<td>.ProcessId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1136</td><td><a name="p-reqreducekey"></a>ReqReduceKey</td>
+<td>.ReduceKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqgroup">ReqGroup</a></td>
+<td>.ReqReduceKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1137</td><td>ReqReduceKey</td>
+<td>.ReduceKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqreduceline">ReqReduceLine</a></td>
+<td>.ReduceKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1138</td><td><a name="p-reqroute"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqreqroutechanges">PMFSeqReqRouteChanges</a></td>
+<td>.ReqRouteRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1139</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqtmpbuffer">PMFSeqTmpBuffer</a></td>
+<td>.RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1140</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.PlanVersion, .Pky?, .OprPriority, .OprNum, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqwrkctrcapres">PMFSeqWrkCtrCapRes</a></td>
+<td>.PlanVersion, .Fky?, .OprPriority, .OprNum, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1141</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.PlanVersion, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.PlanVersion, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1142</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.OprPriority, .OprNum, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroutejob">ReqRouteJob</a></td>
+<td>.OprPriority, .OprNum, .ReqPOId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1143</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.Pky?, .OprPriority, .OprNum, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-wrkctrcapres">WrkCtrCapRes</a></td>
+<td>.Fky?, .OprPriority, .OprNum, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1144</td><td><a name="p-reqroutejob"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroutejob">ReqRouteJob</a></td>
+<td>.PlanVersion, .Pky?, .OprPriority, .OprNum, .ReqPOId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqwrkctrcapres">PMFSeqWrkCtrCapRes</a></td>
+<td>.PlanVersion, .Fky?, .OprPriority, .OprNum, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1145</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroutejob">ReqRouteJob</a></td>
+<td>.Pky?, .PlanVersion, .OprPriority, .OprNum, .ReqPOId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-wrkctrcapres">WrkCtrCapRes</a></td>
+<td>.Fky?, .PlanVersion, .OprPriority, .OprNum, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1146</td><td><a name="p-reqsafetykey"></a>ReqSafetyKey</td>
+<td>.SafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemtable">ReqItemTable</a></td>
+<td>.MaxSafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1147</td><td>ReqSafetyKey</td>
+<td>.SafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqitemtable">ReqItemTable</a></td>
+<td>.MinSafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1148</td><td>ReqSafetyKey</td>
+<td>.SafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqsafetyline">ReqSafetyLine</a></td>
+<td>.SafetyKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1149</td><td><a name="p-reqtracelog"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtracelog">ReqTraceLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtracelogdetail">ReqTraceLogDetail</a></td>
+<td>.ReqTraceLog</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1150</td><td><a name="p-reqtrans"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-intercompanyinventsum">InterCompanyInventSum</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1151</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsum">InventSum</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1152</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfcotmpreqtrans">PmfCoTmpReqTrans</a></td>
+<td>.Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1153</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfcotmpreqtrans">PmfCoTmpReqTrans</a></td>
+<td>.ReqTransRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1154</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-pmfseqreqroutechanges">PMFSeqReqRouteChanges</a></td>
+<td>.RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1155</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-17.htm#c-prodbom">ProdBOM</a></td>
+<td>.Fky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1156</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.Fky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1157</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodroutejob">ProdRouteJob</a></td>
+<td>.Fky?, .ProdId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1158</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RefId, .RefType, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqpo">ReqPO</a></td>
+<td>.RefId, .RefType, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1159</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqprocesstransfilter">ReqProcessTransFilter</a></td>
+<td>.ReqTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1160</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1161</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1162</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.PlanVersion, .RefId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroutejob">ReqRouteJob</a></td>
+<td>.PlanVersion, .ReqPOId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1163</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtracelog">ReqTraceLog</a></td>
+<td>.ReqTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1164</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Pky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.Fky?, .RefId, .PlanVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1165</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtranscov">ReqTransCov</a></td>
+<td>.IssueRecId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1166</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtranscov">ReqTransCov</a></td>
+<td>.ReceiptRecId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1167</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmppmfconsolidatedbulk">TmpPmfConsolidatedBulk</a></td>
+<td>.ReqTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1168</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmppmfconsolidatedpack">TmpPmfConsolidatedPack</a></td>
+<td>.ReqTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1169</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmppmfpackitems">TmpPmfPackItems</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1170</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-reqtrans">ReqTrans</a></td>
+<td>.CovInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmpreqinventdim">TmpReqInventDim</a></td>
+<td>.CovInventDimId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1171</td><td><a name="p-route"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-route">Route</a></td>
+<td>.OprId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-12.htm#c-jmgjobtable">JmgJobTable</a></td>
+<td>.OprActId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1172</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-route">Route</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.RouteRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1173</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-route">Route</a></td>
+<td>.OprId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.OprId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1174</td><td><a name="p-routecostcategory"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-11.htm#c-cosledgertable">COSLedgerTable</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>1175</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.QtyCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1176</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.ProcessCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1177</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.SetUpCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1178</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodjournalroute">ProdJournalRoute</a></td>
+<td>.CategoryQtyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1179</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodjournalroute">ProdJournalRoute</a></td>
+<td>.CategoryHoursId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1180</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodparameters">ProdParameters</a></td>
+<td>.PmfBurdenCostCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1181</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.QtyCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1182</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.ProcessCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1183</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.SetUpCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1184</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodroutetrans">ProdRouteTrans</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1185</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategoryprice">RouteCostCategoryPrice</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1186</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.QtyCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1187</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.ProcessCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1188</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.SetUpCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1189</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-21.htm#c-wrkctrtable">WrkCtrTable</a></td>
+<td>.QtyCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1190</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-21.htm#c-wrkctrtable">WrkCtrTable</a></td>
+<td>.ProcessCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1191</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routecostcategory">RouteCostCategory</a></td>
+<td>.CostCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-21.htm#c-wrkctrtable">WrkCtrTable</a></td>
+<td>.SetUpCategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1192</td><td><a name="p-routegroup"></a>RouteGroup</td>
+<td>.Pky?, .Pky?, .RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtestassociationtable">InventTestAssociationTable</a></td>
+<td>.Fky?, .Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1193</td><td>RouteGroup</td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1194</td><td>RouteGroup</td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1195</td><td>RouteGroup</td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routejobsetup">RouteJobSetup</a></td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1196</td><td>RouteGroup</td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1197</td><td>RouteGroup</td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-21.htm#c-wrkctrtable">WrkCtrTable</a></td>
+<td>.RouteGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1198</td><td><a name="p-routeopr"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.dataAreaId, .RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-docuref">DocuRef</a></td>
+<td>.RefCompanyId, .RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>1199</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-18.htm#c-prodroute">ProdRoute</a></td>
+<td>.RouteOprRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1200</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-reqroute">ReqRoute</a></td>
+<td>.RouteOprRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>1201</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-routeopr">RouteOpr</a></td>
+<td>.RecId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-21.htm#c-wrkctrrouteopractivity">WrkCtrRouteOprActivity</a></td>
+<td>.RouteOpr, .RouteOprDataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-17.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

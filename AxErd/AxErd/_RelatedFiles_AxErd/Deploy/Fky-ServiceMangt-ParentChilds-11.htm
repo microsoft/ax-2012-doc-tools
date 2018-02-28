@@ -1,0 +1,1214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: SvcM</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Service management</h2>
+
+
+<a class="cssAHref2" href="Module-ServiceMangt-11.htm#m-servicemanagement">Module: Service management</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="p-smaagreementgroup"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementgroup">SMAAgreementGroup</a></td>
+<td>.AgreementGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementgroup">SMAAgreementGroup</a></td>
+<td>.AgreementGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaparameters">SMAParameters</a></td>
+<td>.AgreementGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a name="p-smaagreementinterval"></a>SMAAgreementInterval</td>
+<td>.IntervalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMAALIntervalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td>SMAAgreementInterval</td>
+<td>.IntervalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.IntervalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a name="p-smaagreementline"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.TableId, .AgreementId, .ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelTableId, .RelKeyId, .ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.TableId, .AgreementId, .ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelTableId, .RelKeyId, .ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a name="p-smaagreementtable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpsma">GanttTmpSMA</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMAALAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salesquotationtable">SalesQuotationTable</a></td>
+<td>.ServiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.TableId, .AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelTableId, .RelKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.OTAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a name="p-smaconditiontable"></a>SMAConditionTable</td>
+<td>.ConditionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ConditionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a name="p-smadiagnosisarea"></a>SMADiagnosisArea</td>
+<td>.DiagnosisAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smadiagnosiscode">SMADiagnosisCode</a></td>
+<td>.DiagnosisAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td>SMADiagnosisArea</td>
+<td>.DiagnosisAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.DiagnosisAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>20</td><td><a name="p-smadiagnosiscode"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smadiagnosiscode">SMADiagnosisCode</a></td>
+<td>.DiagnosisAreaId, .DiagnosisCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.DiagnosisAreaId, .DiagnosisCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>21</td><td><a name="p-smadispatchteamtable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smadispatchteamtable">SMADispatchTeamTable</a></td>
+<td>.DispatchTeamId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpsma">GanttTmpSMA</a></td>
+<td>.DispatchTeamId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>22</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smadispatchteamtable">SMADispatchTeamTable</a></td>
+<td>.dataAreaId, .DispatchTeamId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smadispatchworkersetup">SMADispatchWorkerSetup</a></td>
+<td>.DispatchTeamDataAreaId, .DispatchTeamId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>23</td><td><a name="p-smareasontable"></a>SMAReasonTable</td>
+<td>.ReasonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementreason">SMAServiceLevelAgreementReason</a></td>
+<td>.ReasonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>24</td><td>SMAReasonTable</td>
+<td>.ReasonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderreason">SMAServiceOrderReason</a></td>
+<td>.ReasonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>25</td><td><a name="p-smarepairstage"></a>SMARepairStage</td>
+<td>.RepairStageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.RepairStageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>26</td><td><a name="p-smaresolutiontable"></a>SMAResolutionTable</td>
+<td>.ResolutionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ResolutionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>27</td><td><a name="p-smaservicebomtable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomtable">SMAServiceBOMTable</a></td>
+<td>.Pky?, .ServiceBOMLineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomchange">SMAServiceBOMChange</a></td>
+<td>.Fky?, .ActiveServiceBOMLineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>28</td><td><a name="p-smaservicelevelagreementtable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-casecategoryhierarchydetail">CaseCategoryHierarchyDetail</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>29</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-casedetail">CaseDetail</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>30</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpsma">GanttTmpSMA</a></td>
+<td>.ServiceLevelAgreement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>31</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementgroup">SMAAgreementGroup</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>32</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>33</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceLevelAgreement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>34</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementtable">SMAServiceLevelAgreementTable</a></td>
+<td>.ServiceLevelAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.OTServiceLevelAgreement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>35</td><td><a name="p-smaserviceobjectgroup"></a>SMAServiceObjectGroup</td>
+<td>.ServiceObjectGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>36</td><td><a name="p-smaserviceobjectrelation"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>37</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>38</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>39</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>40</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>41</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomchange">SMAServiceBOMChange</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>42</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomtable">SMAServiceBOMTable</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>43</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>44</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>45</td><td><a name="p-smaserviceobjecttable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMAALServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>46</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>47</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>48</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>49</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomchange">SMAServiceBOMChange</a></td>
+<td>.ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>50</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomtable">SMAServiceBOMTable</a></td>
+<td>.ObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>51</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>52</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>53</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.OLServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>54</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-tmpsmaagreementobjects">tmpSMAAgreementObjects</a></td>
+<td>.ServiceObjectId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>55</td><td><a name="p-smaserviceorderline"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-bomcalctable">BOMCalcTable</a></td>
+<td>.ItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>56</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.AgreementId, .AgreementLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.AgreementId, .AgreementLineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>57</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.DateCalculated, .AgreementLineNum, .AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.DateCalculated, .AgreementLineNum, .AgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>58</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.TableId, .ServiceOrderId, .ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelTableId, .RelKeyId, .ServiceObjectRelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>59</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-14.htm#c-smaserviceorderlinetaxextension_in">SMAServiceOrderLineTaxExtension_IN</a></td>
+<td>.ServiceOrder</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>60</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.TableId, .ServiceOrderId, .ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelTableId, .RelKeyId, .ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>61</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-12.htm#c-smmactivityparentlinktable">smmActivityParentLinkTable</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>62</td><td><a name="p-smaserviceordertable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.RecId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-caseassociation">CaseAssociation</a></td>
+<td>.RefRecId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>63</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-gantttmpsma">GanttTmpSMA</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>64</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMASOLServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>65</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-19.htm#c-salesline">SalesLine</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>66</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>67</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>68</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomchange">SMAServiceBOMChange</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>69</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementlog">SMAServiceLevelAgreementLog</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>70</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>71</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>72</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderreason">SMAServiceOrderReason</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>73</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.TableId, .ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelTableId, .RelKeyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>74</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>75</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.SEFTVisibility</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>76</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.SOlVisibility</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>77</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.SITVisibility</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>78</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.SLServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>79</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.OTServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>80</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.STAServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>81</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.STServiceOrderId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>82</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-12.htm#c-smmactivityparentlinktable">smmActivityParentLinkTable</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>83</td><td><a name="p-smaservicetask"></a>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMAALServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>84</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>85</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>86</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderline">SMAServiceOrderLine</a></td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>87</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>88</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.OLServiceLineTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>89</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.TRServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>90</td><td>SMAServiceTask</td>
+<td>.ServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaworknotetmp">SMAWorkNoteTmp</a></td>
+<td>.TRSTAServiceTaskId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>91</td><td><a name="p-smaservicetaskrelation"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.AgreementId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>92</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicetaskrelation">SMAServiceTaskRelation</a></td>
+<td>.RelKeyId, .RelTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.ServiceOrderId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>93</td><td><a name="p-smastagetable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-casedetail">CaseDetail</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>94</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaparameters">SMAParameters</a></td>
+<td>.ServiceLineActivityStage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>95</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicelevelagreementreason">SMAServiceLevelAgreementReason</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>96</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceorderreason">SMAServiceOrderReason</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>97</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceordertable">SMAServiceOrderTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>98</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.StageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smastagetable">SMAStageTable</a></td>
+<td>.ParentStageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>99</td><td><a name="p-smasubscriptiongroup"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiongroup">SMASubscriptionGroup</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>100</td><td><a name="p-smasubscriptiontable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projinvoicelocalizationtmp">ProjInvoiceLocalizationTmp</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>101</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projinvoicerevenue">ProjInvoiceRevenue</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>102</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projinvoicetmp">ProjInvoiceTmp</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>103</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-14.htm#c-projrevenuetrans">ProjRevenueTrans</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>104</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-15.htm#c-projtransbudget">ProjTransBudget</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>105</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-15.htm#c-projtransposting">ProjTransPosting</a></td>
+<td>.SubscriptionId, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>106</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasalespricesubscription">SMASalesPriceSubscription</a></td>
+<td>.SMASubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>107</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-17.htm#c-tmpprojcashflowexcelpivot">TmpProjCashFlowExcelPivot</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>108</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-17.htm#c-tmpprojcostcontrolexcelpivot">TmpProjCostControlExcelPivot</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>109</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-18.htm#c-tmpprojhourutilexcelpivot">TmpProjHourUtilExcelPivot</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>110</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-18.htm#c-tmpprojinvoicecontrolexcelpivot">TmpProjInvoiceControlExcelPivot</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>111</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasubscriptiontable">SMASubscriptionTable</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-18.htm#c-tmpprojstatisticexcelpivot">TmpProjStatisticExcelPivot</a></td>
+<td>.SubscriptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>112</td><td><a name="p-smasymptomarea"></a>SMASymptomArea</td>
+<td>.SymptomAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.SymptomAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>113</td><td>SMASymptomArea</td>
+<td>.SymptomAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasymptomcode">SMASymptomCode</a></td>
+<td>.SMASymptomAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>114</td><td><a name="p-smasymptomcode"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasymptomcode">SMASymptomCode</a></td>
+<td>.SMASymptomAreaId, .SMASymptomCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smarepairline">SMARepairLine</a></td>
+<td>.SymptomAreaId, .SymptomCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>115</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasymptomcode">SMASymptomCode</a></td>
+<td>.SMASymptomCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smasymptomcode">SMASymptomCode</a></td>
+<td>.SMASymptomCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>116</td><td><a name="p-smatemplatebomtable"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomchange">SMAServiceBOMChange</a></td>
+<td>.ServiceBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>117</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaservicebomtable">SMAServiceBOMTable</a></td>
+<td>.ServiceBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>118</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjectrelation">SMAServiceObjectRelation</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>119</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaserviceobjecttable">SMAServiceObjectTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>120</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.Pky?, .TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.Fky?, .BOMCopyRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>121</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplatebomtable">SMATemplateBOMTable</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-tmpsmaagreementobjects">tmpSMAAgreementObjects</a></td>
+<td>.TemplateBOMId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>122</td><td><a name="p-smatemplategroup"></a><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplategroup">SMATemplateGroup</a></td>
+<td>.TemplateGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementtable">SMAAgreementTable</a></td>
+<td>.TemplateGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>123</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplategroup">SMATemplateGroup</a></td>
+<td>.TemplateGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smatemplategroup">SMATemplateGroup</a></td>
+<td>.ParentTemplateGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>124</td><td><a name="p-smatimeagreement"></a>SMATimeAgreement</td>
+<td>.TimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.SMAALTimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>125</td><td>SMATimeAgreement</td>
+<td>.TimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smaagreementline">SMAAgreementLine</a></td>
+<td>.TimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+<tr><td>126</td><td>SMATimeAgreement</td>
+<td>.TimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServiceMangt-ChildParents-11.htm#c-smapreserviceorderline">SMAPreServiceOrderLine</a></td>
+<td>.TimeAgreementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServiceMangt-11.htm">(Service management)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,2195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: Manuf</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Manufacturing</h2>
+
+
+<a class="cssAHref2" href="Module-Manufacturing-11.htm#m-manufacturing">Module: Manufacturing</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-12.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-14.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>403</td><td><a name="p-kanbanrulefixed"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanquantitycalculationproposal">KanbanQuantityCalculationProposal</a></td>
+<td>.KanbanRuleFixed</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>404</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanrulefixed">KanbanRuleFixed</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanquantitypolicykanbanrulefixed">KanbanQuantityPolicyKanbanRuleFixed</a></td>
+<td>.KanbanRuleFixed</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>405</td><td><a name="p-kanbanrulevariable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanrulevariable">KanbanRuleVariable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanruleevent">KanbanRuleEvent</a></td>
+<td>.ParentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>406</td><td><a name="p-leancosting"></a>LeanCosting</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-13.htm#c-leanproductionflowcosting">LeanProductionFlowCosting</a></td>
+<td>.LeanCosting</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>407</td><td><a name="p-leancoverage"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leancoverage">LeanCoverage</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leancoveragekanbanrule">LeanCoverageKanbanRule</a></td>
+<td>.Coverage</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>408</td><td><a name="p-leanprodflowplanactivityrelation"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leanprodflowplanactivityrelation">LeanProdFlowPlanActivityRelation</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanflowactivityrelationship">KanbanFlowActivityRelationship</a></td>
+<td>.LeanProdFlowActivityRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>409</td><td><a name="p-leanproductionflow"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leanproductionflow">LeanProductionFlow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leanprodflowplanactivityrelation">LeanProdFlowPlanActivityRelation</a></td>
+<td>.ProductionFlow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>410</td><td><a name="p-leanproductionflowactivity"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanjob">KanbanJob</a></td>
+<td>.LeanProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>411</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-kanbanjobpickinglist">KanbanJobPickingList</a></td>
+<td>.PickingProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>412</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowactivity">LeanProductionFlowActivity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leanprodflowactivitypickinglocation">LeanProdFlowActivityPickingLocation</a></td>
+<td>.ProductionFlowActivity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>413</td><td><a name="p-leanproductionflowmodel"></a>LeanProductionFlowModel</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanworkcellcapacity">LeanWorkCellCapacity</a></td>
+<td>.ProductionFlowModel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>414</td><td><a name="p-leanproductionflowreference"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowreference">LeanProductionFlowReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-bomcalctable">BOMCalcTable</a></td>
+<td>.LeanProductionFlowReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>415</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowreference">LeanProductionFlowReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-bomdefaultproductionflow">BOMDefaultProductionFlow</a></td>
+<td>.LeanProductionFlowReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>416</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowreference">LeanProductionFlowReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-14.htm#c-leanproductionflow">LeanProductionFlow</a></td>
+<td>.ProductionFlowReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>417</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanproductionflowreference">LeanProductionFlowReference</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProductionCtrl-ChildParents-13.htm#c-leanproductionflowcosting">LeanProductionFlowCosting</a></td>
+<td>.LeanProductionFlowReference</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProductionCtrl-11.htm">(Production control)</a></span></td></tr>
+
+
+
+<tr><td>418</td><td><a name="p-leanschedulegroup"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroup">LeanScheduleGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroupitem">LeanScheduleGroupItem</a></td>
+<td>.ScheduleGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>419</td><td><a name="p-leanschedulegroupitem"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroupitem">LeanScheduleGroupItem</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroupentrygroup">LeanScheduleGroupEntryGroup</a></td>
+<td>.LeanScheduleGroupItem</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>420</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroupitem">LeanScheduleGroupItem</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-leanschedulegroupentrysingle">LeanScheduleGroupEntrySingle</a></td>
+<td>.LeanScheduleGroupItem</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>421</td><td><a name="p-pbacustgroup"></a>PBACustGroup</td>
+<td>.PBACustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.PBACustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>422</td><td>PBACustGroup</td>
+<td>.Pky?, .PBACustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefault">PBADefault</a></td>
+<td>.Fky?, .CustRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>423</td><td><a name="p-pbadefault"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefault">PBADefault</a></td>
+<td>.PBADefaultId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefaultvar">PBADefaultVar</a></td>
+<td>.PBADefaultId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>424</td><td><a name="p-pbadefaultroutetable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefaultroutetable">PBADefaultRouteTable</a></td>
+<td>.DefaultRouteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefaultroute">PBADefaultRoute</a></td>
+<td>.DefaultRouteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>425</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefaultroutetable">PBADefaultRouteTable</a></td>
+<td>.Pky?, .Pky?, .DefaultRouteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedefault">PBATreeDefault</a></td>
+<td>.Fky?, .Fky?, .DefaultRouteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>426</td><td><a name="p-pbagraphicparameters"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparameters">PBAGraphicParameters</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparametersvariable">PBAGraphicParametersVariable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>427</td><td><a name="p-pbagraphicparametersvariable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparametersvariable">PBAGraphicParametersVariable</a></td>
+<td>.ExtVar, .LineNum, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparametersinterval">PBAGraphicParametersInterval</a></td>
+<td>.PBAVar, .LineNum, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>428</td><td><a name="p-pbagroup"></a>PBAGroup</td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbalanguagetxt">PBALanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>429</td><td>PBAGroup</td>
+<td>.PBAGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegroup">PBATableGroup</a></td>
+<td>.ParentGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>430</td><td>PBAGroup</td>
+<td>.PBAGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegroup">PBATableGroup</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>431</td><td>PBAGroup</td>
+<td>.PBAGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.ParentGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>432</td><td><a name="p-pbainventitemgroup"></a>PBAInventItemGroup</td>
+<td>.PBAInventItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtable">InventTable</a></td>
+<td>.PBAInventItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>433</td><td>PBAInventItemGroup</td>
+<td>.Pky?, .PBAInventItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbadefault">PBADefault</a></td>
+<td>.Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>434</td><td><a name="p-pbarule"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>435</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>436</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecode">PBARuleActionValueCode</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>437</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>438</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulecodecompiled">PBARuleCodeCompiled</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>439</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleline">PBARuleLine</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>440</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleClauseId, .PBAId, .RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecode">PBARuleLineCode</a></td>
+<td>.RuleClauseId, .PBAId, .RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>441</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecodeparm">PBARuleLineCodeParm</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>442</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.RuleClauseId, .RuleId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>443</td><td><a name="p-pbaruleaction"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .PBAId, .PBAVar, .ArrayIdx, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId, .PBAVar, .RuleActionArrayIdx, .LineNumRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>444</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .PBAId, .PBAVar, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecode">PBARuleActionValueCode</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId, .PBAVar, .LineNumRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>445</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .PBAId, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId, .LineNumRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>446</td><td><a name="p-pbaruleactionvalue"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>447</td><td><a name="p-pbaruleactionvaluecodeparm"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>448</td><td><a name="p-pbaruleclause"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBARuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>449</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbalanguagetxt">PBALanguageTxt</a></td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>450</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId, .RuleClauseType, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.RuleClauseId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>451</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId, .RuleClauseType, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.RuleClauseId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>452</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>453</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecode">PBARuleActionValueCode</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>454</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>455</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulecodecompiled">PBARuleCodeCompiled</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>456</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruledebuggertable">PBARuleDebuggerTable</a></td>
+<td>.PBARuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>457</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleline">PBARuleLine</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>458</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecode">PBARuleLineCode</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>459</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecodeparm">PBARuleLineCodeParm</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>460</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>461</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulepbaid2consid">PBARulePBAId2ConsId</a></td>
+<td>.PBARuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>462</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariable">PBARuleVariable</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>463</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RuleClauseId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>464</td><td><a name="p-pbaruleclauseset"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclauseset">PBARuleClauseSet</a></td>
+<td>.Pky?, .RuleClauseVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Fky?, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>465</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclauseset">PBARuleClauseSet</a></td>
+<td>.RuleClauseVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclauseversion">PBARuleClauseVersion</a></td>
+<td>.RuleClauseVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>466</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclauseset">PBARuleClauseSet</a></td>
+<td>.RuleClauseVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulepbaid2consid">PBARulePBAId2ConsId</a></td>
+<td>.PBARuleClauseVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>467</td><td><a name="p-pbaruleline"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleline">PBARuleLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>468</td><td><a name="p-pbarulelinecodeparm"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecodeparm">PBARuleLineCodeParm</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>469</td><td><a name="p-pbarulelinesimple"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .PBAId, .RuleId, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId, .RuleId, .LineNumRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>470</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.Pky?, .RuleClauseId, .RuleClauseType, .PBAId, .RuleId, .LineNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecode">PBARuleActionValueCode</a></td>
+<td>.Fky?, .RuleClauseId, .RuleClauseType, .PBAId, .RuleId, .LineNumRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>471</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.Pky?, .RuleClauseId, .RuleId, .LineNum, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.Fky?, .RuleClauseId, .RuleId, .LineNumRef, .RuleClauseType, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>472</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulecodecompiled">PBARuleCodeCompiled</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>473</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulevariableline">PBARuleVariableLine</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>474</td><td><a name="p-pbaruletableconstraint"></a>PBARuleTableConstraint</td>
+<td>.PBARuleTableConstraintId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruletableconstraintcolumn">PBARuleTableConstraintColumn</a></td>
+<td>.PBARuleTableConstraintId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>475</td><td>PBARuleTableConstraint</td>
+<td>.PBARuleTableConstraintId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruletableconstraintref">PBARuleTableConstraintRef</a></td>
+<td>.PBARuleTableConstraintIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>476</td><td><a name="p-pbatable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-bom">BOM</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>477</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbabomrouteoccurrence">PBABOMRouteOccurrence</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>478</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconfigurateditemtmp">PBAConfiguratedItemTmp</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>479</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBAOperationPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>480</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBATablePBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>481</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBATreeBOMItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>482</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBATreeBOMPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>483</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBATableVariablePBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>484</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaconsistoftmp">PBAConsistOfTmp</a></td>
+<td>.PBAVersionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>485</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparameters">PBAGraphicParameters</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>486</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparametersinterval">PBAGraphicParametersInterval</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>487</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbareusebomroute">PBAReuseBOMRoute</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>488</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId, .PBAId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.PBAId, .RuleRef, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>489</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>490</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>491</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecode">PBARuleActionValueCode</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>492</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>493</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.Pky?, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Fky?, .RuleClauseRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>494</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclauseversion">PBARuleClauseVersion</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>495</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleline">PBARuleLine</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>496</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecode">PBARuleLineCode</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>497</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>498</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulepbaid2consid">PBARulePBAId2ConsId</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>499</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruletableconstraintref">PBARuleTableConstraintRef</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>500</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegenerateitemid">PBATableGenerateItemId</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>501</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegroup">PBATableGroup</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>502</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatableinstance">PBATableInstance</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>503</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepbainstance">PBATablePBAInstance</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>504</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatableprice">PBATablePrice</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>505</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricecurrencysetup">PBATablePriceCurrencySetup</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>506</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricesetup">PBATablePriceSetup</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>507</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricesetupcode">PBATablePriceSetupCode</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>508</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>509</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatablevariabledefaultval">PBATableVariableDefaultVal</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>510</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatablevariableval">PBATableVariableVal</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>511</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>512</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>513</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreecase">PBATreeCase</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>514</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreecode">PBATreeCode</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>515</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedefault">PBATreeDefault</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>516</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>517</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreefor">PBATreeFor</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>518</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinfolog">PBATreeInfoLog</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>519</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>520</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreenode">PBATreeNode</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>521</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>522</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>523</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreesimpel">PBATreeSimpel</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>524</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeswitch">PBATreeSwitch</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>525</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreetable">PBATreeTable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>526</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreetableselect">PBATreeTableSelect</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>527</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreetableval">PBATreeTableVal</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>528</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbavarpbaprofiles">PBAVarPBAProfiles</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>529</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbaversion">PBAVersion</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>530</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-19.htm#c-prodtable">ProdTable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>531</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchline">PurchLine</a></td>
+<td>.itemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>532</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchlinehistory">PurchLineHistory</a></td>
+<td>.itemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>533</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-19.htm#c-salesbasketline">SalesBasketLine</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>534</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-19.htm#c-salesline">SalesLine</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>535</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-20.htm#c-salesquotationbasketline">SalesQuotationBasketLine</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>536</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-20.htm#c-salesquotationline">SalesQuotationLine</a></td>
+<td>.ItemPBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>537</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatable">PBATable</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-20.htm#c-tmppbareference">TmpPBAReference</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>538</td><td><a name="p-pbatablegenerateitemid"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegenerateitemid">PBATableGenerateItemId</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegenerateitemvariables">PBATableGenerateItemVariables</a></td>
+<td>.PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>539</td><td><a name="p-pbatablegroup"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegroup">PBATableGroup</a></td>
+<td>.Pky?, .GroupId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.Fky?, .RuleRef, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>540</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegroup">PBATableGroup</a></td>
+<td>.PBAId, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .PBAGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>541</td><td><a name="p-pbatableprice"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatableprice">PBATablePrice</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricecurrencysetup">PBATablePriceCurrencySetup</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>542</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatableprice">PBATablePrice</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricesetup">PBATablePriceSetup</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>543</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatableprice">PBATablePrice</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricesetupcode">PBATablePriceSetupCode</a></td>
+<td>.PriceId, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>544</td><td><a name="p-pbatablevariable"></a><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbagraphicparametersvariable">PBAGraphicParametersVariable</a></td>
+<td>.Fky?, .ExtVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>545</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .extvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarule">PBARule</a></td>
+<td>.Fky?, .RuleRef, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>546</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Fky?, .PBAId, .PBAVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>547</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .Pky?, .extvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Fky?, .PBAId, .Fky?, .ValueFalse, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>548</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .Pky?, .extvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleaction">PBARuleAction</a></td>
+<td>.Fky?, .PBAId, .Fky?, .ValueTrue, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>549</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .Pky?, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvalue">PBARuleActionValue</a></td>
+<td>.Fky?, .PBAId, .Fky?, .RuleText, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>550</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleactionvaluecodeparm">PBARuleActionValueCodeParm</a></td>
+<td>.Fky?, .PBAId, .PBAVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>551</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Fky?, .Fky?, .RuleClauseRef, .Variable, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>552</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .Pky?, .PBAId, .Pky?, .extvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleclause">PBARuleClause</a></td>
+<td>.Fky?, .Fky?, .RuleClauseRef, .Fky?, .Value, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>553</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbaruleline">PBARuleLine</a></td>
+<td>.Fky?, .Fky?, .PBAId, .RuleText, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>554</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinecodeparm">PBARuleLineCodeParm</a></td>
+<td>.Fky?, .PBAId, .PBAVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>555</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.Fky?, .PBAId, .VarExt, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>556</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .Pky?, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbarulelinesimple">PBARuleLineSimple</a></td>
+<td>.Fky?, .PBAId, .Fky?, .Value, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>557</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablegenerateitemvariables">PBATableGenerateItemVariables</a></td>
+<td>.Fky?, .Fky?, .Variable, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>558</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .Pky?, .Pky?, .extvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablepricesetup">PBATablePriceSetup</a></td>
+<td>.PBAId, .Fky?, .Fky?, .Fky?, .PriceText</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>559</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.IdxSplitRec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>560</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatablevariabledefaultval">PBATableVariableDefaultVal</a></td>
+<td>.PBAVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>561</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatablevariableval">PBATableVariableVal</a></td>
+<td>.PBAId, .PBAVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>562</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .BOMConsumpVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>563</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .BOMQtySerieVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>564</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .BOMQtyVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>565</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .BOMTypeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>566</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .CalculationVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>567</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ConfigGroupIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>568</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ConstantVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>569</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .DensityVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>570</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .DepthVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>571</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .EndSchedConsumpVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>572</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .FormulaVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>573</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .FromDateVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>574</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .HeightVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>575</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ItemBOMIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>576</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ItemIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>577</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ItemPBAIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>578</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ItemRouteIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>579</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .OprNumVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>580</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .PositionVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>581</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .ProdFlushingPrincipVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>582</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .RoundUpQtyVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>583</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .RoundUpVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>584</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ScrapConstVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>585</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ScrapVarVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>586</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .ToDateVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>587</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .UnitIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>588</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .VendIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>589</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .Fky?, .WidthVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>590</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreebom">PBATreeBOM</a></td>
+<td>.PBAId, .WrkCtrConsumptionVar, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>591</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.Fky?, .FileNameVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>592</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.Fky?, .NameVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>593</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.Fky?, .NotesVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>594</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.Fky?, .RestrictionVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>595</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreedocref">PBATreeDocRef</a></td>
+<td>.Fky?, .TypeIdVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>596</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .configIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>597</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .inventBatchIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>598</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .InventColorIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>599</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.Fky?, .InventGTDIdVar_RU, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>600</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .InventLocationIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>601</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.Fky?, .PBAId, .InventOwnerIdVar_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>602</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .InventProfileIdVar_RU, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>603</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .inventSerialIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>604</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .InventSizeIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>605</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .wMSLocationIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>606</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeinventdim">PBATreeInventDim</a></td>
+<td>.PBAId, .Fky?, .wMSPalletIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>607</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .AccErrorVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>608</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .ErrorPctVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>609</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.Fky?, .JobPayTypeVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>610</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .LevelVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>611</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .LinkTypeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>612</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .OprIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>613</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .OprNumNextVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>614</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .OprNumVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>615</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeroute">PBATreeRoute</a></td>
+<td>.PBAId, .Fky?, .OprPriorityVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>616</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .FormulaFactor1Var</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>617</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .FormulaVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>618</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .OprIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>619</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .ProcessCategoryIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>620</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .ProcessPerQtyVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>621</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .ProcessTimeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>622</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .PropertyIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>623</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .QtyCategoryIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>624</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .QueueTimeAfterVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>625</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .QueueTimeBeforeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>626</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .RouteGroupIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>627</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .RouteTypeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>628</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .SetUpCategoryIdVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>629</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .SetupTimeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>630</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .ToHoursVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>631</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .TransferBatchVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>632</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .Pky?, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreerouteopr">PBATreeRouteOpr</a></td>
+<td>.PBAId, .Fky?, .TranspTimeVar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>633</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .intvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreesimpel">PBATreeSimpel</a></td>
+<td>.Fky?, .CalculationVariable, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>634</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .PBAId, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreesimpel">PBATreeSimpel</a></td>
+<td>.Fky?, .PBAId, .ReceiverVariable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>635</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.PBAId, .intvar</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbatreeswitch">PBATreeSwitch</a></td>
+<td>.PBAId, .SwitchValue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>636</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-15.htm#c-pbatablevariable">PBATableVariable</a></td>
+<td>.Pky?, .Pky?, .extvar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-16.htm#c-pbavarpbaprofiles">PBAVarPBAProfiles</a></td>
+<td>.Fky?, .Fky?, .PBAVar, .PBAId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-Manufacturing-ParentChilds-14.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

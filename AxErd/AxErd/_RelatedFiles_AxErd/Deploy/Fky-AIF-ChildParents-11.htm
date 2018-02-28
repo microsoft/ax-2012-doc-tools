@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: AIF</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: AIF</h2>
+
+
+<a class="cssAHref2" href="Module-AIF-11.htm#m-aif">Module: AIF</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="c-aifaction"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifaction">AifAction</a></td>
+<td>.ClassId, .ServiceName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifservice">AifService</a></td>
+<td>.ClassId, .Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a name="c-aifchannel"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.AdapterClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifadapter">AifAdapter</a></td>
+<td>.AdapterClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a name="c-aifcorrelation"></a>AifCorrelation</td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td>AifCorrelation</td>
+<td>.EntityRecId, .EntityTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a name="c-aifdatapolicy"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdatapolicy">AifDataPolicy</a></td>
+<td>.DocumentFieldRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfield">AifDocumentField</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdatapolicy">AifDataPolicy</a></td>
+<td>.PortDocument</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportdocument">AifPortDocument</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a name="c-aifdatapolicylegalvalue"></a>AifDataPolicyLegalValue</td>
+<td>.DocumentFieldRecId, .PortDocument</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdatapolicy">AifDataPolicy</a></td>
+<td>.DocumentFieldRecId, .PortDocument</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td>AifDataPolicyLegalValue</td>
+<td>.DocumentFieldRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfield">AifDocumentField</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td><a name="c-aifdatapolicyxpath"></a>AifDataPolicyXPath</td>
+<td>.PortDocument</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportdocument">AifPortDocument</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td><a name="c-aifdocumentfield"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfield">AifDocumentField</a></td>
+<td>.DocumentClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentschematable">AifDocumentSchemaTable</a></td>
+<td>.DocumentClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a name="c-aifdocumentfilter"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfilter">AifDocumentFilter</a></td>
+<td>.Port</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifinboundport">AifInboundPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfilter">AifDocumentFilter</a></td>
+<td>.Service</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifservice">AifService</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td><a name="c-aifdocumentlog"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentlog">AifDocumentLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td><a name="c-aifdocumentqueryfilter"></a>AifDocumentQueryFilter</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfilter">AifDocumentFilter</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a name="c-aifdocumentschematable"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentschematable">AifDocumentSchemaTable</a></td>
+<td>.SchemaRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifschemastore">AifSchemaStore</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td><a name="c-aifdocumentsetfilter"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentsetfilter">AifDocumentSetFilter</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfilter">AifDocumentFilter</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a name="c-aifdocumentsetfilterelement"></a>AifDocumentSetFilterElement</td>
+<td>.DocumentSetFilter</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentsetfilter">AifDocumentSetFilter</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a name="c-aifendpointactionvaluemap"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifaction">AifAction</a></td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ParentChilds-11.htm#p-aifendpointactionvaluemapext_ru">AifEndPointActionValueMapExt_RU</a></td>
+<td>.AifEndpointActionValueMap</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>20</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.BarCodeSetupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ParentChilds-11.htm#p-barcodesetup">BarcodeSetup</a></td>
+<td>.barcodeSetupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>21</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.Fky?, .AgreementClassificationExtCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.Pky?, .ExtCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>22</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.CountryRegionExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>23</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.CountyExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>24</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.CurrencyExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>25</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.CustAccountExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>26</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.DlvModeExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>27</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.DlvTermExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>28</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.InventLocationExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>29</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.ItemExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>30</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.MarkupExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>31</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.ReturnDispCodeExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>32</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.ReturnReasonCodeExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>33</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.StateExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>34</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.Fky?, .TaxExtCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.Pky?, .ExtCodeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>35</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.UnitExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>36</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.VendAccountExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>37</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.ZipCodeExtCodeId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-extcodetable">ExtCodeTable</a></td>
+<td>.ExtCodeId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>38</td><td><a name="c-aifexceptionmap"></a>AifExceptionMap</td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>39</td><td>AifExceptionMap</td>
+<td>.ExceptionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-sysexceptiontable">SysExceptionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>40</td><td><a name="c-aiffilesystemconfiguration"></a>AifFileSystemConfiguration</td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>41</td><td><a name="c-aifgatewayqueue"></a>AifGatewayQueue</td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>42</td><td>AifGatewayQueue</td>
+<td>.PortName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>43</td><td>AifGatewayQueue</td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>44</td><td><a name="c-aifinboundport"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifinboundport">AifInboundPort</a></td>
+<td>.AosChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>45</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifinboundport">AifInboundPort</a></td>
+<td>.ResponseChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>46</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifinboundport">AifInboundPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>47</td><td><a name="c-aiflookupentry"></a>AifLookupEntry</td>
+<td>.LookupTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aiflookuptable">AifLookupTable</a></td>
+<td>.LookupTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>48</td><td><a name="c-aifmessagelog"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>49</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.RequestMessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>50</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.PipelineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipeline">AifPipeline</a></td>
+<td>.PipelineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>51</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>52</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.DataPartition</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-partitions">Partitions</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>53</td><td><a name="c-aifoutboundport"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifoutboundport">AifOutboundPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>54</td><td><a name="c-aifoutboundprocessingqueue"></a>AifOutboundProcessingQueue</td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifaction">AifAction</a></td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>55</td><td>AifOutboundProcessingQueue</td>
+<td>.OutboundPortName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifoutboundport">AifOutboundPort</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>56</td><td>AifOutboundProcessingQueue</td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>57</td><td><a name="c-aifpipeline"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipeline">AifPipeline</a></td>
+<td>.PortActionPolicyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportactionpolicy">AifPortActionPolicy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>58</td><td><a name="c-aifpipelinecomponent"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipelinecomponent">AifPipelineComponent</a></td>
+<td>.PipelineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipeline">AifPipeline</a></td>
+<td>.PipelineId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>59</td><td><a name="c-aifport"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>60</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.Company, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>61</td><td><a name="c-aifportactionpolicy"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportactionpolicy">AifPortActionPolicy</a></td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifaction">AifAction</a></td>
+<td>.ActionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>62</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportactionpolicy">AifPortActionPolicy</a></td>
+<td>.Port</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>63</td><td><a name="c-aifportdocument"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportdocument">AifPortDocument</a></td>
+<td>.DocumentClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentschematable">AifDocumentSchemaTable</a></td>
+<td>.DocumentClassId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>64</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportdocument">AifPortDocument</a></td>
+<td>.Port</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>65</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifportdocument">AifPortDocument</a></td>
+<td>.SchemaStore</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifschemastore">AifSchemaStore</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>66</td><td><a name="c-aifportuser"></a>AifPortUser</td>
+<td>.InboundPort</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifinboundport">AifInboundPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>67</td><td><a name="c-aifportvaluemap"></a>AifPortValueMap</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifendpointactionvaluemap">AifEndpointActionValueMap</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>68</td><td>AifPortValueMap</td>
+<td>.PortId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>69</td><td><a name="c-aifqueuemanager"></a>AifQueueManager</td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentlog">AifDocumentLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>70</td><td><a name="c-aifresourceidmap"></a>AifResourceIdMap</td>
+<td>.PortName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>71</td><td>AifResourceIdMap</td>
+<td>.ResourceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifresourcelock">AifResourceLock</a></td>
+<td>.ResourceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>72</td><td><a name="c-aifresponse"></a>AifResponse</td>
+<td>.RequestMessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>73</td><td>AifResponse</td>
+<td>.ResponseMessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifmessagelog">AifMessageLog</a></td>
+<td>.MessageId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>74</td><td><a name="c-aiftransform"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aiftransform">AifTransform</a></td>
+<td>.AifAppShareFile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifappsharefile">AifAppShareFile</a></td>
+<td>.FilePath</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>75</td><td><a name="c-aiftransformelement"></a>AifTransformElement</td>
+<td>.PortName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>76</td><td>AifTransformElement</td>
+<td>.AifTransform</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aiftransform">AifTransform</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>77</td><td><a name="c-aifvaluesubstitutioncomponentconfig"></a>AifValueSubstitutionComponentConfig</td>
+<td>.PipelineComponentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipelinecomponent">AifPipelineComponent</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>78</td><td><a name="c-aifvaluesubstitutionconfig"></a>AifValueSubstitutionConfig</td>
+<td>.DocumentFieldRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifdocumentfield">AifDocumentField</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>79</td><td>AifValueSubstitutionConfig</td>
+<td>.LookupTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aiflookuptable">AifLookupTable</a></td>
+<td>.LookupTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>80</td><td>AifValueSubstitutionConfig</td>
+<td>.PipelineComponentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipelinecomponent">AifPipelineComponent</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>81</td><td><a name="c-aifwcfconfiguration"></a>AifWcfConfiguration</td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifchannel">AifChannel</a></td>
+<td>.ChannelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>82</td><td><a name="c-aifxmltransformconfig"></a>AifXmlTransformConfig</td>
+<td>.PipelineComponentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifpipelinecomponent">AifPipelineComponent</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>83</td><td>AifXmlTransformConfig</td>
+<td>.XsltId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifxsltrepository">AifXsltRepository</a></td>
+<td>.XsltId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>84</td><td><a name="c-aifxsltrepository"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifxsltrepository">AifXsltRepository</a></td>
+<td>.SchemaStoreRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifschemastore">AifSchemaStore</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>85</td><td><a name="c-sysexceptiontable"></a><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-sysexceptiontable">SysExceptionTable</a></td>
+<td>.DataPartition</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-partitions">Partitions</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

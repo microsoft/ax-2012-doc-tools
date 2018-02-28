@@ -1,0 +1,25 @@
+
+// by Ole Hellevik
+// See email from JHagen 2012/Nov/29 10:19am Thursday.
+
+
+static void GmAx6Job2(Args _args) 
+{ 
+	TreeNode n; 
+
+	n = TreeNode ::findNode("\\Data Dictionary\\Tables");
+	n = n.AOTfirstChild();
+
+	for (; n != null; n = n .AOTnextSibling()) 
+	{
+		info(strFmt
+				("%1\t%2",
+					n .AOTname(),
+					SysVersionControlFileBasedBackEndSD
+						::getOwner(n .AOTname())
+				)
+			); 
+	}
+}
+
+//eof

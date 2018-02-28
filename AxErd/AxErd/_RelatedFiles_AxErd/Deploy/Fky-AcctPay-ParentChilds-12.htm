@@ -1,0 +1,2015 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: APay</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Accounts Payable</h2>
+
+
+<a class="cssAHref2" href="Module-AcctPay-11.htm#m-accountspayable">Module: Accounts Payable</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-AcctPay-ParentChilds-11.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-AcctPay-ParentChilds-13.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>236</td><td><a name="p-vendinvoicetrans"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-11.htm#c-agreementlinereleasedline">AgreementLineReleasedLine</a></td>
+<td>.VendInvoiceTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>237</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-caseassociation">CaseAssociation</a></td>
+<td>.RefRecId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>238</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-costallocationhistory_ru">CostAllocationHistory_RU</a></td>
+<td>.AllocatedInvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>239</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-12.htm#c-customsvendinvoiceboetranslink_in">CustomsVendInvoiceBOETransLink_IN</a></td>
+<td>.VendInvoiceTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>240</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendcreditinvoicingtrans">CustVendCreditInvoicingTrans</a></td>
+<td>.TransRecId, .TransTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>241</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custvendtranspostinglog_ru">CustVendTransPostingLog_RU</a></td>
+<td>.InvoiceTransTableId, .InvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>242</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-12.htm#c-defermentscheduletrans_in">DefermentScheduleTrans_IN</a></td>
+<td>.ExtRecId, .ExtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>243</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-docuref">DocuRef</a></td>
+<td>.RefCompanyId, .RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>244</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-13.htm#c-eximvendinvoicetrans_in">EximVendInvoiceTrans_IN</a></td>
+<td>.VendInvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>245</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.InvoiceDate, .InvoiceId, .Pky?, .Pky?, .LineNum, .InternalInvoiceId, .PurchID, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturetrans_ru">FactureTrans_RU</a></td>
+<td>.InvoiceDate, .InvoiceId, .Fky?, .Fky?, .InvoiceLineNum, .InternalInvoiceId, .SalesPurchId, .NumberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>246</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.Pky?, .Pky?, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturetrans_ru">FactureTrans_RU</a></td>
+<td>.Fky?, .Fky?, .InvoiceTransTableId, .InvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>247</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-fiscaldocumentline_br">FiscalDocumentLine_BR</a></td>
+<td>.RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>248</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-fiscaldocumentlinesource_br">FiscalDocumentLineSource_BR</a></td>
+<td>.SourceDocumentLineTableId, .SourceDocumentLineRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>249</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-intrastat">Intrastat</a></td>
+<td>.TransTableId, .TransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>250</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.Pky?, .InventTransId, .InternalInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventreportdimhistory">InventReportDimHistory</a></td>
+<td>.Fky?, .InventTransId, .TransRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>251</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-markuptrans">MarkupTrans</a></td>
+<td>.TransRecId, .TransTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>252</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-13.htm#c-projitemtrans">ProjItemTrans</a></td>
+<td>.VendInvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>253</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-purchline_w">PurchLine_W</a></td>
+<td>.RefReturnInvoiceTrans_W</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>254</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-purchlinehistory_w">PurchLineHistory_W</a></td>
+<td>.RefReturnInvoiceTrans_W</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>255</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-19.htm#c-salesline">SalesLine</a></td>
+<td>.RefReturnInvoiceTrans_W</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>256</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-salespurchinvoicelink_ru">SalesPurchInvoiceLink_RU</a></td>
+<td>.PurchTransTableId, .PurchTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>257</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxtrans_in">TaxTrans_IN</a></td>
+<td>.VATDefermentExtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>258</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxtrans_in">TaxTrans_IN</a></td>
+<td>.TransRecId, .TransTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>259</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-18.htm#c-vendinvoiceinfolinecorrlink_ru">VendInvoiceInfoLineCorrLink_RU</a></td>
+<td>.CorrTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>260</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicepackingslipquantitymatch">VendInvoicePackingSlipQuantityMatch</a></td>
+<td>.InvoiceSourceDocumentLIne</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>261</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans_intrastat">VendInvoiceTrans_Intrastat</a></td>
+<td>.VendInvoiceTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>262</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-18.htm#c-vendinvoicetranscorrlink_ru">VendInvoiceTransCorrLink_RU</a></td>
+<td>.TransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>263</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-18.htm#c-vendinvoicetranscorrlink_ru">VendInvoiceTransCorrLink_RU</a></td>
+<td>.CorrTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>264</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-17.htm#c-vendinvoicetranstaxextensionin">VendInvoiceTransTaxExtensionIN</a></td>
+<td>.VendInvoiceTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>265</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetrans">VendInvoiceTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendpackingsliptrans">VendPackingSlipTrans</a></td>
+<td>.InvoiceTransRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>266</td><td><a name="p-vendledger"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-bankclientpayment_ru">BankClientPayment_RU</a></td>
+<td>.PostingProfile, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>267</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-12.htm#c-banktranstype">BankTransType</a></td>
+<td>.PostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>268</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-customjournaltable_ru">CustomJournalTable_RU</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>269</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custompartners_ru">CustomPartners_RU</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>270</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custpaymmanstepposting">CustPaymManStepPosting</a></td>
+<td>.Fky?, .CreditPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>271</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custpaymmanstepposting">CustPaymManStepPosting</a></td>
+<td>.Fky?, .DebitPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>272</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-czvendadvanceinvoicetable">CzVendAdvanceInvoiceTable</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>273</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-inventprofilecustvendledger_ru">InventProfileCustVendLedger_RU</a></td>
+<td>.VendPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>274</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .OffsetPostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>275</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.dataAreaId, .Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Company, .Fky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>276</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.Pky?, .Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .Fky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>277</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchagreementheaderext_ru">PurchAgreementHeaderExt_RU</a></td>
+<td>.VendPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>278</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchagreementheaderext_ru">PurchAgreementHeaderExt_RU</a></td>
+<td>.VendPrepaymentPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>279</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchagreementheaderhistoryext_ru">PurchAgreementHeaderHistoryExt_RU</a></td>
+<td>.VendPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>280</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchagreementheaderhistoryext_ru">PurchAgreementHeaderHistoryExt_RU</a></td>
+<td>.VendPrepaymentPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>281</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-purchcomplementaryinvoiceheader">PurchComplementaryInvoiceHeader</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>282</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-purchline_w">PurchLine_W</a></td>
+<td>.PostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>283</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-purchlinehistory_w">PurchLineHistory_W</a></td>
+<td>.PostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>284</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmline">PurchParmLine</a></td>
+<td>.PostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>285</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtable">PurchParmTable</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>286</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtable">PurchTable</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>287</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtablehistory">PurchTableHistory</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>288</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-salespurchoperationtype_br">SalesPurchOperationType_BR</a></td>
+<td>.VendPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>289</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.Pky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-tmpcostallocationbase_ru">TmpCostAllocationBase_RU</a></td>
+<td>.Fky?, .PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>290</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-vendinvoiceinfoline_w">VendInvoiceInfoLine_W</a></td>
+<td>.PostingProfile_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>291</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceinfotable">VendInvoiceInfoTable</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>292</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoicejour">VendInvoiceJour</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>293</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendinvoicesettled_transdatetmp_es">VendInvoiceSettled_TransDateTmp_ES</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>294</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfileClose</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>295</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledgeraccounts">VendLedgerAccounts</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>296</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.AdvancePostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>297</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>298</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.PostingProfileInvoiceRemit</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>299</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.PostingProfileNotes</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>300</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.PostingProfileRemitNotes</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>301</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendparameters">VendParameters</a></td>
+<td>.PrepaymentPostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>302</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendpromissorynoteopentranstmp_es">VendPromissoryNoteOpenTransTmp_ES</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>303</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotereporttmp">VendPromissoryNoteReportTmp</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>304</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendtmpopenpaymdocu_es">VendTmpOpenPaymDocu_ES</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>305</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingChangeVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>306</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>307</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingProfileApprove</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>308</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingProfileCancel</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>309</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingProfileClose</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>310</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PostingProfileReOpen</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>311</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendledger">VendLedger</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen_paymmode_tmpes">VendTransOpen_PaymMode_TmpES</a></td>
+<td>.PostingProfile</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>312</td><td><a name="p-vendpaymfee"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymfee">VendPaymFee</a></td>
+<td>.Pky?, .FeeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendpaymjournalfee">CustVendPaymJournalFee</a></td>
+<td>.Fky?, .FeeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>313</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymfee">VendPaymFee</a></td>
+<td>.FeeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodefee">VendPaymModeFee</a></td>
+<td>.PaymFeeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>314</td><td><a name="p-vendpaymmodefee"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodefee">VendPaymModeFee</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodefeeinterval">VendPaymModeFeeInterval</a></td>
+<td>.RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>315</td><td><a name="p-vendpaymmodespec"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-czvendadvanceinvoicetable">CzVendAdvanceInvoiceTable</a></td>
+<td>.PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>316</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Pky?, .PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>317</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Pky?, .Pky?, .PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .Fky?, .PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>318</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.dataAreaId, .Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefault">PurchAgreementHeaderDefault</a></td>
+<td>.PaymentSpecificationDataAreaId, .PaymentSpecification, .MethodOfPayment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>319</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.dataAreaId, .Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefaulthistory">PurchAgreementHeaderDefaultHistory</a></td>
+<td>.PaymentSpecificationDataAreaId, .PaymentSpecification, .MethodOfPayment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>320</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-purchcomplementaryinvoiceheader">PurchComplementaryInvoiceHeader</a></td>
+<td>.VendPaymModeTable, .VendPaymModeSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>321</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtable">PurchParmTable</a></td>
+<td>.PaymSpec, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>322</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchrfqtable">PurchRFQTable</a></td>
+<td>.PaymSpec, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>323</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtable">PurchTable</a></td>
+<td>.PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>324</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtablehistory">PurchTableHistory</a></td>
+<td>.PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>325</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceinfotable">VendInvoiceInfoTable</a></td>
+<td>.PaymSpec, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>326</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.Specification, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodefee">VendPaymModeFee</a></td>
+<td>.PaymSpec, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>327</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>328</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode, .Specification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PaymMode, .PaymSpec</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>329</td><td><a name="p-vendpaymmodetable"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.Pky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-bankclientoutpaymentlog_ru">BankClientOutPaymentLog_RU</a></td>
+<td>.Fky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>330</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-12.htm#c-bankremittancefilesvend">BankRemittanceFilesVend</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>331</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-bankvendpaymmodebankaccounts">BankVendPaymModeBankAccounts</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>332</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-customjournaltable_ru">CustomJournalTable_RU</a></td>
+<td>.PaymentMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>333</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendpaymproposalline">CustVendPaymProposalLine</a></td>
+<td>.PaymMode, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>334</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-czvendadvanceinvoicetable">CzVendAdvanceInvoiceTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>335</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-journalizingdefinitionbanktrans">JournalizingDefinitionBankTrans</a></td>
+<td>.VendPaymModeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>336</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.PaymMode, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>337</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.Pky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>338</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.Pky?, .Pky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.Fky?, .Fky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>339</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-paymcalendarcriteriarule">PaymCalendarCriteriaRule</a></td>
+<td>.VendorPaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>340</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-15.htm#c-prlpayrollparameters">PRLPayrollParameters</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>341</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-15.htm#c-prlpayrollparameters">PRLPayrollParameters</a></td>
+<td>.ElectronicPaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>342</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.dataAreaId, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefault">PurchAgreementHeaderDefault</a></td>
+<td>.MethodOfPaymentDataAreaId, .MethodOfPayment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>343</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.dataAreaId, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefaulthistory">PurchAgreementHeaderDefaultHistory</a></td>
+<td>.MethodOfPaymentDataAreaId, .MethodOfPayment</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>344</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-purchcomplementaryinvoiceheader">PurchComplementaryInvoiceHeader</a></td>
+<td>.VendPaymModeTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>345</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtable">PurchParmTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>346</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-17.htm#c-purchrfqcasetable">PurchRFQCaseTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>347</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchrfqtable">PurchRFQTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>348</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtable">PurchTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>349</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-18.htm#c-purchtablehistory">PurchTableHistory</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>350</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.Pky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-tmpbankclientoutpayment_ru">TmpBankClientOutPayment_RU</a></td>
+<td>.Fky?, .PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>351</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceinfotable">VendInvoiceInfoTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>352</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendinvoicesettled_transdatetmp_es">VendInvoiceSettled_TransDateTmp_ES</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>353</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetmp">VendInvoiceTmp</a></td>
+<td>.PaymModeVendTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>354</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendinvoicetmp">VendInvoiceTmp</a></td>
+<td>.PaymModeVendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>355</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmethodattribute">VendPaymMethodAttribute</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>356</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmethodval">VendPaymMethodVal</a></td>
+<td>.VendPaymentMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>357</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodefee">VendPaymModeFee</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>358</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodespec">VendPaymModeSpec</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>359</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendrfqjour">VendRFQJour</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>360</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>361</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>362</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymmodetable">VendPaymModeTable</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen_paymmode_tmpes">VendTransOpen_PaymMode_TmpES</a></td>
+<td>.PaymMode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>363</td><td><a name="p-vendpaymsched"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymsched">VendPaymSched</a></td>
+<td>.ExtRecId, .ExtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymschedhistory">VendPaymSchedHistory</a></td>
+<td>.ExtRecId, .ExtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>364</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymsched">VendPaymSched</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymschedline">VendPaymSchedLine</a></td>
+<td>.FatherRecID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>365</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymsched">VendPaymSched</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpaymschedlinehistory">VendPaymSchedLineHistory</a></td>
+<td>.ParentRecID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>366</td><td><a name="p-vendpaymschedline"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymschedline">VendPaymSchedLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpaymschedlinehistory">VendPaymSchedLineHistory</a></td>
+<td>.VendPaymSchedLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>367</td><td><a name="p-vendpricetolerancegroup"></a>VendPriceToleranceGroup</td>
+<td>.Pky?, .VendPriceToleranceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchpricetolerance">PurchPriceTolerance</a></td>
+<td>.Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>368</td><td>VendPriceToleranceGroup</td>
+<td>.VendPriceToleranceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.VendPriceToleranceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>369</td><td><a name="p-vendpromissorynotejour"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-bankpromissorynotetable">BankPromissoryNoteTable</a></td>
+<td>.VendPromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>370</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendouttmp">CustVendOutTmp</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>371</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendinvoicesettled_transdatetmp_es">VendInvoiceSettled_TransDateTmp_ES</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>372</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendoutattendingnote_pnremittancetmp">VendOutAttendingNote_PNRemittanceTmp</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>373</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-12.htm#c-vendpaymsched">VendPaymSched</a></td>
+<td>.ExtRecId, .ExtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>374</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynoteinvoice">VendPromissoryNoteInvoice</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>375</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendpromissorynoteopentranstmp_es">VendPromissoryNoteOpenTransTmp_ES</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>376</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotereporttmp">VendPromissoryNoteReportTmp</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>377</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotetrans">VendPromissoryNoteTrans</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>378</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-vendtmpopenpaymdocu_es">VendTmpOpenPaymDocu_ES</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>379</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>380</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen">VendTransOpen</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>381</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotejour">VendPromissoryNoteJour</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen_paymmode_tmpes">VendTransOpen_PaymMode_TmpES</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>382</td><td><a name="p-vendpromissorynotetrans"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynotetrans">VendPromissoryNoteTrans</a></td>
+<td>.PromissoryNoteId, .VendAccount, .Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PromissoryNoteID, .AccountNum, .Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>383</td><td><a name="p-vendsettlement"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchbookvatprocesslogtrans_ru">PurchBookVATProcessLogTrans_RU</a></td>
+<td>.SettlementRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>384</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchbookvatprocesslogtrans_ru">PurchBookVATProcessLogTrans_RU</a></td>
+<td>.ReverseSettlementRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>385</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FinMangt-ChildParents-11.htm#c-spectrans">SpecTrans</a></td>
+<td>.RefCompany, .RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FinMangt-11.htm">(Financial management)</a></span></td></tr>
+
+
+
+<tr><td>386</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-tmppurchbookvatprocesslogtrans_ru">TmpPurchBookVATProcessLogTrans_RU</a></td>
+<td>.SettlementRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>387</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-tmppurchbookvatprocesslogtrans_ru">TmpPurchBookVATProcessLogTrans_RU</a></td>
+<td>.ReverseSettlementRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>388</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.ReversedRecId_RU</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>389</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlementextensionth">VendSettlementExtensionTH</a></td>
+<td>.VendSettlement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>390</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtranscashdisc">VendTransCashDisc</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>391</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.RecId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-13.htm#c-vendtransepremit_br">VendTransEPRemit_BR</a></td>
+<td>.VendSettleRefRecId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>392</td><td><a name="p-vendtmpinvoiceinfotable"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtmpinvoiceinfotable">VendTmpInvoiceInfoTable</a></td>
+<td>.TableRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtmpinvoiceinfoline">VendTmpInvoiceInfoLine</a></td>
+<td>.TableRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>393</td><td><a name="p-vendtmpsearchcreatevendor"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtmpsearchcreatevendor">VendTmpSearchCreateVendor</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtmpsearchcreatevendorcategory">VendTmpSearchCreateVendorCategory</a></td>
+<td>.VendTmpSearchCreateVendor</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>394</td><td><a name="p-vendtrans"></a><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-bankborderopaymtrans_br">BankBorderoPaymTrans_BR</a></td>
+<td>.InvoiceVoucher, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>395</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.dataAreaId, .Pky?, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-bankchequepaymtrans">BankChequePaymTrans</a></td>
+<td>.InvoiceCompany, .Fky?, .InvoiceTransDate, .InvoiceVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>396</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-costallocationhistory_ru">CostAllocationHistory_RU</a></td>
+<td>.Fky?, .IndebtednessTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>397</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-costallocationhistory_ru">CostAllocationHistory_RU</a></td>
+<td>.CreditNoteTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>398</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-costallocationhistory_ru">CostAllocationHistory_RU</a></td>
+<td>.GoalVendInvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>399</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-costallocationhistory_ru">CostAllocationHistory_RU</a></td>
+<td>.InvoiceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>400</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-custvendtmpcreditinvoicing">CustVendTmpCreditInvoicing</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>401</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custvendtranspostinglog_ru">CustVendTransPostingLog_RU</a></td>
+<td>.OffsetCompany, .RefTableId, .OffSetRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>402</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custvendtranspostinglog_ru">CustVendTransPostingLog_RU</a></td>
+<td>.TransCompany, .RefTableId, .TransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>403</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.TableId, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-cztaxdocumentlink">CzTaxDocumentLink</a></td>
+<td>.TransTableId, .TransDate, .TransVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>404</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher, .TransDate, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-czvendadvanceinvoicelink">CzVendAdvanceInvoiceLink</a></td>
+<td>.Voucher, .TransDate, .PaymentCompany</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>405</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturejour_ru">FactureJour_RU</a></td>
+<td>.CustVendTransRecId, .CustVendTransTableId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>406</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturejour_ru">FactureJour_RU</a></td>
+<td>.CustVendTransRecId, .CustVendTransTableId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>407</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturejour_ru">FactureJour_RU</a></td>
+<td>.CustVendTransRecId, .CustVendTransTableId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>408</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .Pky?, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturejour_ru">FactureJour_RU</a></td>
+<td>.ExchAdjInvoiceRecId, .Fky?, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>409</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-fiscalestablishmentvendinvoicejour_br">FiscalEstablishmentVendInvoiceJour_BR</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>410</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-ledgercov">LedgerCov</a></td>
+<td>.TransRecId, .TransTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>411</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.BankChequeDepositTransRefRecID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>412</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.VendTransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>413</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher, .JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournalvoucherchanged">LedgerJournalVoucherChanged</a></td>
+<td>.FromVoucher, .JournalNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>414</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-15.htm#c-payrollpaystatement">PayrollPayStatement</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>415</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-15.htm#c-payrollpaystatementline">PayrollPayStatementLine</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>416</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchbooktrans_ru">PurchBookTrans_RU</a></td>
+<td>.InvoiceRecIdRef, .RefTableId, .InvoiceCompany</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>417</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchbooktrans_ru">PurchBookTrans_RU</a></td>
+<td>.PaymentRecIdRef, .RefTableId, .PaymentCompany</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>418</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-14.htm#c-purchbookvatprocesslogtrans_ru">PurchBookVATProcessLogTrans_RU</a></td>
+<td>.InvoiceRecIdRef, .RefTableId, .InvoiceCompany</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>419</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-16.htm#c-restoredvatlogtrans_ru">RestoredVATLogTrans_RU</a></td>
+<td>.InvoiceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>420</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-16.htm#c-rtax25registertrans">RTax25RegisterTrans</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>421</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-salesbookvatprocesslogtrans_ru">SalesBookVATProcessLogTrans_RU</a></td>
+<td>.InvoiceRecIdRef, .RefTableId, .InvoiceCompany</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>422</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.TableId, .RecId, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-14.htm#c-smmtranslog">smmTransLog</a></td>
+<td>.RefTableId, .RefRecId, .RefNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>423</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ChildParents-11.htm#c-taxtrans">TaxTrans</a></td>
+<td>.TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>424</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholdtaxjournaltrans_in">TaxWithholdTaxJournalTrans_IN</a></td>
+<td>.SourceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>425</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ChildParents-12.htm#c-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.VendTransInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>426</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ChildParents-12.htm#c-taxwithholdtrans">TaxWithholdTrans</a></td>
+<td>.VendTransPaymId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>427</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholdtrans_in">TaxWithholdTrans_IN</a></td>
+<td>.CPOrigInvoiceRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>428</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholdtrans_in">TaxWithholdTrans_IN</a></td>
+<td>.CustVendTransInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>429</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholdtrans_in">TaxWithholdTrans_IN</a></td>
+<td>.SourceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>430</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholduncommitted_in">TaxWithholdUncommitted_IN</a></td>
+<td>.CPOrigInvoiceRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>431</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholduncommitted_in">TaxWithholdUncommitted_IN</a></td>
+<td>.SourceTransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>432</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-16.htm#c-taxwithholdworkregulation_in">TaxWithholdWorkRegulation_IN</a></td>
+<td>.CPOrigInvoiceRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>433</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-16.htm#c-tmptaxwithholdregulationtrans_in">TmpTaxWithholdRegulationTrans_IN</a></td>
+<td>.CPOrigInvoiceRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>434</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-16.htm#c-tmptaxwithholdworktrans_in">TmpTaxWithholdWorkTrans_IN</a></td>
+<td>.CPOrigInvoiceRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>435</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-tradeblwijournalpurposecodes">TradeBLWIJournalPurposeCodes</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>436</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceinfo">VendInvoiceInfo</a></td>
+<td>.RefRecId, .RefTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>437</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceintrastat">VendInvoiceIntrastat</a></td>
+<td>.Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>438</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.PromissoryNoteID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynoteinvoice">VendPromissoryNoteInvoice</a></td>
+<td>.PromissoryNoteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>439</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.dataAreaId, .Invoice</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendpromissorynoteinvoice">VendPromissoryNoteInvoice</a></td>
+<td>.InvoiceCompany, .InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>440</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.dataAreaId, .RecId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.TransCompany, .TransRecId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>441</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendsettlement">VendSettlement</a></td>
+<td>.OffsetRecid</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>442</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.AccountNum, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.AccountNum, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>443</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.OffsetRecid</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>444</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>445</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-17.htm#c-vendtrans_in">VendTrans_IN</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>446</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-17.htm#c-vendtrans_in">VendTrans_IN</a></td>
+<td>.VendTransRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>447</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-vendtrans_w">VendTrans_W</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>448</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.AccountNum, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen">VendTransOpen</a></td>
+<td>.AccountNum, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>449</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-13.htm#c-vendtranspayment_br">VendTransPayment_BR</a></td>
+<td>.VendTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-AcctPay-ParentChilds-13.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

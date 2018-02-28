@@ -1,0 +1,290 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: GmErdBzClass unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #GmErdBzClass
+    PROPERTIES
+      Name                #GmErdBzClass
+      Origin              #{3EC5273D-C381-4F68-A67A-BAFDD1A31A0B}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #public class GmErdBzClass
+        #{
+        #}
+      ENDSOURCE
+      SOURCE #generateListOfFkys
+        #public Array generateListOfFkys
+        #        (
+        #         str _sParentChildSequence       // "CP". (OLD: Now just "CP".  "PC" or "CP" or "Center".)
+        #        ,str _sTableNameBeginsWithChild  // "" (zero length str) for no filter. Or maybe "Gm".
+        #        ,str _sTableNameBeginsWithParent // "" (zero length str) for no filter.
+        #        )
+        #{
+        #    Array arrayReturn; // To be returned.
+        #    List listRelationsTT, listColumnsCC;
+        #    TreeNode trnodeTable, trnodeTables, trnodeRelations, trnodeOneRel, trnodeOneCol;
+        #    TreeNodeIterator tnitTables, tnitRelations, tnitColumns;
+        #    anytype any3;
+        #    str sProperty_ParentTableName, sProperty_ChildTableName
+        #        , sDelimChar, sWork
+        #        , sColNameFky, sColNamePky;
+        #    int tt, rr, cc,
+        #        nCountChilds_Tables, nCountChilds_Relations, nCountChilds_Columns,
+        #        nSum_Relations = 0, nSum_Columns = 0;
+        #    ;
+        #    //--------
+        #
+        #    sDelimChar = "\t";
+        #    listRelationsTT = new List(Types::String);
+        #    listColumnsCC = new List(Types::String);
+        #
+        #    trnodeTables = TreeNode::findNode("\\Data Dictionary\\Tables");
+        #    nCountChilds_Tables = trnodeTables.AOTchildNodeCount();
+        #    Global::info(strFmt("%1 is total number of tables to process...",nCountChilds_Tables));
+        #    tnitTables = TreeNode::findNode("\\Data Dictionary\\Tables").AOTiterator();
+        #
+        #    for (tt=0; tt < nCountChilds_Tables; tt++)
+        #    {
+        #        trnodeTable = tnitTables.next();
+        #        if (null == trnodeTable) break;
+        #
+        #        if (3 == (tt mod 500))
+        #        {
+        #            sWork = "modulo: " + strFmt("%1 tables processed so far. %2"
+        #                ,tt,trnodeTable.AOTname());
+        #            Global::info(sWork);
+        #            print sWork;
+        #        }
+        #
+        #        any3 = trnodeTable.AOTgetProperty("Name");
+        #        sProperty_ChildTableName = any2str(any3);
+        #
+        #        if ("Center" == _sParentChildSequence)
+        #        {
+        #            listRelationsTT.addEnd(sProperty_ChildTableName);
+        #            continue;
+        #        }
+        #
+        #        if ((0 < strLen(_sTableNameBeginsWithChild))
+        #             && _sTableNameBeginsWithChild != subStr
+        #                (sProperty_ChildTableName,1
+        #                ,strLen(_sTableNameBeginsWithChild))
+        #                )
+        #        {
+        #            continue;
+        #        }
+        #        trnodeRelations = trnodeTable.AOTfindChild("Relations");
+        #        nCountChilds_Relations = trnodeRelations.AOTchildNodeCount();
+        #
+        #        tnitRelations = trnodeRelations.AOTiterator(); // !!
+        #
+        #        for (rr=1; rr <= nCountChilds_Relations; rr++)
+        #        {
+        #            trnodeOneRel = tnitRelations.next();
+        #            if (null == trnodeOneRel) break;
+        #
+        #            nSum_Relations = nSum_Relations + 1;
+        #
+        #            if ((0 < strLen(_sTableNameBeginsWithParent))
+        #                && _sTableNameBeginsWithParent != subStr
+        #                    (sProperty_ParentTableName,1
+        #                    ,strLen(_sTableNameBeginsWithParent))
+        #                    )
+        #            {
+        #                continue;
+        #            }
+        #            any3 = trnodeOneRel.AOTgetProperty("Table"); // Parent table (of current child table).
+        #            sProperty_ParentTableName = any2str(any3);
+        #
+        #            //------- Add to List, then loop to next Relation node. ----
+        #            if ("CP" == _sParentChildSequence)
+        #            {
+        #                sWork = int2str(nSum_Relations) + sDelimChar
+        #                    + sProperty_ChildTableName + sDelimChar
+        #                    + sProperty_ParentTableName;
+        #                listRelationsTT.addEnd(sWork);
+        #            }
+        #            else if ("PC" == _sParentChildSequence)
+        #            {
+        #                sWork = int2str(nSum_Relations) + sDelimChar
+        #                    + sProperty_ParentTableName + sDelimChar
+        #                    + sProperty_ChildTableName;
+        #                listRelationsTT.addEnd(sWork);
+        #            }
+        #            else
+        #            {
+        #                Global::error("Bad value for _sParentChildSequence, neither PC nor CP!");
+        #                throw Exception::Error;
+        #            }
+        #
+        #            //------- Get COLUMNS of the Relation node (Pky, Fky). ----
+        #
+        #            print sWork;
+        #
+        #            tnitColumns = trnodeOneRel.AOTiterator();
+        #            nCountChilds_Columns = trnodeOneRel.AOTchildNodeCount();
+        #            nSum_Columns = nSum_Columns + nCountChilds_Columns;
+        #
+        #            for (cc=1; cc <= nCountChilds_Columns; cc++)
+        #            {
+        #                trnodeOneCol = tnitColumns.next();
+        #
+        #                nSum_Columns = nSum_Columns + 1;
+        #
+        #                sColNameFky = trnodeOneCol.AOTgetProperty("Field"); // On Child table.
+        #                sColNamePky = trnodeOneCOl.AOTgetProperty("RelatedField"); // On Parent table.
+        #                listColumnsCC.addEnd
+        #                    (
+        #                    int2str(nSum_Relations) + sDelimChar
+        #                    + int2str(nSum_Columns) + sDelimChar
+        #                    + sColNameFky + sDelimChar
+        #                    + sColNamePky
+        #                    );
+        #            } // EOFor cc
+        #        } // EOFor rr
+        #    }
+        #
+        #    arrayReturn.value(0, listRelationsTT);
+        #    arrayReturn.value(1, listColumnsCC);
+        #    return arrayReturn;
+        #}
+        #
+      ENDSOURCE
+      SOURCE #writeList_RR_CC_Files
+        #public void writeList_RR_CC_Files  // RelationsTT (Child-Parent), ColumnsCC (Fky-Pky)! Both file records begin with RelationIdentityNum, joinable!
+        #        (
+        #         //List _listRecs
+        #        Array _arrayOfLists  // 1 based, not 0 based.  // Relations, sub-Columns, as Map objects???
+        #        ,str _sDirPathButNotFile  // Such as "C:\\mydir\\".
+        #        ,str _sFileNameTT // To write to, such as TabDelim-Child-Parents.txt .
+        #        ,str _sFileNameCC // To write to, such as TabDelim-Columns-Columns.txt .
+        #        )
+        #{
+        #    TextIo txIoWriteTT, txIoWriteCC;
+        #    FileIOPermission fioPermissionTT, fioPermissionCC;
+        #    List listRelationsTT, listColumnsCC;
+        #    ListEnumerator listEnumerator4;
+        #    //Array arrayOfLists;
+        #    str sOneRec, sTempPath;
+        #    int aa;
+        #    boolean boolMoveNext;
+        #    ;
+        #
+        #    // Get the temporary path.
+        #    //sTempPath = WINAPI::getTempPath();
+        #    info("Relations_TT File is at: " + _sDirPathButNotFile + _sFileNameTT);
+        #    info("Columns_CC File is at: " + _sDirPathButNotFile + _sFileNameCC);
+        #
+        #    // Assert permission.
+        #    fioPermissionTT = new FileIOPermission
+        #        (_sDirPathButNotFile + _sFileNameTT ,"RW");
+        #    fioPermissionTT.assert();
+        #
+        #    fioPermissionCC = new FileIOPermission
+        #        (_sDirPathButNotFile + _sFileNameCC ,"RW");
+        #    fioPermissionCC.assert();
+        #
+        #    // If the file already exists, delete it.
+        #    if (WINAPI::fileExists(_sDirPathButNotFile + _sFileNameTT))
+        #    {
+        #        WINAPI::deleteFile(_sDirPathButNotFile + _sFileNameTT);
+        #    }
+        #
+        #    if (WINAPI::fileExists(_sDirPathButNotFile + _sFileNameCC))
+        #    {
+        #        WINAPI::deleteFile(_sDirPathButNotFile + _sFileNameCC);
+        #    }
+        #
+        #    // Open the file for writing.
+        #    // "W" mode overwrites existing content, or creates the file.
+        #    txIoWriteTT = new TextIo( _sDirPathButNotFile + _sFileNameTT ,"W");
+        #    txIoWriteCC = new TextIo( _sDirPathButNotFile + _sFileNameCC ,"W");
+        #
+        #    // Write records to the file.
+        #
+        #    listRelationsTT = _arrayOfLists.value(1);
+        #    listColumnsCC = _arrayOfLists.value(2);
+        #
+        #    // Relations TT
+        #    listEnumerator4 = listRelationsTT.getEnumerator();
+        #    while (true)
+        #    {
+        #        boolMoveNext = listEnumerator4.moveNext();
+        #        if (! boolMoveNext) break;
+        #
+        #        sOneRec = any2str(listEnumerator4.current());
+        #        txIoWriteTT.write(sOneRec);
+        #    }
+        #    listEnumerator4 = null;
+        #    txIoWriteTT = null;
+        #
+        #    // Columns CC
+        #    listEnumerator4 = listColumnsCC.getEnumerator();
+        #    while (true)
+        #    {
+        #        boolMoveNext = listEnumerator4.moveNext();
+        #        if (! boolMoveNext) break;
+        #
+        #        sOneRec = any2str(listEnumerator4.current());
+        #        txIoWriteCC.write(sOneRec);
+        #    }
+        #    listEnumerator4 = null;
+        #    txIoWriteCC = null;
+        #
+        #    CodeAccessPermission::revertAssert();
+        #}
+        #
+      ENDSOURCE
+      SOURCE #Main
+        #static public void Main(Args _args)
+        #{
+        #    Array arrayOfLists;
+        #    GmErdBzClass erdExtractor;
+        #
+        #    //GmErdBzClass::Test33();
+        #
+        #    erdExtractor = new GmErdBzClass();
+        #
+        #
+        #    //listRecs = erdExtractor.generateListOfFkys("Center","","");
+        #    //erdExtractor.writeListToFile
+        #    //    (
+        #    //        listRecs
+        #    //        ,"C:\\Writers\\GeneMi\\" //,"C:\\"
+        #    //        ,"ErdBz-1Center.txt"
+        #    //    );
+        #
+        #
+        #    //listRecs = erdExtractor.generateListOfFkys("PC","",""); //("PC","Gm", "Gm");
+        #    //erdExtractor.writeListToFile
+        #    //    (
+        #    //        listRecs
+        #    //        ,"C:\\Writers\\GeneMi\\" //,"C:\\"
+        #    //        ,"ErdBz-3ParentChilds.txt"
+        #    //    );
+        #
+        #
+        #    arrayOfLists = erdExtractor.generateListOfFkys("CP","","");
+        #    erdExtractor.writeList_RR_CC_Files
+        #        (
+        #            arrayOfLists  // Array class objects are 1 based, not 0 based.
+        #            ,"C:\\Writers\\GeneMi\\"
+        #            ,"TabDelim-Child-Parents.txt"  // "ErdBz-2ChildParents.txt"
+        #            ,"TabDelim-Column-Column.txt"
+        #        );
+        #
+        #    return;
+        #}
+        #
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: END

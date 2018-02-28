@@ -1,0 +1,1969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: ARecv</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Accounts Receivable</h2>
+
+
+<a class="cssAHref2" href="Module-AcctRecv-11.htm#m-accountsreceivable">Module: Accounts Receivable</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-AcctRecv-ParentChilds-12.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="p-creditcardauthtrans"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardauthtrans">CreditCardAuthTrans</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retaileventnotificationlog">RetailEventNotificationLog</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a name="p-creditcardcust"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardcust">CreditCardCust</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salestable">SalesTable</a></td>
+<td>.CreditCardCustRefId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a name="p-creditcardprocessors"></a>CreditCardProcessors</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardaccountsetup">CreditCardAccountSetup</a></td>
+<td>.CreditCardProcessors</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td>CreditCardProcessors</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardauthtrans">CreditCardAuthTrans</a></td>
+<td>.CreditCardProcessors</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td>CreditCardProcessors</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardcust">CreditCardCust</a></td>
+<td>.CreditCardProcessors</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td>CreditCardProcessors</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardtypesetup">CreditCardTypeSetup</a></td>
+<td>.CreditCardProcessors</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a name="p-creditcardtypesetup"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardtypesetup">CreditCardTypeSetup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardtypecurrency">CreditCardTypeCurrency</a></td>
+<td>.CreditCardTypeSetup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td><a name="p-custaging"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custaging">CustAging</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custaginglegalentity">CustAgingLegalEntity</a></td>
+<td>.CustAging</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td><a name="p-custaginglegalentity"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custaginglegalentity">CustAgingLegalEntity</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custagingline">CustAgingLine</a></td>
+<td>.CustAgingLegalEntity</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td><a name="p-custbankaccount"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-banklcexport">BankLCExport</a></td>
+<td>.IssuingBank, .CustTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicetable">CustInvoiceTable</a></td>
+<td>.InvoiceAccount, .CustBankAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicetable">CustInvoiceTable</a></td>
+<td>.InvoiceAccount, .CustBankAccount_LV</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custpaymmantrans">CustPaymManTrans</a></td>
+<td>.AccountNum, .CustBankAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custprenote">CustPrenote</a></td>
+<td>.CustAccountId, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.AccountNum, .BankAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.AccountNum, .IntBank_LV</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.AccountNum, .ThirdPartyBankAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.Pky?, .AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendpaymproposalline">CustVendPaymProposalLine</a></td>
+<td>.Fky?, .ThirdPartyBankAccountID, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>20</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.CustBankAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>21</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.dataAreaId, .CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-lvpaymentorderinfo">LvPaymentOrderInfo</a></td>
+<td>.CustCompany, .CustAccount, .CustBank</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>22</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.dataAreaId, .CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-lvpaymentorderinfo">LvPaymentOrderInfo</a></td>
+<td>.CustCompany, .CustAccount, .CustIntBank</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>23</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ChildParents-14.htm#c-projproposaljour">ProjProposalJour</a></td>
+<td>.CustBankAccountId, .InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>24</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-salescomplementaryinvoiceheader">SalesComplementaryInvoiceHeader</a></td>
+<td>.CustBankAccountID, .CustTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>25</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.AccountID, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-20.htm#c-salesparmtable">SalesParmTable</a></td>
+<td>.CustBankAccountId, .InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>26</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salesquotationparmtable">SalesQuotationParmTable</a></td>
+<td>.InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>27</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbankaccount">CustBankAccount</a></td>
+<td>.CustAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salestable">SalesTable</a></td>
+<td>.InvoiceAccount, .CustBankAccount_LV</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>28</td><td><a name="p-custbillofexchangejour"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-bankbillofexchangetable">BankBillOfExchangeTable</a></td>
+<td>.CustBillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>29</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangeinvoice">CustBillOfExchangeInvoice</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>30</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejourextensionjp">CustBillOfExchangeJourExtensionJP</a></td>
+<td>.CustBillOfExchangeJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>31</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-custbillofexchangeopentranstmp_es">CustBillOfExchangeOpenTransTmp_ES</a></td>
+<td>.CustBillOfExchangeJour_BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>32</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-custbillofexchangeopentranstmp_es">CustBillOfExchangeOpenTransTmp_ES</a></td>
+<td>.CustBillOfExchangeTrans_BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>33</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-custbillofexchangeopentranstmp_es">CustBillOfExchangeOpenTransTmp_ES</a></td>
+<td>.CustTrans_BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>34</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangereporttmp">CustBillOfExchangeReportTmp</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>35</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetrans">CustBillOfExchangeTrans</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>36</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-custinvoicesettled_transdatetmp_es">CustInvoiceSettled_TransDateTmp_ES</a></td>
+<td>.BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>37</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custoutattendingnote_billremittancetmp">CustOutAttendingNote_BillRemittanceTmp</a></td>
+<td>.BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>38</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custpaymsched">CustPaymSched</a></td>
+<td>.ExtTableId, .ExtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>39</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>40</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtransopen">CustTransOpen</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>41</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-11.htm#c-custtransopentmp_es">CustTransOpenTmp_ES</a></td>
+<td>.BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+<tr><td>42</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangejour">CustBillOfExchangeJour</a></td>
+<td>.BillOfExchangeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendouttmp">CustVendOutTmp</a></td>
+<td>.BillOfExchangeID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>43</td><td><a name="p-custbillofexchangetrans"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetrans">CustBillOfExchangeTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetransextensionjp">CustBillOfExchangeTransExtensionJP</a></td>
+<td>.CustBillOfExchangeTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>44</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetrans">CustBillOfExchangeTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetransextensionjp">CustBillOfExchangeTransExtensionJP</a></td>
+<td>.ReverseOffsetRecid</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>45</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custbillofexchangetrans">CustBillOfExchangeTrans</a></td>
+<td>.BillOfExchangeId, .CustAccount, .Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.BillOfExchangeID, .AccountNum, .Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>46</td><td><a name="p-custclassificationgroup"></a>CustClassificationGroup</td>
+<td>.Code</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.CustClassificationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>47</td><td>CustClassificationGroup</td>
+<td>.Code</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventreleaseorderpickingtmp">InventReleaseOrderPickingTmp</a></td>
+<td>.CustClassificationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>48</td><td><a name="p-custcollectionletterjour"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterjour">CustCollectionLetterJour</a></td>
+<td>.CollectionLetterNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertrans">CustCollectionLetterTrans</a></td>
+<td>.CollectionLetterNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>49</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterjour">CustCollectionLetterJour</a></td>
+<td>.AccountNum, .CollectionLetterNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertrans">CustCollectionLetterTrans</a></td>
+<td>.AccountNum, .CollectionLetterNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>50</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterjour">CustCollectionLetterJour</a></td>
+<td>.Updated, .AccountNum, .LedgerVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.TransDate, .AccountNum, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>51</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterjour">CustCollectionLetterJour</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtransopen">CustTransOpen</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>52</td><td><a name="p-custcollectionletterline"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterline">CustCollectionLetterLine</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>53</td><td><a name="p-custcollectionlettertable"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertable">CustCollectionLetterTable</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custbillingclassification">CustBillingClassification</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>54</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertable">CustCollectionLetterTable</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionletterline">CustCollectionLetterLine</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>55</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertable">CustCollectionLetterTable</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custledgeraccounts">CustLedgerAccounts</a></td>
+<td>.CollectionLetterCourse</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>56</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionlettertable">CustCollectionLetterTable</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>57</td><td><a name="p-custcollectionsagent"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionsagent">CustCollectionsAgent</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionsagentpool">CustCollectionsAgentPool</a></td>
+<td>.CustCollectionsAgent</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>58</td><td><a name="p-custcollectionscontact"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionscontact">CustCollectionsContact</a></td>
+<td>.AccountNum, .ContactPersonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-contactperson">ContactPerson</a></td>
+<td>.CustAccount, .ContactPersonId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>59</td><td><a name="p-custcollectionspool"></a>CustCollectionsPool</td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionsagent">CustCollectionsAgent</a></td>
+<td>.DefaultCustomerPool</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>60</td><td>CustCollectionsPool</td>
+<td>.Pky?, .Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custcollectionsagentpool">CustCollectionsAgentPool</a></td>
+<td>.Fky?, .CustomerPoolId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>61</td><td><a name="p-custexchrateadjustment"></a>CustExchRateAdjustment</td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>62</td><td>CustExchRateAdjustment</td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-generaljournalaccountentry">GeneralJournalAccountEntry</a></td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>63</td><td>CustExchRateAdjustment</td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-generaljournalentry">GeneralJournalEntry</a></td>
+<td>.createdTransactionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>64</td><td><a name="p-custgroup"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-11.htm#c-businessstatisticsdata">BusinessStatisticsData</a></td>
+<td>.CustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>65</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custagingreporttmp">CustAgingReportTmp</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>66</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-12.htm#c-custconfirmjour">CustConfirmJour</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>67</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-custfiscaldocumenttype_br">CustFiscalDocumentType_BR</a></td>
+<td>.Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>68</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custinvoice4paymjour_ru">CustInvoice4PaymJour_RU</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>69</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>70</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicetable">CustInvoiceTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>71</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custledgeraccounts">CustLedgerAccounts</a></td>
+<td>.Fky?, .Num</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>72</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custpaymmanstepposting">CustPaymManStepPosting</a></td>
+<td>.Fky?, .CustRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>73</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-12.htm#c-custquotationconfirmjour">CustQuotationConfirmJour</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>74</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-12.htm#c-custquotationjour">CustQuotationJour</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>75</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>76</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendaccountstatementinttmp">CustVendAccountStatementIntTmp</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>77</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-czcustadvanceinvoicetable">CzCustAdvanceInvoiceTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>78</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-forecastsales">ForecastSales</a></td>
+<td>.CustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>79</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ChildParents-11.htm#c-forecastsalesitemtmp">ForecastSalesItemTmp</a></td>
+<td>.CustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>80</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-inventbaileecalcsetup_ru">InventBaileeCalcSetup_RU</a></td>
+<td>.Fky?, .CustRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>81</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>82</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>83</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>84</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>85</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>86</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>87</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>88</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>89</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>90</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>91</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-12.htm#c-inventposting">InventPosting</a></td>
+<td>.Fky?, .Fky?, .CustVendRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>92</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-13.htm#c-inventsitedimensionlinkvalidationtmp">InventSiteDimensionLinkValidationTmp</a></td>
+<td>.FSCustGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>93</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtestassociationtable">InventTestAssociationTable</a></td>
+<td>.Fky?, .Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>94</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-ltinvoiceautonumberinggroups">LtInvoiceAutoNumberingGroups</a></td>
+<td>.CustVendGroup, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>95</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup, .Pky?, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-ltinvoiceautonumberinggroups">LtInvoiceAutoNumberingGroups</a></td>
+<td>.CustVendGroup, .Fky?, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>96</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-markupcustposting_ru">MarkupCustPosting_RU</a></td>
+<td>.Fky?, .CustRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>97</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-16.htm#c-pdsbatchattribbyitemcustomer">PdsBatchAttribByItemCustomer</a></td>
+<td>.PdsBatchAttribAccountRelation, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>98</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-19.htm#c-salesline">SalesLine</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>99</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salestable">SalesTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>100</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-12.htm#c-smmbusreltable">smmBusRelTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>101</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-12.htm#c-smmcustrevenuetmp">smmCustRevenueTmp</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>102</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-13.htm#c-smmimportrelationjournal">smmImportRelationJournal</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>103</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-13.htm#c-smmparameterstable">smmParametersTable</a></td>
+<td>.CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>104</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custgroup">CustGroup</a></td>
+<td>.Pky?, .Pky?, .CustGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-taxesmatrix_br">TaxesMatrix_BR</a></td>
+<td>.Fky?, .Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>105</td><td><a name="p-custinterest"></a>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custbillingclassification">CustBillingClassification</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>106</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custbillingcodeversion">CustBillingCodeVersion</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>107</td><td>CustInterest</td>
+<td>.InterestCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestnotetmp">CustInterestNoteTmp</a></td>
+<td>.InterestCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>108</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custinteresttransline">CustInterestTransLine</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>109</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestversion">CustInterestVersion</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>110</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custledgeraccounts">CustLedgerAccounts</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>111</td><td>CustInterest</td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>112</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-paymcalendarcustinterest">PaymCalendarCustInterest</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>113</td><td>CustInterest</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-tmpcustinteresttransline">TmpCustInterestTransLine</a></td>
+<td>.CustInterest</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>114</td><td><a name="p-custinterestfee"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestfee">CustInterestFee</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestrange">CustInterestRange</a></td>
+<td>.CustInterestFee</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>115</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestfee">CustInterestFee</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>116</td><td><a name="p-custinterestjour"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-caseassociation">CaseAssociation</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>117</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestadjustmenthistory">CustInterestAdjustmentHistory</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>118</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestnotetmp">CustInterestNoteTmp</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>119</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinteresttrans">CustInterestTrans</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>120</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custinteresttransline">CustInterestTransLine</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>121</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestwriteoffunpostedjournal">CustInterestWriteOffUnPostedJournal</a></td>
+<td>.InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>122</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestjour">CustInterestJour</a></td>
+<td>.FeeVoucher, .Updated, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.Voucher, .TransDate, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>123</td><td><a name="p-custinteresttrans"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinteresttrans">CustInterestTrans</a></td>
+<td>.RecId, .InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-custinteresttransline">CustInterestTransLine</a></td>
+<td>.CustInterestTrans, .InterestNote</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>124</td><td><a name="p-custinterestversion"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestversion">CustInterestVersion</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestversiondetail">CustInterestVersionDetail</a></td>
+<td>.CustInterestVersion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>125</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestversion">CustInterestVersion</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-languagetxt">LanguageTxt</a></td>
+<td>.TxtRecId, .TxtTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>126</td><td><a name="p-custinterestversiondetail"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestversiondetail">CustInterestVersionDetail</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestfee">CustInterestFee</a></td>
+<td>.CustInterestVersionDetail</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>127</td><td><a name="p-custinterestwriteoffunpostedjournal"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinterestwriteoffunpostedjournal">CustInterestWriteOffUnPostedJournal</a></td>
+<td>.LedgerJournalTrans, .dataAreaId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FinMangt-ChildParents-11.htm#c-spectrans">SpecTrans</a></td>
+<td>.SpecRecId, .SpecCompany, .SpecTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FinMangt-11.htm">(Financial management)</a></span></td></tr>
+
+
+
+<tr><td>128</td><td><a name="p-custinvoicejour"></a><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetbook">AssetBook</a></td>
+<td>.CustInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>129</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetbookmerge">AssetBookMerge</a></td>
+<td>.CustInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>130</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-FixedAssets-ChildParents-11.htm#c-assetdepbook">AssetDepBook</a></td>
+<td>.CustInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-FixedAssets-11.htm">(Fixed assets)</a></span></td></tr>
+
+
+
+<tr><td>131</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceDate, .InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-12.htm#c-commissiontrans">CommissionTrans</a></td>
+<td>.InvoiceDate, .InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>132</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-creditcardauthtrans">CreditCardAuthTrans</a></td>
+<td>.SalesInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>133</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-custadvanceinvoicesettlement_w">CustAdvanceInvoiceSettlement_W</a></td>
+<td>.InvoiceJourRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>134</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-custadvanceinvoicesettlement_w">CustAdvanceInvoiceSettlement_W</a></td>
+<td>.CreditNoteRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>135</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicebackorderline">CustInvoiceBackorderLine</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .NumberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>136</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-custinvoiceduplicatetable_w">CustInvoiceDuplicateTable_W</a></td>
+<td>.InvoiceTableIdRef, .InvoiceRecIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>137</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>138</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.ReversedRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>139</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>140</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-custinvoicejour_br">CustInvoiceJour_BR</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>141</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejour_intrastat">CustInvoiceJour_Intrastat</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>142</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejour_officials">CustInvoiceJour_Officials</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>143</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-custinvoicejour_pl">CustInvoiceJour_PL</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>144</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custinvoicejour_ru">CustInvoiceJour_RU</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>145</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmW-ChildParents-11.htm#c-custinvoicejour_w">CustInvoiceJour_W</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmW-11.htm">(Global financial management - _W)</a></span></td></tr>
+
+
+
+<tr><td>146</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejouradjustment">CustInvoiceJourAdjustment</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>147</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custinvoicejourcorrectiontype_ru">CustInvoiceJourCorrectionType_RU</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>148</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custinvoicejourcorrlink_ru">CustInvoiceJourCorrLink_RU</a></td>
+<td>.JourRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>149</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-11.htm#c-custinvoicejourcorrlink_ru">CustInvoiceJourCorrLink_RU</a></td>
+<td>.CorrJourRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>150</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-11.htm#c-custinvoicejourextension_cn">CustInvoiceJourExtension_CN</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>151</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejourextensionth">CustInvoiceJourExtensionTH</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>152</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejourprint">CustInvoiceJourPrint</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>153</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejoursymbol">CustInvoiceJourSymbol</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>154</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicejourtmp">CustInvoiceJourTmp</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>155</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId, .InvoiceDate, .SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-11.htm#c-custinvoicepackingslip_in">CustInvoicePackingSlip_IN</a></td>
+<td>.InvoiceId, .InvoiceDate, .SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>156</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicesaleslink">CustInvoiceSalesLink</a></td>
+<td>.salesId, .invoiceId, .invoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>157</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-12.htm#c-custinvoicetable">CustInvoiceTable</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>158</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custinvoicetrans">CustInvoiceTrans</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>159</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custinvoicetrans">CustInvoiceTrans</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>160</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-13.htm#c-custinvoicetrans">CustInvoiceTrans</a></td>
+<td>.ParentRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>161</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custpaymsched">CustPaymSched</a></td>
+<td>.ExtTableId, .ExtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>162</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId, .InvoiceAccount, .InvoiceDate, .LedgerVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtrans">CustTrans</a></td>
+<td>.Invoice, .AccountNum, .TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>163</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtranscashdisc">CustTransCashDisc</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>164</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtransopen">CustTransOpen</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>165</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custtransopenperdatetmp">CustTransOpenPerDateTmp</a></td>
+<td>.Invoice</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>166</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendcreditinvoicingjour">CustVendCreditInvoicingJour</a></td>
+<td>.CorrectedInvoiceRecId, .InvoiceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>167</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendcreditinvoicingjour">CustVendCreditInvoicingJour</a></td>
+<td>.InvoiceRecId, .InvoiceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>168</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-einvoicejour_mx">EInvoiceJour_MX</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>169</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-exportsalesinvoice">ExportSalesInvoice</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>170</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.Pky?, .Pky?, .SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturetrans_ru">FactureTrans_RU</a></td>
+<td>.Fky?, .Fky?, .SalesPurchId, .InvoiceId, .InvoiceDate, .NumberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>171</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.Pky?, .Pky?, .SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-facturetrans_ru">FactureTrans_RU</a></td>
+<td>.Fky?, .Fky?, .SalesPurchId, .InvoiceId, .InvoiceDate, .NumberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>172</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-fiscaldocument_br">FiscalDocument_BR</a></td>
+<td>.RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>173</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-11.htm#c-fiscaldocumentline_br">FiscalDocumentLine_BR</a></td>
+<td>.RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>174</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-formlettersortingparameters">FormLetterSortingParameters</a></td>
+<td>.SortingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>175</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-giroreporttmp">GiroReportTmp</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>176</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-goodsinroutejour_ru">GoodsInRouteJour_RU</a></td>
+<td>.InvoiceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>177</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-12.htm#c-goodsinroutejour_ru">GoodsInRouteJour_RU</a></td>
+<td>.CancelInvoiceRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>178</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-12.htm#c-ledgercov">LedgerCov</a></td>
+<td>.TransRecId, .TransTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>179</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-14.htm#c-ledgerpostingtransactionprojecttmp">LedgerPostingTransactionProjectTmp</a></td>
+<td>.SalesInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>180</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-markuptrans">MarkupTrans</a></td>
+<td>.TransTableId, .TransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>181</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-14.htm#c-markuptranshistory">MarkupTransHistory</a></td>
+<td>.TransTableId, .TransRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>182</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-14.htm#c-pdsrebatetable">PdsRebateTable</a></td>
+<td>.PdsCustInvoiceJourRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>183</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-14.htm#c-pdsrebatetable">PdsRebateTable</a></td>
+<td>.SalesInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>184</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-14.htm#c-pdsrebatetable">PdsRebateTable</a></td>
+<td>.PdsCustInvoiceJourRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>185</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .numberSequenceGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-12.htm#c-plinventpackagetrans">PlInventPackageTrans</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate, .NumberSequenceGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>186</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-printouttable_ru">PrintoutTable_RU</a></td>
+<td>.RefRecId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>187</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId, .InvoiceDate, .SalesId, .numberSequenceGroup, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-13.htm#c-printouttable_ru">PrintoutTable_RU</a></td>
+<td>.DocumentId, .DocumentDate, .SalesPurchId, .CustVendNumSeqGroup, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>188</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId, .SalesId, .InvoiceAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-15.htm#c-rassettable">RAssetTable</a></td>
+<td>.CustInvoiceId, .SalesId, .CustAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>189</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-16.htm#c-restoredvatloggain_ru">RestoredVATLogGain_RU</a></td>
+<td>.CustInvoiceJourRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>190</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-16.htm#c-restoredvatsalestaxtrans_ru">RestoredVATSalesTaxTrans_RU</a></td>
+<td>.CustInvoiceJourRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>191</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-12.htm#c-retailconcessioncontractinvoicehistory">RetailConcessionContractInvoiceHistory</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>192</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-13.htm#c-retailcustinvoicejourtable">RetailCustInvoiceJourTable</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>193</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailloyaltymsrcardtranscustinvoicejour">RetailLoyaltyMSRCardTransCustInvoiceJour</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>194</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-salesinvoiceheaderfootertmp">SalesInvoiceHeaderFooterTmp</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>195</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-salesinvoicelocalizationtmp">SalesInvoiceLocalizationTmp</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>196</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-salesinvoicepaymentstubtmp">SalesInvoicePaymentStubTmp</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>197</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-15.htm#c-salesinvoicetmp">SalesInvoiceTmp</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>198</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-14.htm#c-salesinvoicetmp_in">SalesInvoiceTmp_IN</a></td>
+<td>.JournalRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>199</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salesshippingstat">SalesShippingStat</a></td>
+<td>.SalesId, .InvoiceId, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>200</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-21.htm#c-salestable">SalesTable</a></td>
+<td>.CustInvoiceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>201</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-salestable_br">SalesTable_BR</a></td>
+<td>.InvoiceRefRecID_BR</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>202</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-salestaxtransactionexchangerate">SalesTaxTransactionExchangeRate</a></td>
+<td>.SourceRecordId, .SourceTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>203</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-16.htm#c-shipcarriershipmentinvoice">ShipCarrierShipmentInvoice</a></td>
+<td>.CustInvoiceJourRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>204</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-14.htm#c-taxexternalsalesinvoice_cn">TaxExternalSalesInvoice_CN</a></td>
+<td>.CustInvoiceJour</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>205</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.InvoiceDate, .LedgerVoucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ChildParents-11.htm#c-taxtrans">TaxTrans</a></td>
+<td>.TransDate, .Voucher</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>206</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.LedgerVoucher, .InvoiceDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmAPac-ChildParents-15.htm#c-taxwithholdtrans_in">TaxWithholdTrans_IN</a></td>
+<td>.Voucher, .TransDate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmAPac-11.htm">(Global financial management - Asia Pacific)</a></span></td></tr>
+
+
+
+<tr><td>207</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ChildParents-12.htm#c-taxworkregulation">TaxWorkRegulation</a></td>
+<td>.HeadingRecId, .HeadingTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>208</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmRu-ChildParents-17.htm#c-tmpsalespurchreporttable_ru">TmpSalesPurchReportTable_RU</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmRu-11.htm">(Global financial management - Russia)</a></span></td></tr>
+
+
+
+<tr><td>209</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-11.htm#c-custinvoicejour">CustInvoiceJour</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmWE-ChildParents-13.htm#c-tradeblwijournalpurposecodes">TradeBLWIJournalPurposeCodes</a></td>
+<td>.Fky?, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmWE-11.htm">(Global financial management - Western Europe)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-AcctRecv-ParentChilds-12.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

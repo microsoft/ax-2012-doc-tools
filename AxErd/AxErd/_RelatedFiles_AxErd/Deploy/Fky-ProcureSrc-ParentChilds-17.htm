@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd PC: PSrc</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="PC" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorPC">AxErd: Parent-Children: Procurement and sourcing</h2>
+
+
+<a class="cssAHref2" href="Module-ProcureSrc-11.htm#m-procurementandsourcing">Module: Procurement and sourcing</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProcureSrc-ParentChilds-16.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProcureSrc-ParentChilds-18.htm">Next_File</a>
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders"><th>Row-num</th><th>Parent-table-name</th><th>Foreign-key-columns</th><th>Module-of-parent-table</th><th>Arrow-to-parent</th><th>Child-table-name</th><th>Primary-key-columns</th><th>Module-of-child-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1354</td><td><a name="p-salestabledelete"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-salestabledelete">SalesTableDelete</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-20.htm#c-saleslinedelete">SalesLineDelete</a></td>
+<td>.SalesId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1355</td><td><a name="p-suppitemgroup"></a>SuppItemGroup</td>
+<td>.GroupId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ChildParents-11.htm#c-custtable">CustTable</a></td>
+<td>.SuppItemGroupId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>1356</td><td>SuppItemGroup</td>
+<td>.GroupId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-14.htm#c-inventtablemodule">InventTableModule</a></td>
+<td>.SuppItemGroupId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1357</td><td>SuppItemGroup</td>
+<td>.Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmassupdateworksheetline">RetailMassUpdateWorksheetLine</a></td>
+<td>.Fky?, .Purch_SuppItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1358</td><td>SuppItemGroup</td>
+<td>.Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-14.htm#c-retailmassupdateworksheetline">RetailMassUpdateWorksheetLine</a></td>
+<td>.Fky?, .Sales_SuppItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1359</td><td>SuppItemGroup</td>
+<td>.Module, .Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-suppitemtable">SuppItemTable</a></td>
+<td>.Module, .Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1360</td><td>SuppItemGroup</td>
+<td>.Pky?, .Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-suppitemtable">SuppItemTable</a></td>
+<td>.Fky?, .Fky?, .ItemRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1361</td><td>SuppItemGroup</td>
+<td>.Module, .Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-suppitemtable">SuppItemTable</a></td>
+<td>.Module, .Fky?, .AccountRelation</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1362</td><td>SuppItemGroup</td>
+<td>.Pky?, .GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.Fky?, .SuppItemGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1363</td><td><a name="p-suppitemtable"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-suppitemtable">SuppItemTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-InvenWareMangt-ChildParents-17.htm#c-tmpsuppitem">TmpSuppItem</a></td>
+<td>.SuppItemTableRecid</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-InvenWareMangt-11.htm">(Inventory and warehouse management)</a></span></td></tr>
+
+
+
+<tr><td>1364</td><td><a name="p-tradenonstockedconversion"></a>TradeNonStockedConversion</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionchangetasklog">TradeNonStockedConversionChangeTaskLog</a></td>
+<td>.NonStockedConversion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1365</td><td>TradeNonStockedConversion</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionchecktasklog">TradeNonStockedConversionCheckTaskLog</a></td>
+<td>.NonStockedConversion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1366</td><td>TradeNonStockedConversion</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionitem">TradeNonStockedConversionItem</a></td>
+<td>.NonStockedConversion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1367</td><td>TradeNonStockedConversion</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversiontmpcompanies">TradeNonStockedConversionTmpCompanies</a></td>
+<td>.NonStockedConversion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1368</td><td>TradeNonStockedConversion</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversiontmpproducts">TradeNonStockedConversionTmpProducts</a></td>
+<td>.NonStockedConversion</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1369</td><td><a name="p-tradenonstockedconversionitem"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionitem">TradeNonStockedConversionItem</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionlog">TradeNonStockedConversionLog</a></td>
+<td>.NonStockedConversionItem</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1370</td><td><a name="p-tradenonstockedconversionlog"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionlog">TradeNonStockedConversionLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionchangelog">TradeNonStockedConversionChangeLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1371</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionlog">TradeNonStockedConversionLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionchecklog">TradeNonStockedConversionCheckLog</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1372</td><td><a name="p-tradenonstockedconversionlogparent"></a>TradeNonStockedConversionLogParent</td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-tradenonstockedconversionlog">TradeNonStockedConversionLog</a></td>
+<td>.NonStockedConversionLogParent</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1373</td><td><a name="p-userrequest"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequest">UserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-13.htm#c-custuserrequest">CustUserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1374</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequest">UserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ChildParents-12.htm#c-hcmworkeruserrequest">HcmWorkerUserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>1375</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequest">UserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendrequestuserrequest">VendRequestUserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1376</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-userrequest">UserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-24.htm#c-venduserrequest">VendUserRequest</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1377</td><td><a name="p-vendbankaccount"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-banklcimport">BankLCImport</a></td>
+<td>.ImportAdvisingBank, .VendTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>1378</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-CashBankMangt-ChildParents-11.htm#c-banklcimporthistory">BankLCImportHistory</a></td>
+<td>.ImportAdvisingBank, .VendTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-CashBankMangt-11.htm">(Cash and bank management)</a></span></td></tr>
+
+
+
+<tr><td>1379</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.Pky?, .AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctRecv-ChildParents-14.htm#c-custvendpaymproposalline">CustVendPaymProposalLine</a></td>
+<td>.Fky?, .ThirdPartyBankAccountID, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctRecv-11.htm">(Accounts Receivable)</a></span></td></tr>
+
+
+
+<tr><td>1380</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-docuref">DocuRef</a></td>
+<td>.RefCompanyId, .RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>1381</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ChildParents-13.htm#c-ledgerjournaltrans">LedgerJournalTrans</a></td>
+<td>.VendBankAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>1382</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-lvpaymentorderinfo">LvPaymentOrderInfo</a></td>
+<td>.VendCompany, .VendAccount, .VendBank</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>1383</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmEE-ChildParents-11.htm#c-lvpaymentorderinfo">LvPaymentOrderInfo</a></td>
+<td>.VendCompany, .VendAccount, .VendIntBank</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmEE-11.htm">(Global financial management - Eastern Europe)</a></span></td></tr>
+
+
+
+<tr><td>1384</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefault">PurchAgreementHeaderDefault</a></td>
+<td>.VendBankAccountDataAreaID_PSN, .VendBankAccountID_PSN, .VendAccount_PSN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1385</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-15.htm#c-purchagreementheaderdefaulthistory">PurchAgreementHeaderDefaultHistory</a></td>
+<td>.VendBankAccountDataAreaID_PSN, .VendBankAccountID_PSN, .VendAccount_PSN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1386</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.dataAreaId, .AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-purchagreementsubcontractor">PurchAgreementSubcontractor</a></td>
+<td>.VendBankAccountDataAreaID_PSN, .VendBankAccountID_PSN, .VendAccount_PSN</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>1387</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GfmLatAm-ChildParents-12.htm#c-purchcomplementaryinvoiceheader">PurchComplementaryInvoiceHeader</a></td>
+<td>.VendBankAccount, .VendTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GfmLatAm-11.htm">(Global financial management - Latin America)</a></span></td></tr>
+
+
+
+<tr><td>1388</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-16.htm#c-purchparmtable">PurchParmTable</a></td>
+<td>.InvoiceAccount, .VendBankAccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1389</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-purchparmtable_paymentdisbursement">PurchParmTable_PaymentDisbursement</a></td>
+<td>.VendBankAccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>1390</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.IntermBankAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1391</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1392</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-vendinvoiceinfo_paymentdisbursement">VendInvoiceInfo_PaymentDisbursement</a></td>
+<td>.VendBankAccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>1393</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-11.htm#c-vendinvoiceinfotable">VendInvoiceInfoTable</a></td>
+<td>.InvoiceAccount, .VendBankAccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>1394</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendprenote">VendPrenote</a></td>
+<td>.VendAccount, .VendAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>1395</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.AccountNum, .BankAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1396</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.VendAccount, .AccountID</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtrans">VendTrans</a></td>
+<td>.AccountNum, .ThirdPartyBankAccountId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>1397</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendbankaccount">VendBankAccount</a></td>
+<td>.AccountID, .VendAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendtransopen">VendTransOpen</a></td>
+<td>.ThirdPartyBankAccountId, .AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>1398</td><td><a name="p-vendcategory"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcategory">VendCategory</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ChildParents-11.htm#c-catdisplayvendorcategory">CatDisplayVendorCategory</a></td>
+<td>.VendorCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>1399</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcategory">VendCategory</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AcctPay-ChildParents-13.htm#c-vendprocurementcategorystatus">VendProcurementCategoryStatus</a></td>
+<td>.VendorCategory</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AcctPay-11.htm">(Accounts Payable)</a></span></td></tr>
+
+
+
+<tr><td>1400</td><td><a name="p-vendcertification"></a><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcertification">VendCertification</a></td>
+<td>.dataAreaId, .TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Client-ChildParents-11.htm#c-docuref">DocuRef</a></td>
+<td>.RefCompanyId, .RefTableId, .RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Client-11.htm">(Client)</a></span></td></tr>
+
+
+
+<tr><td>1401</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcertification">VendCertification</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-PublicSectorSL1-ChildParents-11.htm#c-purchagreementcertification">PurchAgreementCertification</a></td>
+<td>.VendCertification</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-PublicSectorSL1-11.htm">(Public Sector SL1)</a></span></td></tr>
+
+
+
+<tr><td>1402</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcertification">VendCertification</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcertification">VendCertification</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>1403</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-22.htm#c-vendcertification">VendCertification</a></td>
+<td>.VendParty</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ChildParents-23.htm#c-vendtable">VendTable</a></td>
+<td>.Party</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br />
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-ProcureSrc-ParentChilds-18.htm">Next_File</a>
+</p>
+
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

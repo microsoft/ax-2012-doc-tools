@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: DynOn</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Dynamics Online</h2>
+
+
+<a class="cssAHref2" href="Module-DynOnline-11.htm#m-dynamicsonline">Module: Dynamics Online</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="c-docommerceconfiguration"></a><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceconfiguration">DOCommerceConfiguration</a></td>
+<td>.CustomerTemplate</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-11.htm#p-custtable">CustTable</a></td>
+<td>.AccountNum</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceconfiguration">DOCommerceConfiguration</a></td>
+<td>.DOCommerceOnlineStores</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceonlinestores">DOCommerceOnlineStores</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceconfiguration">DOCommerceConfiguration</a></td>
+<td>.MarkupCode, .MarkupModuleType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-markuptable">MarkupTable</a></td>
+<td>.MarkupCode, .ModuleType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceconfiguration">DOCommerceConfiguration</a></td>
+<td>.SalesOriginId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-16.htm#p-salesorigin">SalesOrigin</a></td>
+<td>.OriginId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a name="c-docommerceentitygroupsyncstate"></a>DOCommerceEntityGroupSyncState</td>
+<td>.EntityGroupSyncState</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonsyncstatetable">DOCommonSyncStateTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td>DOCommerceEntityGroupSyncState</td>
+<td>.EntitySyncState</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonsyncstatetable">DOCommonSyncStateTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a name="c-docommerceonlineparameters"></a>DoCommerceOnlineParameters</td>
+<td>.AifPort</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifport">AifPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td>DoCommerceOnlineParameters</td>
+<td>.CategoryHierarchyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-12.htm#p-ecorescategoryhierarchy">EcoResCategoryHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td>DoCommerceOnlineParameters</td>
+<td>.PreviousCategoryHierarchyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Retail-ParentChilds-12.htm#p-ecorescategoryhierarchy">EcoResCategoryHierarchy</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Retail-11.htm">(Retail)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td>DoCommerceOnlineParameters</td>
+<td>.ChargeCodeRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProcureSrc-ParentChilds-12.htm#p-markuptable">MarkupTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProcureSrc-11.htm">(Procurement and sourcing)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a name="c-docommerceonlinestores"></a><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommerceonlinestores">DOCommerceOnlineStores</a></td>
+<td>.MarketplaceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommercemarketplaces">DOCommerceMarketplaces</a></td>
+<td>.MarketplaceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a name="c-docommonportservicesubscription"></a>DOCommonPortServiceSubscription</td>
+<td>.ServiceSubscriptionRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonservicesubscription">DOCommonServiceSubscription</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td><a name="c-docommonserverstate"></a><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonserverstate">DOCommonServerState</a></td>
+<td>.RootEntityRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonserverstate">DOCommonServerState</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td><a name="c-docommonservicesaccount"></a>DOCommonServicesAccount</td>
+<td>.CredentialRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-docommonservicecredentials">DOCommonServiceCredentials</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a name="c-docommonstagingtable"></a>DOCommonStagingTable</td>
+<td>.ServiceName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifservice">AifService</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td><a name="c-dositessolutionport"></a><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-dositessolutionport">DOSitesSolutionPort</a></td>
+<td>.SolutionRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-dositessolution">DOSitesSolution</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a name="c-dositessolutionportservice"></a>DOSitesSolutionPortService</td>
+<td>.SolutionPortRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-dositessolutionport">DOSitesSolutionPort</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a name="c-sitessvcentitysecurity"></a>SitesSvcEntitySecurity</td>
+<td>.SitesSvcUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-sitessvcuser">SitesSvcUser</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td><a name="c-sitessvcpage"></a><a class="cssAHref2" href="Fky-DynOnline-ParentChilds-11.htm#p-sitessvcpage">SitesSvcPage</a></td>
+<td>.DocumentServiceName</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DynOnline-11.htm">(Dynamics Online)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-AIF-ParentChilds-11.htm#p-aifservice">AifService</a></td>
+<td>.Name</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-AIF-11.htm">(AIF)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

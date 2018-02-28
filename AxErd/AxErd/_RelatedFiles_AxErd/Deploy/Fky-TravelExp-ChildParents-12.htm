@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: TExp</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Travel and expense</h2>
+
+
+<a class="cssAHref2" href="Module-TravelExp-11.htm#m-travelandexpense">Module: Travel and expense</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fky-TravelExp-ChildParents-11.htm">Previous_File</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>201</td><td><a name="c-trvworkflowexpprovidercache"></a>TrvWorkflowExpProviderCache</td>
+<td>.AccountingDistribution</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-accountingdistribution">AccountingDistribution</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>202</td><td>TrvWorkflowExpProviderCache</td>
+<td>.TrvExpTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-trvexptable">TrvExpTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>203</td><td>TrvWorkflowExpProviderCache</td>
+<td>.TrvExpTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-trvexptrans">TrvExpTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>204</td><td>TrvWorkflowExpProviderCache</td>
+<td>.WorkflowUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>205</td><td><a name="c-trvworkflowlog"></a>TrvWorkflowLog</td>
+<td>.ApprovedByWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>206</td><td>TrvWorkflowLog</td>
+<td>.RejectedByWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>207</td><td>TrvWorkflowLog</td>
+<td>.ExpHeaderRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-trvexptable">TrvExpTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>208</td><td>TrvWorkflowLog</td>
+<td>.ExpLineRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-trvexptrans">TrvExpTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>209</td><td><a name="c-tsappemplsub"></a>TSAppEmplSub</td>
+<td>.AppWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>210</td><td>TSAppEmplSub</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>211</td><td>TSAppEmplSub</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>212</td><td><a name="c-tsintercompanycost"></a><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tsintercompanycost">TSIntercompanyCost</a></td>
+<td>.SourceDocumentHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentheader">SourceDocumentHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>213</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tsintercompanycost">TSIntercompanyCost</a></td>
+<td>.TSTimesheetTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>214</td><td><a name="c-tsintercompanycostdetails"></a>TSIntercompanyCostDetails</td>
+<td>.Currency</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>215</td><td>TSIntercompanyCostDetails</td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>216</td><td>TSIntercompanyCostDetails</td>
+<td>.TSIntercompanyCost</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tsintercompanycost">TSIntercompanyCost</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>217</td><td>TSIntercompanyCostDetails</td>
+<td>.TSTimesheetTrans</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettrans">TSTimesheetTrans</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>218</td><td><a name="c-tstimesheetemployeefilter"></a>TSTimesheetEmployeeFilter</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>219</td><td>TSTimesheetEmployeeFilter</td>
+<td>.UserId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>220</td><td><a name="c-tstimesheetfavorites"></a>TSTimesheetFavorites</td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>221</td><td>TSTimesheetFavorites</td>
+<td>.Fky?, .Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.Pky?, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>222</td><td>TSTimesheetFavorites</td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>223</td><td>TSTimesheetFavorites</td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>224</td><td>TSTimesheetFavorites</td>
+<td>.ProjValEmplGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-projvalemplprojtable">ProjValEmplProjTable</a></td>
+<td>.GroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>225</td><td>TSTimesheetFavorites</td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>226</td><td><a name="c-tstimesheetline"></a><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>227</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.DefaultDimension</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-19.htm#p-dimensionattributevalueset">DimensionAttributeValueSet</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>228</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>229</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.CategoryId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-11.htm#p-projcategory">ProjCategory</a></td>
+<td>.CategoryId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>230</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.TransIdRef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-12.htm#p-projempltrans">ProjEmplTrans</a></td>
+<td>.TransId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>231</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.ProjectDataAreaId, .LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projlineproperty">ProjLineProperty</a></td>
+<td>.dataAreaId, .LinePropertyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>232</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.ProjPeriodTimesheetWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projperiodtimesheetweek">ProjPeriodTimesheetWeek</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>233</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projtable">ProjTable</a></td>
+<td>.ProjId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>234</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-16.htm#p-smmactivities">smmActivities</a></td>
+<td>.ActivityNumber</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>235</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.TaxGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxgroupheading">TaxGroupHeading</a></td>
+<td>.TaxGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>236</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Tax-ParentChilds-11.htm#p-taxitemgroupheading">TaxItemGroupHeading</a></td>
+<td>.TaxItemGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Tax-11.htm">(Tax)</a></span></td></tr>
+
+
+
+<tr><td>237</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>238</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.WrkCtrId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Manufacturing-ParentChilds-17.htm#p-wrkctrtable">WrkCtrTable</a></td>
+<td>.WrkCtrId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Manufacturing-11.htm">(Manufacturing)</a></span></td></tr>
+
+
+
+<tr><td>239</td><td><a name="c-tstimesheetlinecomments"></a>TSTimesheetLineComments</td>
+<td>.TSTimesheetLineWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>240</td><td><a name="c-tstimesheetlineweek"></a><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournaltable">ProjJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>241</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.ProjPeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodtable">ProjPeriodTable</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>242</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.TSTimesheetLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>243</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>244</td><td><a name="c-tstimesheettable"></a><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.Worker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>245</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.ProjPeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projperiodtable">ProjPeriodTable</a></td>
+<td>.PeriodId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>246</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.ProjPeriodTimesheetWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-14.htm#p-projperiodtimesheetweek">ProjPeriodTimesheetWeek</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>247</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.SourceDocumentHeader</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentheader">SourceDocumentHeader</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>248</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-tstimesheetapprovalsummary">TSTimesheetApprovalSummary</a></td>
+<td>.TimesheetNbr</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>249</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.Worker, .ProjPeriodTimesheetWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-tstimesheetentrytotalspart">TSTimesheetEntryTotalsPart</a></td>
+<td>.Worker, .ProjPeriodTimesheetWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>250</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>251</td><td><a name="c-tstimesheettrans"></a><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettrans">TSTimesheetTrans</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-13.htm#p-projjournaltable">ProjJournalTable</a></td>
+<td>.JournalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>252</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettrans">TSTimesheetTrans</a></td>
+<td>.PSAIndirectComponentGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ProjectMangtAccounting-ParentChilds-15.htm#p-psaindirectcomponentgroup">PSAIndirectComponentGroup</a></td>
+<td>.ComponentGroupId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ProjectMangtAccounting-11.htm">(Project management and accounting)</a></span></td></tr>
+
+
+
+<tr><td>253</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettrans">TSTimesheetTrans</a></td>
+<td>.SourceDocumentLine</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-24.htm#p-sourcedocumentline">SourceDocumentLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>254</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettrans">TSTimesheetTrans</a></td>
+<td>.TSTimesheetLineWeek</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetlineweek">TSTimesheetLineWeek</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>255</td><td><a name="c-tsworkflowlog"></a>TSWorkflowLog</td>
+<td>.ApprovedByWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>256</td><td>TSWorkflowLog</td>
+<td>.RejectedByWorker</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-HumanRes-ParentChilds-12.htm#p-hcmworker">HcmWorker</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-HumanRes-11.htm">(Human resources)</a></span></td></tr>
+
+
+
+<tr><td>257</td><td>TSWorkflowLog</td>
+<td>.TimesheetLineRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>258</td><td>TSWorkflowLog</td>
+<td>.TimesheetRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>259</td><td><a name="c-tsworkflowtable"></a>TSWorkflowTable</td>
+<td>.TimesheetLineRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheetline">TSTimesheetLine</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+<tr><td>260</td><td>TSWorkflowTable</td>
+<td>.TimesheetRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-TravelExp-ParentChilds-11.htm#p-tstimesheettable">TSTimesheetTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-TravelExp-11.htm">(Travel and expense)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

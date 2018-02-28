@@ -1,0 +1,1575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+	Microsoft Dynamics AX 2012 R2, Table ERD and related Application Module info.
+-->
+<head>
+	<title>AxErd CP: WFlow</title>
+	<link rel="stylesheet" type="text/css" href="Aa_Stylesheet_AxErd.css"/>
+	<meta name="Search.MsDynAx.Erd.62.All" content="yes" />
+	<meta name="Search.MsDynAx.Erd.62.ContentType" content="CP" />
+</head>
+<body class="cssBackgroundColorBodyCP">
+
+<h4>Microsoft Dynamics AX 2012 R2</h4>
+<h2 class="cssH3ColorCP">AxErd: Child-Parents: Workflow</h2>
+
+
+<a class="cssAHref2" href="Module-Workflow-11.htm#m-workflow">Module: Workflow</a>
+
+
+<p class="cssPPreviousNextNavigation">
+<i>Navigation:</i>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Default.htm">AxErd_Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<br />
+<table id="idTabMainTest2">
+<thead>
+<tr class="cssFontForMainColumnHeaders">
+    <th>Row-num</th> <th>Child-table-name</th> <th>Foreign-key-columns</th> <th>Module-of-child-table</th> <th>Arrow-to-parent</th> <th>Parent-table-name</th> <th>Primary-key-columns</th> <th>Module-of-parent-table</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr><td>1</td><td><a name="c-eventcompanyrule"></a>EventCompanyRule</td>
+<td>.CompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>2</td><td><a name="c-eventcud"></a>EventCUD</td>
+<td>.CudRecId, .CudTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>3</td><td><a name="c-eventinbox"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.AlertTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>4</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>5</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.CompanyId, .EmailTemplateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysemailtable">SysEmailTable</a></td>
+<td>.dataAreaId, .EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>6</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysoutgoingemailtable">SysOutgoingEmailTable</a></td>
+<td>.EmailItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>7</td><td><a name="c-eventinboxdata"></a>EventInboxData</td>
+<td>.InboxId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.InboxId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>8</td><td><a name="c-eventparameters"></a>EventParameters</td>
+<td>.AlertTemplateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysemailtable">SysEmailTable</a></td>
+<td>.EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>9</td><td><a name="c-eventrule"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.DeleteRefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>10</td><td><a name="c-eventruledata"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventruledata">EventRuleData</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>11</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventruledata">EventRuleData</a></td>
+<td>.DataType, .RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventruledata">EventRuleData</a></td>
+<td>.DataType, .RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>12</td><td><a name="c-eventrulefield"></a>EventRuleField</td>
+<td>.uTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>13</td><td>EventRuleField</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>14</td><td>EventRuleField</td>
+<td>.RuleRelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.RuleRelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>15</td><td><a name="c-eventruleignore"></a>EventRuleIgnore</td>
+<td>.RefRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>16</td><td>EventRuleIgnore</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>17</td><td><a name="c-eventruleignoreaggregation"></a>EventRuleIgnoreAggregation</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>18</td><td><a name="c-eventrulerel"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.CudTableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>19</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>20</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.ParentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.RuleRelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>21</td><td><a name="c-eventrulereldata"></a>EventRuleRelData</td>
+<td>.RuleRelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrulerel">EventRuleRel</a></td>
+<td>.RuleRelId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>22</td><td><a name="c-eventsystemparameters"></a>EventSystemParameters</td>
+<td>.AlertTemplateId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysemailsystemtable">SysEmailSystemTable</a></td>
+<td>.EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>23</td><td><a name="c-eventtmpalertreport"></a>EventTmpAlertReport</td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>24</td><td>EventTmpAlertReport</td>
+<td>.TypeId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventrule">EventRule</a></td>
+<td>.RuleId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>25</td><td><a name="c-expressionelement"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionelement">ExpressionElement</a></td>
+<td>.ParentElement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionelement">ExpressionElement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>26</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionelement">ExpressionElement</a></td>
+<td>.ExpressionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>27</td><td><a name="c-expressionpredicate"></a>ExpressionPredicate</td>
+<td>.RefRecIdValue, .RefTableIdValue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.RecId, .TableId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>28</td><td>ExpressionPredicate</td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-12.htm#p-currency">Currency</a></td>
+<td>.CurrencyCode</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>29</td><td>ExpressionPredicate</td>
+<td>.ExpressionElement</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionelement">ExpressionElement</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>30</td><td>ExpressionPredicate</td>
+<td>.ExpressionFieldLHS</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectionfield">ExpressionProjectionField</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>31</td><td>ExpressionPredicate</td>
+<td>.ExpressionFieldRHS</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectionfield">ExpressionProjectionField</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>32</td><td><a name="c-expressionprojectiondatasource"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectiondatasource">ExpressionProjectionDatasource</a></td>
+<td>.ParentDatasource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectiondatasource">ExpressionProjectionDatasource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>33</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectiondatasource">ExpressionProjectionDatasource</a></td>
+<td>.ExpressionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>34</td><td><a name="c-expressionprojectionfield"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectionfield">ExpressionProjectionField</a></td>
+<td>.ExpressionDatasource</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressionprojectiondatasource">ExpressionProjectionDatasource</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>35</td><td><a name="c-expressionstagingtable"></a>ExpressionStagingTable</td>
+<td>.ExpressionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>36</td><td><a name="c-sysworkflowelementtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowelementtable">SysWorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>37</td><td><a name="c-sysworkflowfaulttable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowfaulttable">SysWorkflowFaultTable</a></td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>38</td><td><a name="c-sysworkflowmessagetable"></a>SysWorkflowMessageTable</td>
+<td>.WorkflowContextCompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>39</td><td>SysWorkflowMessageTable</td>
+<td>.AssignedUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>40</td><td>SysWorkflowMessageTable</td>
+<td>.AxaptaUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>41</td><td>SysWorkflowMessageTable</td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>42</td><td>SysWorkflowMessageTable</td>
+<td>.WorkItemInstanceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>43</td><td><a name="c-sysworkflowparameters"></a>SysWorkflowParameters</td>
+<td>.WorkItemEmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysemailsystemtable">SysEmailSystemTable</a></td>
+<td>.EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>44</td><td><a name="c-sysworkflowtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.ContextCompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>45</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.WorkflowCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowelementtable">SysWorkflowElementTable</a></td>
+<td>.CorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>46</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.RootCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowfaulttable">SysWorkflowFaultTable</a></td>
+<td>.RootCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>47</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.WorkflowCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowinstancetable">SysWorkflowInstanceTable</a></td>
+<td>.CorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>48</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.Originator</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>49</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.Submitter</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>50</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.ConfigurationSequenceNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>51</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.InstanceNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>52</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>53</td><td><a name="c-sysworkflowtrackingentry"></a>SysWorkflowTrackingEntry</td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>54</td><td>SysWorkflowTrackingEntry</td>
+<td>.StepId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.StepId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>55</td><td><a name="c-workflowactiontable"></a>WorkflowActionTable</td>
+<td>.WorkflowElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>56</td><td><a name="c-workflowassignmenttable"></a>WorkflowAssignmentTable</td>
+<td>.HierarchyFilterId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>57</td><td>WorkflowAssignmentTable</td>
+<td>.HierarchyStopId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>58</td><td>WorkflowAssignmentTable</td>
+<td>.WorkflowElementNotificationTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementnotificationtable">WorkflowElementNotificationTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>59</td><td>WorkflowAssignmentTable</td>
+<td>.WorkflowEscalationPathTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowescalationpathtable">WorkflowEscalationPathTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>60</td><td>WorkflowAssignmentTable</td>
+<td>.WorkflowStepTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>61</td><td>WorkflowAssignmentTable</td>
+<td>.WorkflowVersionNotificationTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversionnotificationtable">WorkflowVersionNotificationTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>62</td><td><a name="c-workflowassociation"></a>WorkflowAssociation</td>
+<td>.WorkflowTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>63</td><td><a name="c-workflowelementlinktable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.SourceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>64</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.TargetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>65</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.ParallelBranchTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>66</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.SourceId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>67</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.TargetId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>68</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.WorkflowVersionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>69</td><td><a name="c-workflowelementnotificationtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementnotificationtable">WorkflowElementNotificationTable</a></td>
+<td>.WorkflowElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>70</td><td><a name="c-workflowelementoutcometable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementoutcometable">WorkflowElementOutcomeTable</a></td>
+<td>.ElementLinkTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementlinktable">WorkflowElementLinkTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>71</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementoutcometable">WorkflowElementOutcomeTable</a></td>
+<td>.ElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>72</td><td><a name="c-workflowelementtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.AutoCompleteId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>73</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ConditionalId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>74</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ExecuteSubWorkflowId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>75</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.FinalApproverAccount</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>76</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ParallelBranchTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>77</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>78</td><td><a name="c-workflowelementviewstate"></a>WorkflowElementViewState</td>
+<td>.WorkflowElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>79</td><td>WorkflowElementViewState</td>
+<td>.WorkflowParallelBranchTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>80</td><td>WorkflowElementViewState</td>
+<td>.WorkflowSubWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>81</td><td><a name="c-workflowescalationpathtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowescalationpathtable">WorkflowEscalationPathTable</a></td>
+<td>.EscalationTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowescalationtable">WorkflowEscalationTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>82</td><td><a name="c-workflowescalationtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowescalationtable">WorkflowEscalationTable</a></td>
+<td>.WorkflowStepTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>83</td><td><a name="c-workflowhistorytmp"></a>WorkflowHistoryTmp</td>
+<td>.CompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>84</td><td>WorkflowHistoryTmp</td>
+<td>.ConfigurationNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>85</td><td>WorkflowHistoryTmp</td>
+<td>.CorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.CorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>86</td><td><a name="c-workflowmaxruntimetable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowmaxruntimetable">WorkflowMaxRuntimeTable</a></td>
+<td>.WorkflowElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>87</td><td><a name="c-workflowmessagetext"></a>WorkflowMessageText</td>
+<td>.LanguageId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-DevPartTool-ParentChilds-11.htm#p-languagetable">LanguageTable</a></td>
+<td>.LanguageId, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-DevPartTool-11.htm">(Developer and Partner Tools)</a></span></td></tr>
+
+
+
+<tr><td>88</td><td>WorkflowMessageText</td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementoutcometable">WorkflowElementOutcomeTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>89</td><td>WorkflowMessageText</td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>90</td><td>WorkflowMessageText</td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>91</td><td>WorkflowMessageText</td>
+<td>.TxtTableId, .TxtRecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.TableId, .RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>92</td><td><a name="c-workflownotificationstaging"></a>WorkflowNotificationStaging</td>
+<td>.SysWorkflowTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>93</td><td>WorkflowNotificationStaging</td>
+<td>.WorkflowWorkItemTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>94</td><td><a name="c-workflowparallelbranchtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.ElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>95</td><td><a name="c-workflowparameters"></a>WorkflowParameters</td>
+<td>.WorkItemEmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-SalesMarket-ParentChilds-18.htm#p-sysemailtable">SysEmailTable</a></td>
+<td>.EmailId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-SalesMarket-11.htm">(Sales and marketing)</a></span></td></tr>
+
+
+
+<tr><td>96</td><td><a name="c-workflowqueuedocumentcommonfields"></a>WorkflowQueueDocumentCommonFields</td>
+<td>.WorkflowWorkitem</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>97</td><td><a name="c-workflowstatustreetmp"></a>WorkflowStatusTreeTmp</td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>98</td><td>WorkflowStatusTreeTmp</td>
+<td>.StepId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.StepId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>99</td><td>WorkflowStatusTreeTmp</td>
+<td>.WorkItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>100</td><td><a name="c-workflowsteptable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.ExecuteStepId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>101</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>102</td><td><a name="c-workflowsubworkflow"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.ParallelBranchTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>103</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.WorkflowTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>104</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.WorkflowVersionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>105</td><td><a name="c-workflowsubworkflowitem"></a>WorkflowSubWorkflowItem</td>
+<td>.ExpressionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>106</td><td>WorkflowSubWorkflowItem</td>
+<td>.WorkflowSubWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>107</td><td>WorkflowSubWorkflowItem</td>
+<td>.WorkflowTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>108</td><td><a name="c-workflowsubworkflowtable"></a>WorkflowSubWorkflowTable</td>
+<td>.ExecuteWorkflowId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>109</td><td>WorkflowSubWorkflowTable</td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>110</td><td>WorkflowSubWorkflowTable</td>
+<td>.ConfigurationSequenceNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>111</td><td><a name="c-workflowtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.DataArea</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>112</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>113</td><td><a name="c-workflowtimespantable"></a>WorkflowTimeSpanTable</td>
+<td>.WorkflowEscalationPathTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowescalationpathtable">WorkflowEscalationPathTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>114</td><td>WorkflowTimeSpanTable</td>
+<td>.WorkflowMaxRuntimeTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowmaxruntimetable">WorkflowMaxRuntimeTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>115</td><td>WorkflowTimeSpanTable</td>
+<td>.WorkflowStepTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>116</td><td><a name="c-workflowtmpworklist"></a>WorkflowTmpWorkList</td>
+<td>.ToUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>117</td><td><a name="c-workflowtrackingargumenttable"></a>WorkflowTrackingArgumentTable</td>
+<td>.WorkflowTrackingCommentTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingcommenttable">WorkflowTrackingCommentTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>118</td><td><a name="c-workflowtrackingcommenttable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingcommenttable">WorkflowTrackingCommentTable</a></td>
+<td>.WorkflowTrackingTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>119</td><td><a name="c-workflowtrackingstatustable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.ContextCompanyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-GenLed-ParentChilds-11.htm#p-companyinfo">CompanyInfo</a></td>
+<td>.DataArea</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-GenLed-11.htm">(General ledger)</a></span></td></tr>
+
+
+
+<tr><td>120</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.ContextCompanyId, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-dataarea">DataArea</a></td>
+<td>.id, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>121</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.CorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.WorkflowCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>122</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.ParentCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.ParentCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>123</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.RootCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-sysworkflowtable">SysWorkflowTable</a></td>
+<td>.RootCorrelationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>124</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.Originator</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>125</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.Owner</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>126</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.ConfigurationNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>127</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.InstanceNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>128</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.WorkflowVersionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>129</td><td><a name="c-workflowtrackingtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>130</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.WorkflowElementTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>131</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.WorkflowParallelBranchTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowparallelbranchtable">WorkflowParallelBranchTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>132</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.WorkflowStepTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsteptable">WorkflowStepTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>133</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.WorkflowSubWorkflow</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowsubworkflow">WorkflowSubWorkflow</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>134</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.WorkflowTrackingStatusTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingstatustable">WorkflowTrackingStatusTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>135</td><td><a name="c-workflowtrackingworkitem"></a>WorkflowTrackingWorkItem</td>
+<td>.ToUser</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>136</td><td>WorkflowTrackingWorkItem</td>
+<td>.WorkflowTrackingTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtrackingtable">WorkflowTrackingTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>137</td><td>WorkflowTrackingWorkItem</td>
+<td>.WorkflowWorkItemQueue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>138</td><td>WorkflowTrackingWorkItem</td>
+<td>.WorkItemId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>139</td><td>WorkflowTrackingWorkItem</td>
+<td>.WorkflowWorkItemTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>140</td><td><a name="c-workflowversionnotificationtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversionnotificationtable">WorkflowVersionNotificationTable</a></td>
+<td>.WorkflowVersionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>141</td><td><a name="c-workflowversiontable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ActivationConditionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.ExpressionId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>142</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.Owner</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>143</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.WorkflowTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>144</td><td><a name="c-workflowversiontablenotes"></a>WorkflowVersionTableNotes</td>
+<td>.WorkflowVersionTable</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>145</td><td>WorkflowVersionTableNotes</td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>146</td><td><a name="c-workflowworkitemcommenttable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemcommenttable">WorkflowWorkItemCommentTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemdelegationparameters">WorkflowWorkItemDelegationParameters</a></td>
+<td>.CommentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>147</td><td><a name="c-workflowworkitemdelegationparameters"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemdelegationparameters">WorkflowWorkItemDelegationParameters</a></td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>148</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemdelegationparameters">WorkflowWorkItemDelegationParameters</a></td>
+<td>.DelegateTo</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>149</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemdelegationparameters">WorkflowWorkItemDelegationParameters</a></td>
+<td>.ConfigurationSequenceNumber, .Fky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowtable">WorkflowTable</a></td>
+<td>.SequenceNumber, .Pky?</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>150</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemdelegationparameters">WorkflowWorkItemDelegationParameters</a></td>
+<td>.CommentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemcommenttable">WorkflowWorkItemCommentTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>151</td><td><a name="c-workflowworkitemqueueassignee"></a>WorkflowWorkItemQueueAssignee</td>
+<td>.User</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-ServerTools-ParentChilds-12.htm#p-sysuserinfo">SysUserInfo</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-ServerTools-11.htm">(Server and Tools)</a></span></td></tr>
+
+
+
+<tr><td>152</td><td>WorkflowWorkItemQueueAssignee</td>
+<td>.WorkitemQueue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>153</td><td><a name="c-workflowworkitemqueueexpression"></a>WorkflowWorkItemQueueExpression</td>
+<td>.Expression</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-expressiontable">ExpressionTable</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>154</td><td>WorkflowWorkItemQueueExpression</td>
+<td>.WorkflowWorkItemQueue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>155</td><td>WorkflowWorkItemQueueExpression</td>
+<td>.WorkFlowWorkItemQueueExpressionDef</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueueexpressiondef">WorkflowWorkItemQueueExpressionDef</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>156</td><td><a name="c-workflowworkitemqueueexpressiondef"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueueexpressiondef">WorkflowWorkItemQueueExpressionDef</a></td>
+<td>.DefaultQueue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>157</td><td><a name="c-workflowworkitemqueuegrouprelation"></a>WorkflowWorkItemQueueGroupRelation</td>
+<td>.WorkflowWorkitemQueue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>158</td><td>WorkflowWorkItemQueueGroupRelation</td>
+<td>.WorkflowWorkitemQueueGroup</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueuegroup">WorkflowWorkItemQueueGroup</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>159</td><td><a name="c-workflowworkitemqueuetypetmp"></a>WorkflowWorkItemQueueTypeTmp</td>
+<td>.WorkitemType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.WorkitemType</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>160</td><td><a name="c-workflowworkitemtable"></a><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.RefTableId, .RefRecId, .CompanyId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-11.htm#p-common">Common</a></td>
+<td>.TableId, .RecId, .dataAreaId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>161</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.NotificationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-eventinbox">EventInbox</a></td>
+<td>.InboxId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>162</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.UserId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-UnknownMod-ParentChilds-12.htm#p-userinfo">UserInfo</a></td>
+<td>.id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-UnknownMod-11.htm">(Unknown module)</a></span></td></tr>
+
+
+
+<tr><td>163</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowelementtable">WorkflowElementTable</a></td>
+<td>.ElementId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>164</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowversiontable">WorkflowVersionTable</a></td>
+<td>.ConfigurationId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>165</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.CommentId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemcommenttable">WorkflowWorkItemCommentTable</a></td>
+<td>.Id</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+<tr><td>166</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemtable">WorkflowWorkItemTable</a></td>
+<td>.Queue</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><a class="cssAHref2" href="Fky-Workflow-ParentChilds-11.htm#p-workflowworkitemqueue">WorkflowWorkItemQueue</a></td>
+<td>.RecId</td>
+<td><span class="css2ModuleLink"><a class="cssAHref2" href="Module-Workflow-11.htm">(Workflow)</a></span></td></tr>
+
+
+
+</tbody>
+</table>
+<br /><br />
+
+<div id="idDiv387Footer" class="classDiv387Footer" align="right">
+			<br />
+	<table style="width:600px">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<img id="idImg387Footer_MsftAndCopyrightSymbol" class="class387Footer" alt="Microsoft" align="right"
+						src="M_MS2.png"/> 
+			</td>
+		</tr>
+		<tr>
+			<td class="classTd387Legal">
+				<a id="idA387Footer_Disclaimer" class="classA387Footer" target="_blank"
+					href="Disclaimer-AxErd.htm"
+					>Disclaimer</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_TermsOfUse" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
+					>Terms of Use</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_Trademarks" class="classA387Footer" target="_blank"
+					href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
+					>Trademarks</a>
+						<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<a id="idA387Footer_PrivacyStatement" class="classA387Footer" target="_blank"
+					href="http://go.microsoft.com/fwlink/?LinkId=81184"
+					>Privacy Statement</a>
+			</td>
+			<td class="classTd387Legal">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy;
+				&nbsp;2013 Microsoft</span>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@echo off
+rem GeneMi   ,   2013/Feb/20  Wednesday  15:33pm
+rem AxErd33 is hardcoded presently.
+
+rem AxErd-run.BAT
+rem ...\AxErd\bin\Debug\
+
+
+rem All of these % parameters are REQUIRED.
+rem  %1 =run ,  literally those three characters.
+rem  %2 = Formal AX6 appmodu name including spaces, such as ="General ledger".
+rem  %3 = Free form, last thing before the final param, where final is /s1. 
+rem
+rem Example-  AxErd-run.bat  run  "General ledger"
+
+if ''=='%1' echo This BAT will Not run now, missing three char param 'run'.
+if ''=='%1' goto LAB86END
+
+
+
+@echo on
+@echo.
+AxErd.exe  /in2 C:\Main\VisStudioProjs\AxErd33\AxErd\AxErd\_RelatedFiles_AxErd\DataFilesCPTM\  /out3 C:\inetpub\wwwroot\Dynamics\AxErd33b\  /in1 AxErd-Input-  /m1 %2  /s3 true  /s1 1
+@echo.
+@echo -------------------------------------------
+@echo.
+@rem AxErd.exe  /in2 C:\Main\VisStudioProjs\AxErd31\AxErd\AxErd\_RelatedFiles_AxErd\DataFilesCPTM\  /out3 C:\inetpub\wwwroot\Dynamics\AxErd31a\  /in1 AxErd-Input-  /s2 true  /s1 1
+@echo.
+@echo off
+
+
+
+:LAB86END
+
+@echo %0  done.
+ 

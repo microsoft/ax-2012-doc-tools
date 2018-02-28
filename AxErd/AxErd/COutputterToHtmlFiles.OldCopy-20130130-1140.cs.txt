@@ -1,0 +1,3136 @@
+﻿//  GeneMi   ,   2013/Jan/30  Wednesday  000:33am  No file is output, maybe null StreamWriter??
+
+using System;
+using SysCollGen = System.Collections.Generic;
+using SysIo      = System.IO;
+using SysTex     = System.Text;
+
+
+namespace AxErd
+{
+	class COutputterToHtmlFiles
+				: IOutputter
+	{
+
+		internal const string M_sCss_Stylesheet_FileName = "Aa_Stylesheet_AxErd.css";
+		internal const string M_sUnknownModule = "UnknownModule";
+
+		internal IRunPropertiesReader m_irunPropRead;
+		//
+
+
+		public COutputterToHtmlFiles()  // .ctor
+		{
+			return;
+		}
+
+
+		public COutputterToHtmlFiles  // .ctor
+				(
+				IRunPropertiesReader _irunPropRead
+				)
+		{
+			this.m_irunPropRead = _irunPropRead;
+			return;
+		}
+
+
+		/// <summary>
+		/// For example, write every .html file that this object knows how to write.
+		/// </summary>
+		public void DoOutputAll()
+		{
+			this.CreateHtmlFileChildParents_10();
+			// ?? this.CreateHtmlFileParentChilds();
+
+			// ?? this.CreateHtmlFileTableModules();
+			// ?? this.CreateHtmlFileModuleTables();
+
+			return;
+		}
+
+
+
+
+
+
+
+
+		private SysIo.StreamWriter OpenOutputFileByInputName(string sFileName)
+		{
+			SysIo.FileStream fileStream;
+			SysIo.StreamWriter streamWriter;
+			//
+
+			fileStream = new SysIo.FileStream
+				(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+					+ sFileName,
+				SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+				SysIo.FileAccess.Write,
+				SysIo.FileShare.None
+				);
+
+			streamWriter = new SysIo.StreamWriter(fileStream);
+
+			return streamWriter;
+		}
+
+
+
+		
+		private void CreateHtmlFileChildParents_10() // this.IRunPropertiesReader has info, so no parameters needed.
+		{
+			this.CreateHtmlFileChildParents_ForOneModule_20
+				(
+					CRunProperties.BuildModuleNameKey_From_ModuleName  // LowercaseNoSpaces
+						(
+						this.m_irunPropRead.GetRestrictToModulesCP()[0]
+						)
+				);
+
+			return;
+		}
+
+
+
+
+		private void CreateHtmlFileChildParents_ForOneModule_20(string _sModuleNameLowercaseNoSpaces)
+		{
+			CModSubNodeState modSubNodeState = new CModSubNodeState();
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfModuleTables;
+			SysCollGen.List<CValueTableModule> listTableModule_MT;
+			//CValueTableModule valueTableModule_MT = null;
+			// ?? string sLatestChildTableNameLowercaseWithinModule;
+			//
+
+			// Seed with the first table name, within the module name,
+			// in preparation for the loop thru sdict_MT.
+			//
+			// In M-T, the T structure includes the module SubNode string,
+			// which was already calculated during the input phase.
+
+			// Obtain a reference to the List of CValueTableModule objects,
+			// for the one input module.
+
+			sdictOfModuleTables = this.m_irunPropRead.GetSDictOfModuleTables();
+			listTableModule_MT = sdictOfModuleTables[_sModuleNameLowercaseNoSpaces];
+
+
+			for (int ll=0; ll < listTableModule_MT.Count; ll++)
+			{
+				modSubNodeState.m_valueTableModule_MT_Previous = modSubNodeState.m_valueTableModule_MT;
+				modSubNodeState.m_valueTableModule_MT = listTableModule_MT[ll];
+				
+				this.CreateHtmlFileChildParents_ManageSubNodeFileReuseVsCreation_24
+					(ref modSubNodeState);
+			}
+
+			if (null != modSubNodeState.m_streamWriter)
+			{
+				modSubNodeState.m_streamWriter.Close();
+				modSubNodeState.m_streamWriter.Dispose();
+				modSubNodeState.m_streamWriter = null;
+			}
+
+			return;
+		}
+
+
+
+
+		/// <summary>
+		/// Handles one M-T pair.
+		/// </summary>
+		/// <param name="_modSubNodeState">ref structure of parameters.
+		/// </param>
+		private void CreateHtmlFileChildParents_ManageSubNodeFileReuseVsCreation_24
+			(
+				ref CModSubNodeState _modSubNodeState
+			)
+		{
+			SysCollGen.List<CValueTableTable> listTableTable_CP;
+			//
+
+			//try
+			//{
+				// For the one T Table in any one pairing of M-T, we always
+				// write all the corresponding C-P entries together into the same module subnode file
+				// (here T == C, and there are many P's for the C key).
+				// Typically several M-T pairings become represented inside one subnode file.
+
+				// Reuse the subnode file, or create the next subnode file.
+
+				if (null == _modSubNodeState.m_valueTableModule_MT_Previous
+						||
+						_modSubNodeState.m_valueTableModule_MT_Previous .SubNode_of_ModuleFileName !=
+							_modSubNodeState.m_valueTableModule_MT .SubNode_of_ModuleFileName
+					)
+				{
+					// Create a new subnode file.
+
+					// First, close the subnode file that we have completed.
+					if (null != _modSubNodeState.m_streamWriter)
+					{
+						_modSubNodeState.m_streamWriter .Close();
+						_modSubNodeState.m_streamWriter .Dispose();
+						_modSubNodeState.m_streamWriter = null;
+					}
+
+					_modSubNodeState.m_streamWriter = this.CreateFileForOutHtmlModuleSubNode_33
+						(
+						_modSubNodeState.m_valueTableModule_MT .GetModuleNameLowercaseNoSpaces(),
+						_modSubNodeState.m_valueTableModule_MT .SubNode_of_ModuleFileName
+						);
+
+					this.WriteHtmlFileHeader_34
+						(_modSubNodeState.m_streamWriter);
+				}
+
+				// Get the list of Parents for the C-P dictionary item, but
+				// only if the T in M-T is a child of any parent table.
+
+				if (this.m_irunPropRead.GetSDictOfChildParents().ContainsKey
+						(_modSubNodeState.m_valueTableModule_MT.GetTableNameLowercase())
+					)
+				{
+					listTableTable_CP = this.m_irunPropRead.GetSDictOfChildParents()
+						[_modSubNodeState.m_valueTableModule_MT.GetTableNameLowercase()];
+				}
+				else
+				{
+					return;
+				}
+
+
+				// REDUNDANT ?? listTableTable_CP = this.m_irunPropRead.GetSDictOfChildParents()
+				//	[_modSubNodeState.m_valueTableModule_MT.GetTableNameLowercase()]; // ?? WHY budgetallocationterm not found as sdict key?? 2013/Jan/30 00:22am  SIMPLY is a parent-only table, should be easy fix here.
+
+				for (int ll=0; ll < listTableTable_CP.Count; ll++)
+				{
+
+					_modSubNodeState.m_valueTableTable = listTableTable_CP[ll];
+
+					// Get the CModuleFileOwnerInfo object, add it to the ref.
+					if (! this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes().TryGetValue
+							(
+							_modSubNodeState.m_valueTableModule_MT .GetModuleNameLowercaseNoSpaces(),
+							out _modSubNodeState.m_moduleFileOwnerInfo
+							)
+						)
+					{
+						Console.WriteLine("AxErd_Warning_1903dh7: CModuleFileOwnerInfo related problem, in _24.");
+					}
+
+
+					this.BuildOneEntryForChildParents_SubNode_37
+						(
+						ref _modSubNodeState
+						);
+				}
+			//}
+			//catch (Exception ee)
+			//{
+			//	Console.WriteLine(_modSubNodeState.ToString_ForDiagnostics());
+			//	throw ee;
+			//}
+
+			return;
+		}
+
+
+
+
+
+
+
+
+
+
+		/// <summary>
+		/// Finds index in listTableModules_MT at which to begin to gather data for the next subnode html file
+		/// for the ongoing module, until the module is exhausted and it needs no more subnode files.
+		/// </summary>
+		/// <param name="_sModuleNameLowercaseNoSpaces">sdict key</param>
+		/// <param name="_sLatestChildTableNameLowercase">ref</param>
+		private void CreateHtmlFileChildParents_ForOneModuleSubNode_30_OLD_b  // Meaning create 1 Html file per call to this method.
+				(
+				string _sModuleNameLowercaseNoSpaces,
+				ref string _sLatestChildTableNameLowercaseWithinModule
+				)
+		{
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfModuleTables;
+			// ?? SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>>.KeyCollection.Enumerator ienumerator_MT;
+			SysCollGen.List<CValueTableModule> listTableModule_MT;
+			SysCollGen.List<CValueTableTable> listTableTable_CP;
+			CValueTableModule valueTableModule_MT = null,
+				valueTableModule_MT_Previous;
+			// ?? CValueTableTable valueTableTable_CP;
+			SysIo.StreamWriter streamWriter;
+			string sTableNameLowercaseLeftWithinModule = null,  // Meaning within M-T sdict list.  Also, in C-P, left means C (child).
+				sSubNodeForModule = null,
+				sOneEntry_LeftRightTablePair;
+			int nIdxTM1, nEmittedLineNumberCurrentModule = 1;
+			//
+
+			sdictOfModuleTables = this.m_irunPropRead.GetSDictOfModuleTables();
+			listTableModule_MT = sdictOfModuleTables[_sModuleNameLowercaseNoSpaces];
+
+			// Find the index at which the input ref table name is found,
+			// in the list.
+			// (The table that immediately follows it must be identified, at index plus one,
+			// will be the left-side table in the first entry into the new subnode html file,
+			// for the current
+			// module.)
+			if (null == _sLatestChildTableNameLowercaseWithinModule)
+			{
+				nIdxTM1 = 0;
+				valueTableModule_MT = listTableModule_MT[nIdxTM1];
+				sTableNameLowercaseLeftWithinModule = valueTableModule_MT.GetTableNameLowercase();
+				sSubNodeForModule = valueTableModule_MT.SubNode_of_ModuleFileName;
+			}
+			else
+			{
+				for (nIdxTM1=0; nIdxTM1 < listTableModule_MT.Count - 1; nIdxTM1++)
+				{
+					valueTableModule_MT = listTableModule_MT[nIdxTM1];
+					sTableNameLowercaseLeftWithinModule = valueTableModule_MT.GetTableNameLowercase();
+		
+					if (sTableNameLowercaseLeftWithinModule == _sLatestChildTableNameLowercaseWithinModule)
+					{
+						nIdxTM1++;
+
+						valueTableModule_MT = listTableModule_MT[nIdxTM1];
+						sTableNameLowercaseLeftWithinModule = valueTableModule_MT.GetTableNameLowercase();
+						sSubNodeForModule = valueTableModule_MT.SubNode_of_ModuleFileName;
+
+						break; // Good, match found etc.
+					}
+
+					sTableNameLowercaseLeftWithinModule = null;
+				}
+			}
+
+			if (null == sTableNameLowercaseLeftWithinModule)
+			{
+				// Null tells the caller of this method to stop calling, for the current module.
+				_sLatestChildTableNameLowercaseWithinModule = null;
+				return;
+			}
+
+			// We now know we have content for a module subnode output Html file,
+			// so create the file now.
+			//
+			streamWriter = this.CreateFileForOutHtmlModuleSubNode_33
+				(
+				_sModuleNameLowercaseNoSpaces,
+				valueTableModule_MT.SubNode_of_ModuleFileName
+				);
+
+			this.WriteHtmlFileHeader_34(streamWriter);
+
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+
+			//_______________________________________________________________
+
+			//__________  LOOP  M-T,  for one Module.  ______________________
+
+			// Loop thru the Tables for the one Module.
+
+			valueTableModule_MT = listTableModule_MT[nIdxTM1];
+
+			for (; nIdxTM1 < listTableModule_MT.Count; nIdxTM1++)
+			{
+
+				valueTableModule_MT_Previous = valueTableModule_MT;
+				valueTableModule_MT = listTableModule_MT[nIdxTM1];
+
+				if (valueTableModule_MT_Previous.SubNode_of_ModuleFileName !=
+						valueTableModule_MT.SubNode_of_ModuleFileName
+					)
+				{
+					break;
+				}
+
+
+
+				// TODO: !!! Must recheck NumEntriesApprox each outer loop.
+				// TODO: !!! Understand that only the SubNode of the Left table matters. And this SubNode value is only in CValueTableModule objects in sdicts MT and TM (not in anything CP or PC).
+
+				//___________  LOOP  C-P,  for one Left/C Table from MT.  ________
+
+				// Loop thru the Parents of one Child table.
+
+				listTableTable_CP = sdictOfChildParents[valueTableModule_MT.GetTableNameLowercase()];
+
+
+				for (int tt=0; tt < listTableTable_CP.Count; tt++)
+				{
+					sOneEntry_LeftRightTablePair = this.BuildOneEntryForChildParents_SubNode_36
+						(_sModuleNameLowercaseNoSpaces,
+						sSubNodeForModule,
+						listTableTable_CP[tt], // CValueTableTable
+						ref nEmittedLineNumberCurrentModule
+						);
+
+					streamWriter.WriteLine(sOneEntry_LeftRightTablePair);
+				}
+			}
+		}
+
+
+
+
+
+		private SysIo.StreamWriter CreateFileForOutHtmlModuleSubNode_33
+			(
+			string _sModuleNameLowercaseNoSpaces,
+			string _sModuleSubNode
+			)
+		{
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			CModuleFileOwnerInfo moduleFileOwnerInfo;
+			SysIo.FileStream fileStreamCreate;
+			SysIo.StreamWriter streamWriter;
+			string sWholeFileName;
+			//
+
+			// We now know we have content for a module subnode output Html file,
+			// so create the file now.
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+			moduleFileOwnerInfo = sdictOfModuleName_to_FileNameNodes[_sModuleNameLowercaseNoSpaces];
+
+			sWholeFileName = 
+				this.m_irunPropRead.GetPathToOutputHtmlFiles()  // "C:\Blah\"
+				+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()  // "Modu"
+				+ "-"
+				+ moduleFileOwnerInfo.GetFileNameNode()  // "GenLen"
+				+ "-"
+				+ this.m_irunPropRead.GetHtmlFileChildParents()  // "ChildParents"
+				+ "-"
+				+ _sModuleSubNode  // "11"
+				+ this.m_irunPropRead.GetHtmlFileExtension();  // ".htm"
+
+			fileStreamCreate = new SysIo.FileStream
+					(sWholeFileName,
+					SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+					SysIo.FileAccess.Write,
+					SysIo.FileShare.None
+					);
+			streamWriter = new SysIo.StreamWriter(fileStreamCreate);
+
+			return streamWriter;
+		}
+
+
+
+
+		private void WriteHtmlFileHeader_34(SysIo.StreamWriter _streamWriter)
+		{
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(1028);
+			string[] sAryModParamsCP;
+			//
+
+			_streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+			_streamWriter.WriteLine("<html>");
+			_streamWriter.WriteLine("<!--");
+			_streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+			_streamWriter.WriteLine("-->");
+			_streamWriter.WriteLine("<head>");
+
+			_streamWriter.Write("\t<title>AxErd CP");
+			sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+			if (null != sAryModParamsCP)
+			{
+				if (1 == sAryModParamsCP.Length)
+				{
+					_streamWriter.Write(": ");
+					_streamWriter.Write(sAryModParamsCP[0]);
+				}
+			}
+			_streamWriter.WriteLine("</title>");
+		
+			_streamWriter.Write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+			_streamWriter.Write(M_sCss_Stylesheet_FileName);
+			_streamWriter.WriteLine("\"/>");
+
+			_streamWriter.WriteLine("</head>");
+			_streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyCP\">");
+
+			// Print names of modules, if RestrictToModules param was used.
+			sbuilder.Length = 0;
+			sbuilder.Append("<h3 class=\"cssH3ColorCP\">AX ERD: Child-Parents");
+			sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+			if (null != sAryModParamsCP)
+			{
+				if (1 == sAryModParamsCP.Length)
+				{
+					sbuilder.Append(": ");
+					sbuilder.Append(sAryModParamsCP[0]);
+				}
+			}				
+			sbuilder.Append("</h3>");
+			_streamWriter.WriteLine(sbuilder.ToString());
+			_streamWriter.WriteLine("");
+
+			// Module names as inter-webpage links, if RestrictToModulesCP param was used.
+			//sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+			if (null != sAryModParamsCP && 0 < sAryModParamsCP.Length)
+			{
+				_streamWriter.WriteLine("<pre>");
+				_streamWriter.WriteLine("");
+				for (int mm = 0; mm < sAryModParamsCP.Length; mm++)
+				{
+					sbuilder.Length = 0;
+					sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+					sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+					sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+					sbuilder.Append("#m-");
+					sbuilder.Append(CRunProperties.BuildModuleNameKey_From_ModuleName(sAryModParamsCP[mm]));
+					sbuilder.Append("\">Module: ");
+					sbuilder.Append(sAryModParamsCP[mm]);
+					sbuilder.Append("</a>");
+					_streamWriter.WriteLine(sbuilder.ToString());
+				}
+				_streamWriter.WriteLine("</pre>");
+				_streamWriter.WriteLine("");
+				_streamWriter.WriteLine("<br /><br />");
+			}
+
+			// Output column headers, CP.
+
+			sbuilder.Length = 0;
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<table id=\"idTabMainTest2\">");
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<tr class=\"cssFontForMainColumnHeaders\"><td>Row-num</td>");
+
+			sbuilder.Append("<td>Child-table-name</td>");
+			sbuilder.Append("<td>Foreign-key-columns</td>");
+			sbuilder.Append("<td>Module-of-child-table</td>");
+		
+			sbuilder.Append("<td>Arrow-to-child</td>");
+				
+			sbuilder.Append("<td>Parent-table-name</td>");
+			sbuilder.Append("<td>Primary-key-columns</td>");
+			sbuilder.Append("<td>Module-of-parent-table</td></tr>");
+
+			_streamWriter.WriteLine(sbuilder.ToString());
+
+
+			return;
+		}
+
+
+
+
+		private string BuildOneEntryForChildParents_SubNode_37
+				(
+				ref CModSubNodeState _modSubNodeState
+				)
+		{
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfParentChilds;
+			SysCollGen.SortedDictionary<int, SysCollGen.List<CValueColumnColumn>> sdictOfColumnsFkyPky;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			//
+			SysCollGen.List<CValueColumnColumn> listColumnColumn;
+			SysCollGen.List<CValueTableModule> listTableModule; // List-ed elements are sorted before .Add to list.
+			//
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			CValueTableModule valueTableModule;
+			//
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(1028);
+			//
+			string s4ModuleNameLowercaseNoSpaces,
+				s3FileNameModuleNode;
+			//
+			int nLoopColumnsCounter;
+			//___________________________________________
+
+			// Handier.
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+			sdictOfParentChilds = this.m_irunPropRead.GetSDictOfParentChilds();
+			sdictOfColumnsFkyPky = this.m_irunPropRead.GetSDictOfColumnsFkyPky();
+			sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			//____________________________________________________________________
+			// Left - Child_______________________________________________________
+
+
+			// Emit:  Line number.____________________________
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<tr><td>");
+			sbuilder.Append(Convert.ToString(++ _modSubNodeState .m_nCountEntriesWrittenForCurrentModule));
+			sbuilder.Append("</td>");
+
+			sbuilder.Append("<td>");
+
+			if (_modSubNodeState.m_sLatestLeftAnchorTableNameLowercase !=
+					_modSubNodeState.m_valueTableModule_MT .GetTableNameLowercase()
+				)
+			{
+				sbuilder.Append("<a name=\"c-");  // Not p-
+				sbuilder.Append(_modSubNodeState.m_valueTableModule_MT .GetTableNameLowercase());
+				sbuilder.Append("\"></a>");
+
+				_modSubNodeState.m_sLatestLeftAnchorTableNameLowercase =
+					_modSubNodeState.m_valueTableModule_MT .GetTableNameLowercase();
+			}
+
+			// Emit:  Left-Child name,
+			// and as a jumpFrom link.____________________________
+
+			// For the Left-Child column on the HTML webpage,
+			// emit the child table name as an inter-webpage link to where the table is a parent,
+			// but only if the table really is also a parent in another relationship.
+			// Else emit the child table's name as plain nonLink text.
+
+			if (sdictOfParentChilds.ContainsKey(_modSubNodeState.m_valueTableModule_MT .GetTableNameLowercase()))
+			{
+				sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+				sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+				try
+				{
+					if (sdictOfTableModules.TryGetValue
+							(_modSubNodeState.m_valueTableModule_MT .GetTableNameLowercase(),
+							out listTableModule)
+						)
+					{
+						//s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+						s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching.
+
+						sbuilder.Append("-");
+						if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+								(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+							)
+						{
+							s3FileNameModuleNode = moduFileOwnerInfo.GetFileNameNode();
+							sbuilder.Append(s3FileNameModuleNode); // "GenLed"
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+
+							Console.WriteLine();
+							Console.WriteLine("AxErd-Warning-8526bw3: File node for C table in CP, module lookup failed.");
+							Console.WriteLine(_modSubNodeState.ToString_ForDiagnostics());
+							Console.WriteLine();
+						}
+					}
+				}
+				catch (Exception_AxErd eeax)
+				{
+					Console.WriteLine();
+					Console.WriteLine(eeax);
+					Console.WriteLine();
+					Console.WriteLine("AxErd-Error-8527bs1: File node for C table in CP, module lookup failed.");
+					Console.WriteLine();
+
+					eeax.IsAlreadyCaughtAndProcessed = true; // 'false' would be a rare choice for Set.
+					throw eeax;
+				}
+				catch (Exception ee)
+				{
+					Console.WriteLine();
+					Console.WriteLine(ee);
+					Console.WriteLine();
+					Console.WriteLine("AxErd-Error-8527bt3: File node for C table in CP, module lookup failed.");
+					Console.WriteLine();
+
+					throw ee;
+				}
+
+				sbuilder.Append("-");
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds" (not yet include ".htm")
+
+				// Include Module SubNode in file name.
+				listTableModule = sdictOfTableModules
+					[_modSubNodeState.m_valueTableTable .GetTableNameChildLowercase()];
+				valueTableModule = listTableModule[0];
+				sbuilder.Append("-");
+				sbuilder.Append(valueTableModule.SubNode_of_ModuleFileName); // "11"
+
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileExtension());
+				// Thus built substring - "Modu-GenLed-ParentChilds-11.htm" (that total format, before #).
+
+				sbuilder.Append("#p-");
+				sbuilder.Append(_modSubNodeState.m_valueTableTable .GetTableNameChildLowercase());
+				sbuilder.Append("\">");
+				sbuilder.Append(_modSubNodeState.m_valueTableTable .GetTableNameChild());
+				sbuilder.Append("</a>");
+			}
+			else
+			{
+				sbuilder.Append(_modSubNodeState.m_valueTableTable .GetTableNameChild());
+			}
+			sbuilder.Append("</td>");
+
+
+			// Emit: Columns, Fky.____________________________
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<td>");
+
+			nLoopColumnsCounter = 0;
+			listColumnColumn = sdictOfColumnsFkyPky[_modSubNodeState.m_valueTableTable .GetIdentityTT()];
+			foreach (CValueColumnColumn valueColColFkyFE in listColumnColumn)
+			{
+				if (0 != nLoopColumnsCounter++)
+					{ sbuilder.Append(", "); }
+				sbuilder.Append(".");
+				sbuilder.Append(valueColColFkyFE.GetFieldFky());
+			}
+			sbuilder.Append("</td>");
+
+
+			// Emit: Application Module, for Child._______________
+
+			try
+			{
+				if (sdictOfTableModules.ContainsKey(_modSubNodeState.m_valueTableTable .GetTableNameChildLowercase()))
+				{
+					// Gather data.
+					listTableModule = sdictOfTableModules[_modSubNodeState.m_valueTableTable .GetTableNameChildLowercase()];
+					valueTableModule = listTableModule[0];
+					// ?? ERASE OLD CODE. sAryModParamsCP = valueTableModule.GetModuleName().Split
+					//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); // This .Split is no longer good code.
+				}
+				else
+				{
+					valueTableModule = null;
+					//sAryModParamsCP = null;
+				}
+			}
+			catch (Exception ee)
+			{
+				Console.WriteLine(_modSubNodeState.ToString_ForDiagnostics());
+				throw ee;
+			}
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+			if (null != valueTableModule) //&& null != sAryModParamsCP)
+			{
+				sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+				sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+				sbuilder.Append("#m-");
+
+				sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+				//foreach (string sModulePart in sAryModParamsCP)
+				//{
+				//	sbuilder.Append(sModulePart);
+				//}
+
+				sbuilder.Append("\">(");
+				sbuilder.Append(valueTableModule.GetModuleName());
+				sbuilder.Append(")</a>");
+			}
+			else
+			{
+				sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+			}
+			sbuilder.Append("</span></td>");
+
+
+			// Emit: Arrow._________________________________
+
+			sbuilder.Append(Environment.NewLine);
+
+			sbuilder.Append("<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td>");  // &lt;   _OR_   &#x003C; (for Unicode =), or &#x002D (for Unicode -).   (rt 3E)
+
+
+
+
+
+
+			//____________________________________________________________________
+			// Right - Parent_____________________________________________________
+
+
+
+			// TODO: ???? Continue, to add Right-Parent !!
+
+
+
+
+
+
+			return sbuilder.ToString();
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		private string BuildOneEntryForChildParents_SubNode_36  //CreateHtmlFileChildParents_ForOneModuleSubNode_WEIRD_3  // Meaning create 1 Html file per called.
+				( // ???? JUNK !?   See _37 instead.
+				string _sModuleNameLowercaseNoSpaces,
+				string _sFileNameModuleSubNode,
+				CValueTableTable _valueTableTable,
+				ref int _nEmittedLineNumberCurrentModule  // First subnode (11) might include 1-123, then second (12) might be 124-279, etc.
+				)
+		{
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfParentChilds;
+			SysCollGen.SortedDictionary<int, SysCollGen.List<CValueColumnColumn>> sdictOfColumnsFkyPky;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			//
+			SysCollGen.List<CValueColumnColumn> listColumnColumn;
+			SysCollGen.List<CValueTableModule> listTableModule; // List-ed elements are sorted before .Add to list.
+			//
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			CValueTableModule valueTableModule;
+			//
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(1028);
+			//
+			string s4ModuleNameLowercaseNoSpaces,
+				s3FileNameModuleNode;
+			//
+			int nEmittedLineNumberCurrentSubNode = 0,
+				nLoopColumnsCounter;
+			//___________________________________________
+
+			// Handier.
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+			sdictOfParentChilds = this.m_irunPropRead.GetSDictOfParentChilds();
+			sdictOfColumnsFkyPky = this.m_irunPropRead.GetSDictOfColumnsFkyPky();
+			sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			//____________________________________________________________________
+			// Left - Child_______________________________________________________
+
+
+			// Emit:  Line number.____________________________
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<tr><td>");
+			sbuilder.Append(Convert.ToString(_nEmittedLineNumberCurrentModule ++)); // ref
+			sbuilder.Append("</td>");
+
+			sbuilder.Append("<td>");
+			if (1 == (++ nEmittedLineNumberCurrentSubNode)) // Above 1 are redundant, want only one jumpTo anchor for repeated left-side table names.
+			{
+				sbuilder.Append("<a name=\"c-");  // Not p-
+				sbuilder.Append(_valueTableTable.GetTableNameChildLowercase());
+				sbuilder.Append("\"></a>");
+			}
+
+			// Emit:  Left-Child name,
+			// and as a jumpFrom link.____________________________
+
+			// For the Left-Child column on the HTML webpage,
+			// emit the child table name as an inter-webpage link to where the table is a parent,
+			// but only if the table really is also a parent in another relationship.
+			// Else emit the child table's name as plain nonLink text.
+
+			if (sdictOfParentChilds.ContainsKey(_valueTableTable.GetTableNameChildLowercase()))
+			{
+				sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+				sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+				try
+				{
+					if (sdictOfTableModules.TryGetValue
+							(_valueTableTable.GetTableNameChildLowercase(),
+							out listTableModule)
+						)
+					{
+						//s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+						s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching.
+
+						sbuilder.Append("-");
+						if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+								(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+							)
+						{
+							s3FileNameModuleNode = moduFileOwnerInfo.GetFileNameNode();
+							sbuilder.Append(s3FileNameModuleNode); // "GenLed"
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+
+							Console.WriteLine();
+							Console.WriteLine("AxErd-Warning-8526bw3: File node for C table in CP, module lookup failed.");
+							Console.WriteLine
+								("{0}=_valueTableTable.GetTableNameChild() , {1}=s3FileNameModuleNode , {2}=_sModuleNameLowercaseNoSpaces , {3}=_nEmittedLineNumberCurrentModule",
+								_valueTableTable.GetTableNameChild(),
+								"?", //s3FileNameModuleNode,
+								_sModuleNameLowercaseNoSpaces,
+								_nEmittedLineNumberCurrentModule
+								);
+							Console.WriteLine();
+						}
+					}
+				}
+				catch (Exception_AxErd eeax)
+				{
+					Console.WriteLine();
+					Console.WriteLine(eeax);
+					Console.WriteLine();
+					Console.WriteLine("AxErd-Error-8527bs1: File node for C table in CP, module lookup failed.");
+					Console.WriteLine
+						("{0}=_valueTableTable.GetTableNameChild() , {1}=s3FileNameModuleNode , {2}=_sModuleNameLowercaseNoSpaces , {3}=_nEmittedLineNumberCurrentModule",
+						_valueTableTable.GetTableNameChild(),
+						"?", //s3FileNameModuleNode,
+						_sModuleNameLowercaseNoSpaces,
+						_nEmittedLineNumberCurrentModule
+						);
+					Console.WriteLine();
+
+					eeax.IsAlreadyCaughtAndProcessed = true; // 'false' would be a rare choice for Set.
+					throw eeax;
+				}
+				catch (Exception ee)
+				{
+					Console.WriteLine();
+					Console.WriteLine(ee);
+					Console.WriteLine();
+					Console.WriteLine("AxErd-Error-8527bt3: File node for C table in CP, module lookup failed.");
+					Console.WriteLine
+						("{0}=_nEmittedLineNumberCurrentModule , {1}=s3FileNameModuleNode , {2}=_sModuleNameLowercaseNoSpaces , {3}=_nEmittedLineNumberCurrentModule",
+						_nEmittedLineNumberCurrentModule,
+						"?", //s3FileNameModuleNode,
+						_sModuleNameLowercaseNoSpaces,
+						_nEmittedLineNumberCurrentModule
+						);
+					Console.WriteLine();
+
+					throw ee;
+				}
+
+				sbuilder.Append("-");
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds" (not yet include ".htm")
+
+				// Include Module SubNode in file name.
+				listTableModule = sdictOfTableModules[_valueTableTable.GetTableNameChildLowercase()];
+				valueTableModule = listTableModule[0];
+				sbuilder.Append("-");
+				sbuilder.Append(valueTableModule.SubNode_of_ModuleFileName); // "11"
+
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileExtension());
+				// Thus built substring - "Modu-GenLed-ParentChilds-11.htm" (that total format, before #).
+
+				sbuilder.Append("#p-");
+				sbuilder.Append(_valueTableTable.GetTableNameChildLowercase());
+				sbuilder.Append("\">");
+				sbuilder.Append(_valueTableTable.GetTableNameChild());
+				sbuilder.Append("</a>");
+			}
+			else
+			{
+				sbuilder.Append(_valueTableTable.GetTableNameChild());
+			}
+			sbuilder.Append("</td>");
+
+
+			// Emit: Columns, Fky.____________________________
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<td>");
+
+			nLoopColumnsCounter = 0;
+			listColumnColumn = sdictOfColumnsFkyPky[_valueTableTable.GetIdentityTT()];
+			foreach (CValueColumnColumn valueColColFkyFE in listColumnColumn)
+			{
+				if (0 != nLoopColumnsCounter++)
+					{ sbuilder.Append(", "); }
+				sbuilder.Append(".");
+				sbuilder.Append(valueColColFkyFE.GetFieldFky());
+			}
+			sbuilder.Append("</td>");
+
+
+			// Emit: Application Module, for Child._______________
+
+			try
+			{
+				if (sdictOfTableModules.ContainsKey(_valueTableTable.GetTableNameChildLowercase()))
+				{
+					// Gather data.
+					listTableModule = sdictOfTableModules[_valueTableTable.GetTableNameChildLowercase()];
+					valueTableModule = listTableModule[0];
+					// ?? ERASE OLD CODE. sAryModParamsCP = valueTableModule.GetModuleName().Split
+					//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); // This .Split is no longer good code.
+				}
+				else
+				{
+					valueTableModule = null;
+					//sAryModParamsCP = null;
+				}
+			}
+			catch (Exception ee)
+			{
+				Console.WriteLine
+					("Exception_bqi83, when nEmittedLineNumberCurrentSubNode={0}, _valueTableTable.GetTableNameChildLowercase()={1}. Now re-throwing.",
+					nEmittedLineNumberCurrentSubNode,
+					_valueTableTable.GetTableNameChildLowercase()
+					);
+				throw ee;
+			}
+
+			sbuilder.Append(Environment.NewLine);
+			sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+			if (null != valueTableModule) //&& null != sAryModParamsCP)
+			{
+				sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+				sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+				sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+				sbuilder.Append("#m-");
+
+				sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+				//foreach (string sModulePart in sAryModParamsCP)
+				//{
+				//	sbuilder.Append(sModulePart);
+				//}
+
+				sbuilder.Append("\">(");
+				sbuilder.Append(valueTableModule.GetModuleName());
+				sbuilder.Append(")</a>");
+			}
+			else
+			{
+				sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+			}
+			sbuilder.Append("</span></td>");
+
+
+			// Emit: Arrow._________________________________
+
+			sbuilder.Append(Environment.NewLine);
+
+			sbuilder.Append("<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td>");  // &lt;   _OR_   &#x003C; (for Unicode =), or &#x002D (for Unicode -).   (rt 3E)
+
+
+
+
+
+
+			//____________________________________________________________________
+			// Right - Parent_____________________________________________________
+
+
+
+			// TODO: ???? Continue, to add Right-Parent !!
+
+
+
+
+
+
+			return sbuilder.ToString();
+		}
+
+
+
+
+
+
+
+
+
+
+
+		private void CreateHtmlFileChildParents_ForOneModuleSubNode_WEIRD_3  // Meaning create 1 Html file per called.
+				(
+				string _sModuleNameLowercaseNoSpaces,
+				string _sFileNameModuleSubNode,
+
+				string _sFirstTableNameLowercase, // ????? and 3. code the caller method and its loop around modules !! ,
+
+				out string _out_sNextTableNameLowercase  // s2TableNameLowercase
+				)
+		{
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfParentChilds;
+			SysCollGen.SortedDictionary<int, SysCollGen.List<CValueColumnColumn>> sdictOfColumnsFkyPky;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			//
+			SysCollGen.List<CValueColumnColumn> listColumnColumn;
+			SysCollGen.List<CValueTableModule> listTableModule; // List-ed elements are sorted before .Add to list.
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(256);
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			CValueTableModule valueTableModule;
+			CValueTableTable valueTableTableFE = null, valueTableTableFE_Previous = null;
+			char[] charArraySpace = new char[1] {' '};  // One space character, only.
+			string[] sAryModParamsCP;
+			SysIo.FileStream fileStreamCreate;
+			SysIo.StreamWriter streamWriter;
+			SysCollGen.List<CValueTableTable> listTableTable;
+			int nLoopCountInnerRunningSum = 0, // Exactly how should these intS be used??
+				nOutputLineNumber = 0,
+				nLoopColumnsCounter = 0;
+			int nIdxFirstTable;
+			string s2TableName,
+				s2TableNameLowercase,
+				s3FileNameModuleNode,
+				s4ModuleNameLowercaseNoSpaces,
+				s5ModuleNameMixedCase;
+			string sTemp1;
+			bool boolModuleMatchFound;
+			//
+
+			_out_sNextTableNameLowercase = null;
+
+			if (true == this.m_irunPropRead.GetSkipOutputOfFilesCP())
+			{
+				goto LABEL_ENDOFMETHOD_ntu70_LABEL;
+			}
+
+			// Handier.
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+			sdictOfParentChilds = this.m_irunPropRead.GetSDictOfParentChilds();
+			sdictOfColumnsFkyPky = this.m_irunPropRead.GetSDictOfColumnsFkyPky();
+			sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+					(_sModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+				)
+			{
+				s3FileNameModuleNode = moduFileOwnerInfo.GetFileNameNode();
+			}
+			else
+			{
+				s3FileNameModuleNode = M_sUnknownModule;
+			}
+
+
+			using (
+					fileStreamCreate = new SysIo.FileStream
+							(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+								+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()  // "Modu"
+								+ "-"
+								+ s3FileNameModuleNode  // "GenLen"
+								+ "-"
+								+ _sFileNameModuleSubNode  // "11"
+								+ "-"
+								+ this.m_irunPropRead.GetHtmlFileChildParents(),  // "ChildParents.htm"
+							SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+							SysIo.FileAccess.Write,
+							SysIo.FileShare.None
+							)
+				)
+			{
+				streamWriter = new SysIo.StreamWriter(fileStreamCreate);
+
+				streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+				streamWriter.WriteLine("<html>");
+				streamWriter.WriteLine("<!--");
+				streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+				streamWriter.WriteLine("-->");
+				streamWriter.WriteLine("<head>");
+
+				streamWriter.Write("\t<title>AxErd CP");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						streamWriter.Write(": ");
+						streamWriter.Write(sAryModParamsCP[0]);
+					}
+				}
+				streamWriter.WriteLine("</title>");
+		
+				streamWriter.WriteLine("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+				streamWriter.WriteLine(M_sCss_Stylesheet_FileName);
+				streamWriter.WriteLine("\"/>");
+
+				streamWriter.WriteLine("</head>");
+				streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyCP\">");
+
+				// Print names of modules, if RestrictToModules param was used.
+				sbuilder.Length = 0;
+				sbuilder.Append("<h3 class=\"cssH3ColorCP\">AX ERD: Child-Parents");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						sbuilder.Append(": ");
+						sbuilder.Append(sAryModParamsCP[0]);
+					}
+				}				
+				sbuilder.Append("</h3>");
+				streamWriter.WriteLine(sbuilder.ToString());
+				streamWriter.WriteLine("");
+
+				// Module names as inter-webpage links, if RestrictToModulesCP param was used.
+				//sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP && 0 < sAryModParamsCP.Length)
+				{
+					streamWriter.WriteLine("<pre>");
+					streamWriter.WriteLine("");
+					for (int mm = 0; mm < sAryModParamsCP.Length; mm++)
+					{
+						sbuilder.Length = 0;
+						sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+						sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+						sbuilder.Append("#m-");
+						sbuilder.Append(CRunProperties.BuildModuleNameKey_From_ModuleName(sAryModParamsCP[mm]));
+						sbuilder.Append("\">Module: ");
+						sbuilder.Append(sAryModParamsCP[mm]);
+						sbuilder.Append("</a>");
+						streamWriter.WriteLine(sbuilder.ToString());
+					}
+					streamWriter.WriteLine("</pre>");
+					streamWriter.WriteLine("");
+					streamWriter.WriteLine("<br /><br />");
+					//streamWriter.WriteLine("<table id=\"idTabMainTest2\">");
+				}
+
+				// Output column headers, CP.
+
+				sbuilder.Length = 0;
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<table id=\"idTabMainTest2\">");
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<tr class=\"cssFontForMainColumnHeaders\"><td>Row-num</td>");
+
+				sbuilder.Append("<td>Child-table-name</td>");
+				sbuilder.Append("<td>Foreign-key-columns</td>");
+				sbuilder.Append("<td>Module-of-child-table</td>");
+		
+				sbuilder.Append("<td>Arrow-to-child</td>");
+				
+				sbuilder.Append("<td>Parent-table-name</td>");
+				sbuilder.Append("<td>Primary-key-columns</td>");
+				sbuilder.Append("<td>Module-of-parent-table</td></tr>");
+
+				streamWriter.WriteLine(sbuilder.ToString());
+
+				//_______________________________________________________
+				// Next LOOPS, for data driven output lines.  <tr><td>
+
+
+				foreach (SysCollGen.KeyValuePair<string, SysCollGen.List<CValueTableTable>> kvpCP in sdictOfChildParents)
+				{
+
+					listTableTable = kvpCP.Value; // No cast needed.  (SysCollGen.List<CValueTableTable>>)
+
+
+					// Queue up the first table for the current module subnode.
+					for (nIdxFirstTable=0; nIdxFirstTable < listTableTable.Count; nIdxFirstTable++)
+					{
+						if (_sFirstTableNameLowercase == listTableTable[nIdxFirstTable]
+							.GetTableNameChildLowercase()
+							)
+						{
+							break; // Found.
+						}
+					} // EOFor ff
+					if (nIdxFirstTable >= listTableTable.Count)
+					{
+						sTemp1 = String.Format("{0} table not found in listTableTable, for start of module subnode.",
+							_sFirstTableNameLowercase);
+						throw new Exception_AxErd("AXERD_Error_1736gw2", sTemp1);
+					}
+
+
+					//foreach (CValueTableTable valueTableTableFE in listTableTable)
+					for (int tt=nIdxFirstTable; tt < listTableTable.Count; tt++)
+					{
+
+						valueTableTableFE_Previous = valueTableTableFE;
+						valueTableTableFE = listTableTable[tt];
+
+						nLoopCountInnerRunningSum++;
+
+						s2TableName = "?";
+						s3FileNameModuleNode = "?";
+						s4ModuleNameLowercaseNoSpaces = "?";
+						s5ModuleNameMixedCase = "?";
+
+						//----------------------
+						// Get the two modules names, one for child table and one for parent table.  c-m & p-m.
+						// Then ask whether either c-m or p-m is present in the parameter array for RestictToModules.
+						// If Yes present, then proceed normally and emit the HTML code.
+						// If No present, then 'continue' to skip the present table pair.
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameChild(),  // Child, not parent.
+								this.m_irunPropRead.GetRestrictToModulesCP()
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameParent(),  // Parent, not child.
+								this.m_irunPropRead.GetRestrictToModulesCP()
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						continue;  // Skip this out-of-module-set pair of C-P tables.
+					LABEL_AFTER_MODULE_FILTER_589vh_LABEL: ;
+						//----------------------
+
+
+						sbuilder.Length = 0;
+
+						// Child________________________________________________________________
+
+						s2TableName = valueTableTableFE.GetTableNameChild();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameChildLowercase();
+
+						if (this.m_irunPropRead.GetNumEntriesPerModuleSubNodeFileApprox() < nOutputLineNumber)
+						{
+							_out_sNextTableNameLowercase = s2TableNameLowercase;
+							break;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<tr><td>");
+						sbuilder.Append(Convert.ToString(++nOutputLineNumber));
+						sbuilder.Append("</td>");
+
+						sbuilder.Append("<td>");
+						if (0 == tt) // Above 0 are redundant.
+						{
+							sbuilder.Append("<a name=\"c-");  // Not p-
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\"></a>");
+						}
+
+						// For the Left-Child column on the HTML webpage,
+						// emit the child table name as an inter-webpage link to where the table is a parent,
+						// but only if the table really is also a parent in another relationship.
+
+						if (sdictOfParentChilds.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching.
+
+									sbuilder.Append("-");
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNameModuleNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append(s3FileNameModuleNode); // "GenLed"
+									}
+									else
+									{
+										sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8526bw3: File node for C table in CP, module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNameModuleNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNameModuleNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception_AxErd eeax)
+							{
+								Console.WriteLine();
+								Console.WriteLine(eeax);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8527bs1: File node for C table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNameModuleNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNameModuleNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								eeax.IsAlreadyCaughtAndProcessed = true; // 'false' would be a very rare choice for Set.
+								throw eeax;
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8527bt3: File node for C table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNameModuleNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNameModuleNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds" (not yet include ".htm")
+
+							// Include Module SubNode in file name.
+							listTableModule = sdictOfTableModules[s2TableNameLowercase];
+							valueTableModule = listTableModule[0];
+							sbuilder.Append("-");
+							sbuilder.Append(valueTableModule.SubNode_of_ModuleFileName); // "11"
+
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileExtension());
+							// Thus built substring - "Modu-GenLed-ParentChilds-11.htm" (that total format, before #).
+
+							sbuilder.Append("#p-");
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\">");
+							sbuilder.Append(s2TableName);
+							sbuilder.Append("</a>");
+						}
+						else
+						{
+							sbuilder.Append(s2TableName);
+						}
+						sbuilder.Append("</td>");
+
+						// Columns, Fky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						nLoopColumnsCounter = 0;
+						listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						foreach (CValueColumnColumn valueColColFkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColFkyFE.GetFieldFky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Child.
+						try
+						{
+							if (sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); // This .Split is no longer good code.
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("Exception_bqi83, when nLoopCountInnerRunningSum={0}, kvpCP.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpCP.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) //&& null != sAryModParamsCP)
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP)
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td>");
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td>");  // &lt;   _OR_   &#x003C; (for Unicode =), or &#x002D (for Unicode -).   (rt 3E)
+
+						// Parent________________________________________________________
+
+						// For the Right-Parent column on the HTML webpage,
+						// emit the parent table name as an inter-webpage link
+						// to where the table is a parent in Html file P-C.
+						//
+
+						s2TableName = valueTableTableFE.GetTableNameParent();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameParentLowercase();
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						if (sdictOfParentChilds.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching in dictionary keys.
+
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNameModuleNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append("-");
+										sbuilder.Append(s3FileNameModuleNode); // "GenLed"
+									}
+									else
+									{
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8525bw4: File node for P table in CP, module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNameModuleNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNameModuleNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8528bs2: File node for C table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNameModuleNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNameModuleNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds"
+
+							// Include Module SubNode in file name.
+							listTableModule = sdictOfTableModules[s2TableNameLowercase];
+							valueTableModule = listTableModule[0];
+							sbuilder.Append("-");
+							sbuilder.Append(valueTableModule.SubNode_of_ModuleFileName); // "11"
+
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileExtension());
+							// Thus built substring - "Modu-GenLed-ParentChilds.htm" (that format).
+						}
+
+						sbuilder.Append("#p-");
+						sbuilder.Append(s2TableNameLowercase);
+						sbuilder.Append("\">");
+						sbuilder.Append(s2TableName);
+						sbuilder.Append("</a></td>");
+
+						// Columns, Pky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						//listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						nLoopColumnsCounter = 0;
+						foreach (CValueColumnColumn valueColColPkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColPkyFE.GetFieldRelPky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Parent.
+						try
+						{
+							if (true == sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); ??
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("AXERD_Exception_1835bq3, when nLoopCountInnerRunningSum={0}, kvpCP.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpCP.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) // && null != sAryModParamsCP) ??
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP) ??
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td></tr>");
+
+						streamWriter.WriteLine(sbuilder.ToString());
+					} // EOFor, listTableTable, each valueTableTable per iteration.
+				} // EOFor SortedDict CP.
+
+				streamWriter.WriteLine("</table>");
+				streamWriter.WriteLine("</body>");
+				streamWriter.WriteLine("</html>");
+
+				streamWriter.Flush();
+				streamWriter.Close();
+				streamWriter.Dispose();
+			} // EOUsing.
+
+			LABEL_ENDOFMETHOD_ntu70_LABEL: ;
+			return;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		private void CreateHtmlFileChildParents_OLD_91() // ??? Delete this OLD code!
+		{
+			SysIo.FileStream fileStream;
+			SysIo.StreamWriter streamWriter;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfParentChilds;
+			SysCollGen.SortedDictionary<int, SysCollGen.List<CValueColumnColumn>> sdictOfColumnsFkyPky;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			SysCollGen.List<CValueTableTable> listTableTable;
+			SysCollGen.List<CValueColumnColumn> listColumnColumn;
+			SysCollGen.List<CValueTableModule> listTableModule;
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(256);
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			CValueTableModule valueTableModule;
+			CValueTableTable valueTableTableFE = null, valueTableTableFE_Previous = null;
+			char[] charArraySpace = new char[1] {' '};  // One space character, only.
+			string[] sAryModParamsCP;
+			string s2TableName = null, s2TableNameLowercase = null,
+				s3FileNode = null,
+				s4ModuleNameLowercase = null, s4ModuleNameLowercaseNoSpaces = null,
+				s5ModuleNameMixedCase = null;
+			int nLoopCountInnerRunningSum = 0, nOutputLineNumber = 0, nLoopColumnsCounter;
+			bool boolModuleMatchFound;
+			//
+
+			if (true == this.m_irunPropRead.GetSkipOutputOfFilesCP())
+			{
+				goto LABEL_ENDOFMETHOD_ntu70_LABEL;
+			}
+
+			// Handier.
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+			sdictOfParentChilds = this.m_irunPropRead.GetSDictOfParentChilds();
+			sdictOfColumnsFkyPky = this.m_irunPropRead.GetSDictOfColumnsFkyPky();
+			sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			// Get FileNode string for output Html file name, based on app module.
+
+			s3FileNode = "ModuleNameNotFound"; // Hope to overlay this ugly default value.
+			sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+			if (1 == sAryModParamsCP.Length)
+			{
+				s4ModuleNameLowercaseNoSpaces = sAryModParamsCP[0].ToLower().Replace(" ","");
+
+				if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+						(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+					)
+				{
+					s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+				}
+			}
+
+			using (
+					fileStream = new SysIo.FileStream
+							(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+								+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()  // "Modu"
+								+ "-"
+								+ s3FileNode  // "GenLen"
+								+ "-"
+								+ this.m_irunPropRead.GetHtmlFileChildParents(),  // "ChildParents.htm"
+							SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+							SysIo.FileAccess.Write,
+							SysIo.FileShare.None
+							)
+				)
+			{
+				streamWriter = new SysIo.StreamWriter(fileStream);
+
+				streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+				streamWriter.WriteLine("<html>");
+				streamWriter.WriteLine("<!--");
+				streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+				streamWriter.WriteLine("-->");
+				streamWriter.WriteLine("<head>");
+
+				streamWriter.Write("\t<title>AxErd CP");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						streamWriter.Write(": ");
+						streamWriter.Write(sAryModParamsCP[0]);
+					}
+				}
+				streamWriter.WriteLine("</title>");
+		
+				streamWriter.WriteLine("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+				streamWriter.WriteLine(M_sCss_Stylesheet_FileName);
+				streamWriter.WriteLine("\"/>");
+
+				streamWriter.WriteLine("</head>");
+				streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyCP\">");
+
+				// Print names of modules, if RestrictToModules param was used.
+				sbuilder.Length = 0;
+				sbuilder.Append("<h3 class=\"cssH3ColorCP\">AX ERD: Child-Parents");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						sbuilder.Append(": ");
+						sbuilder.Append(sAryModParamsCP[0]);
+					}
+				}				
+				sbuilder.Append("</h3>");
+				streamWriter.WriteLine(sbuilder.ToString());
+				streamWriter.WriteLine("");
+
+				// Module names as inter-webpage links, if RestrictToModulesCP param was used.
+				//sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP && 0 < sAryModParamsCP.Length)
+				{
+					streamWriter.WriteLine("<pre>");
+					streamWriter.WriteLine("");
+					for (int mm = 0; mm < sAryModParamsCP.Length; mm++)
+					{
+						sbuilder.Length = 0;
+						sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+						sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+						sbuilder.Append("#m-");
+						sbuilder.Append(sAryModParamsCP[mm].ToLower().Replace(" ",""));
+						sbuilder.Append("\">Module: ");
+						sbuilder.Append(sAryModParamsCP[mm]);
+						sbuilder.Append("</a>");
+						streamWriter.WriteLine(sbuilder.ToString());
+					}
+					streamWriter.WriteLine("</pre>");
+					streamWriter.WriteLine("");
+					streamWriter.WriteLine("<br /><br />");
+					//streamWriter.WriteLine("<table id=\"idTabMainTest2\">");
+				}
+
+				// Output column headers, CP.
+
+				sbuilder.Length = 0;
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<table id=\"idTabMainTest2\">");
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<tr class=\"cssFontForMainColumnHeaders\"><td>Row-num</td>");
+
+				sbuilder.Append("<td>Child-table-name</td>");
+				sbuilder.Append("<td>Foreign-key-columns</td>");
+				sbuilder.Append("<td>Module-of-child-table</td>");
+		
+				sbuilder.Append("<td>Arrow-to-child</td>");
+				
+				sbuilder.Append("<td>Parent-table-name</td>");
+				sbuilder.Append("<td>Primary-key-columns</td>");
+				sbuilder.Append("<td>Module-of-parent-table</td></tr>");
+
+				streamWriter.WriteLine(sbuilder.ToString());
+
+				// Next, file data driven lines.  <tr><td>
+
+				foreach (SysCollGen.KeyValuePair<string, SysCollGen.List<CValueTableTable>> kvpCP in sdictOfChildParents)
+				{
+					listTableTable = kvpCP.Value; // No cast needed.  (SysCollGen.List<CValueTableTable>>)
+
+					//foreach (CValueTableTable valueTableTableFE in listTableTable)
+					for (int tt=0; tt < listTableTable.Count; tt++)
+					{
+						valueTableTableFE_Previous = valueTableTableFE;
+						valueTableTableFE = listTableTable[tt];
+
+						nLoopCountInnerRunningSum++;
+
+						s2TableName = "?";
+						s3FileNode = "?";
+						s4ModuleNameLowercase = "?";
+						s5ModuleNameMixedCase = "?";
+
+						//----------------------
+						// Get the two modules names, one for child table and one for parent table.  c-m & p-m.
+						// Then ask whether either c-m or p-m is present in the parameter array for RestictToModules.
+						// If Yes present, then proceed normally and emit the HTML code.
+						// If No present, then 'continue' to skip the present table pair.
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameChild(),  // Child, not parent.
+								this.m_irunPropRead.GetRestrictToModulesCP()
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameParent(),  // Parent, not child.
+								this.m_irunPropRead.GetRestrictToModulesCP()
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						continue;  // Skip this out-of-module-set pair of C-P tables.
+					LABEL_AFTER_MODULE_FILTER_589vh_LABEL: ;
+						//----------------------
+
+
+						sbuilder.Length = 0;
+
+						// Child________________________________________________________________
+						// ?? Should suppress the jumpTo anchor NAME= portion in all but
+						// first occurrence of the specific table name.
+
+						s2TableName = valueTableTableFE.GetTableNameChild();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameChildLowercase();
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<tr><td>");
+						sbuilder.Append(Convert.ToString(++nOutputLineNumber));
+						sbuilder.Append("</td>");
+
+						sbuilder.Append("<td>");
+						if (0 == tt) // Above 0 are redundant.
+						{
+							sbuilder.Append("<a name=\"c-");  // Not p-
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\"></a>");
+						}
+
+						// For the Left-Child column on the HTML webpage,
+						// emit the child table name as an inter-webpage link to where the table is a parent,
+						// but only if the table really is also a parent in another relationship.
+
+						if (sdictOfParentChilds.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching.
+
+									sbuilder.Append("-");
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append(s3FileNode); // "GenLed"
+									}
+									else
+									{
+										sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8526bw3: File node for C table in CP, module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8527bs1: File node for C table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds.htm"
+							// Thus built substring - "Modu-GenLed-ParentChilds.htm" (that format).
+							sbuilder.Append("#p-");
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\">");
+							sbuilder.Append(s2TableName);
+							sbuilder.Append("</a>");
+						}
+						else
+						{
+							sbuilder.Append(s2TableName);
+						}
+						sbuilder.Append("</td>");
+
+						// Columns, Fky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						nLoopColumnsCounter = 0;
+						listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						foreach (CValueColumnColumn valueColColFkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColFkyFE.GetFieldFky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Child.
+						try
+						{
+							if (sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); // This .Split is no longer good code.
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("Exception_bqi83, when nLoopCountInnerRunningSum={0}, kvpCP.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpCP.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) //&& null != sAryModParamsCP)
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP)
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td>");
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#x2011;&#x2011;&#x2011;&nbsp;&nbsp;&nbsp;&nbsp;</td>");  // &lt;   _OR_   &#x003C; (for Unicode =), or &#x002D (for Unicode -).   (rt 3E)
+
+						// Parent________________________________________________________
+
+						// For the Right-Parent column on the HTML webpage,
+						// emit the parent table name as an inter-webpage link
+						// to where the table is a parent in Html file P-C.
+						//
+
+						s2TableName = valueTableTableFE.GetTableNameParent();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameParentLowercase();
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						if (sdictOfParentChilds.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching in dictionary keys.
+
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append("-");
+										sbuilder.Append(s3FileNode); // "GenLed"
+									}
+									else
+									{
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8525bw4: File node for P table in CP, module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8528bs2: File node for C table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds()); // "ParentChilds.htm"
+							// Thus built substring - "Modu-GenLed-ParentChilds.htm" (that format).
+						}
+
+						sbuilder.Append("#p-");
+						sbuilder.Append(s2TableNameLowercase);
+						sbuilder.Append("\">");
+						sbuilder.Append(s2TableName);
+						sbuilder.Append("</a></td>");
+
+						// Columns, Pky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						//listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						nLoopColumnsCounter = 0;
+						foreach (CValueColumnColumn valueColColPkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColPkyFE.GetFieldRelPky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Parent.
+						try
+						{
+							if (true == sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); ??
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("Exception_bqg63, when nLoopCountInnerRunningSum={0}, kvpCP.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpCP.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) // && null != sAryModParamsCP) ??
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP) ??
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td></tr>");
+
+						streamWriter.WriteLine(sbuilder.ToString());
+					} // EOFor, listTableTable, each valueTableTable per iteration.
+				} // EOFor SortedDict CP.
+
+				streamWriter.WriteLine("</table>");
+				streamWriter.WriteLine("</body>");
+				streamWriter.WriteLine("</html>");
+
+				streamWriter.Flush();
+				streamWriter.Close();
+				streamWriter.Dispose();
+			} // EOUsing.
+
+			LABEL_ENDOFMETHOD_ntu70_LABEL: ;
+			return;
+		}
+
+
+
+
+
+		private void CreateHtmlFileParentChilds() // ??? ReCode this whole method! Module SubNode
+		{
+			SysIo.FileStream fileStream;
+			SysIo.StreamWriter streamWriter;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfChildParents;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableTable>> sdictOfParentChilds;
+			SysCollGen.SortedDictionary<int, SysCollGen.List<CValueColumnColumn>> sdictOfColumnsFkyPky;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			SysCollGen.List<CValueTableTable> listTableTable;
+			SysCollGen.List<CValueColumnColumn> listColumnColumn;
+			SysCollGen.List<CValueTableModule> listTableModule;
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(256);
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			CValueTableModule valueTableModule;
+			CValueTableTable valueTableTableFE = null, valueTableTableFE_Previous = null;
+			char[] charArraySpace = new char[1] {' '};  // One space character, only.
+			string[] sAryModParamsCP;
+			string s2TableName = null, s2TableNameLowercase = null,
+				s3FileNode = null,
+				s4ModuleNameLowercase = null, s4ModuleNameLowercaseNoSpaces = null,
+				s5ModuleNameMixedCase = null;
+			int nLoopCountInnerRunningSum = 0, nOutputLineNumber = 0, nLoopColumnsCounter;
+			bool boolModuleMatchFound;
+			//
+
+			if (true == this.m_irunPropRead.GetSkipOutputOfFilesCP())
+			{
+				goto LABEL_ENDOFMETHOD_ntu70_LABEL;
+			}
+
+			// Handier.
+			sdictOfChildParents = this.m_irunPropRead.GetSDictOfChildParents();
+			sdictOfParentChilds = this.m_irunPropRead.GetSDictOfParentChilds();
+			sdictOfColumnsFkyPky = this.m_irunPropRead.GetSDictOfColumnsFkyPky();
+			sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			// Get FileNode string for output Html file name, based on app module.
+
+			s3FileNode = "ModuleNameNotFound"; // Hope to overlay this ugly default value.
+			sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+			if (1 == sAryModParamsCP.Length)
+			{
+				s4ModuleNameLowercaseNoSpaces = CRunProperties
+					.BuildModuleNameKey_From_ModuleName(sAryModParamsCP[0]);
+
+				if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+						(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+					)
+				{
+					s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+				}
+			}
+
+			using (
+					fileStream = new SysIo.FileStream
+							(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+								+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()  // "Modu"
+								+ "-"
+								+ s3FileNode  // "GenLen"
+								+ "-"
+								+ this.m_irunPropRead.GetHtmlFileParentChilds(),  // "ParentChilds.htm"
+							SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+							SysIo.FileAccess.Write,
+							SysIo.FileShare.None
+							)
+				)
+			{
+				streamWriter = new SysIo.StreamWriter(fileStream);
+
+				streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+				streamWriter.WriteLine("<html>");
+				streamWriter.WriteLine("<!--");
+				streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+				streamWriter.WriteLine("-->");
+				streamWriter.WriteLine("<head>");
+
+				streamWriter.Write("\t<title>AxErd PC");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						streamWriter.Write(": ");
+						streamWriter.Write(sAryModParamsCP[0]);
+					}
+				}
+				streamWriter.WriteLine("</title>");
+		
+				streamWriter.WriteLine("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+				streamWriter.WriteLine(M_sCss_Stylesheet_FileName);
+				streamWriter.WriteLine("\"/>");
+
+				streamWriter.WriteLine("</head>");
+				streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyPC\">");
+
+				// Print names of modules, if RestrictToModules param was used.
+				sbuilder.Length = 0;
+				sbuilder.Append("<h3 class=\"cssH3ColorPC\">AX ERD: Parent-Childs");
+				sAryModParamsCP = m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP)
+				{
+					if (1 == sAryModParamsCP.Length)
+					{
+						sbuilder.Append(": ");
+						sbuilder.Append(sAryModParamsCP[0]);
+					}
+				}				
+				sbuilder.Append("</h3>");
+				streamWriter.WriteLine(sbuilder.ToString());
+				streamWriter.WriteLine("");
+
+				// Module names as inter-webpage links, if RestrictToModulesCP param was used.
+				//sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesCP();
+				if (null != sAryModParamsCP && 0 < sAryModParamsCP.Length)
+				{
+					streamWriter.WriteLine("<pre>");
+					streamWriter.WriteLine("");
+					for (int mm = 0; mm < sAryModParamsCP.Length; mm++)
+					{
+						sbuilder.Length = 0;
+						sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+						sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+						sbuilder.Append("#m-");
+						sbuilder.Append(sAryModParamsCP[mm].ToLower().Replace(" ",""));
+						sbuilder.Append("\">Module: ");
+						sbuilder.Append(sAryModParamsCP[mm]);
+						sbuilder.Append("</a>");
+						streamWriter.WriteLine(sbuilder.ToString());
+					}
+					streamWriter.WriteLine("</pre>");
+					streamWriter.WriteLine("");
+					streamWriter.WriteLine("<br /><br />");
+					//streamWriter.WriteLine("<table id=\"idTabMainTest2\">");
+				}
+
+				// Output column headers, CP.
+
+				sbuilder.Length = 0;
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<table id=\"idTabMainTest2\">");
+				sbuilder.Append(Environment.NewLine);
+				sbuilder.Append("<tr class=\"cssFontForMainColumnHeaders\"><td>Row-num</td>");
+
+				sbuilder.Append("<td>Parent-table-name</td>");
+				sbuilder.Append("<td>Foreign-key-columns</td>");
+				sbuilder.Append("<td>Module-of-parent-table</td>");
+		
+				sbuilder.Append("<td>Arrow-to-child</td>");
+				
+				sbuilder.Append("<td>Child-table-name</td>");
+				sbuilder.Append("<td>Primary-key-columns</td>");
+				sbuilder.Append("<td>Module-of-child-table</td></tr>");
+
+				streamWriter.WriteLine(sbuilder.ToString());
+
+				// Next, file data driven lines.  <tr><td>
+
+				foreach (SysCollGen.KeyValuePair<string, SysCollGen.List<CValueTableTable>> kvpPC in sdictOfParentChilds)
+				{
+					listTableTable = kvpPC.Value; // No cast needed.  (SysCollGen.List<CValueTableTable>>)
+
+					for (int tt=0; tt < listTableTable.Count; tt++)
+					{
+						valueTableTableFE_Previous = valueTableTableFE;
+						valueTableTableFE = listTableTable[tt];
+
+						nLoopCountInnerRunningSum++;
+
+						s2TableName = "?";
+						s3FileNode = "?";
+						s4ModuleNameLowercase = "?";
+						s5ModuleNameMixedCase = "?";
+
+						//----------------------
+						// Get the two modules names, one for parent table and one for child table.  p-m & c-m.
+						// Then ask whether either p-m or c-m is present in the parameter array for RestictToModules.
+						// If Yes present, then proceed normally and emit the HTML code.
+						// If No present, then 'continue' to skip the present table pair.
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameParent(),  // Parent, not child.
+								this.m_irunPropRead.GetRestrictToModulesCP()  // There is no *PC for this.
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						boolModuleMatchFound = this.IsTableInRestictToModules
+								(
+								valueTableTableFE.GetTableNameChild(),  // Child, not parent.
+								this.m_irunPropRead.GetRestrictToModulesCP()
+								);
+						if (boolModuleMatchFound)
+						{
+							goto LABEL_AFTER_MODULE_FILTER_589vh_LABEL;
+						}
+
+						continue;  // Skip this out-of-module-set pair of P-C tables.
+					LABEL_AFTER_MODULE_FILTER_589vh_LABEL: ;
+						//----------------------
+
+
+						sbuilder.Length = 0;
+
+						// Parent________________________________________________________________
+						// ?? Should suppress the jumpTo anchor NAME= portion in all but
+						// first occurrence of the specific table name.
+
+						s2TableName = valueTableTableFE.GetTableNameParent();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameParentLowercase();
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<tr><td>");
+						sbuilder.Append(Convert.ToString(++nOutputLineNumber));
+						sbuilder.Append("</td>");
+
+						sbuilder.Append("<td>");
+						if (0 == tt) // Above 0 are redundant.
+						{
+							sbuilder.Append("<a name=\"p-"); // Not c-
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\"></a>");
+						}
+
+						// For the Left-Parent column on the HTML webpage,
+						// emit the parent table name as an inter-webpage link to where the table is a child,
+						// but only if the table really is also a child in another relationship.
+
+						if (sdictOfChildParents.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu" (no *PC here)
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching.
+
+									sbuilder.Append("-");
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append(s3FileNode); // "GenLed"
+									}
+									else
+									{
+										sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8546bw3: File node for P table in PC, module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8547bs1: File node for P table in PC, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileChildParents()); // "ChildParents.htm"
+							// Thus built substring - "Modu-GenLed-ParentChilds.htm" (that format).
+							sbuilder.Append("#c-");
+							sbuilder.Append(s2TableNameLowercase);
+							sbuilder.Append("\">");
+							sbuilder.Append(s2TableName);
+							sbuilder.Append("</a>");
+						}
+						else
+						{
+							sbuilder.Append(s2TableName); // ??? Seems like <p></p> bounds needed around this.
+						}
+						sbuilder.Append("</td>");
+
+						// Columns, Fky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						nLoopColumnsCounter = 0;
+						listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						foreach (CValueColumnColumn valueColColFkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColFkyFE.GetFieldFky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Parent.
+						try
+						{
+							if (sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); // This .Split is no longer good code.
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("Exception_bqi93, when nLoopCountInnerRunningSum={0}, kvpPC.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpPC.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) //&& null != sAryModParamsCP)
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP)
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td>");
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>&nbsp;&nbsp;&nbsp;&nbsp;&#x2011;&#x2011;&#x2011;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</td>");  // &lt;   _OR_   &#x003C; (for Unicode =), or &#x002D (for Unicode -).   (rt 3E)
+
+						// Child________________________________________________________
+
+						// For the Right-Child column on the HTML webpage,
+						// emit the child table name as an inter-webpage link
+						// to where the table is a child in Html file C-P.
+						//
+
+						s2TableName = valueTableTableFE.GetTableNameChild();
+						s2TableNameLowercase = valueTableTableFE.GetTableNameChildLowercase();
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						if (sdictOfChildParents.ContainsKey(s2TableNameLowercase))
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP()); // "Modu"
+
+							try
+							{
+								if (sdictOfTableModules.TryGetValue(s2TableNameLowercase, out listTableModule))
+								{
+									s5ModuleNameMixedCase = listTableModule[0].GetModuleName(); // Mixed is for display.
+									s4ModuleNameLowercaseNoSpaces = listTableModule[0].GetModuleNameLowercaseNoSpaces(); // Lowercase is for key matching in dictionary keys.
+
+									if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+											(s4ModuleNameLowercaseNoSpaces, out moduFileOwnerInfo)
+										)
+									{
+										s3FileNode = moduFileOwnerInfo.GetFileNameNode();
+										sbuilder.Append("-");
+										sbuilder.Append(s3FileNode); // "GenLed"
+									}
+									else
+									{
+										Console.WriteLine();
+										Console.WriteLine("AxErd-Warning-8545bw4: File node for C table in CP ? module lookup failed.");
+										Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+											s2TableName, s3FileNode, s4ModuleNameLowercaseNoSpaces, nLoopCountInnerRunningSum);
+										Console.WriteLine();
+									}
+								}
+							}
+							catch (Exception ee)
+							{
+								Console.WriteLine();
+								Console.WriteLine(ee);
+								Console.WriteLine();
+								Console.WriteLine("AxErd-Error-8548bs2: File node for C ? table in CP, module lookup failed.");
+								Console.WriteLine("{0}=s2TableName , {1}=s3FileNode , {2}=s4ModuleNameLower , {3}=nLoopCountInnerRunningSum",
+									s2TableName, s3FileNode, s4ModuleNameLowercase, nLoopCountInnerRunningSum);
+								Console.WriteLine();
+
+								throw ee;
+							}
+
+							sbuilder.Append("-");
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileChildParents()); // "ChildParents.htm"
+							// Thus built substring - "Modu-GenLed-ChildParents.htm" (that format).
+						}
+
+						sbuilder.Append("#c-");
+						sbuilder.Append(s2TableNameLowercase);
+						sbuilder.Append("\">");
+						sbuilder.Append(s2TableName);
+						sbuilder.Append("</a></td>");
+
+						// Columns, Pky.
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>");
+
+						//listColumnColumn = sdictOfColumnsFkyPky[valueTableTableFE.GetIdentityTT()];
+						nLoopColumnsCounter = 0;
+						foreach (CValueColumnColumn valueColColPkyFE in listColumnColumn)
+						{
+							if (0 != nLoopColumnsCounter++)
+								{ sbuilder.Append(", "); }
+							sbuilder.Append(".");
+							sbuilder.Append(valueColColPkyFE.GetFieldRelPky());
+						}
+						sbuilder.Append("</td>");
+
+						// Application Module, for Child.
+						try
+						{
+							if (true == sdictOfTableModules.ContainsKey(s2TableNameLowercase))
+							{
+								// Gather data.
+								listTableModule = sdictOfTableModules[s2TableNameLowercase];
+								valueTableModule = listTableModule[0];
+								//sAryModParamsCP = valueTableModule.GetModuleName().Split
+								//	(charArraySpace, StringSplitOptions.RemoveEmptyEntries); ??
+							}
+							else
+							{
+								valueTableModule = null;
+								//sAryModParamsCP = null;
+							}
+						}
+						catch (Exception ee)
+						{
+							Console.WriteLine("Exception_bqg73, when nLoopCountInnerRunningSum={0}, kvpPC.Key={1}. Now re-throwing.",
+								nLoopCountInnerRunningSum, kvpPC.Key);
+							throw ee;
+						}
+
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td><span class=\"css2ModuleLink\">");
+						if (null != valueTableModule) // && null != sAryModParamsCP) ??
+						{
+							sbuilder.Append("<a class=\"cssAHref2\" href=\"");
+							sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+							sbuilder.Append("#m-");
+
+							sbuilder.Append(valueTableModule.GetModuleNameLowercaseNoSpaces());
+							//foreach (string sModulePart in sAryModParamsCP) ??
+							//{
+							//	sbuilder.Append(sModulePart);
+							//}
+
+							sbuilder.Append("\">(");
+							sbuilder.Append(valueTableModule.GetModuleName());
+							sbuilder.Append(")</a>");
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+						sbuilder.Append("</span></td></tr>");
+
+						streamWriter.WriteLine(sbuilder.ToString());
+					} // EOFor, listTableTable, each valueTableTable per iteration.
+				} // EOFor SortedDict PC.
+
+				streamWriter.WriteLine("</table>");
+				streamWriter.WriteLine("</body>");
+				streamWriter.WriteLine("</html>");
+
+				streamWriter.Flush();
+				streamWriter.Close();
+				streamWriter.Dispose();
+			} // EOUsing.
+
+			LABEL_ENDOFMETHOD_ntu70_LABEL: ;
+			return;
+		}
+
+
+
+
+		private bool IsTableInRestictToModules
+				(
+				string _sTableName,        // Perhaps from:  this.m_irunPropRead.GetChildTableName()
+				string[] _sAryModuleNames  // Perhaps from:  this.m_irunPropRead.GetRestrictToModules()
+				)
+		{
+			SysCollGen.List<CValueTableModule> listTableModule;
+			string sTableNameLowercase;
+			bool returnBoolModuleMatchFound = true;  // If no restricted modules, then consider it matched.
+
+			// Get the two modules names, one for child table and one for parent table.  c-m & p-m.
+			// Then ask whether either c-m or p-m is present in the parameter array for RestictToModules.
+			// If Yes present, then proceed normally and emit the HTML code.
+			// If No present, then 'continue' to skip the present table pair.
+
+			sTableNameLowercase = _sTableName.ToLower();
+
+			if (null != _sAryModuleNames && 0 < _sAryModuleNames.Length)  // Modules are restricted.
+			{
+				returnBoolModuleMatchFound = false;
+
+				if (!this.m_irunPropRead.GetSDictOfTableModules().ContainsKey(sTableNameLowercase))
+				{
+					goto LABEL_KEYNOTFOUND_THUSNOMATCH_gnp81_LABEL;
+				}
+				listTableModule = this.m_irunPropRead.GetSDictOfTableModules()[sTableNameLowercase];
+
+				foreach (string sModuleNameFE in _sAryModuleNames)
+				{
+					foreach (CValueTableModule valueTableModuleFE in listTableModule)
+					{
+						// ?? Gross number of string objects. Thus maybe GetRestrictToModules() should return
+						// object that has both Original command line value AND ToLower edition.
+						if (valueTableModuleFE.GetModuleNameLowercase() == sModuleNameFE.ToLower()) // ?? Gross number of string objects.
+						{
+							returnBoolModuleMatchFound = true;
+							break;
+						}
+					}
+					if (returnBoolModuleMatchFound) { break; }
+				}
+			}
+
+		LABEL_KEYNOTFOUND_THUSNOMATCH_gnp81_LABEL: ;
+			return returnBoolModuleMatchFound;
+		}
+
+
+
+
+
+		private void CreateHtmlFileTableModules()
+		{
+			SysIo.FileStream fileStream;
+			SysIo.StreamWriter streamWriter;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfTableModules;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictOfModuleName_to_FileNameNodes;
+			SysCollGen.List<CValueTableModule> listTableModule;
+			SysCollGen.List<CValueTableTable> listTableTable;
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			//CValueTableTable valueTableTable;
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(256);
+			char[] charArraySpace = new char[1] { ' ' };  // One space character, only.
+			string[] sAryModParamsCP;
+			string s2TableNameLowercase;
+			int nLoopCount = 0, nOutputLineNumber = 0;
+			bool boolModuleMatchFound;
+			//
+
+			if (true == this.m_irunPropRead.GetSkipOutputOfFilesTM())
+			{
+				goto LABEL_ENDOFMETHOD_nte72_LABEL;
+			}
+
+			sdictOfModuleName_to_FileNameNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+
+
+			using (
+					fileStream = new SysIo.FileStream
+							(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+								+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM()
+								+ this.m_irunPropRead.GetHtmlFileTableModules(),
+							SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+							SysIo.FileAccess.Write,
+							SysIo.FileShare.None
+							)
+				)
+			{
+				streamWriter = new SysIo.StreamWriter(fileStream);
+
+				streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+
+				streamWriter.WriteLine("<html>");
+				streamWriter.WriteLine("<!--");
+				streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+				streamWriter.WriteLine("-->");
+				streamWriter.WriteLine("<head>");
+				streamWriter.WriteLine("\t<title>AxErd Table-Modules</title>");
+
+				streamWriter.WriteLine("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+				streamWriter.WriteLine(M_sCss_Stylesheet_FileName);
+				streamWriter.WriteLine("\"/>");
+
+				streamWriter.WriteLine("</head>");
+				streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyTM\">");
+				streamWriter.WriteLine("<h3 class=\"cssH3ColorTM\">AxErd Table-Modules</h3>");
+				streamWriter.WriteLine("");
+				streamWriter.WriteLine("<table>");
+
+				// Next, file data driven lines.
+
+				sdictOfTableModules = this.m_irunPropRead.GetSDictOfTableModules();
+
+				foreach (SysCollGen.KeyValuePair<string, SysCollGen.List<CValueTableModule>> kvpMT in sdictOfTableModules)
+				{
+
+					listTableModule = kvpMT.Value;
+
+					foreach (CValueTableModule valueTableModuleFE in listTableModule)
+					{
+						nLoopCount++;
+
+						//----------------------
+						// Is the module of the present record filtered out by the restrict to modules parameter?
+
+						boolModuleMatchFound = false;  // Assume this module should be skipped.
+						sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesTM();
+						if (null == sAryModParamsCP || 0 == sAryModParamsCP.Length)
+						{
+							boolModuleMatchFound = true;  // Not literally true, but equivalent.
+						}
+						else
+						{
+							foreach (string sMod in sAryModParamsCP)
+							{
+								if (valueTableModuleFE.GetModuleNameLowercase() == sMod.ToLower())
+								{
+									boolModuleMatchFound = true;
+									break;
+								}
+							}
+						}
+						if (!boolModuleMatchFound)
+						{
+							continue;  // Thus skipping the current module record, and not outputting it to HTML.
+						}
+						//----------------------
+
+
+						// Next part is driven by the data derived earlier from the input delimited files.
+						sbuilder.Length = 0;
+
+						// Table
+
+						s2TableNameLowercase = valueTableModuleFE.GetTableNameLowercase();
+
+						sbuilder.Append("<tr><td>");
+						sbuilder.Append(Convert.ToString(++nOutputLineNumber));
+						sbuilder.Append("</td>");
+
+						sbuilder.Append("<td><a name=\"t-");
+						sbuilder.Append(s2TableNameLowercase);
+						sbuilder.Append("\"></a><a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixCP());
+
+						sbuilder.Append("-");
+						if (sdictOfModuleName_to_FileNameNodes.TryGetValue
+								(valueTableModuleFE.GetModuleNameLowercaseNoSpaces(), out moduFileOwnerInfo)
+							)
+						{
+							sbuilder.Append(moduFileOwnerInfo.GetFileNameNode());
+						}
+						else
+						{
+							sbuilder.Append(CDllCentral.M_readonly_sModuleNotKnown);
+						}
+
+						sbuilder.Append("-");
+						if (this.m_irunPropRead.GetSDictOfParentChilds().TryGetValue
+								(s2TableNameLowercase, out listTableTable)
+							)
+						{
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileParentChilds());
+							sbuilder.Append("#p-");
+						}
+						else
+						{
+							sbuilder.Append(this.m_irunPropRead.GetHtmlFileChildParents());
+							sbuilder.Append("#c-");
+						}
+
+						sbuilder.Append(s2TableNameLowercase);
+						sbuilder.Append("\">");
+						sbuilder.Append(valueTableModuleFE.GetTableName());
+						sbuilder.Append("</td>");
+
+						// Module
+						sbuilder.Append(Environment.NewLine);
+						sbuilder.Append("<td>&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</td>");
+						sbuilder.Append("<td></a>   <a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+						sbuilder.Append(this.m_irunPropRead.GetHtmlFileModuleTables());
+						sbuilder.Append("#m-");
+						sbuilder.Append(valueTableModuleFE.GetModuleNameLowercaseNoSpaces());
+						sbuilder.Append("\">");
+						sbuilder.Append(valueTableModuleFE.GetModuleName());
+						sbuilder.Append("</td></tr>");
+
+						streamWriter.WriteLine(sbuilder.ToString());
+					} // EOFor, listTableTable, each valueTableModule per iteration.
+				} // EOFor SortedDict TM.
+
+				streamWriter.WriteLine("</table>");
+				streamWriter.WriteLine("</body>");
+				streamWriter.WriteLine("</html>");
+
+				streamWriter.Flush();
+				streamWriter.Close();
+				streamWriter.Dispose();
+			} // EOUsing.
+
+		LABEL_ENDOFMETHOD_nte72_LABEL: ;
+			return;
+		}
+
+
+
+
+		private void CreateHtmlFileModuleTables()
+		{
+			SysIo.FileStream fileStream;
+			SysIo.StreamWriter streamWriter;
+			SysCollGen.SortedDictionary<string, SysCollGen.List<CValueTableModule>> sdictOfModuleTables;
+			SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> sdictModuFileNodes;
+			CModuleFileOwnerInfo moduFileOwnerInfo;
+			SysCollGen.List<CValueTableModule> listTableModule;
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(256);
+			char[] charArraySpace = new char[1] { ' ' };  // One space character, only.
+			string[] sAryModParamsCP;
+			string sIntraPageLinks, sModNameNoSpaces_Previous = "";
+			int nLoopCount = 0;
+			bool boolModuleMatchFound, bModuleNameHasChangedFromPrevious;
+			//
+
+			if (true == this.m_irunPropRead.GetSkipOutputOfFilesTM())
+			{
+				goto LABEL_ENDOFMETHOD_nte73_LABEL;
+			}
+
+			using (
+					fileStream = new SysIo.FileStream
+							(this.m_irunPropRead.GetPathToOutputHtmlFiles()
+								+ this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM()
+								+ this.m_irunPropRead.GetHtmlFileModuleTables(),
+							SysIo.FileMode.Create,  // .Create means Overwrite if file pre-exists.
+							SysIo.FileAccess.Write,
+							SysIo.FileShare.None
+							)
+				)
+			{
+				streamWriter = new SysIo.StreamWriter(fileStream);
+
+				streamWriter.WriteLine("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+
+				streamWriter.WriteLine("<html>");
+				streamWriter.WriteLine("<!--");
+				streamWriter.WriteLine("\tMicrosoft Dynamics AX 2012 R2, Table ERD and related Application Module info.");
+				streamWriter.WriteLine("-->");
+				streamWriter.WriteLine("<head>");
+				streamWriter.WriteLine("\t<title>AxErd Module-Tables</title>");
+
+				streamWriter.WriteLine("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+				streamWriter.WriteLine(M_sCss_Stylesheet_FileName);
+				streamWriter.WriteLine("\"/>");
+
+				streamWriter.WriteLine("</head>");
+				streamWriter.WriteLine("<body class=\"cssBackgroundColorBodyMT\">");
+				streamWriter.WriteLine("<h3 class=\"cssH3ColorMT\">AxErd Module-Tables</h3>");
+				streamWriter.WriteLine("");
+				streamWriter.WriteLine("<pre>");
+
+
+				sIntraPageLinks = this.BuildIntraPageLinksToModuleNames
+					(this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes());
+				streamWriter.WriteLine(sIntraPageLinks);
+
+
+				// Next, file data driven lines.
+
+				sdictOfModuleTables = this.m_irunPropRead.GetSDictOfModuleTables();
+
+				foreach (SysCollGen.KeyValuePair<string, SysCollGen.List<CValueTableModule>> kvpMT in sdictOfModuleTables)
+				{
+
+					listTableModule = kvpMT.Value;
+
+
+					foreach (CValueTableModule valueTableModuleFE in listTableModule)
+					{
+						nLoopCount++;
+
+						if (sModNameNoSpaces_Previous == valueTableModuleFE.GetModuleNameLowercaseNoSpaces())
+						{
+							bModuleNameHasChangedFromPrevious = false;
+						}
+						else
+						{
+							bModuleNameHasChangedFromPrevious = true;
+						}
+						sModNameNoSpaces_Previous = valueTableModuleFE.GetModuleNameLowercaseNoSpaces();
+
+						//----------------------
+						// Is the module of the present record filtered out by the restrict to modules parameter?
+
+						boolModuleMatchFound = false;  // Assume this module should be skipped.
+						sAryModParamsCP = this.m_irunPropRead.GetRestrictToModulesTM();
+						if (null == sAryModParamsCP || 0 == sAryModParamsCP.Length)
+						{
+							boolModuleMatchFound = true;  // Not literally true, but equivalent.
+						}
+						else
+						{
+							foreach (string sMod in sAryModParamsCP)
+							{
+								if (valueTableModuleFE.GetModuleNameLowercase() == sMod.ToLower())
+								{
+									boolModuleMatchFound = true;
+									break;
+								}
+							}
+						}
+						if (!boolModuleMatchFound)
+						{
+							continue;  // Thus skipping the current module record, and not outputting it to HTML.
+						}
+						//----------------------
+
+
+						// Next part is driven by the data derived earlier from the input delimited files.
+						sbuilder.Length = 0;
+
+						// Module
+						if (bModuleNameHasChangedFromPrevious)
+						{
+							sbuilder.Append("<a name=\"m-");
+							sbuilder.Append(valueTableModuleFE.GetModuleNameLowercaseNoSpaces());
+							sbuilder.Append("\"></a>");
+						}
+
+						// ERD link.
+						sdictModuFileNodes = this.m_irunPropRead.GetSDictOfModuleName_to_FileNameNodes();
+						if (sdictModuFileNodes.TryGetValue
+								(valueTableModuleFE.GetModuleNameLowercaseNoSpaces(),
+								out moduFileOwnerInfo
+								)
+							)
+						{
+							if (moduFileOwnerInfo .GetErdModuleFileName() !=
+								CModuleFileOwnerInfo .M_sUnknown_ErdModuleFileName_PlaceholderValue
+								)
+							{
+								sbuilder.Append("<a href=\"");
+								sbuilder.Append(moduFileOwnerInfo.GetErdModuleFileName());
+								sbuilder.Append("\"<a>ERD</a>  ");
+							}
+						}
+
+						sbuilder.Append(valueTableModuleFE.GetModuleName());
+
+						// Table
+						sbuilder.Append(":   <a class=\"cssAHref2\" href=\"");
+						sbuilder.Append(this.m_irunPropRead.GetOutputHtmlFilesCommonPrefixTM());
+						sbuilder.Append(this.m_irunPropRead.GetHtmlFileTableModules());
+						sbuilder.Append("#t-");
+						sbuilder.Append(valueTableModuleFE.GetTableNameLowercase());
+						sbuilder.Append("\">");
+						sbuilder.Append(valueTableModuleFE.GetTableName());
+						sbuilder.Append("</a>");
+
+						streamWriter.WriteLine(sbuilder.ToString());
+					} // EOFor, listTableTable, each valueTableModule per iteration.
+				} // EOFor SortedDict MT.
+
+				streamWriter.WriteLine("</pre>");
+				streamWriter.WriteLine("</body>");
+				streamWriter.WriteLine("</html>");
+
+				streamWriter.Flush();
+				streamWriter.Close();
+				streamWriter.Dispose();
+			} // EOUsing.
+
+		LABEL_ENDOFMETHOD_nte73_LABEL: ;
+			return;
+		}
+
+
+
+
+		private string BuildIntraPageLinksToModuleNames
+				(SysCollGen.SortedDictionary<string, CModuleFileOwnerInfo> _sdictMods
+				)
+		{
+			SysTex.StringBuilder sbuilder = new SysTex.StringBuilder(2048);
+			int nLinksWritten = 0, nMaxLinksPerRow = 2;
+			//
+
+			sbuilder.AppendLine();
+			sbuilder.AppendLine("<div class=\"cssDiv_MT_IntraPage_ModuLinks\">");
+			sbuilder.AppendLine("&nbsp;&nbsp;&nbsp;<i>Links to sections below:</i><br />");
+			sbuilder.AppendLine("<table>");
+			sbuilder.AppendLine();
+
+			foreach (SysCollGen.KeyValuePair<string, CModuleFileOwnerInfo> kvpMods in _sdictMods)
+			{
+				if ( 0 == (nLinksWritten % nMaxLinksPerRow) )
+				{
+					// New <tr> row must be started.
+					sbuilder.Append("<tr>");
+				}
+				else
+				{
+					// Add a short horizontal buffer between previous <td> cell and this new cell.
+					sbuilder.AppendLine("<td style=\"border: 0px\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>");
+				}
+
+				sbuilder.Append("<td style=\"border: 0px\"><a href=\"#m-");
+				sbuilder.Append(kvpMods.Value.GetFormalModuleNameLowercaseNoSpaces());
+				sbuilder.Append("\">");
+				sbuilder.Append(kvpMods.Value.GetFormalModuleName());
+				sbuilder.AppendLine("</a></td>");
+
+				if ( (nMaxLinksPerRow - 1) == (nLinksWritten % nMaxLinksPerRow) )
+				{
+					// This was the final <td> cell for this <tr> row.
+					sbuilder.AppendLine("</tr>");
+				}
+
+				nLinksWritten++;
+			}
+
+			sbuilder.AppendLine();
+			sbuilder.AppendLine("</table></div>");
+			sbuilder.AppendLine();
+
+			return sbuilder.ToString();
+		}
+
+	} // EOClass
+}

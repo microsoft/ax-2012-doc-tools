@@ -1,4 +1,4 @@
-﻿//  GeneMi   ,   2013/March/29  Friday  10:33am   Fixed MT .htm off-by-one-record bug. Adding <h4> MS Dyn AX 2012 R2.
+﻿//     2013/March/29  Friday  10:33am   Fixed MT .htm off-by-one-record bug. Adding <h4> MS Dyn AX 2012 R2.
 
 using System;
 using SysCollGen = System.Collections.Generic;

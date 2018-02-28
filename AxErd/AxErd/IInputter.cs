@@ -1,4 +1,4 @@
-﻿//  GeneMi  ,  2012/11/30  Friday  11:12am
+﻿//  2012/11/30  Friday  11:12am
 
 using               System;
 using SysCollGen  = System.Collections.Generic;

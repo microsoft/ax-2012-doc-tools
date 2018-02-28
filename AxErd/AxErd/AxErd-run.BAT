@@ -1,5 +1,5 @@
 @echo off
-rem GeneMi   ,   2013/April/26  Friday  17:20pm
+rem    2013/April/26  Friday  17:20pm
 rem Deploy\ contents are then manually copied to http://www.microsoft.com/dynamics/ax/erd/ax2012r2/ corresponding directory.
 
 rem AxErd-run.BAT

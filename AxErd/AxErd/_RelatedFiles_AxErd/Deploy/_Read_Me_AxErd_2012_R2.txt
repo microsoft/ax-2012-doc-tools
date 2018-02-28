@@ -1,6 +1,6 @@
 
 /***
-GeneMi    ,    2013/04/18  Thursday  13:05pm
+2013/04/18  Thursday  13:05pm
 
 _Read_Me_AxErd_2012_R2.txt
 	in  ...\AxErd\AxErd\_RelatedFiles_AxErd\Deploy\

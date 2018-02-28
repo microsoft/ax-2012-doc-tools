@@ -1,5 +1,5 @@
 ﻿
-//  GeneMi  ,  2013/05/10  Friday  14:35pm
+//  2013/05/10  Friday  14:35pm
 //
 //  This generates a sitemap.XML for AxErd.
 //
@@ -7,7 +7,6 @@
 //    [C:\Main\VisStudioProjs\AxErd33\AxErd\AxErd\_RelatedFiles_AxErd\Deploy\]
 //    >> C:\Main\VisStudioProjs\AxErd33\SiteMapXml_AxErd\SiteMapXml_AxErd\bin\Debug\SiteMapXml_AxErd.exe
 //
-//  Source Depot:    RainFND/private/developer/genemi/AxErd/SiteMapXml_AxErd/
 //
 
 using              System;

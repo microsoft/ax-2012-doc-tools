@@ -1,7 +1,7 @@
 @echo off
 echo .
 
-rem GeneMi   ,   2013/Jan/26  Saturday  13:32pm
+rem    2013/Jan/26  Saturday  13:32pm
 rem AxErd-run-Caller.BAT
 
 

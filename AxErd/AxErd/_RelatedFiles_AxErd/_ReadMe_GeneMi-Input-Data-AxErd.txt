@@ -1,9 +1,9 @@
 
 /****
-GeneMi   ,   2013/Jan/07  Monday  15:58pm c
+   2013/Jan/07  Monday  15:58pm c
 
 
-_ReadMe_GeneMi-Input-Data-AxErd.txt
+_ReadMe-Input-Data-AxErd.txt
 
 C:\Main\VisStudioProjs\AxErd31\
 	AxErd\AxErd\RelatedFiles\

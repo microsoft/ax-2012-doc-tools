@@ -1,5 +1,5 @@
 ﻿// C#.  Change at each 'Application-specific' find, per application.
-// GeneMi   ,   2013-Feb-01
+//    2013-Feb-01
 
 using System;
 using SysTex = System.Text;

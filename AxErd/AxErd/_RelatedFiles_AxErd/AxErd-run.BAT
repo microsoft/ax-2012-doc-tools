@@ -1,5 +1,5 @@
 @echo off
-rem GeneMi   ,   2013/Jan/26  Saturday  13:33pm b
+rem    2013/Jan/26  Saturday  13:33pm b
 
 rem AxErd-run.BAT
 rem ...\AxErd\bin\Debug\

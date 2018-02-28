@@ -1,7 +1,7 @@
 @echo off
 echo .
 
-rem GeneMi   ,   2013/April/26  Friday  17:20pm
+rem    2013/April/26  Friday  17:20pm
 rem AxErd-run-Caller.BAT
 
 if not 'runbyhuman'=='%1' echo This BAT will Not run now, missing the ten char first param 'runbyhuman'. (%1)

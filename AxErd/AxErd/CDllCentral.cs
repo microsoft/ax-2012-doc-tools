@@ -1,5 +1,5 @@
 ﻿/***
-GeneMi  ,  AxErdModule tool  ,  2012/Dec/08 Saturday 22:51pm
+AxErdModule tool  ,  2012/Dec/08 Saturday 22:51pm
 
 Status:
 	[B] Needs table FOREIGN KEY COLUMNS <br /> along side child table name.

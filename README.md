@@ -12,3 +12,13 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Using this repo
+
+The HTML pages are in the repo, at [AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)
+
+A description of how to create your own ERDs is at: [AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
+
+The solution is at the root of the AxErd folder [AxErd](AxErd/)
+
+To view the HTML files, append the HTML url to "http://htmlpreview.github.io/?"
